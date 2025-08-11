@@ -34,14 +34,14 @@
 }
 
 @font-face {
-  font-family: 'Outfit';
-  src: url('/fonts/Outfit-Regular.woff') format('woff2');
-  font-weight: 400;
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Variable.woff2') format('woff2');
+  font-weight: 100 900;
   font-display: swap;
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .navbar__title {
