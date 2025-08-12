@@ -60,7 +60,7 @@ The default ACSS Palette with all shades and transparencies will cover 99% of us
 
 To create a new color, we recommend defining all the following at the root level for your new color:
 
-```
+```CSS
 :root {
     --my-color: {hex value};
     --my-color-hex: {hex value};
@@ -77,7 +77,7 @@ To create a new color, we recommend defining all the following at the root level
 
 Here’s an example:
 
-```
+```CSS
 :root {
     --my-color: #344f6f;
     --my-color-hex: #344f6f;
@@ -98,7 +98,7 @@ Since your new color is based on variables, you can make your own utility classe
 
 If you want to create a utility class that uses your new color, you can do that easily. You just have to decide what you want the utility class to do. Here’s an example where we create a new background color utility class:
 
-```
+```CSS
 .bg--my-color {
    background-color: var(--my-color);
 }
@@ -106,7 +106,7 @@ If you want to create a utility class that uses your new color, you can do that 
 
 If you were creating a card and wanted to use that new color as the background color for the card, it would look like this:
 
-```
+```CSS
 .my-card {
    background-color: var(--my-color);
 }
@@ -114,7 +114,7 @@ If you were creating a card and wanted to use that new color as the background c
 
 Once you’ve created a new color variable you can reference it anywhere. And since you created the color partials along with it, you can even do extra custom stuff like this:
 
-```
+```CSS
 .my-card {
    background-color: hsl(var(--my-color-h) calc(var(--my-color-s) * .5) calc(var(--my-color-l) * 1.5));
 }
@@ -128,7 +128,7 @@ Note: These same color partials are available for all colors in the ACSS system,
 
 To create a new shade, you’ll want to reference the HSL values for your new color (or an existing color), but change the shades to the new desired values:
 
-```
+```CSS
 :root {
    --my-color-light: hsl(var(--my-color-h) var(--my-color-s) 82%);
 }
@@ -144,7 +144,7 @@ To create a new transparency, you’ll want to reference the HSL values for your
 
 In this case, you usually don’t need to reference the HSL values individually. That’s where our HSL variable comes in handy:
 
-```
+```CSS
 :root {
    --my-color-light: hsl(var(--my-color-hsl) / 72%);
 }
