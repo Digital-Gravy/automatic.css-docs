@@ -7,9 +7,7 @@ In most scenarios, modern web design calls for using relative units over static 
 
 As explained in the below video, rem units map directly to the root font size of the website. In most cases, the root font size is 100%, and rendered by most browsers as 16px.
 
-PB101: L05 - Static vs Relative Units - YouTube
-
-[](https://www.youtube.com/watch?v=cwfxZRLqyus&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
+[PB101: L05 - Static vs Relative Units - YouTube](https://www.youtube.com/watch?v=cwfxZRLqyus&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
 
 The challenge with using rem units is that they’re hard to calculate on the fly if you use pixels as a reference point.
 

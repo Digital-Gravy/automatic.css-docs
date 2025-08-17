@@ -50,8 +50,13 @@ For reference, the default values for these are as follows:
 
 To style a ribbon contextually, create a custom modifier class to identify it and then set its styling via locally scoped variables. You only need to add the variables you want to change. So if you like all the default ribbon styling but want to change the background color, text color, and shadow, you only need to alter those three variables:
 
-`.ribbon--sale {    --ribbon-background-color: var(--primary);   --ribbon-text-color: var(--primary-ultra-light);   --ribbon-shadow: 0 0 30px -3px var(--primary-ultra-dark-trans-20); }`
-Code language: CSS (css)
+```CSS
+.ribbon--sale {
+    --ribbon-background-color: var(--primary);
+    --ribbon-text-color: var(--primary-ultra-light);
+    --ribbon-shadow: 0 0 30px -3px var(--primary-ultra-dark-trans-20);
+}
+```
 
 When adding your new “sale” ribbon, you’ll want to add the standard `.ribbon` class and your new `.ribbon--sale` class. This is the standard for how modifier classes work. One class adds base styling, and the modifier modifies the style.
 

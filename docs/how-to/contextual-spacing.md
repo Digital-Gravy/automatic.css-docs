@@ -63,8 +63,13 @@ You should only abandon these utilities if you’re abandoning the context they 
 
 Let’s say I actually want double the typical grid gap for an individual grid.
 
-`.my-grid {    display: grid;   grid-template-columns: var(--grid-3);   gap: calc(var(--grid-gap) * 2); }`
-Code language: CSS (css)
+```CSS
+.my-grid {
+    display: grid;
+    grid-template-columns: var(--grid-3);
+    gap: calc(var(--grid-gap) * 2);
+}
+```
 
 This is a really fantastic approach for multiple reasons:
 

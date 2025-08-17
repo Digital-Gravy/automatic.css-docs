@@ -7,9 +7,7 @@ ACSS users have a full range of utility classes for [Flexbox](https://developer.
 
 If you’re not familiar with Flexbox, it’s going to be tough to use these classes effectively. I’d recommend watching this Flexbox video as a pre-requisite:
 
-PB101: L10 - Content Justification & Alignment with Flexbox - YouTube
-
-[](https://www.youtube.com/watch?v=k46Cft746IM&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
+[PB101: L10 - Content Justification & Alignment with Flexbox - YouTube](https://www.youtube.com/watch?v=k46Cft746IM&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
 
 How Flexbox Works
 

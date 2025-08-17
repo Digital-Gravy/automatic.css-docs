@@ -104,13 +104,27 @@ To override a button or group of buttons, use a selector to identify them and th
 
 For example, let’s say you wanted to override the padding, font weight, background color, and hover background color of a single action button on a single page of your site. Just override the variables you want to override at the ID level:
 
-`#btn123 {   --btn-padding-block: 2em;  --btn-padding-inline: 4em;  --btn-font-weight: 900;  --btn-background: var(--action-dark);  --btn-background-hover: var(--action-ultra-dark); }`
-Code language: CSS (css)
+```CSS
+#btn123 {
+    --btn-padding-block: 2em;
+    --btn-padding-inline: 4em;
+    --btn-font-weight: 900;
+    --btn-background: var(--action-dark);
+    --btn-background-hover: var(--action-ultra-dark);
+}
+```
 
 Want to make this change across an entire page? You can add a body class (a class on the body element) to the page to affect all action buttons:
 
-`body.custom .btn--action {   --btn-padding-block: 2em;  --btn-padding-inline: 4em;  --btn-font-weight: 900;  --btn-background: var(--action-dark);  --btn-background-hover: var(--action-ultra-dark); }`
-Code language: CSS (css)
+```CSS
+body.custom .btn--action {
+    --btn-padding-block: 2em;
+    --btn-padding-inline: 4em;
+    --btn-font-weight: 900;
+    --btn-background: var(--action-dark);
+    --btn-background-hover: var(--action-ultra-dark);
+}
+```
 
 Now you’ve changed the style of all buttons on a page without affecting any other page of the site.
 

@@ -13,8 +13,9 @@ The syntax for width classes is `.width--[value]` with the value being 10-90 in 
 
 The output for these width classes is:
 
-`calc(var(--content-width) * .2)`
-Code language: JavaScript (javascript)
+```CSS
+calc(var(--content-width) * .2)
+```
 
 As mentioned previously, this results in a fixed width calculation rather than a percent value. Since the `.width--` classes also set a max-inline size of 100%, they’re automatically responsive and won’t create overflow issues.
 

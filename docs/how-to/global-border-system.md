@@ -52,25 +52,40 @@ ACSS allows you to set all three of these from the dashboard with color having b
 
 These properties combine together in a global variable called var(–border). This allows you to add your global border style to any element like this:
 
-`.card {   border: var(--border); }`
-Code language: CSS (css)
+```CSS
+.card {
+    border: var(--border);
+}
+```
 
 The global border style is either light by default or dark by default, depending on what you choose in the dashboard. If you need the alternate version, you can simply call it with its own variable, like this:
 
-`.card {   border: var(--border-light); }`
-Code language: CSS (css)
+```CSS
+.card {
+    border: var(--border-light);
+}
+```
 
 You can also modify the border style per instance by modifying the tokens locally (should only be needed in rare cases):
 
-`.card {   --border-width: 5px;  --border-style: dashed;  border: var(--border); }`
-Code language: CSS (css)
+```CSS
+.card {
+    --border-width: 5px;
+    --border-style: dashed;
+    border: var(--border);
+}
+```
 
 ## Global Border Style + Global Radius
 
 Keep in mind that border-radius is not part of the shorthand border property, so it’s not included in `var(--border)`. In order to get an element to have both the global radius and your global border style, you need to declare both, like this:
 
-`.card {   border: var(--border);  border-radius: var(--radius); }`
-Code language: CSS (css)
+```CSS
+.card {
+    border: var(--border);
+    border-radius: var(--radius);
+}
+```
 
 ## Border Classes
 

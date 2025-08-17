@@ -37,7 +37,7 @@ Exclude Headers & Exclude Pages for Offset Content Automatically Option
 
 You can exclude specific headers by entering any valid selector for the header. A data attribute is a really good way to do this because it also allows you to make a header sticky or not sticky from the back-end of WordPress.
 
-We provide a default data attribute `[data-sticky-header=""0""]` that you can use, which is already excluded by default. Of course, you can use any selector or list of selectors you’d like, just make sure to wrap each selector in quotes and comma separate them.
+We provide a default data attribute `[data-sticky-header="0"]` that you can use, which is already excluded by default. Of course, you can use any selector or list of selectors you’d like, just make sure to wrap each selector in quotes and comma separate them.
 
 You can also disable the offset on specific pages by referencing the unique body class of the page (WordPress adds a body class to every page automatically) or by using the default utility class `.content-offset--off`.
 

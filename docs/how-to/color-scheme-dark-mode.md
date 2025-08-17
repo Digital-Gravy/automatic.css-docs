@@ -129,8 +129,7 @@ This input accepts any valid selector including complex selectors, compound sele
 
 Example:
 
-`""header"", "".service-card"", "".hero .featured-image"", "".team-grid""`
-Code language: JavaScript (javascript)
+`"header", ".service-card", ".hero .featured-image", ".team-grid"`
 
 This example would protect the header, service cards, hero features images, and team grids from displaying the alt scheme.
 

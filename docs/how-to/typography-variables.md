@@ -92,9 +92,7 @@ Now apply that class on your `h2` heading, and you have a heading element that i
 
 This technique is demonstrated in the video dedicated to Typography in the [ACSS 101 course](https://youtube.com/playlist?list=PL72Ci-T5YC93yut2z1NZBVY1pBYy2osB8&si=TCC4Q9mlNBaC4mHT), starting at [11:59](https://www.youtube.com/watch?v=AMxvR3TaJ8g&list=PL72Ci-T5YC93yut2z1NZBVY1pBYy2osB8&index=4&t=719s):
 
-ACSS 101.03: Fluid Responsive, Scale-Based Typography - YouTube
-
-[](https://www.youtube.com/watch?list=PL72Ci-T5YC93yut2z1NZBVY1pBYy2osB8&v=AMxvR3TaJ8g&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
+[ACSS 101.03: Fluid Responsive, Scale-Based Typography - YouTube](https://www.youtube.com/watch?list=PL72Ci-T5YC93yut2z1NZBVY1pBYy2osB8&v=AMxvR3TaJ8g&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
 
 ### Referencing the headings font family
 
@@ -126,7 +124,7 @@ By proceeding this way, we can create a completely custom heading style, while s
 
 ```CSS
 .fancy-heading {
-    --heading-font-family: ""Birthstone"", cursive;
+    --heading-font-family: "Birthstone", cursive;
     --heading-color: var(--accent);  /* see color palette documentation */
     --heading-letter-spacing: 0.0125em;
     --heading-line-height: calc(6px + 2ex);

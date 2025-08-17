@@ -13,9 +13,7 @@ The video below shows how to get started with Responsive Grids with ACSS.
 
 **Note:** Some classes, like alignment, have slightly changed, but you can find all current classes in the [ACSS cheat sheet](https://automaticcss.com/cheat-sheet/).
 
-How to Easily Create Responsive Grids With Automatic.css - YouTube
-
-[](https://www.youtube.com/watch?v=jEizAXhL2JE&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
+[How to Easily Create Responsive Grids With Automatic.css - YouTube](https://www.youtube.com/watch?v=jEizAXhL2JE&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
 
 There are various ways we can apply standard grid classes to our design.
 

@@ -14,15 +14,13 @@ When users with [assistive technology](https://www.understood.org/en/articles/as
 
 Here’s a video that covers this topic in detail:
 
-Stop Making This BIG Mistake With Clickable Cards (Use ""Clickable Parent"" & ""Focus Parent"" Instead) - YouTube
-
-[](https://www.youtube.com/watch?v=nM78am-FC9Q&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
+[Stop Making This BIG Mistake With Clickable Cards (Use "Clickable Parent" & "Focus Parent" Instead) - YouTube](https://www.youtube.com/watch?v=nM78am-FC9Q&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
 
 ## An Example (Right vs Wrong)
 
 Here’s a card that is wrapped in a link. Use a screen reader or [Apple Voiceover](https://en.wikipedia.org/wiki/VoiceOver) to interact with it. You’ll see that the accessibility is poor.
 
-![ACSS Cover](https://automaticcss.com/wp-content/uploads/acss-cover-1.jpg ""acss-cover"")
+![ACSS Cover](https://automaticcss.com/wp-content/uploads/acss-cover-1.jpg "acss-cover")
 
 ### Clickable Card
 

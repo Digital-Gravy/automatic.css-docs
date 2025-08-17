@@ -50,10 +50,9 @@ Example:
 <div class="bg--action-trans-20"></div>
 ```
 
-Code language: HTML, XML (xml)
-
-`<div class=""bg--action-ultra-dark-trans-20""></div>`
-Code language: HTML, XML (xml)
+```HTML
+<div class="bg--action-ultra-dark-trans-20"></div>
+```
 
 Transparency values range from 10 to 90 in increments of 10.
 

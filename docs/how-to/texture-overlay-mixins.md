@@ -11,8 +11,11 @@ Your custom [Textures & Overlays](https://automaticcss.com/docs/textures-overlay
 
 To apply your texture as a texture, use the `texture($number)` mixin. **As of right now, the mixins are only compatible with the numbered textures.** Even if you gave your texture a custom name, it can be referenced by its number without issue.
 
-`body {   @include texture(1); }`
-Code language: PHP (php)
+```CSS
+body {
+    @include texture(1);
+}
+```
 
 Texture 1 will now be applied to the body tag of your site.
 
@@ -22,7 +25,7 @@ Texture 1 will now be applied to the body tag of your site.
 
 To apply your texture as an overlay, ensure that the “Enable Overlay Class” option is on and then use the `texture-overlay($number)` mixin.
 
-```SCSS
+```CSS
 body {
     @include texture-overlay(1);
 }

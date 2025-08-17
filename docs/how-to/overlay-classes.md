@@ -13,9 +13,7 @@ In ACSS, overlay classes define the appearance of an overlay allowing us to use 
 
 The video below shows these classes in use in the Oxygen Builder as Kevin explains some of the nuances of using Overlays in Oxygen.
 
-Background Overlays, Gradients, and Custom Overlay Colors with Automatic.css - YouTube
-
-[](https://www.youtube.com/watch?v=Acz_fJG_i0M&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
+[Background Overlays, Gradients, and Custom Overlay Colors with Automatic.css - YouTube](https://www.youtube.com/watch?v=Acz_fJG_i0M&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
 
 ## Overlay Classes
 

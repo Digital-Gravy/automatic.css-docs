@@ -223,7 +223,7 @@ Convert template on import/insert from Container to new layout elements structur
 | Disable jQuery migrate                                                       | On                                              |
 | Cache query loops                                                            | Off                                             |
 | Disable class chaining                                                       | **On (REQUIRED)**                               |
-| CSS loading method[](https://academy.bricksbuilder.io/article/asset-loading) | Inline Styles                                   |
+| [CSS loading method](https://academy.bricksbuilder.io/article/asset-loading) | Inline Styles                                   |
 
 Once you’ve configured the settings, it’s time to setup your Global Theme Styles.
 

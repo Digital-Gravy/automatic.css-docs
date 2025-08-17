@@ -11,7 +11,7 @@ The Card Container Mixin is used for applying container query styles to any card
 
 ```CSS
 .your-card {
-    @include card-container(""inline-size > 767px"") {
+    @include card-container("inline-size > 767px") {
         // Your styles here
     }
 }
@@ -28,7 +28,7 @@ If you run into specificity issues that are causing your container query styles 
 
 ```CSS
 .your-card.your-card {
-    @include card-container(""inline-size > 767px"") {
+    @include card-container("inline-size > 767px") {
         // Your styles here
     }
 }

@@ -95,8 +95,14 @@ By default, we don’t load styles in the builder on posts or custom post types.
 
 Support for posts and CPTs exists, though, you just have to add it manually. Open your functions.php file and add the following:
 
-`add_filter(     'acss/gutenberg/allowed_post_types',    function( $post_types ) {        return array_merge( $post_types, array( 'post' ) ); // Add your post types in the array().    } );`
-Code language: PHP (php)
+```PHP
+add_filter ( 'acss/gutenberg/allowed_post_types',
+    function( $post_types ) {
+        return array_merge( $post_types, array( 'post' ) );
+        // Add your post types in the array().
+    }
+);
+```
 
 This allows you to add support for posts/CPTs selectively.
 

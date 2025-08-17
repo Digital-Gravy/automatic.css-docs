@@ -3,9 +3,7 @@ title: Pro Mode & Classless Workflow
 sidebar_position: 100
 ---
 
-ACSS 2.3: Introducing "Pro Mode" - YouTube
-
-[](https://www.youtube.com/watch?v=gDF-Wv3rmkM&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
+[ACSS 2.3: Introducing "Pro Mode" - YouTube](https://www.youtube.com/watch?v=gDF-Wv3rmkM&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
 
 Advanced ACSS users know that the real power of the ACSS framework is accessible through variables and that building sites with custom classes (preferably using BEM methodology) that use ACSS variables is the most maintainable practice.
 
@@ -45,7 +43,7 @@ Enabling Pro Mode is easy:
 You can think of “classless workflow” as “Beast Mode.” It deactivates ALL utility classes, leaving you with only variables. It creates an insanely lightweight framework.
 
 Please note that you can turn on individual utility modules after activating either Pro Mode or Classless Workflow, so it’s never a black and white situation that you’re locked into.","Pro Mode & Classless Workflow
-ACSS 2.3: Introducing ""Pro Mode"" - YouTube
+ACSS 2.3: Introducing "Pro Mode" - YouTube
 Advanced ACSS users know that the real power of the ACSS framework is accessible through variables and that building sites with custom classes (preferably using BEM methodology) that use ACSS variables is the most maintainable practice.
 When advanced users primarily use variables with custom classes, the ACSS framework becomes unnecessarily heavy. All the utility classes are being loaded in the stylesheet, but aren’t getting used.
 Enter Pro Mode.

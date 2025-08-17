@@ -3,7 +3,7 @@ title: Pro Mode & Classless Workflow
 sidebar_position: 20
 ---
 
-[ACSS 2.3: Introducing ""Pro Mode"" - YouTube](https://www.youtube.com/watch?v=gDF-Wv3rmkM&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
+[ACSS 2.3: Introducing "Pro Mode" - YouTube](https://www.youtube.com/watch?v=gDF-Wv3rmkM&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
 
 Advanced ACSS users know that the real power of the ACSS framework is accessible through variables and that building sites with custom classes (preferably using BEM methodology) that use ACSS variables is the most maintainable practice.
 

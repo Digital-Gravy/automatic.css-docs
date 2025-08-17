@@ -102,8 +102,17 @@ Notes:
 
 Setting up the button styles the way we have makes adjusting hover styles super easy. You can nest this code in your original code block:
 
-`&:hover {     --gradient-color-1: var(--primary);    --gradient-color-2: var(--secondary);     &::before {      --gradient-color-1: var(--primary);      --gradient-color-2: var(--secondary);    }  }`
-Code language: PHP (php)
+```CSS
+&:hover {
+	--gradient-color-1: var(--primary);
+	--gradient-color-2: var(--secondary);
+
+	&::before {
+		--gradient-color-1: var(--primary);
+		--gradient-color-2: var(--secondary);
+	}
+}
+```
 
 Notes:
 
@@ -164,13 +173,13 @@ Vanilla CSS:
 
 ```CSS
 @property --gradient-color-1 {
-	syntax: "" <color>"";
+	syntax: " <color>";
 	inherits: false;
 	initial-value: transparent;
 }
 
 @property --gradient-color-2 {
-	syntax: "" <color>"";
+	syntax: " <color>";
 	inherits: false;
 	initial-value: transparent;
 }

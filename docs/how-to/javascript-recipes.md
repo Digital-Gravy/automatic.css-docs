@@ -7,4 +7,4 @@ sidebar_position: 100
 
 This will expand out a “type=module” JS wrapper so you can start writing custom JS that’s automatically modular and deferred.
 
-`<script type=""module""> </script>`
+`<script type="module"> </script>`

@@ -27,9 +27,7 @@ When you use utility classes exclusively, you lose global control over re-usable
 
 Instead, you should create custom classes and you should create them using an organized naming convention. We recommend the BEM method:
 
-BEM 101: How to Make Web Design Organized & Scalable - YouTube
-
-[](https://www.youtube.com/watch?v=tha_ynmZRaA&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
+[BEM 101: How to Make Web Design Organized & Scalable - YouTube](https://www.youtube.com/watch?v=tha_ynmZRaA&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
 
 Here’s a critical detail: With most utility frameworks, you’d need to abandon the framework at this point and just use completely custom styling.
 

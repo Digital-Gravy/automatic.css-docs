@@ -9,9 +9,7 @@ Auto Color Relationships allow users to assign foreground styles to headings, te
 
 This video will give you additional context and an example of how this feature works:
 
-ACSS 101.07.P2: Background & Text Color (Contextual Approach + Auto Color Relationships) - YouTube
-
-[](https://www.youtube.com/watch?v=xhFOgOBV774&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
+[ACSS 101.07.P2: Background & Text Color (Contextual Approach + Auto Color Relationships) - YouTube](https://www.youtube.com/watch?v=xhFOgOBV774&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
 
 ## Setting up Auto Color Relationships
 
@@ -41,8 +39,11 @@ To see your color relationships in action, just add one of the contextual backgr
 
 Please note that auto relationships won’t work when using the variable version of these utilities. For example:
 
-`.my-hero {   background: var(--bg-ultra-dark); }`
-Code language: CSS (css)
+```CSS
+.my-hero {
+    background: var(--bg-ultra-dark);
+}
+```
 
 The above example will not trigger the auto relationship because variables in CSS are simply a token that stores a value. They don’t have any power beyond that to influence other elements and elements can’t be targeted based on the existence of a specific variable.
 
@@ -58,14 +59,20 @@ How can I have two different color buttons since auto relationship overrides but
 
 It’s uncommon to need two different button colors next to each other, so the first thing you should do is re-assess the design decision and make sure you’re following best practices. If you do, in fact, need two different button colors next to each other, the easiest way to do this is to add a custom BEM class to the button you want to override and then use the [btn() mixin](https://automaticcss.com/docs/button-mixins/) within the custom SCSS area of ACSS, like this:
 
-`.button-you-want-to-override {   @include btn(secondary); }`
-Code language: PHP (php)
+```CSS
+.button-you-want-to-override {
+    @include btn(secondary);
+}
+```
 
 Assuming the auto relationship was set to display your primary button, this would allow you to switch one of them to secondary.
 
 You could also do this programmatically by targeting, for example, any second button with an ACSS button class using the new `nth-of-class` syntax.
 
-`.bg--ultra-dark :nth-child(2 of [class*=""btn--""]) {   @include btn(secondary); }`
-Code language: JavaScript (javascript)
+```CSS
+.bg--ultra-dark :nth-child(2 of [class*="btn--"]) {
+    @include btn(secondary);
+}
+```
 
 The above example would target any second instance of a button that exists inside of .bg–ultra-dark and has a class containing `.btn--` (ACSS buttons), and change its style automatically.

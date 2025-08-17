@@ -62,7 +62,6 @@ Just append the slug of your post type, e.g. “events” to the class `.post-ty
 Example:
 
 `".post-type-events", ".post-type-services"`
-Code language: JavaScript (javascript)
 
 Of course, you have to make sure you have activated ACSS for those post types using the code snippet from the previous section.
 

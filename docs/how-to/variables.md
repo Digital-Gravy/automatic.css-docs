@@ -13,8 +13,11 @@ A variable in CSS is just a token, or placeholder, for a value.
 
 Here’s a typical scenario where you need to set the background color of a card:
 
-`.my-card {    background-color: #08001F; }`
-Code language: CSS (css)
+```CSS
+.my-card {
+    background-color: #08001F;
+}
+```
 
 That color isn’t random. It is a dark color commonly used across many parts of our example website, which means it’s referenced over and over again.
 
@@ -27,8 +30,11 @@ Using the hex code is undesirable because:
 
 It’s better to use a variable here because a variable solves all these common challenges.
 
-`.my-card {    background-color: var(--base-dark); }`
-Code language: CSS (css)
+```CSS
+.my-card {
+    background-color: var(--base-dark);
+}
+```
 
 `--base-dark` is the variable, but it must be wrapped in a `var()` function to use it.
 
@@ -51,14 +57,16 @@ Variables should be used when you create a custom class for an element. This is 
 
 Here’s a great video that will help you understand when to use utility classes vs custom classes:
 
-Utility Classes vs Custom Classes in ACSS (Best Practices) - YouTube
-
-[](https://www.youtube.com/watch?v=bNzWVAPlMgU&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
+[Utility Classes vs Custom Classes in ACSS (Best Practices) - YouTube](https://www.youtube.com/watch?v=bNzWVAPlMgU&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
 
 When using a custom class, it means you will assign values for different CSS properties manually. For example, we need to define padding for our example card above.
 
-`.my-card {    background-color: var(--base-dark);   padding: var(--space-l); }`
-Code language: CSS (css)
+```CSS
+.my-card {
+    background-color: var(--base-dark);
+    padding: var(--space-l);
+}
+```
 
 We could very easily choose a random value for our spacing (e.g. 3em), but then we’d lose many benefits of the ACSS variable, namely consistency and automatic responsiveness.
 
@@ -70,24 +78,41 @@ Let’s say that “my-card” is being used in a specific place where we want t
 
 Here’s the code we have our card so far:
 
-`.my-card {    background-color: var(--base-dark);   color: var(--white);   padding: var(--space-l); }`
-Code language: CSS (css)
+```CSS
+.my-card {
+    background-color: var(--base-dark);
+    color: var(--white);
+    padding: var(--space-l);
+}
+```
 
 All we need to do is give our tokens new values. We just have to do this within a specific context, like when there’s a specific data attribute present:
 
-`[data-theme-style=""secondary""] .my-card {    --base-dark: var(--secondary);   --white: var(--secondary-ultra-dark); }`
-Code language: CSS (css)
+```CSS
+[data-theme-style="secondary"] .my-card {
+    --base-dark: var(--secondary);
+    --white: var(--secondary-ultra-dark);
+}
+```
 
 This would change the value of `--base-dark` to whatever the value of our `--secondary` color is. And it would change the text color from `--white` to whatever the value of `--secondary-ultra-dark` is.
 
 You could also do this with a modifier class:
 
-`.my-card--secondary {    --base-dark: var(--secondary);   --white: var(--secondary-ultra-dark); }`
-Code language: CSS (css)
+```CSS
+.my-card--secondary {
+    --base-dark: var(--secondary);
+    --white: var(--secondary-ultra-dark);
+}
+```
 
 You could also do it to a single card by applying this technique at the ID level:
 
-`#my-card-3125 {    --base-dark: var(--secondary);   --white: var(--secondary-ultra-dark); }`
-Code language: CSS (css)
+```CSS
+#my-card-3125 {
+    --base-dark: var(--secondary);
+    --white: var(--secondary-ultra-dark);
+}
+```
 
 The point is that variables have additional superpowers where static values do not.

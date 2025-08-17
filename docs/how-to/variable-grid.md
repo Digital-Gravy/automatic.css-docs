@@ -99,7 +99,7 @@ Being OCD about this will limit the “automatic” nature of Variable Grids, bu
 If you’re in a situation where you need to set or change the behavior a grid (like the number of items per row) dynamically with Javascript, Variable Grids might be a good option. Instead of having to dynamically add or remove classes, or create additional variables, you can simply change the value of `var(--min)` dynamically with inline CSS.
 
 ```HTML
-<div class=""my-variable-grid"" style=""--min: 320px;""></div>
+<div class="my-variable-grid" style="--min: 320px;"></div>
 ```
 
 ## Have fun!
