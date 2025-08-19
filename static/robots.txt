@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Allow DocSearch crawler
+User-agent: Algolia DocSearch
+Allow: /
+
+# Sitemap
+Sitemap: https://docs.automaticcss.com/sitemap.xml
