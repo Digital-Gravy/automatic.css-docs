@@ -11,7 +11,7 @@ First, let’s talk about how to set your header heights. Then we’ll run throu
 
 ## Header Height Values
 
-![](https://automaticcss.com/wp-content/uploads/CleanShot-2024-09-24-at-16.20.02@2x-924x1024.jpg)
+![Header Height Values](img/header-height-values.webp)
 
 Header Heights
 

@@ -9,7 +9,7 @@ You probably already know about the [Content Width](https://automaticcss.com/doc
 
 A gutter is the inline padding that protects your content from touching the edge of the screen on smaller devices.
 
-![Visualization of website gutter](https://automaticcss.com/wp-content/uploads/CleanShot-2023-08-14-at-22.19.07@2x-897x1024.jpg)
+![Visualization of website gutter](img/visualization-website-gutter.webp)
 
 On advanced websites (and ACSS websites), the gutter is responsive. The larger the screen, the larger the gutter is (up to desktop, where the gutter no longer matters because the screen is much wider than the website’s content width).
 

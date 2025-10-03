@@ -7,7 +7,7 @@ Boxed layouts are an interesting alternative to the edge-to-edge layouts of many
 
 You can see an example of a boxed layout in the photo below.
 
-![Boxed Layout Example](https://automaticcss.com/wp-content/uploads/CleanShot-2024-10-20-at-09.02.44@2x-1024x617.jpg)
+![Boxed Layout Example](img/boxed-layout-example.webp)
 
 Boxed Layout Example
 

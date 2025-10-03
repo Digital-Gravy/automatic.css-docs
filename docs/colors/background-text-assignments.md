@@ -13,7 +13,7 @@ When you assign colors to specific contexts, you can build a site without refere
 
 It’s easier to understand how this works if you look at a real example.
 
-![](https://automaticcss.com/wp-content/uploads/use-of-color-1024x685.jpg)
+![](img/use-of-color.webp)
 
 The light background of that section is the default body background color of the website, which ACSS outputs as `var(--body-bg-color)`, but could easily be referenced with `var(--bg-light)` or `var(--bg-ultra-light)`.
 

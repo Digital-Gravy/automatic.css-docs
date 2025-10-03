@@ -5,7 +5,7 @@ sidebar_position: 110
 
 Are you tired of setting `object-fit: cover;` every single time you change the dimensions of an image or set an [aspect ratio](https://automaticcss.com/docs/aspect-ratio-classes/)? Just turn on ACSS’ automatic `object-fit` feature under Options > Workflow Enhancements.
 
-![Auto Object Fit](https://automaticcss.com/wp-content/uploads/CleanShot-2024-11-01-at-14.39.25@2x-970x1024.jpg)
+![Auto Object Fit](img/auto-object-fit.webp)
 
 Auto Object Fit
 

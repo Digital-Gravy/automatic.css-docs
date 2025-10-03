@@ -11,7 +11,7 @@ Note: This feature is currently in experimental mode while we do extensive testi
 
 The Card Framework is turned off by default, though we _highly recommend_ you turn it on. To enable the framework, navigate to Cards from the main dashboard and then toggle the framework on.
 
-![Card Framework Panel](https://automaticcss.com/wp-content/uploads/CleanShot-2024-11-09-at-14.33.56@2x-1024x1024.jpg)
+![Card Framework Panel](img/card-framework-panel.webp)
 
 Card Framework Panel
 

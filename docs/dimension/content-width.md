@@ -5,7 +5,7 @@ sidebar_position: 20
 
 The content width of a website is defined as the width from the left edge of the content to the right edge of the content on a screen that’s large enough not to compress the content.
 
-![website content width example](https://automaticcss.com/wp-content/uploads/CleanShot-2023-08-14-at-21.52.18@2x-1024x552.jpg)
+![website content width example](img/website-content-width-example.webp)
 
 The content width of your website is an important value. You’ll commonly want to set elements to the website’s content width, or to a value that’s somehow relative to the website’s content width.
 

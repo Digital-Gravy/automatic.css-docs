@@ -5,7 +5,7 @@ sidebar_position: 20
 
 Color setup happens in the Palette tab of ACSS:
 
-![Color Palette Panel](https://automaticcss.com/wp-content/uploads/CleanShot-2024-10-20-at-10.45.59@2x-1024x1024.jpg)
+![Color Palette Panel](img/color-palette-panel.webp)
 
 Color Palette Panel
 

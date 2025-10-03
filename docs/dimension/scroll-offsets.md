@@ -5,7 +5,7 @@ sidebar_position: 100
 
 ACSS allows you to set offsets for scroll-to-hash links. This ensures that when users scroll to a hash link on your page, the content has some breathing room and isn’t touching the edge of the screen.
 
-![Scroll Offset Options](https://automaticcss.com/wp-content/uploads/CleanShot-2024-12-27-at-15.09.12@2x-1024x1024.jpg)
+![Scroll Offset Options](img/scroll-offset-opsions.webp)
 
 Scroll Offset Settings
 

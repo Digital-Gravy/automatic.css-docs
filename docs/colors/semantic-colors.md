@@ -18,7 +18,7 @@ Note: Prior to v3.0, Semantic Colors were referred to as “contextual colors”
 
 Semantic colors can easily be set in the Palette area of the dashboard.
 
-![Semantic Color Dashboard](https://automaticcss.com/wp-content/uploads/CleanShot-2024-10-26-at-18.23.01@2x-1024x911.jpg)
+![Semantic Color Dashboard](img/semantic-color-dashboard.webp)
 
 Semantic Color Dashboard
 

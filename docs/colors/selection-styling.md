@@ -5,7 +5,7 @@ sidebar_position: 60
 
 ACSS users can control the background and foreground color of selected text (highlighted when the user clicks and drags to select text on the site) via the Selection Styling panel under Additional Styling.
 
-![Selection Styling Options](https://automaticcss.com/wp-content/uploads/CleanShot-2024-10-20-at-08.58.17@2x-1024x882.jpg)
+![Selection Styling Options](img/selection-styling-options.webp)
 
 Selection Styling Options
 

@@ -7,7 +7,7 @@ Breakout classes allow you to break an element outside the width confines of its
 
 For example, here’s an image in a content-width container, but it’s breaking out to the edges of the viewport because `.breakout--full` has been used.
 
-![Example of Breakout Class](https://automaticcss.com/wp-content/uploads/CleanShot-2024-10-19-at-19.02.35@2x-1024x804.jpg)
+![Example of Breakout Class](img/example-breakout-class.webp)
 
 Example of Breakout Class
 

@@ -27,7 +27,7 @@ Consequently, you can use ACSS’s color scheme functionality for more than just
 
 In the dashboard, navigate to the Palette tab and find the area titled Color Scheme.
 
-![Color Scheme Panel](https://automaticcss.com/wp-content/uploads/CleanShot-2024-11-03-at-08.15.09@2x-1024x794.jpg)
+![Color Scheme Panel](img/color-scheme-panel.webp)
 
 Color Scheme Panel
 

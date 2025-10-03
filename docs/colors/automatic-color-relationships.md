@@ -15,7 +15,7 @@ This video will give you additional context and an example of how this feature w
 
 First, you need to make sure the feature is turned on by navigating to Backgrounds & Text > Options. Flip the switch to turn on Automatic Color Relationships.
 
-![Auto Color Relationships Option](https://automaticcss.com/wp-content/uploads/CleanShot-2024-10-28-at-07.58.29@2x-1024x1024.jpg)
+![Auto Color Relationships Option](img/auto-color-relationships-option.webp)
 
 Auto Color Relationships Option
 
