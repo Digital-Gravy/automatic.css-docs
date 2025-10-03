@@ -3,7 +3,7 @@ title: Inverted Radius Framework
 sidebar_position: 30
 ---
 
-![Inverted Radius Example](https://automaticcss.com/wp-content/uploads/CleanShot-2025-01-07-at-18.14.09@2x-1024x548.jpg)
+![Inverted Radius Example](img/CleanShot-2025-01-07-at-18.14.09@2x-1024x548.webp)
 
 Inverted radii are not a native feature of CSS. Therefore, inverted radius implementation is typically quite technical and time consuming. But, with ACSS’ **Inverted Radius Framework**, you can implement inverted radius in your designs in seconds with no technical understanding of the technique.
 

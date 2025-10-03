@@ -32,7 +32,7 @@ For this reason, we’ve introduced [@recipes](https://automaticcss.com/docs/rec
 
 You can automatically add your site’s default radius to elements programmatically by turning on the “Add Radius Automatically” switch and targeting specific CSS selectors.
 
-![ACSS Auto Radius Option](https://automaticcss.com/wp-content/uploads/auto-radius-option.jpg)
+![ACSS Auto Radius Option](img/auto-radius-option.webp)
 
 ACSS Auto Radius Option
 

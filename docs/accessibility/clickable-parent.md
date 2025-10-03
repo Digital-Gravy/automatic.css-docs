@@ -20,7 +20,7 @@ Here’s a video that covers this topic in detail:
 
 Here’s a card that is wrapped in a link. Use a screen reader or [Apple Voiceover](https://en.wikipedia.org/wiki/VoiceOver) to interact with it. You’ll see that the accessibility is poor.
 
-![ACSS Cover](https://automaticcss.com/wp-content/uploads/acss-cover-1.jpg "acss-cover")
+![ACSS Cover](img/acss-cover-1.webp "acss-cover")
 
 ### Clickable Card
 

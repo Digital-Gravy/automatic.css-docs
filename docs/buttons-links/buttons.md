@@ -7,7 +7,7 @@ Buttons and links are used on nearly every page of a website, so it’s importan
 
 ## Default Button Styling
 
-![ACSS Global Button Styling Options](https://automaticcss.com/wp-content/uploads/CleanShot-2024-05-29-at-15.42.41@2x-scaled.jpg)
+![ACSS Global Button Styling Options](img/CleanShot-2024-05-29-at-15.42.41@2x-scaled.webp)
 
 ACSS Global Button Styling
 

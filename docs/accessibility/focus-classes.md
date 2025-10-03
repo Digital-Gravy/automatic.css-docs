@@ -9,7 +9,7 @@ Focus styling is the styling of the visual indication of focused elements like l
 
 Navigate to Additional Styling > Accessibility.
 
-![Focus Styling Panel](https://automaticcss.com/wp-content/uploads/CleanShot-2024-10-20-at-09.57.32@2x-1024x890.jpg)
+![Focus Styling Panel](img/CleanShot-2024-10-20-at-09.57.32@2x-1024x890.webp)
 
 Focus Styling Panel
 

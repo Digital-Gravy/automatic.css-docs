@@ -5,7 +5,7 @@ sidebar_position: 60
 
 Aside from default button styling, setting default link styling for your site is important.
 
-![ACSS Link Styling Panel](https://automaticcss.com/wp-content/uploads/CleanShot-2024-09-13-at-13.27.43@2x-1024x768.jpg)
+![ACSS Link Styling Panel](img/link-style-panel.webp)
 
 ACSS Link Styling Panel
 

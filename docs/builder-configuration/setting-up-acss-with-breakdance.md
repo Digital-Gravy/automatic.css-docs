@@ -26,4 +26,4 @@ The normal padding input fields won’t work for changing section padding becaus
 
 Here’s a look at the wrapper inputs you’ll want to use:
 
-![Editing section padding in Breakdance](https://automaticcss.com/wp-content/uploads/breakdance-section-padding-1024x698.png)
+![Editing section padding in Breakdance](img/breakdance-section-padding-1024x698.webp)

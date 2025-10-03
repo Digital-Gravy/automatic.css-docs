@@ -17,7 +17,7 @@ ACSS lets you apply the visual and auditory cues automatically to any link that 
 
 ## Turning on External Link Indication
 
-![Indicate External Links Setting in ACSS](https://automaticcss.com/wp-content/uploads/indicate-external-links-930x1024.jpg)
+![Indicate External Links Setting in ACSS](img/indicate-external-links-930x1024.webp)
 
 Indicate External Links Setting in ACSS
 

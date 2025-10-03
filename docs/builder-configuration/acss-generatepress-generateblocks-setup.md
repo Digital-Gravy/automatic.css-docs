@@ -21,7 +21,7 @@ Caution: While ACSS is compatible with Generate and its workflow, it’s not the
 
 Most of the GeneratePress setup happens in the WP Customizer. You can get to the Customizer by visiting the front end and choosing Customize from the wp-admin menu.
 
-![](https://automaticcss.com/wp-content/uploads/CleanShot-2025-01-15-at-09.25.35@2x-1024x576.jpg)
+![](img/CleanShot-2025-01-15-at-09.25.35@2x-1024x576.webp)
 
 Once the Customizer is open, follow these steps:
 

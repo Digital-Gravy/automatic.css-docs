@@ -15,7 +15,7 @@ We provide two settings files to establish the default settings for your Bricks 
 
 Download this [Bricks Settings Blueprint file](https://automaticcss.com/wp-content/uploads/bricks-settings-2024-07-29.zip) (.zip), unzip it to expose the .json file, and upload the .json file to your Bricks Settings Panel:
 
-![](https://automaticcss.com/wp-content/uploads/bricks-import-settings-1024x496.jpg)
+![](img/bricks-import-settings-1024x496.webp)
 
 ### Step #2: Import Bricks Theme File
 

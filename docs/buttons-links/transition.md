@@ -26,7 +26,7 @@ You could also just add `.transition` to the card, but that’s less efficient t
 
 The global transition style is set with multiple inputs in the dashboard. Three of the inputs are for your main transition properties:
 
-![](https://automaticcss.com/wp-content/uploads/CleanShot-2024-04-02-at-20.58.22@2x-1024x919.png)
+![](img/global-transition-properties.webp)
 
 - Duration
 - Timing Function

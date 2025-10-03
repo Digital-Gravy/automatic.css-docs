@@ -11,7 +11,7 @@ By default, Gutenberg support is turned off. Open the ACSS dashboard and navigat
 
 There, you’ll find the options ACSS makes available to you to make the Block Editor behave in a more predictable way:
 
-![The panel with Gutenberg-related options in the AutomaticCSS dashboard](https://automaticcss.com/wp-content/uploads/acss-gutenberg-switches-v3.3-783x1024.jpg)
+![The panel with Gutenberg-related options in the AutomaticCSS dashboard](img/acss-gutenberg-switches-v3.3-783x1024.webp)
 
 ACSS Gutenberg Options
 

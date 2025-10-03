@@ -11,7 +11,7 @@ Get all your [global button defaults](https://automaticcss.com/docs/buttons/) se
 
 ## Step #1: Custom Background
 
-![primary button style panel](https://automaticcss.com/wp-content/uploads/CleanShot-2024-12-02-at-17.45.35@2x-1024x1024.jpg)
+![primary button style panel](img/CleanShot-2024-12-02-at-17.45.35.webp)
 
 Navigate to the Primary button styles panel in the ACSS dashboard. Set the background and background-hover fields to:
 

@@ -7,7 +7,7 @@ sidebar_position: 6
 
 ACSS allows you to remove animations with the flip of a switch by navigating to Options > Accessibility > Reduce Motion.
 
-![](https://automaticcss.com/wp-content/uploads/CleanShot-2024-11-01-at-14.10.09@2x-1024x593.jpg)
+![](img/CleanShot-2024-11-01-at-14.10.09@2x-1024x593.webp)
 
 Reduce Motion Option
 

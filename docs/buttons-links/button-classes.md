@@ -21,7 +21,7 @@ You can do the same with any of the other colors (secondary, tertiary, accent, b
 
 Every button style also has light and dark variants. These are useful for when your button color is clashing with the background of the container. Light and dark variants can be activated/deactivated from the button options in ACSS:
 
-![Light and Dark Button Variants Option](https://automaticcss.com/wp-content/uploads/buttons-light-dark-1024x1024.jpg)
+![Light and Dark Button Variants Option](img/buttons-light-dark-1024x1024.webp)
 
 These are applied with classes using the syntax `.btn--{color}-{variant}`.
 

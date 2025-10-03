@@ -9,7 +9,7 @@ Websites don’t have focus styling by default – the developer must add it. Or
 
 ## Customizing Focus Styling
 
-![ACSS Focus Styling Panel](https://automaticcss.com/wp-content/uploads/CleanShot-2023-08-15-at-09.34.12@2x-1024x487.jpg)
+![ACSS Focus Styling Panel](img/CleanShot-2023-08-15-at-09.34.12@2x-1024x487.webp)
 
 You can customize your site’s focus styling in the ACSS Additional Styling panel under Accessibility.
 

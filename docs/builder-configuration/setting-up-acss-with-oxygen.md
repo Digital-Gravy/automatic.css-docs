@@ -27,7 +27,7 @@ By default, Cwicly has a class-first workflow, so we need this setting off.
 
 In the WordPress admin, go to Cwicly > Settings and open the “Advanced Settings” panel.
 
-![Cwicly admin settings](https://automaticcss.com/wp-content/uploads/cwicly-settings-1024x590.jpg)
+![Cwicly admin settings](img/cwicly-settings-1024x590.webp)
 
 Here are the recommended settings to confirm:
 
