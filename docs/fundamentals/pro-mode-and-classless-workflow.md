@@ -11,7 +11,7 @@ When advanced users primarily use variables with custom classes, the ACSS framew
 
 Enter **Pro Mode**.
 
-![Options > Utility Classes Dashboard](https://automaticcss.com/wp-content/uploads/CleanShot-2024-10-26-at-18.17.53@2x-1024x867.jpg)
+![Options > Utility Classes Dashboard](img/pro-mode.webp)
 
 Options > Utility Classes Dashboard
 

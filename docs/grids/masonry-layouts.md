@@ -3,7 +3,7 @@ title: Masonry Layouts
 sidebar_position: 100
 ---
 
-![Masonry Layout Example](https://automaticcss.com/wp-content/uploads/masonry-layout-1024x740.jpg)
+![Masonry Layout Example](img/masonry-layout.webp)
 
 As of **Automatic.css 2.8**, users can create Masonry layouts in seconds using ACSS Masonry utilities.
 

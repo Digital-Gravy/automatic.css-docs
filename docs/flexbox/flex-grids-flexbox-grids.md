@@ -5,7 +5,7 @@ sidebar_position: 100
 
 CSS Grid is a powerful layout system, but it has one weakness for some users. Grids with an unbalanced number of items must remain left-aligned at all times.
 
-![](https://automaticcss.com/wp-content/uploads/grid3-1024x566.jpg)
+![](img/grid3.webp)
 
 Some users prefer unbalanced grid items to be centered at the bottom of the grid, like this:
 

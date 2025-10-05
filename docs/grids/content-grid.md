@@ -5,7 +5,7 @@ sidebar_position: 100
 
 Content Grid presents a new paradigm for content layouts. Using advanced CSS Grid techniques, Automatic.css offers users a powerful way to vertically layout content using “zones.”
 
-![Content Grid in Automatic.css](https://automaticcss.com/wp-content/uploads/Content-Grid-1024x941.jpg)
+![Content Grid in Automatic.css](img/Content-Grid.webp)
 
 ## Establishing a Content Grid Manually
 

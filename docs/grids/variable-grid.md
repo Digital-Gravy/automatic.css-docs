@@ -54,7 +54,7 @@ In a page builder like Bricks, you can set the value of the variable two ways.
 
 The first method is to add the `--min` via the custom CSS tab. This is probably the fastest, most obvious, and most maintainable method.
 
-![var(--min) added via custom CSS in Bricks](https://automaticcss.com/wp-content/uploads/CleanShot-2024-01-29-at-14.03.20@2x-921x1024.jpg)
+![var(--min) added via custom CSS in Bricks](img/var--min.webp)
 
 Note: Do not attach this custom CSS to the `.variable-grid` class itself. That would apply the same width to every instance of variable grids across your website. Since the grids you’ll be building are all different, you want to assign the `--min` to each unique instance. This is best done at the ID level.
 

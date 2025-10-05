@@ -5,7 +5,7 @@ sidebar_position: 100
 
 ACSS provides automatic form styling for select form systems. To get started, make sure Load Forms is turned on in the Forms screen of the ACSS dashboard:
 
-![](https://automaticcss.com/wp-content/uploads/CleanShot-2024-11-01-at-13.56.46@2x-1024x1024.jpg)
+![](img/load-forms.webp)
 
 Load Forms Setting
 

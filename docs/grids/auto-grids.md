@@ -23,7 +23,7 @@ Remember, none of the grid systems in ACSS are perfect for every scenario. We gi
 
 Auto Grid can be turned on in the options panel under Utility Classes. Once activated, you’ll see an Auto Grid area in the Layout panel:
 
-![Auto Grid Options](https://automaticcss.com/wp-content/uploads/CleanShot-2024-07-13-at-13.47.02@2x-1024x704.jpg)
+![Auto Grid Options](img/auto-grid-options.webp)
 
 Screenshot
 
@@ -125,7 +125,7 @@ These are not true Auto Grids in the sense that they don’t use the exact same 
 
 Auto Ratio Grids use a traditional grid structure to create the desired ratio, and then automatically stack at a specific breakpoint. The default stacking breakpoint is the “L” breakpoint, but you can change this if needed in the Layout panel by editing the “Ratio Breakpoint” field.
 
-![Auto Grid Options](https://automaticcss.com/wp-content/uploads/CleanShot-2024-07-13-at-13.47.02@2x-1024x704.jpg)
+![Auto Grid Options](img/auto-grid-aggressiveness.webp)
 
 Screenshot
 
