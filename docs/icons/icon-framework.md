@@ -5,7 +5,7 @@ sidebar_position: 100
 
 The ACSS Icon Framework makes icon styling a breeze. It’s turned on by default on all new installs, but you can double check that it’s enabled by going to Dashboard > Icons.
 
-![Icon Framework Option Switch](https://automaticcss.com/wp-content/uploads/CleanShot-2024-11-11-at-16.00.02@2x-1024x1024.jpg)
+![Icon Framework Option Switch](img/icon-framework-switch.webp)
 
 ## Styling Icons
 
