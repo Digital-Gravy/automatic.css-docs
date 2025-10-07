@@ -9,7 +9,7 @@ Automatic.css conforms to your website’s actual dimensions (website width and 
 
 To set your website’s width, open the Viewport tab in the ACSS dashboard and change the Website Width input to your desired value:
 
-![Website Dimensions Panel](https://automaticcss.com/wp-content/uploads/CleanShot-2024-10-26-at-18.30.46@2x-1024x887.jpg)
+![Website Dimensions Panel](img/website-dimensions-panel.webp)
 
 Website Dimensions Panel
 
@@ -28,7 +28,7 @@ ACSS has the following breakpoint options by default:
 
 Breakpoints are customizable via the Viewport tab:
 
-![](https://automaticcss.com/wp-content/uploads/CleanShot-2024-10-26-at-18.31.52@2x-1000x1024.jpg)
+![](img/breakpoints.webp)
 
 Breakpoints Setup Panel
 
@@ -47,7 +47,7 @@ Because of the way some page builders show breakpoints in the builder (Oxygen Bu
 Aside from the standard breakpoints, ACSS offers two additional breakpoints that are optional. These breakpoints are off by default, but can easily be turned on in the Viewport tab:
 
 <figure>
-![](https://automaticcss.com/wp-content/uploads/CleanShot-2024-10-26-at-18.31.52@2x-1-1000x1024.jpg)
+![](img/breakpoint-optional.webp)
 <figcaption>XXL and XS Breakpoint Activation</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ Whether you’re sticking to the standard breakpoints or adding additional break
 
 First, ensure you’ve turned on Custom Breakpoints in Bricks’ settings:
 
-![](https://automaticcss.com/wp-content/uploads/2023/08/bricks-custom-breakpoints-settings-scaled-1.jpg)
+![](img/bricks-custom-breakpoints-settings-scaled-1.webp)
 
 Bricks Custom Breakpoint Settings
 
@@ -69,7 +69,7 @@ Once that’s enabled, you can edit breakpoints in Bricks from any page as long 
 
 In the builder, click the three dots next to the breakpoints to open the editor panel.
 
-![](https://automaticcss.com/wp-content/uploads/2023/08/bricks-breakpoints-scaled-1.jpg)
+![](img/website-dimensions-panel.webp)
 
 Bricks Breakpoint Editor Panel
 

@@ -7,7 +7,7 @@ ACSS is compatible with the Bricks Button UI as of version 3.2.8.
 
 Note: This feature is not compatible with deprecated button styles (action, white, black). It’s fully compatible with all current button styles, including light/dark variants).
 
-![Bricks Buttons UI](https://automaticcss.com/wp-content/uploads/CleanShot-2024-12-18-at-07.34.35@2x-1024x987.jpg)
+![Bricks Buttons UI](img/bricks-buttons-ui.webp)
 
 Bricks Button UI
 

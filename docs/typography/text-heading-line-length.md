@@ -9,7 +9,7 @@ The line length of content – the number of characters per line of text – is
 
 ## Why line length is important
 
-![Optimal Line Length Chart](https://automaticcss.com/wp-content/uploads/2023/03/research-media-file-31ae4d447d874c5d76b71c81bd789b29-1.jpg)
+![Optimal Line Length Chart](img/research-media-file.webp)
 
 Optimal Line Length Chart from [Baymard](https://baymard.com/)
 
@@ -65,7 +65,7 @@ This is all handled for you by ACSS.
 
 Line length is controlled via the Typography panel in ACSS. You can set a maximum line length for every text size and every heading size:
 
-![ACSS Line Length Settings](https://automaticcss.com/wp-content/uploads/2023/08/acss-line-length-1024x772.jpg)
+![ACSS Line Length Settings](img/acss-line-length.webp)
 
 ACSS Line Length Settings
 

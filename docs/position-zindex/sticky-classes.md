@@ -19,7 +19,7 @@ Automatic sticky offset is the best practice behavior in ACSS because it gives y
 
 In the ACSS dashboard, click on “Additional Styling.” Scroll down until you see Sticky Settings and make sure you turn on “Offset Sticky Automatically.”
 
-![Sticky Styling](https://automaticcss.com/wp-content/uploads/CleanShot-2024-10-26-at-18.25.33@2x-1024x897.jpg)
+![Sticky Styling](img/sticky-styling.webp)
 
 Sticky Styling
 

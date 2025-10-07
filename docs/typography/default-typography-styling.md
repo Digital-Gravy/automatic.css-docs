@@ -7,7 +7,7 @@ Automatic.css allow you to set key default styles related to the headings and te
 
 First, navigate to the Typography panel in the dashboard and then choose the tab to edit either heading or text defaults:
 
-![Typography Tabs in ACSS](https://automaticcss.com/wp-content/uploads/typography-tabs-acss-1024x683.jpg)
+![Typography Tabs in ACSS](img/typography-tabs-acss.webp)
 
 Typography Tabs in ACSS
 

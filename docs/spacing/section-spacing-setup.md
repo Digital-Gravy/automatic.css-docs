@@ -15,7 +15,7 @@ There’s [a great article on section structure in web design](https://geary.co/
 
 Block padding (top and bottom) and inline padding (left and right) are both controlled via the dashboard:
 
-![Section Spacing in ACSS](https://automaticcss.com/wp-content/uploads/CleanShot-2024-06-18-at-19.36.09@2x-960x1417.jpg)
+![Section Spacing in ACSS](img/section-spacing.webp)
 
 Section Spacing in ACSS
 

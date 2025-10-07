@@ -15,7 +15,7 @@ Columns functionality is not something that can be mapped to a CSS variable, so 
 
 With Recipes, you simply open the rich text element that houses your paragraphs, create a class if you want to assign the Recipe to a class, and then type “@” plus the name of the recipe:
 
-![ACSS recipe](https://automaticcss.com/wp-content/uploads/acss-recipe-923x1024.jpg)
+![ACSS recipe](img/acss-recipe.webp)
 
 Calling a Recipe in ACSS
 

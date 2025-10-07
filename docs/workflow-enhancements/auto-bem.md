@@ -13,7 +13,7 @@ That’s not all, though! Keep reading for a full breakdown of all features.
 
 To use Auto-BEM in a supported page builder, first activate it from the ACSS dashboard:
 
-![ACSS Auto-BEM Settings in Dashboard](https://automaticcss.com/wp-content/uploads/CleanShot-2023-09-29-at-10.52.20@2x-1024x849.jpg)
+![ACSS Auto-BEM Settings in Dashboard](img/auto-bem-settings.webp)
 
 Once it’s activated and you save changes, you can open the builder.
 

@@ -7,7 +7,7 @@ Automatic.css makes using variables and calc() expressions easy with our “Vari
 
 Start by turning on Variable Expansion in the dashboard under Options > Workflow Enhancements:
 
-![Workflow Enhancements Panel](https://automaticcss.com/wp-content/uploads/CleanShot-2024-10-26-at-18.29.33@2x-956x1024.jpg)
+![Workflow Enhancements Panel](img/workflow-enhancements.webp)
 
 Workflow Enhancements Panel
 

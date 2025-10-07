@@ -19,7 +19,7 @@ Traditional overlap techniques all have various pros and cons. The technique dep
 
 ## `@overlap;`
 
-![Overlap](https://automaticcss.com/wp-content/uploads/CleanShot-2024-09-27-at-10.38.28@2x-1024x624.jpg)
+![Overlap](img/overlap.webp)
 
 Overlap
 

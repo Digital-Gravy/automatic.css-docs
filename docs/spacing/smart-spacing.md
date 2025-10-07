@@ -35,7 +35,7 @@ One huge benefit of Smart Spacing is that you can space blog post content withou
 
 ## How to use Smart Spacing
 
-![Smart Spacing Panel](https://automaticcss.com/wp-content/uploads/smart-spacing-1024x1024.jpg)
+![Smart Spacing Panel](img/smart-spacing.webp)
 
 Smart Spacing Panel
 

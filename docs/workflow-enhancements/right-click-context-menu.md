@@ -9,7 +9,7 @@ Using the context menu in your workflow will speed up your development exponenti
 
 ## Enabling the Context Menu
 
-![](https://automaticcss.com/wp-content/uploads/CleanShot-2024-12-27-at-12.00.47@2x-1024x1024.jpg)
+![](img/enabling-context-menu.webp)
 
 The context menu is enabled by default, but you can check its status by going to **Options > Workflow Enhancements**.
 

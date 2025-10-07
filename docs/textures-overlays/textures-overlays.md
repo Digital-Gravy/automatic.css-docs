@@ -5,7 +5,7 @@ sidebar_position: 100
 
 Users can create custom textures and overlays in Automatic.css using a unique approach that allows for a texture to be used as a background, overlay, or both.
 
-![Textures & Overlays Example](https://automaticcss.com/wp-content/uploads/GZs9Um9WAAwRtPv-1024x645.jpeg)
+![Textures & Overlays Example](img/textures-overlays.webp)
 
 ## What are textures?
 

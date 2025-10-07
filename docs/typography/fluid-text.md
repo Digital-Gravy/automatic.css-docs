@@ -11,7 +11,7 @@ Automatic.css’s typography system controls the font size of text across your s
 
 The first setting in the Typography tab is for Root Font Size. It’s essential to set the root font size as a percentage for maximum accessibility.
 
-![Typography Panel for Root Font Size](https://automaticcss.com/wp-content/uploads/CleanShot-2024-10-20-at-10.52.55@2x-952x1024.jpg)
+![Typography Panel for Root Font Size](img/fluid-heading-setup.webp)
 
 Typography Panel for Root Font Size
 

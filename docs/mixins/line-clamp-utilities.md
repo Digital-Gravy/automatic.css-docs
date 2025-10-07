@@ -26,7 +26,7 @@ If you need to clamp to more than five lines, you can use `.line-clamp--custom`.
 
 Here’s what this looks like in Bricks:
 
-![Custom Line Clamp in Bricks Builder](https://automaticcss.com/wp-content/uploads/custom-line-clamp-bricks-1024x733.jpg)
+![Custom Line Clamp in Bricks Builder](img/custom-line-clamp-bricks.webp)
 
 Custom Line Clamp in Bricks Builder
 

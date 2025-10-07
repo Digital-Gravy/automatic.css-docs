@@ -35,7 +35,7 @@ Grid gap is the gap between items in grids and columnized content.
 
 You can set values for these contextual utilities via the ACSS Spacing tab.
 
-![Contextual Spacing Controls in Automatic.css](https://automaticcss.com/wp-content/uploads/contextual-spacing-1024x823.jpg)
+![Contextual Spacing Controls in Automatic.css](img/contextual-spacing.webp)
 
 Contextual Spacing Controls in Automatic.css
 

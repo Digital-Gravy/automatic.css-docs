@@ -54,7 +54,7 @@ Dividing will reduce the value and multiplying will amplify it. Using decimals w
 
 The only thing to potentially keep in mind here is your website’s spacing scale:
 
-![ACSS Spacing Scale](https://automaticcss.com/wp-content/uploads/spacing-scale-1024x507.png)
+![ACSS Spacing Scale](img/spacing-scale.webp)
 
 ACSS Spacing Scale
 

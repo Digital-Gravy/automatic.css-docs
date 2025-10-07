@@ -21,7 +21,7 @@ Texture 1 will now be applied to the body tag of your site.
 
 ## Texture-Overlay Mixin
 
-![Enable Overlay Class on Textures](https://automaticcss.com/wp-content/uploads/CleanShot-2025-01-27-at-19.02.08@2x-1024x1024.jpg)
+![Enable Overlay Class on Textures](img/enable-overlay-class.webp)
 
 To apply your texture as an overlay, ensure that the “Enable Overlay Class” option is on and then use the `texture-overlay($number)` mixin.
 

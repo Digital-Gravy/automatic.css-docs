@@ -9,7 +9,7 @@ Users can set three custom box-shadows in Automatic.css via the Box Shadows pane
 
 All three box shadows have default styles, but you can customize them by Going to Additional Styling > Box Shadows.
 
-![Box Shadow Styling Panel](https://automaticcss.com/wp-content/uploads/CleanShot-2024-10-19-at-18.51.29@2x-1024x906.jpg)
+![Box Shadow Styling Panel](img/box-shadow-styling.webp)
 
 Box Shadow Styling Panel
 

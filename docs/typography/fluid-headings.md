@@ -11,7 +11,7 @@ Automatic.css’s typography system controls the font size of headings across yo
 
 To access settings for your headings, navigate to Typography > Headings in the dashboard.
 
-![ACSS Base Heading Settings](https://automaticcss.com/wp-content/uploads/fluid-heading-setup-1024x671.png)
+![ACSS Base Heading Settings](img/fluid-heading-setup.webp)
 
 ACSS Base Heading Settings
 

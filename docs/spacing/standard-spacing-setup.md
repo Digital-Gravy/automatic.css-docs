@@ -7,7 +7,7 @@ ACSS provides fluid responsive, scale-based spacing out of the box and all the s
 
 To get started, navigate to the Spacing area of the dashboard:
 
-![](https://automaticcss.com/wp-content/uploads/acss-spacing-tab-1024x768.jpg)
+![](img/acss-spacing-tab.webp)
 
 ACSS Dashboard
 

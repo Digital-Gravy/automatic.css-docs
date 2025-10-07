@@ -21,7 +21,7 @@ There’s no right or wrong here. It’s user preference.
 
 All you need to do is apply the class to the parent element (the same element you set to position relative).
 
-![Applying .focus-parent--shadow to the parent element](https://automaticcss.com/wp-content/uploads/CleanShot-2023-08-13-at-22.51.25@2x-1024x715.jpg)
+![Applying .focus-parent--shadow to the parent element](img/focus-parent.webp)
 
 ## The Focus Parent Mixin
 

@@ -11,7 +11,7 @@ This is precisely what ACSS’ Gradient Fades feature handles for you. You can s
 
 Note: If you don’t have a Frames license, you should definitely [get one here](https://getframes.io/pricing/).
 
-![](https://automaticcss.com/wp-content/uploads/CleanShot-2025-02-28-at-16.29.02@2x-1024x487.webp)
+![Gradient Fades](img/gradient-fades.webp)
 
 As you can see in the above example, the images appear to fade into the background of the section. This is accomplished with ACSS’ fade utilities.
 
