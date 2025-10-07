@@ -5,7 +5,7 @@ sidebar_position: 30
 
 **Note:** Functions and mixins are designed for use in the Custom SCSS area of the Automatic.css dashboard. They will not work in the builder inputs or builder CSS.
 
-The Card Container Mixin is used for applying container query styles to any card in the [Card Framework](https://automaticcss.com/docs/card-framework/).
+The Card Container Mixin is used for applying container query styles to any card in the [Card Framework](../cards/card-framework.md).
 
 ## Example
 
@@ -34,4 +34,4 @@ If you run into specificity issues that are causing your container query styles 
 }
 ```
 
-In many page builder scenarios, it might be better to use the [Card Container Recipe](https://automaticcss.com/docs/card-container-recipe/) instead of this mixin, since you’ll be able to keep all your CSS attached to the actual card element.
+In many page builder scenarios, it might be better to use the [Card Container Recipe](../recipes/card-container-recipe.md) instead of this mixin, since you’ll be able to keep all your CSS attached to the actual card element.

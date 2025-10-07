@@ -5,7 +5,7 @@ sidebar_position: 100
 
 **Note:** Functions and mixins are designed for use in the Custom SCSS area of the Automatic.css dashboard. They will not work in the builder inputs or builder CSS.
 
-Sometimes you need to convert a pixel value to rem. If you’re needing to do this in a builder input or custom CSS input, you can simply use our [convert to rem expansion feature](https://automaticcss.com/docs/prem/). If, however, you’re writing custom SCSS and need to convert a pixel value to rem, you can use the `ctr()` function (ctr = convert to rem).
+Sometimes you need to convert a pixel value to rem. If you’re needing to do this in a builder input or custom CSS input, you can simply use our [convert to rem expansion feature](../workflow-enhancements/prem.md). If, however, you’re writing custom SCSS and need to convert a pixel value to rem, you can use the `ctr()` function (ctr = convert to rem).
 
 ```HTML
 .my-static-spacing-value {

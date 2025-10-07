@@ -19,7 +19,7 @@ Standard Spacing asks for a **Base Spacing** value and a **Spacing Scale** value
 
 **Base Spacing** is the spacing value that controls all spacing across the website. It’s directly mapped to all “M” (medium) spacing values and affects section spacing values as well.
 
-The desktop value will be the exact value of your base spacing at [content width](https://automaticcss.com/docs/content-width/) and beyond, the mobile value will be the exact value at your website’s minimum width, and the degree of difference between these values will control how aggressively spacing scales from desktop to mobile.
+The desktop value will be the exact value of your base spacing at [content width](../dimension/content-width.md) and beyond, the mobile value will be the exact value at your website’s minimum width, and the degree of difference between these values will control how aggressively spacing scales from desktop to mobile.
 
 **Spacing Scale** is the math scale used to generate additional sizes above and below “M.” Sizes above “M” are multiplied by the scale value and sizes below “M” are divided by the scale value.
 
@@ -31,12 +31,12 @@ The desktop value controls how much variance there is between sizes near content
 
 Standard spacing affects the following:
 
-- [Spacing Variables](https://automaticcss.com/docs/spacing-variables/)
-- [Section Spacing Variables](https://automaticcss.com/docs/section-spacing-variables/)
-- [Padding Classes](https://automaticcss.com/docs/padding-classes/)
-- [Margin Classes](https://automaticcss.com/docs/margin-classes/)
-- [Gap Classes](https://automaticcss.com/docs/gap-utilities/)
-- [Contextual Spacing Utilities](https://automaticcss.com/docs/contextual-spacing/)
-- [Header Classes](https://automaticcss.com/docs/header-padding-classes/)
+- [Spacing Variables](spacing-variables.md)
+- [Section Spacing Variables](section-spacing-variables.md)
+- [Padding Classes](padding-classes.md)
+- [Margin Classes](margin-classes.md)
+- [Gap Classes](gap-utilities.md)
+- [Contextual Spacing Utilities](contextual-spacing.md)
+- [Header Classes](header-padding-classes.md)
 
 You can adjust standard spacing at any time, even after a website is completely built.

@@ -19,7 +19,7 @@ We’ve created utilities for these gap values and they’re one of the most imp
 
 ## Container Gap
 
-The container gap is the spacing between containers in `section` elements. A container is the direct child div of a `section` element that establishes your website’s [content width](https://automaticcss.com/docs/content-width/).
+The container gap is the spacing between containers in `section` elements. A container is the direct child div of a `section` element that establishes your website’s [content width](../dimension/content-width.).
 
 It’s often desirable to have multiple containers in a `section` as you work to [group associated content](https://youtu.be/ClWMNlBZMR4).
 
@@ -49,7 +49,7 @@ Once your utilities are setup, start using them in every situation that calls fo
 
 When you have multiple containers in a `section`, use `.container-gap` or `var(--container-gap)` on that section’s gap property.
 
-When you have multiple content elements in a container of any kind, use `.content-gap` or `var(--content-gap)` to space your content evenly. It’s advisable to make sure you have [Smart Spacing](https://automaticcss.com/docs/smart-spacing/) turned on in these situations.
+When you have multiple content elements in a container of any kind, use `.content-gap` or `var(--content-gap)` to space your content evenly. It’s advisable to make sure you have [Smart Spacing](../spacing/smart-spacing.md) turned on in these situations.
 
 When you’re using a grid or creating columnized content, use `.grid-gap` or `var(--grid-gap)`.
 
@@ -90,6 +90,6 @@ As of version 2.6, you no longer have to manually use contextual utilities withi
 - ACSS will target all `section` elements and apply container-gap spacing between divs that are direct children of the `section` element.
 - ACSS will target all divs/containers that are direct children of `section` elements and apply content-gap spacing.
 - ACSS will target all div/block elements in general and apply content-gap spacing.
-- ACSS will target all grids that use [grid utility classes](https://automaticcss.com/docs/grid-classes-standard/) and apply grid-gap.
+- ACSS will target all grids that use [grid utility classes](../grids/grid-classes-standard.md) and apply grid-gap.
 
 To avoid conflicts and make it easy to override automatic spacing, ACSS applies these spacing values with zero specificity. The automatic spacing can be overridden at any point with other utility classes, custom classes, ID styling, inline styling, or global styling with any specificity value.

@@ -68,4 +68,4 @@ The final lever is to manually override any individual size.
 
 ## Can I create custom heading sizes?
 
-Yes, you can quickly and easily create custom heading sizes using the [fluid() function](https://automaticcss.com/docs/fluid-function/).
+Yes, you can quickly and easily create custom heading sizes using the [fluid() function](../functions/fluid-function.md).

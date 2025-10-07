@@ -65,7 +65,7 @@ Congrats! Now you have a clickable content group (a clickable parent element) wi
 
 The downside to using the clickable parent class is that you have to apply it multiple times if you have multiple clickable groups (like cards in a grid). This isn’t very scalable or maintainable.
 
-If you have multiple clickable content groups and are using BEM classes, you may want to opt for using our Clickable Parent [mixin](https://automaticcss.com/docs/mixins/).
+If you have multiple clickable content groups and are using BEM classes, you may want to opt for using our Clickable Parent [mixin](../mixins/clickable-parent.md).
 
 **Note:** This mixin must be added to a SCSS stylesheet. It will not work in a vanilla CSS stylesheet. If you’re not using SCSS and aren’t familiar with SCSS, then stick with the utility class method above.
 
@@ -126,11 +126,11 @@ Notice that I have selected the actual clickable element, which, in this case, i
 
 It’s common to want to combine the clickable-parent technique with another technique called focus-parent.
 
-Where clickable parent extends the clickable area of a link to cover an entire parent element, [focus-parent](https://automaticcss.com/docs/focus-parent/) alters the focus behavior of that parent element and its children.
+Where clickable parent extends the clickable area of a link to cover an entire parent element, [focus-parent](../accessibility/focus-parent.md) alters the focus behavior of that parent element and its children.
 
 In other words, the focus-parent technique also allows your entire clickable element to be focusable. This extends the same click and hover effects that clickable-parent provides to keyboard users.
 
-[Learn about focus-parent](https://automaticcss.com/docs/focus-parent/)
+[Learn about focus-parent](../accessibility/focus-parent.md)
 
 ## Wrap-Up
 

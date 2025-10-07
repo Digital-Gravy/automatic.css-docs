@@ -26,7 +26,7 @@ Expose the code for any standard grid utility in ACSS. This includes:
 - `@grid-3-1`
 - `@grid-3-2`
 
-**Pro tip:** You can quickly declare different grids at different mobile breakpoints from the parent element by combining [breakpoint recipes](https://automaticcss.com/docs/media-query-recipes/) with grid recipes.
+**Pro tip:** You can quickly declare different grids at different mobile breakpoints from the parent element by combining [breakpoint recipes](../recipes/media-query-recipes.md) with grid recipes.
 
 ## `@auto-grid`
 

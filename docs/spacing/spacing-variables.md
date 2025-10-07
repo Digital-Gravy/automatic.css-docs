@@ -28,13 +28,13 @@ Notice there is no `var(--pad-m)` variable. Once again, **spacing is just spacin
 }
 ```
 
-The only exception here would be [contextual variables](https://automaticcss.com/docs/contextual-spacing/).
+The only exception here would be [contextual variables](contextual-spacing.md).
 
 This makes life super easy when styling custom classes. There are very few variables to know and they’re super easy to use without a lot of decision-making.
 
 ## Section Spacing & Footer Spacing
 
-Sections and footers typically demand much more spacing than other boxes. If you’re creating a custom class for section padding or using a variable at the ID level on a particular section or within your footer, we recommend using ACSS’s [section spacing variables](https://automaticcss.com/docs/section-spacing-variables/) instead of regular spacing variables. This also keeps things contextually accurate.
+Sections and footers typically demand much more spacing than other boxes. If you’re creating a custom class for section padding or using a variable at the ID level on a particular section or within your footer, we recommend using ACSS’s [section spacing variables](section-spacing-variables.md) instead of regular spacing variables. This also keeps things contextually accurate.
 
 ## Fine Tuning Spacing with `Calc()`
 
@@ -106,4 +106,4 @@ See, there are no random “magic numbers” to manage. It’s all done with var
 
 ## Variables Are King
 
-Variables are much more powerful than utility classes because they can be fine-tuned and they can be attached to custom classes for maximum scalability and maintainability. This is why we advocate for a [Pro Mode](https://automaticcss.com/docs/pro-mode/) approach to development where utility classes are used sparingly and most of the work is done with custom classes and variables.
+Variables are much more powerful than utility classes because they can be fine-tuned and they can be attached to custom classes for maximum scalability and maintainability. This is why we advocate for a [Pro Mode](../setup/pro-mode.md) approach to development where utility classes are used sparingly and most of the work is done with custom classes and variables.

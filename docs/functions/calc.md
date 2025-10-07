@@ -9,9 +9,9 @@ The `calc()` function is a standard CSS function that’s not proprietary to Aut
 
 ## Text & Spacing “Tweener” Sizes
 
-It’s common to need a size in-between what’s available by default in ACSS for text and spacing utilities. You have two options in these cases. You can [create a brand new custom property with `fluid()`](https://automaticcss.com/docs/fluid-function/) or you can quickly use `calc()` and move on. In the majority of cases, `calc()` is probably just fine.
+It’s common to need a size in-between what’s available by default in ACSS for text and spacing utilities. You have two options in these cases. You can [create a brand new custom property with `fluid()`](../functions/fluid-function.md) or you can quickly use `calc()` and move on. In the majority of cases, `calc()` is probably just fine.
 
-For example, let’s say I’m building a card and I want half of my normal [content gap](https://automaticcss.com/docs/contextual-spacing/). Rather than making a custom variable, I can simply do this:
+For example, let’s say I’m building a card and I want half of my normal [content gap](../spacing/contextual-spacing.md). Rather than making a custom variable, I can simply do this:
 
 ```CSS
 gap: calc(var(--content-gap) / 2);
@@ -44,4 +44,4 @@ Here’s a breakdown:
 - `calc(var(--primary-s) / .2)` – Reference the primary color’s saturation value and reduce it by 20% using `calc()`.
 - `var(--primary-l)` – Reference the primary color’s lightness value.
 
-This is covered in more detail in [Palette Setup](https://automaticcss.com/docs/palette-setup/).
+This is covered in more detail in [Palette Setup](../colors/palette-setup.md).

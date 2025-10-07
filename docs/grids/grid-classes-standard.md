@@ -18,7 +18,7 @@ The video below shows how to get started with Responsive Grids with ACSS.
 There are various ways we can apply standard grid classes to our design.
 
 - BEM Classes with [ACSS variables](https://community.automaticcss.com/c/variables/). By creating custom classes that leverage ACSS variables, we can create global grids that are responsive and controlled globally.
-- [Utility Classes](https://automaticcss.com/docs/when-not-to-use-utility-classes/) with variables. We would apply utility classes to the container for one-off grids, but the best practice is adding a custom BEM class if the grid is used elsewhere on the site.
+- [Utility Classes](../fundamentals/when-not-to-use-utility-classes.md) with variables. We would apply utility classes to the container for one-off grids, but the best practice is adding a custom BEM class if the grid is used elsewhere on the site.
 
 ## Getting Started With Basic Grid Structure
 
@@ -34,7 +34,7 @@ You can use `.gap--` classes on the grid container to create spacing between row
 
 The grid-gap utilities create a separation of styles so you can control the grid spacing across your site independently from other types of spacing. The value for these utilities is set in the ACSS dashboard.
 
-![ACSS grid gap](https://automaticcss.com/wp-content/uploads/2023/08/grid-gap-1024x792.png)
+![ACSS grid gap](img/grid-gap.webp)
 
 ACSS .grid-gap
 
@@ -171,4 +171,4 @@ ACSS align-items–center on grid container
 
 It’s important to learn and understand the basics of CSS Grid to get the most out of the grid utilities in ACSS. We’ll continue to release education and training around CSS Grid and Automatic.css, so make sure you’re subscribed to the [ACSS YouTube Channel](https://www.youtube.com/@AutomaticCSS) and the [Geary.co YouTube channel](https://youtube.com/@Gearyco/).
 
-Make sure you also read up on [auto-alternating grid classes](https://automaticcss.com/docs/auto-alternating-grids/) and [grid variables](https://automaticcss.com/docs/grid-variables/).
+Make sure you also read up on [auto-alternating grid classes](auto-alternating-grids.md) and [grid variables](grid-variables.md).

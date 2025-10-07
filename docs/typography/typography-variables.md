@@ -10,7 +10,7 @@ All the typography properties you define in the ACSS dashboard are available as 
 
 The following typography variables can be accessed or changed at any time with custom styling:
 
-The font size variables correspond to ACSS’s global typography system [heading sizes](https://automaticcss.com/docs/fluid-headings/) and [text sizes](https://automaticcss.com/docs/fluid-text/):
+The font size variables correspond to ACSS’s global typography system [heading sizes](fluid-headings.md) and [text sizes](fluid-text.md):
 
 - `--h1`
 - `--h2`

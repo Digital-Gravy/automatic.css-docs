@@ -17,7 +17,7 @@ Typography Panel for Root Font Size
 
 The most common root font sizes are **100%** and **62.5%**.
 
-In Automatic.css, the default is 100% because that’s the typical standard. 62.5% makes it easier to calculate rem values (1rem = 10px), but ACSS has [Auto Rem Conversion](https://automaticcss.com/docs/prem/) to help with that, so setting root font size to 62.5% is not necessary.
+In Automatic.css, the default is 100% because that’s the typical standard. 62.5% makes it easier to calculate rem values (1rem = 10px), but ACSS has [Auto Rem Conversion](../workflow-enhancements/prem.md) to help with that, so setting root font size to 62.5% is not necessary.
 
 ## Fluid Text Setup
 
@@ -60,4 +60,4 @@ The Scales allow you to adjust the VARIANCE between sizes (larger scales create 
 
 ## Can I create custom font sizes?
 
-Yes, you can quickly and easily create additional custom font sizes using the [fluid() function](https://automaticcss.com/docs/fluid-function/).
+Yes, you can quickly and easily create additional custom font sizes using the [fluid() function](../functions/fluid-function.md).

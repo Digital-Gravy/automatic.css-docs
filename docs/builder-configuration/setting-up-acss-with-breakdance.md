@@ -21,7 +21,7 @@ Breakdance uses a different [section structure than recommended](https://geary.c
 
 The normal padding input fields won’t work for changing section padding because these inputs are linked to the inaccessible inner wrapper. ACSS puts padding in the actual section element where it’s supposed to be, so to change section padding in Breakdance you’ll need to use one of two methods:
 
-1.  Use `.pad-section--` [utility classes](https://automaticcss.com/docs/section-padding-classes/).
+1.  Use `.pad-section--` [utility classes](../spacing/section-padding-classes.md).
 2.  Use the padding inputs attached to the section wrapper element in Breakdance.
 
 Here’s a look at the wrapper inputs you’ll want to use:

@@ -158,6 +158,6 @@ You can do this as many times as you’d like to create as many transparencies a
 
 Aside from these main brand colors, ACSS also allows you to configure contextual colors and contextual color utilities.
 
-[Learn more about contextual colors.](https://automaticcss.com/docs/background-text-assignments/)
+[Learn more about contextual colors.](background-text-assignments.md)
 
-[Learn more about contextual color utilities.](https://automaticcss.com/docs/automatic-color-relationships/)","Palette Setup - Automatic.css
+[Learn more about contextual color utilities.](automatic-color-relationships.md)","Palette Setup - Automatic.css

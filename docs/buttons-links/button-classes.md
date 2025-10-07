@@ -53,4 +53,4 @@ By mixing and matching various button classes, you can achieve exactly what you 
 
 Remember, the order the classes are applied to an element doesn’t matter.
 
-**Related:** [Auto Button Styling and Styling Exclusions](https://automaticcss.com/docs/auto-button-styling-exclusions/)
+**Related:** [Auto Button Styling and Styling Exclusions](../buttons-links/auto-button-styling-exclusions.md)

@@ -148,6 +148,6 @@ The accepted values are t-shirt sizes: s, m, l, etc.
 
 ## Overriding Icon Styles with Custom CSS
 
-Every property in the Icon Framework is represented as a variable, making it easy to reference or override any style at any time. You can also deploy icon styling to any icon using [the icon() mixin](https://automaticcss.com/docs/icon-mixin/).
+Every property in the Icon Framework is represented as a variable, making it easy to reference or override any style at any time. You can also deploy icon styling to any icon using [the icon() mixin](icon-mixin.md).
 
 Notice for Bricks Users: Bricks uses inappropriate specificity for their default icon styling. In order to override this, we have to use additional specificity. This means that if you write custom CSS to style icons, the styles may not apply. You can use a double root selector `%root%%root% {}` for your custom CSS to resolve this.

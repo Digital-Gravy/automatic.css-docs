@@ -18,7 +18,7 @@ The options for setting defaults are roughly the same for headings and text:
 ACSS Heading Defaults
 
 - **Root Font Size**: Set your site’s default [root font size](https://youtu.be/cwfxZRLqyus?si=pLCacUEu_egkwj7M).
-- **Base Heading Size**: Set a min and max for [fluid responsive base (H4) heading](https://automaticcss.com/docs/fluid-headings/) or [text (M) size](https://automaticcss.com/docs/fluid-text/).
+- **Base Heading Size**: Set a min and max for [fluid responsive base (H4) heading](fluid-headings.md) or [text (M) size](fluid-text.md).
 - **Type Scale**: Set a mobile/desktop scale value for generating additional sizes.
 - **Font Family:** Set a [Font-Family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) for heading and text.
 - **All: Heading Color**: Set a default color for all headings or text sizes.
@@ -40,7 +40,7 @@ If you want to adjust this line-height value, we recommend changing the `ex` val
 
 ### \*\* Default max-width
 
-Setting a max on the width of lines is [important for maintaining proper readability on a website](https://automaticcss.com/docs/text-heading-line-length/). Unfortunately, due to Bricks’ application of max-width defaults, there’s no way for us to apply max-widths on headings and text without breakage. Therefore, this option is not applied in Bricks.
+Setting a max on the width of lines is [important for maintaining proper readability on a website](text-heading-line-length.md). Unfortunately, due to Bricks’ application of max-width defaults, there’s no way for us to apply max-widths on headings and text without breakage. Therefore, this option is not applied in Bricks.
 
 ### \*\*\* Default text-wrap
 

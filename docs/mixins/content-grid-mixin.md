@@ -5,7 +5,7 @@ sidebar_position: 100
 
 **Note:** Functions and mixins are designed for use in the Custom SCSS area of the Automatic.css dashboard. They will not work in the builder inputs or builder CSS.
 
-You can deploy a [content grid layout](https://automaticcss.com/docs/content-grid/) to any box with the `content-grid()` mixin.
+You can deploy a [content grid layout](../grids/content-grid.md) to any box with the `content-grid()` mixin.
 
 ```PHP
 .my-awesome-grid {   @include content-grid; }

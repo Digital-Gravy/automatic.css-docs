@@ -15,7 +15,7 @@ Best practices suggest the following:
 
 - Sections should consist of at least two elements: the `section` itself and and inner `div`.
 - A “gutter” for the website (inline spacing between content and device edge) should be established with inline padding on the `section` element.
-- The inner `div` should be the website’s [content width](https://automaticcss.com/docs/content-width/) and auto-centered. This `div` should not have any extra inline padding and typically shouldn’t have any padding at all unless it’s going to have its own background styling.
+- The inner `div` should be the website’s [content width](../dimension/content-width.md) and auto-centered. This `div` should not have any extra inline padding and typically shouldn’t have any padding at all unless it’s going to have its own background styling.
 - If a `section` needs more white space, you should almost always use extra block padding (top and bottom padding) for this. `Min-height` should be avoided here except in rare cases.
 - The same rules apply for the site’s `header` and `footer`, though it’s also common for these elements to appear full-width rather than content-width.
 
@@ -23,7 +23,7 @@ Automatic.css is designed with these best practices in mind.
 
 ## Default Section Padding
 
-Make sure you read about [Section Spacing Setup](https://automaticcss.com/docs/section-spacing/).
+Make sure you read about [Section Spacing Setup](../spacing/section-spacing-setup.md).
 
 Also note that “M” section spacing is added to top level section elements by default. This can easily be overridden on a per-section basis using Section Padding Classes.
 
@@ -41,7 +41,7 @@ It should be noted that ACSS is one of the only frameworks to offer a utility li
 
 ## Section Spacing & Pro Mode
 
-Since section padding classes are so important and useful and unique to each section, they stay active when [Pro Mode](https://automaticcss.com/docs/pro-mode/) is activated. They’re an example of a utility class that we still recommend using even when Pro Mode is active.
+Since section padding classes are so important and useful and unique to each section, they stay active when [Pro Mode](../setup/pro-mode.md) is activated. They’re an example of a utility class that we still recommend using even when Pro Mode is active.
 
 ## “Tweener” Sizes
 
@@ -49,4 +49,4 @@ It can be common to want an in-between size on occasion. You don’t necessarily
 
 ## Can I create custom section spacing classes?
 
-Yes, you can quickly and easily create custom section spacing classes using the [fluid() function](https://automaticcss.com/docs/fluid-function/). Or you can simply [use a `calc()`](https://automaticcss.com/docs/calc/).
+Yes, you can quickly and easily create custom section spacing classes using the [fluid() function](../functions/fluid-function.md). Or you can simply [use a `calc()`](../functions/calc.md).

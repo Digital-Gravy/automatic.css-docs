@@ -7,7 +7,7 @@ Many users have asked how to approach gradient outline buttons using ACSS. While
 
 ## Pre-requisite
 
-Get all your [global button defaults](https://automaticcss.com/docs/buttons/) setup in the ACSS dashboard. We’ll be setting this custom gradient outline style as the “primary” button style, so make sure “Primary” color is active and the “Primary” button style is activated. These are both active by default in ACSS, so you should be good to go out of the box.
+Get all your [global button defaults](./buttons.md) setup in the ACSS dashboard. We’ll be setting this custom gradient outline style as the “primary” button style, so make sure “Primary” color is active and the “Primary” button style is activated. These are both active by default in ACSS, so you should be good to go out of the box.
 
 ## Step #1: Custom Background
 

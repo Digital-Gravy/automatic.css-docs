@@ -25,7 +25,7 @@ Most projects don’t have multiple different form styles. As with most things, 
 
 Beyond that, you want to be able to customize the colors and look and feel of your forms. The only time form styles need to differ a lot is when you need a dark form versus a light form. Thus, we have a style set for each.
 
-Keep in mind that this is not related to [color scheme](https://automaticcss.com/docs/color-scheme-dark-mode/). The light and dark form styles can be deployed on your website regardless of color scheme settings.
+Keep in mind that this is not related to [color scheme](../colors/color-scheme-dark-mode.md). The light and dark form styles can be deployed on your website regardless of color scheme settings.
 
 ## Styling Forms (Form Utility Classes)
 

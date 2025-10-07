@@ -74,4 +74,4 @@ Let’s say we want to create a button that shares all the same general styling 
 
 Now you have a custom gradient button that will still inherit any changes you make to your global button styles in the ACSS dashboard.
 
-Additionally, if you’re using SCSS, you can use our [button mixin](https://automaticcss.com/docs/button-mixins/) to apply all the default styles in one line automatically.
+Additionally, if you’re using SCSS, you can use our [button mixin](../mixins/button-mixins.md) to apply all the default styles in one line automatically.

@@ -7,7 +7,7 @@ Variable Grid is a unique, powerful, lightweight, automatically responsive grid 
 
 ## How Variable Grids work
 
-In a [traditional grid system](https://automaticcss.com/docs/grid-classes-standard/), grid cells stack at specific breakpoints (based on your choices at each breakpoint). This means that the grid is responding to the size of the device or window and not the size of the elements in the grid.
+In a [traditional grid system](grid-classes-standard.md), grid cells stack at specific breakpoints (based on your choices at each breakpoint). This means that the grid is responding to the size of the device or window and not the size of the elements in the grid.
 
 In our **Variable Grid system**, grid cells stack automatically when items in the grid are squeezed to their minimum allowed width. Instead of the grid responding to a specific device size, it responds only to the current width of its children.
 

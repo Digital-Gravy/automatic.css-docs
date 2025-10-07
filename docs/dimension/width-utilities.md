@@ -5,7 +5,7 @@ sidebar_position: 80
 
 Width utilities control the width (inline-size) of elements.
 
-Unlike most frameworks, width utilities are not mapped to percentages in ACSS. Rather, they’re a calculation based on your website’s [Content Width](https://automaticcss.com/docs/content-width/). This is much more useful, since percentages cause complications with the responsive size of elements.
+Unlike most frameworks, width utilities are not mapped to percentages in ACSS. Rather, they’re a calculation based on your website’s [Content Width](content-width.md). This is much more useful, since percentages cause complications with the responsive size of elements.
 
 ## 10-90 Width Classes (New)
 
@@ -31,8 +31,8 @@ These classes still exist in the framework and are still valid. We haven’t put
 
 ACSS contains the following special width classes that exist outside of the above syntaxes.
 
-- `.content-width` and `var(--content-width)`. These match the [content width](https://automaticcss.com/docs/content-width/) of your website.
-- `.content-width--safe` and `var(--content-width-safe)`. These “[safe content width](https://automaticcss.com/docs/content-width-safe/)” utilities establish content width along with a virtual gutter.
+- `.content-width` and `var(--content-width)`. These match the [content width](content-width.md) of your website.
+- `.content-width--safe` and `var(--content-width-safe)`. These “[safe content width](content-width-safe.md)” utilities establish content width along with a virtual gutter.
 - `.width--full` is for setting an element to 100% width.
 
 ## Width Variables

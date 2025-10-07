@@ -23,7 +23,7 @@ The advantage of `outline` is the ability to offset the focus ring from the elem
 
 You can choose any color for your focus color. The default is your website’s action color.
 
-Remember that you can change the focus color of individual elements using [focus classes](https://automaticcss.com/docs/focus-classes/).
+Remember that you can change the focus color of individual elements using [focus classes](focus-classes.md).
 
 ### Focus Width
 

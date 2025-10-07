@@ -5,7 +5,7 @@ sidebar_position: 100
 
 **Note:** Functions and mixins are designed for use in the Custom SCSS area of the Automatic.css dashboard. They will not work in the builder inputs or builder CSS.
 
-Automatic.css’ [centering classes](https://automaticcss.com/docs/centering-classes/) are powered by the `center()` mixin, which is also available for users to use on their own. Here’s what it looks like
+Automatic.css’ [centering classes](../layout/centering-classes.md) are powered by the `center()` mixin, which is also available for users to use on their own. Here’s what it looks like
 
 ```PHP
 @include center($alignment, $output);
@@ -13,7 +13,7 @@ Automatic.css’ [centering classes](https://automaticcss.com/docs/centering-cla
 
 The `center()` mixin accepts two arguments: `$alignment` and `$output`.
 
-The $alignment argument accepts all the same alignments that are available with the [centering classes](https://automaticcss.com/docs/centering-classes/):
+The $alignment argument accepts all the same alignments that are available with the [centering classes](../layout/centering-classes.md):
 
 - `all` – center across both axes
 - `left` – center vertically, align left
@@ -45,7 +45,7 @@ Here’s an example of centering vertically, but aligning left:
 }
 ```
 
-And here’s an example of how to set initial centering and then manipulate it at a breakpoint using [breakpoint mixins](https://automaticcss.com/docs/breakpoint-mixins/):
+And here’s an example of how to set initial centering and then manipulate it at a breakpoint using [breakpoint mixins](../mixins/breakpoint-mixins.md):
 
 ```CSS
 .my-centered-box {

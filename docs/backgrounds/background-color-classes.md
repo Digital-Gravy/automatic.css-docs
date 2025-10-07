@@ -9,7 +9,7 @@ While there are dozens of classes to choose from, they all follow the same conve
 
 ## Main Color Convention
 
-If you want to set the background color to one of the [main ACSS colors](https://automaticcss.com/docs/palette-setup/), use:
+If you want to set the background color to one of the [main ACSS colors](../colors/palette-setup.md), use:
 
 `.bg--[color]`
 
@@ -58,4 +58,4 @@ Transparency values range from 10 to 90 in increments of 10.
 
 ## What about background patterns and gradients?
 
-ACSS supports custom backgrounds, gradients, and overlays via our [Textures & Overlay](https://automaticcss.com/docs/textures-overlays/)s feature.
+ACSS supports custom backgrounds, gradients, and overlays via our [Textures & Overlay](../textures-overlays/)s feature.

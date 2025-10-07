@@ -5,7 +5,7 @@ sidebar_position: 50
 
 The establishment of proper contrast between foreground and background elements is important in web design, and can be made automatic in ACSS with our unique Automatic Color Relationships feature.
 
-Auto Color Relationships allow users to assign foreground styles to headings, text, links, and buttons in relationship with [contextual background classes](https://automaticcss.com/docs/background-text-assignments/) as well as [textures and overlays](https://automaticcss.com/docs/textures-overlays/). Once this feature is setup, the use of a utility class like `.bg--ultra-dark` will not only set the background to the ultra-dark color, but it will automatically flip the foreground elements to their preferred values as well.
+Auto Color Relationships allow users to assign foreground styles to headings, text, links, and buttons in relationship with [contextual background classes](background-text-assignments.md) as well as [textures and overlays](../textures-overlays/). Once this feature is setup, the use of a utility class like `.bg--ultra-dark` will not only set the background to the ultra-dark color, but it will automatically flip the foreground elements to their preferred values as well.
 
 This video will give you additional context and an example of how this feature works:
 
@@ -57,7 +57,7 @@ Yes. Auto color relationships provide a new starting point for the styling. If y
 
 How can I have two different color buttons since auto relationship overrides button styling?
 
-It’s uncommon to need two different button colors next to each other, so the first thing you should do is re-assess the design decision and make sure you’re following best practices. If you do, in fact, need two different button colors next to each other, the easiest way to do this is to add a custom BEM class to the button you want to override and then use the [btn() mixin](https://automaticcss.com/docs/button-mixins/) within the custom SCSS area of ACSS, like this:
+It’s uncommon to need two different button colors next to each other, so the first thing you should do is re-assess the design decision and make sure you’re following best practices. If you do, in fact, need two different button colors next to each other, the easiest way to do this is to add a custom BEM class to the button you want to override and then use the [btn() mixin](../mixins/button-mixins.md) within the custom SCSS area of ACSS, like this:
 
 ```CSS
 .button-you-want-to-override {

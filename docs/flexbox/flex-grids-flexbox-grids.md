@@ -19,7 +19,7 @@ All the complicated math and setup is done for you. You can even adjust the gap 
 
 ## How to use Flex Grid classes
 
-Flex grid classes work exactly like our regular [grid classes](https://automaticcss.com/docs/grid-classes-standard/).
+Flex grid classes work exactly like our regular [grid classes](../grids/grid-classes-standard.md).
 
 1.  Make sure Flex Grid is turned on in ACSS options.
 2.  Add the desired desktop Flex Grid count class to the parent container (e.g. `flex-grid--3`)

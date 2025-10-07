@@ -3,7 +3,7 @@ title: Button Recipes
 sidebar_position: 80
 ---
 
-Button recipes allow you to add styling rules for buttons quickly. This is especially useful when creating [custom buttons](https://automaticcss.com/docs/buttons/).
+Button recipes allow you to add styling rules for buttons quickly. This is especially useful when creating [custom buttons](../buttons-links/buttons.md).
 
 ## `@btn`;
 

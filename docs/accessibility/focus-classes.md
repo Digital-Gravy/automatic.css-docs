@@ -32,6 +32,6 @@ Additionally, since all focus styling uses the local variable `--focus-color`, y
 
 ## Focus Parent
 
-When using the [clickable-parent](https://automaticcss.com/docs/clickable-parent/) technique, you can also optionally set focus on the parent using the `.focus-parent` utility class. As the name describes, this moves focus from the child link element to the parent element for better visual effect and accessibility accuracy.
+When using the [clickable-parent](clickable-parent.md) technique, you can also optionally set focus on the parent using the `.focus-parent` utility class. As the name describes, this moves focus from the child link element to the parent element for better visual effect and accessibility accuracy.
 
-You can learn more about this feature by reading the [Focus Parent documentation](https://automaticcss.com/docs/focus-parent/).
+You can learn more about this feature by reading the [Focus Parent documentation](focus-parent.md).

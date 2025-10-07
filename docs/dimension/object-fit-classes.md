@@ -3,7 +3,7 @@ title: Object Fit Classes
 sidebar_position: 10
 ---
 
-There are situations where you need to set a width, [height](https://automaticcss.com/docs/height-classes/), or [aspect ratio](https://automaticcss.com/docs/aspect-ratio-classes/) on an image that doesn’t respect the image’s original aspect ratio. When this occurs, the image “stretches” and looks warped.
+There are situations where you need to set a width, [height](height-classes.md), or [aspect ratio](aspect-ratio-classes.md) on an image that doesn’t respect the image’s original aspect ratio. When this occurs, the image “stretches” and looks warped.
 
 **Object Fit** classes force the image to look appropriate in the new aspect ratio by cropping into the image (`.object-fit--cover`). Or, they force it back to its original aspect ratio within the new container bounds (`.object-fit--contain`).
 

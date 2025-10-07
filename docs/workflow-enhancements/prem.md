@@ -23,4 +23,4 @@ Good news! The same auto-conversion works in custom CSS when using the builder�
 
 ## What about custom CSS outside of the builder?
 
-While we can’t run the auto-converter in every tool that’s ever been built for adding CSS to a website, we do offer a new [ctr() function](https://automaticcss.com/docs/functions/). So, any tool that allows you to write SCSS and hook into Automatic.css, like WPCodeBox, will allow you to use the auto-converter when writing your custom CSS.
+While we can’t run the auto-converter in every tool that’s ever been built for adding CSS to a website, we do offer a new [ctr() function](../functions/ctr.md). So, any tool that allows you to write SCSS and hook into Automatic.css, like WPCodeBox, will allow you to use the auto-converter when writing your custom CSS.

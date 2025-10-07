@@ -41,4 +41,4 @@ As a final example, the code below demonstrates how we can use a `<div>`- as a s
 
 Since the Ad Container sin’t a `<section>` element, it doesn’t get section spacing by default. But, we can easily assign it to have default section spacing using the Section Spacing variables.
 
-Recommended: Read more about [regular spacing variables here](https://automaticcss.com/docs/spacing-variables/), where we go into more detail on advanced use cases.
+Recommended: Read more about [regular spacing variables here](../spacing/spacing-variables.md), where we go into more detail on advanced use cases.

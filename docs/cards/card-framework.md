@@ -188,4 +188,4 @@ First, enable Auto Container Query Support in Card Options:
 
 This automatically gives any wrapping element of your cards a `container-type` of `inline-size`, opening the door for styling your card with container queries.
 
-The easiest way to add a container query is to select the card class you want to style, go to custom CSS, and use the [card container recipe](https://automaticcss.com/docs/card-container-recipe/). There’s also a [card container mixin](https://automaticcss.com/docs/card-container-mixin/) if you prefer using the SCSS editor.
+The easiest way to add a container query is to select the card class you want to style, go to custom CSS, and use the [card container recipe](../recipes/card-container-recipe.md). There’s also a [card container mixin](../mixins/card-container-mixin.md) if you prefer using the SCSS editor.

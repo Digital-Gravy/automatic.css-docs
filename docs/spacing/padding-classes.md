@@ -17,10 +17,10 @@ The convention for adding padding classes is `.padding--{size}`, following the s
 
 Some utility frameworks provide very granular padding classes so you can apply padding only to one side of an element/container. ACSS avoids this because these situations almost always call for [custom classes](https://youtu.be/tha_ynmZRaA) as a best practice.
 
-Being a strict framework, ACSS doesn’t encourage using utility classes in situations where custom classes are far more appropriate. You should use Automatic’s [spacing variables](https://automaticcss.com/docs/spacing-variables/) in conjunction with custom classes in these situations instead.
+Being a strict framework, ACSS doesn’t encourage using utility classes in situations where custom classes are far more appropriate. You should use Automatic’s [spacing variables](spacing-variables.md) in conjunction with custom classes in these situations instead.
 
 ## Can I create custom padding classes?
 
-Yes, you can quickly and easily create custom padding classes using the [fluid() function](https://automaticcss.com/docs/fluid-function/). Or you can simply [use a `calc()`](https://automaticcss.com/docs/calc/).
+Yes, you can quickly and easily create custom padding classes using the [fluid() function](../functions/fluid-function.md). Or you can simply [use a `calc()`](../functions/calc.md).
 
 Notice: Padding classes used to have an abbreviated syntax of `.pad--`. This was deprecated in favor of the non-abbreviated version. The old syntax is still available to be activated/deactivated from the “Deprecated” options panel in ACSS, but we recommend you stop using it. It should only be activated on old/existing websites that were already using it.

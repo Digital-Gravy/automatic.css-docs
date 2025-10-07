@@ -30,7 +30,7 @@ ACSS overlay classes follow the following structure:
 
 ## Example
 
-![section with text](https://automaticcss.com/wp-content/uploads/2023/08/no-overlay-1024x500.png)
+![section with text](img/no-overlay.webp)
 
 Example section with no overlay
 

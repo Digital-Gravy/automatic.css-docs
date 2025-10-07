@@ -3,7 +3,7 @@ title: Content Width (Safe)
 sidebar_position: 30
 ---
 
-You probably already know about the [Content Width](https://automaticcss.com/docs/content-width/) utilities in ACSS, but do you know about Content Width Safe? This utility references your website’s content width while simultaneously creating a gutter on smaller screens. It’s extremely handy!
+You probably already know about the [Content Width](content-width.md) utilities in ACSS, but do you know about Content Width Safe? This utility references your website’s content width while simultaneously creating a gutter on smaller screens. It’s extremely handy!
 
 ## What’s a gutter?
 

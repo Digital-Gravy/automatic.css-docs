@@ -5,7 +5,7 @@ sidebar_position: 5
 
 **Note:** Functions and mixins are designed for use in the Custom SCSS area of the Automatic.css dashboard. They will not work in the builder inputs or builder CSS.
 
-Where [clickable parent](https://automaticcss.com/docs/clickable-parent/) extends the clickable area of a link to cover an entire content group, focus parent alters the focus behavior of that content group. In other words, the focus-parent technique also allows your entire clickable element to be focusable.
+Where [clickable parent](../accessibility/clickable-parent.md) extends the clickable area of a link to cover an entire content group, focus parent alters the focus behavior of that content group. In other words, the focus-parent technique also allows your entire clickable element to be focusable.
 
 ## The Focus Parent Utility class
 

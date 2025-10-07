@@ -9,7 +9,7 @@ Content Grid presents a new paradigm for content layouts. Using advanced CSS Gri
 
 ## Establishing a Content Grid Manually
 
-A Content Grid can be established in any box. You can even nest Content Grids inside other content grids. Simply add `.content-grid` to any box and you’ve established a Content Grid or use the [Content Grid Mixin](https://automaticcss.com/docs/content-grid-mixin/) or [Content Grid Recipe](https://automaticcss.com/docs/content-grid-recipe/).
+A Content Grid can be established in any box. You can even nest Content Grids inside other content grids. Simply add `.content-grid` to any box and you’ve established a Content Grid or use the [Content Grid Mixin](../mixins/content-grid-mixin.md) or [Content Grid Recipe](../recipes/content-grid-recipe.md).
 
 Note: When establishing a Content Grid in a `section` element, ACSS will remove the section’s inline padding (gutter) and set any column gaps to zero. This is because the content grid establishes a gutter by default using your site’s global gutter value.
 

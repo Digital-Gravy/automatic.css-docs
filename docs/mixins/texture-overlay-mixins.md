@@ -5,7 +5,7 @@ sidebar_position: 100
 
 **Note:** Functions and mixins are designed for use in the Custom SCSS area of the Automatic.css dashboard. They will not work in the builder inputs or builder CSS.
 
-Your custom [Textures & Overlays](https://automaticcss.com/docs/textures-overlays/) are available as mixins, which makes it easy to assign them to BEM classes or global areas like the body tag.
+Your custom [Textures & Overlays](../textures-overlays/textures-overlays.md) are available as mixins, which makes it easy to assign them to BEM classes or global areas like the body tag.
 
 ## Texture Mixin
 

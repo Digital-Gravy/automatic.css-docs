@@ -23,6 +23,6 @@ This doesn’t just make the framework easier to learn, it makes it easier to us
 
 **Having _more_ options is positively correlated with more inconsistency across a site.** In other words, the more options you have to choose from, the more inconsistent your website will be. Or, users have to waste additional time referencing which values they used previously to do the next task correctly.
 
-When you have fewer options, it’s easier and faster to use the same ones in the same situations. The use of contextual utilities like [contextual spacing](https://automaticcss.com/docs/contextual-spacing/) and [contextual colors](https://automaticcss.com/docs/semantic-colors/) makes this even easier and faster.
+When you have fewer options, it’s easier and faster to use the same ones in the same situations. The use of contextual utilities like [contextual spacing](../spacing/contextual-spacing.md) and [contextual colors](../colors/semantic-colors.md) makes this even easier and faster.
 
 So, almost any time you’re using a utility that references a size, you’ll have the same t-shirt size options available to you. There’s nothing else to memorize or reference!

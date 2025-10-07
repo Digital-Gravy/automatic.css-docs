@@ -11,7 +11,7 @@ Users can create custom textures and overlays in Automatic.css using a unique ap
 
 Web designers are typically working with solid colors, or they’re working with image files and gradients for backgrounds and overlays. Often, it’s a mix of both.
 
-ACSS has provided tons of solid [background](https://automaticcss.com/docs/background-color-classes/) and [overlay](https://automaticcss.com/docs/overlay-classes/) options since inception, but you still need a way to define areas of “texture.” **In Automatic.css, a Texture is any background or overlay that requires a re-usable image file, repeating pattern, or gradient.**
+ACSS has provided tons of solid [background](../backgrounds/background-color-classes.md) and [overlay](../overlays/overlay-classes.md) options since inception, but you still need a way to define areas of “texture.” **In Automatic.css, a Texture is any background or overlay that requires a re-usable image file, repeating pattern, or gradient.**
 
 By creating a texture that’s available globally, you can easily apply your texture to select areas of your site using a simple utility class.
 
@@ -40,7 +40,7 @@ Here is an explanation of each property:
 - **Texture Position:** The position of the texture within its box. Accepts keywords, static values, and relative values.
 - **Attachment:** Choose whether the texture should behave normally (`scroll`) or act as parallax (`fixed`).
 - **Repeat:** Choose to have your pattern `repeat` or `no-repeat`. Other repeat-related keywords are applicable as well.
-- **Color Relationship:** Textures are compatible with ACSS [auto color relationships](https://automaticcss.com/docs/automatic-color-relationships/), allowing you to sync foreground styles wherever your texture is used.
+- **Color Relationship:** Textures are compatible with ACSS [auto color relationships](../colors/automatic-color-relationships.md), allowing you to sync foreground styles wherever your texture is used.
 - **Enable Overlay Class:** If you want to be able to use your texture as a pseudo-element overlay in addition to the background effect, enable this option.
 - **Additional Overlay Layer:** Your overlay can have an overlay! This uses the same border-image technique from above, so make sure you use a `linear-gradient()`.
 - **Blend Mode:** Set a blend mode for your overlay (optional).

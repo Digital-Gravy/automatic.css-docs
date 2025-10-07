@@ -36,11 +36,11 @@ Sharing styles across button types ensures that all your buttons will be visuall
 - **Button Border Width:** Set the border width of your buttons. You won’t see the border if your border color is the same color as your button.
 - **Button Border Style:**
 - **Outline Button Border Width:** Set the border width of your outline buttons (.btn–outline). Ideally, this value will match your other button border size value. This ensures that all buttons are the same height when placed side by side.
-- **Button Radius**:  Set the border radius for all buttons. By default, buttons use your [website’s global border-radius](https://automaticcss.com/docs/global-border-system/).
+- **Button Radius**:  Set the border radius for all buttons. By default, buttons use your [website’s global border-radius](../borders-dividers/global-border-system.md).
 
 ### Button Transition Styling
 
-- **Use Global Transition (Default)**: Use your website’s [global transition style](https://automaticcss.com/docs/transition/) for buttons.
+- **Use Global Transition (Default)**: Use your website’s [global transition style](transition.md) for buttons.
 - **Transition**: If you opt out of using the website’s global transition style you can set a manual transition style.
 
 **Radius Note:** Using `.rounded` classes or radius variables on your buttons are not advisable because this reduces global control. It’s best to set your button radius here in the ACSS dashboard so that all your buttons inherit this default radius and no additional classes or variables are necessary.
@@ -130,7 +130,7 @@ Now you’ve changed the style of all buttons on a page without affecting any ot
 
 ### Available Button Variables
 
-Please reference our [button variables documentation](https://automaticcss.com/docs/button-variables/) for a full list of available button variables.
+Please reference our [button variables documentation](button-variables.md) for a full list of available button variables.
 
 ## Creating Custom Buttons
 

@@ -19,4 +19,4 @@ Heights are available from 20 to 100 and are represented in vh units (e.g. `.hei
 
 ## Changing height at breakpoints
 
-You can adjust the min-height at each breakpoint using our [breakpoint](https://automaticcss.com/docs/website-width-breakpoints/) height utilities. The convention is: `.height--[breakpoint]-[value]`.
+You can adjust the min-height at each breakpoint using our [breakpoint](../setup/website-width-breakpoints.md) height utilities. The convention is: `.height--[breakpoint]-[value]`.

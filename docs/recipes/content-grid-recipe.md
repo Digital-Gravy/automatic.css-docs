@@ -3,7 +3,7 @@ title: Content Grid Recipe
 sidebar_position: 100
 ---
 
-You can deploy a [content grid layout](https://automaticcss.com/docs/content-grid/) to any box with the `@content-grid;` recipe.
+You can deploy a [content grid layout](../grids/content-grid.md) to any box with the `@content-grid;` recipe.
 
 ```CSS
 @content-grid;

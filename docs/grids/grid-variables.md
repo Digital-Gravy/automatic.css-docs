@@ -3,7 +3,7 @@ title: Grid Variables
 sidebar_position: 40
 ---
 
-ACSS users can create grids with [grid classes](https://automaticcss.com/docs/grid-classes-standard/), or with grid variables. Where grid classes are great for workflow speed, the variables are best for scalability and maintainability.
+ACSS users can create grids with [grid classes](grid-classes-standard.md), or with grid variables. Where grid classes are great for workflow speed, the variables are best for scalability and maintainability.
 
 ## Using Grid Variables
 

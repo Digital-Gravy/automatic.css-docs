@@ -3,7 +3,7 @@ title: Gap Utilities
 sidebar_position: 100
 ---
 
-Gap can be used with [Grid](https://automaticcss.com/docs/grid-classes-standard/), [Flex-Grid](https://automaticcss.com/docs/flex-grids-flexbox-grids/), [Content Grid](https://automaticcss.com/docs/content-grid/), [Variable Grid](https://automaticcss.com/docs/variable-grid/), Flexbox, [Columns](https://automaticcss.com/docs/css-columns/), and [Masonry](https://automaticcss.com/docs/masonry-layouts/) utilities.
+Gap can be used with [Grid](../grids/grid-classes-standard.md), [Flex-Grid](../flexbox/flex-grids-flexbox-grids.md), [Content Grid](../grids/content-grid.md), [Variable Grid](../grids/variable-grid.md), Flexbox, [Columns](../columns/css-columns.md), and [Masonry](../columns/masonry-layouts.md) utilities.
 
 Remember the fundamentals of the box model:
 
@@ -35,7 +35,7 @@ If you want to set both column and row gap simultaneously with a single utility,
 
 Remember that when using variables, there’s no such thing as margin or padding or gap. This is because the code you’re writing or the input field you’re using is already assigning the property. All variables do is act as placeholders for values.
 
-For this reason, there are only [spacing variables](https://automaticcss.com/docs/spacing-variables/). You can use these in any gap input or in CSS using the gap property:
+For this reason, there are only [spacing variables](../spacing/spacing-variables.md). You can use these in any gap input or in CSS using the gap property:
 
 ```CSS
 .card {
@@ -45,8 +45,8 @@ For this reason, there are only [spacing variables](https://automaticcss.com/doc
 }
 ```
 
-Remember, the gap property only works with Flexbox and Grid. Also remember that you have [contextual spacing utilities](https://automaticcss.com/docs/contextual-spacing/) that should be used in most common scenarios.
+Remember, the gap property only works with Flexbox and Grid. Also remember that you have [contextual spacing utilities](../spacing/contextual-spacing.md) that should be used in most common scenarios.
 
 ## Can I create custom spacing utilities for gap?
 
-Yes, you can quickly and easily create custom gap uitilities using the [fluid() function](https://automaticcss.com/docs/fluid-function/). Or you can simply [use a `calc()`](https://automaticcss.com/docs/calc/).
+Yes, you can quickly and easily create custom gap uitilities using the [fluid() function](../functions/fluid-function.md). Or you can simply [use a `calc()`](../functions/calc.md).

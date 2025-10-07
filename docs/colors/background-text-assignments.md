@@ -7,7 +7,7 @@ sidebar_position: 40
 
 Once you setup your Palette in ACSS, you’ll want to set up Background and Text Assignments.
 
-Rather than randomly using brand colors via color-related classes like [background color classes](https://automaticcss.com/docs/background-color-classes/) or [text color classes](https://automaticcss.com/docs/text-classes/), Background & Text Assignments are a way to map specific colors to how they’re actually used on a website.
+Rather than randomly using brand colors via color-related classes like [background color classes](../backgrounds/background-color-classes.md) or [text color classes](../typography/text-classes.md), Background & Text Assignments are a way to map specific colors to how they’re actually used on a website.
 
 When you assign colors to specific contexts, you can build a site without referencing specific colors during the development process.
 
@@ -61,7 +61,7 @@ For Backgrounds, you have four options (plus your default website background). T
 - `.bg--ultra-light` and `--bg-ultra-light`
 - `.bg--ultra-dark` and `--bg-ultra-dark`
 
-It’s best to apply these with the utility classes, because they support [Automatic Color Relationships](https://automaticcss.com/docs/automatic-color-relationships/) (variables don’t).
+It’s best to apply these with the utility classes, because they support [Automatic Color Relationships](automatic-color-relationships.md) (variables don’t).
 
 Keep in mind that you also have your website’s default background color. Let’s say your default background color is `var(--white)`. By not using a background color on a section, it will default to white. So, now you have five simple options for setting background colors across your site.
 

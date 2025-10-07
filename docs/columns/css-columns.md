@@ -49,7 +49,7 @@ Note: Column utilities in ACSS will automatically set an element to `display: bl
 
 ### Defining a specific column count at each breakpoint
 
-As is true with [grid classes](https://automaticcss.com/docs/grid-classes-standard/), you can define a specific column count at each breakpoint using `.col-count--[number]` classes and you can change the column count at a specific breakpoint with `.col-count--[breakpoint]-[number]`.
+As is true with [grid classes](../grids/grid-classes-standard.md), you can define a specific column count at each breakpoint using `.col-count--[number]` classes and you can change the column count at a specific breakpoint with `.col-count--[breakpoint]-[number]`.
 
 You can declare column counts from 1 to 5 at any breakpoint level.
 

@@ -21,7 +21,7 @@ There are two ways to create responsive masonry layouts in ACSS:
 
 ### Method #1: Automatically responsive masonry layouts
 
-Masonry layouts in CSS are created with [CSS Columns](https://automaticcss.com/docs/css-columns/), which ACSS fully supports. So, you can use existing `.col-width--[size]` utilities to make your masonry layouts automatically responsive.
+Masonry layouts in CSS are created with [CSS Columns](css-columns.md), which ACSS fully supports. So, you can use existing `.col-width--[size]` utilities to make your masonry layouts automatically responsive.
 
 ### Method #2: Manually responsive masonry layouts
 
@@ -29,8 +29,8 @@ You can also control the responsiveness of masonry layouts manually using masonr
 
 ## Gaps in Masonry Layouts
 
-CSS Columns support column gaps but not row gaps. But, you’re using ACSS so this isn’t an issue for you. We’ve designed Masonry layouts to be compatible with [existing gap utilities](https://automaticcss.com/docs/spacing/). We’ve also added new gap utilities for controlling column-gap and row-gap separately.
+CSS Columns support column gaps but not row gaps. But, you’re using ACSS so this isn’t an issue for you. We’ve designed Masonry layouts to be compatible with [existing gap utilities](../spacing/spacing-variables.md). We’ve also added new gap utilities for controlling column-gap and row-gap separately.
 
 ## Ruled Masonry Layouts
 
-Since masonry layouts use CSS columns, ruled columns are supported by default using our existing columns utilities. You can control rule style, rule color, and rule width. Read the [Columns documentation](https://automaticcss.com/docs/css-columns/) for more details.
+Since masonry layouts use CSS columns, ruled columns are supported by default using our existing columns utilities. You can control rule style, rule color, and rule width. Read the [Columns documentation](css-columns.md) for more details.

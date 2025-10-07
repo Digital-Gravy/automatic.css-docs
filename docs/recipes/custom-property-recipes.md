@@ -3,7 +3,7 @@ title: Custom Property Recipes
 sidebar_position: 100
 ---
 
-Custom Property Recipes - Automatic.css,https://automaticcss.com/docs/custom-property-recipes/,"# Custom Property Recipes - Automatic.css
+Custom Property Recipes
 
 ## `@property;`
 

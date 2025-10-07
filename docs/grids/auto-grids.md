@@ -94,15 +94,15 @@ Set a box to display grid and then use one of the Auto Grid variables in the gri
 }
 ```
 
-**Note:** Due to variable encapsulation, this is the most limited way to use auto grids. You should only use this method if you’re okay with the default stacking behavior of the Auto Grid. If more control is needed, use the [auto grid mixin](https://automaticcss.com/docs/auto-grid-mixin/) or the [auto grid recipe](https://automaticcss.com/docs/grid-recipes/).
+**Note:** Due to variable encapsulation, this is the most limited way to use auto grids. You should only use this method if you’re okay with the default stacking behavior of the Auto Grid. If more control is needed, use the [auto grid mixin](../mixins/auto-grid-mixin.md) or the [auto grid recipe](../recipes/grid-recipes.md).
 
 ## How to Apply Auto Grid With a Mixin
 
-If you need to apply Auto Grid to a custom selector, you can easily do this with the [auto grid mixin](https://automaticcss.com/docs/auto-grid-mixin/) via the “Custom SCSS” area of the ACSS dashboard.
+If you need to apply Auto Grid to a custom selector, you can easily do this with the [auto grid mixin](../mixins/auto-grid-mixin.md) via the “Custom SCSS” area of the ACSS dashboard.
 
 ## How to Apply Auto Grid With a Recipe
 
-[Auto Grid is also compatible with our recipes feature](https://automaticcss.com/docs/grid-recipes/). This allows you to apply Auto Grid to a custom class using vanilla CSS.
+[Auto Grid is also compatible with our recipes feature](../recipes/grid-recipes.md). This allows you to apply Auto Grid to a custom class using vanilla CSS.
 
 Select the element you want to turn into an auto grid, add a custom class, and then go to the custom CSS area of the style panel.
 

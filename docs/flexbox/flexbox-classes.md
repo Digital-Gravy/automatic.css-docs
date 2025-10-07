@@ -3,7 +3,7 @@ title: Flexbox Classes
 sidebar_position: 100
 ---
 
-ACSS users have a full range of utility classes for [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) properties, along with shortcut [centering classes](https://automaticcss.com/docs/centering-classes/) that also use Flexbox.
+ACSS users have a full range of utility classes for [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) properties, along with shortcut [centering classes](../layout/centering-classes.md) that also use Flexbox.
 
 If you’re not familiar with Flexbox, it’s going to be tough to use these classes effectively. I’d recommend watching this Flexbox video as a pre-requisite:
 

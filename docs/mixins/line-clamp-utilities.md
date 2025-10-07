@@ -7,7 +7,7 @@ sidebar_position: 100
 
 It’s often desirable to only show a few lines of text instead of a full paragraph. Sometimes this can be accomplished with a capable page builder via PHP, but sometimes it’s only possible with CSS (assuming you don’t want to introduce unnecessary JS).
 
-In Automatic.css, clamping lines to a specific line count is as easy as adding the a `line-clamp--` utility class or calling a @line-clamp [recipe](https://automaticcss.com/docs/recipes/).
+In Automatic.css, clamping lines to a specific line count is as easy as adding the a `line-clamp--` utility class or calling a @line-clamp [recipe](../recipes/recipes.md).
 
 ## Line Clamp Classes
 

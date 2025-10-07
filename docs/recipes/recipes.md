@@ -3,13 +3,13 @@ title: Introduction to Recipes
 sidebar_position: 100
 ---
 
-Recipes are a new feature in ACSS v3.0. They’re a very powerful new part of our [variable expansion and validation system](https://automaticcss.com/docs/variable-expansion-validation/).
+Recipes are a new feature in ACSS v3.0. They’re a very powerful new part of our [variable expansion and validation system](../workflow-enhancements/variable-expansion-validation.md).
 
 ## What’s a Recipe?
 
-A Recipe is a block of CSS that you can use wherever needed. It works similar to how a [SCSS mixin](https://automaticcss.com/docs/what-are-mixins/) works, but instead of just referencing the block of CSS, the Recipe functionality fully exposes the underlying code.
+A Recipe is a block of CSS that you can use wherever needed. It works similar to how a [SCSS mixin](../mixins/what-are-mixins.md) works, but instead of just referencing the block of CSS, the Recipe functionality fully exposes the underlying code.
 
-For example, let’s say you want to turn a big block of paragraphs into a multi-column layout. In ACSS, you could do this with our [Columns utilities](https://automaticcss.com/docs/css-columns/). The downside is that you need to use utility classes, which aren’t always appropriate.
+For example, let’s say you want to turn a big block of paragraphs into a multi-column layout. In ACSS, you could do this with our [Columns utilities](../columns/css-columns.md). The downside is that you need to use utility classes, which aren’t always appropriate.
 
 Columns functionality is not something that can be mapped to a CSS variable, so there was no other option for creating columns without writing the CSS yourself, prior to Recipes.
 
@@ -29,7 +29,7 @@ Some recipes are very simple and some are complex. It just depends on the utilit
 
 Some Recipes are simply the exposed value of a specific variable and can be used as single values in input fields. For example, you can expose all the partials for a color with the Recipe “`@[color-name]-clr`.”
 
-Let’s say you want to create a custom transparency or use a tweaked version of an existing color within the ACSS system. Prior to 3.0, you’d have to write your own HSL string manually using [color partials](https://automaticcss.com/docs/palette-setup/):
+Let’s say you want to create a custom transparency or use a tweaked version of an existing color within the ACSS system. Prior to 3.0, you’d have to write your own HSL string manually using [color partials](../colors/palette-setup.md):
 
 ```CSS
 hsl(var(--action-h) var(--action-s) var(--action-l) / 1)
@@ -49,7 +49,7 @@ Using our example above, you could turn off “Columns” classes in ACSS, which
 
 ## The future of Recipes
 
-ACSS 3.0 ships with some initial Recipes for popular non-variable-driven utilities ([columns](https://automaticcss.com/docs/css-columns/), [masonry](https://automaticcss.com/docs/masonry-layouts/), [clickable parent](https://automaticcss.com/docs/clickable-parent/), [focus parent](https://automaticcss.com/docs/focus-parent/), [flex-grid](https://automaticcss.com/docs/flex-grids-flexbox-grids/), color expansion, and more). We’ll quickly expand Recipes functionality to all utilities that will provide great value to the user.
+ACSS 3.0 ships with some initial Recipes for popular non-variable-driven utilities ([columns](../columns/css-columns.md), [masonry](../columns/masonry-layouts.md), [clickable parent](../accessibility/clickable-parent.md), [focus parent](../accessibility/focus-parent.md), [flex-grid](../flexbox/flex-grids-flexbox-grids.md), color expansion, and more). We’ll quickly expand Recipes functionality to all utilities that will provide great value to the user.
 
 In addition to pre-configured Recipes provided by the framework, we have plans to allow for custom Recipes and Recipe-sharing. You’ll be able to write and save your own Recipes and import/export those recipes between sites. You can also share Recipes or groups of Recipes with other users (in the future).
 

@@ -24,7 +24,7 @@ ACSS uses `var(--radius)` for this.
 
 The exception is with a concept called [concentric radius](https://www.30secondsofcode.org/css/s/nested-border-radius/). Unfortunately, concentric radius values can’t be mapped to a single variable since they’re heavily dependent on context and knowing the values of local elements.
 
-For this reason, we’ve introduced [@recipes](https://automaticcss.com/docs/recipes/) for creating concentric radii.
+For this reason, we’ve introduced [@recipes](../recipes/) for creating concentric radii.
 
 **Note:** If your website’s design does not use border radius anywhere, set this global value to “0.”
 

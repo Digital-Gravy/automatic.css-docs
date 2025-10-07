@@ -16,4 +16,4 @@ Alternating Grid Example
 3.  Duplicate the “row” as many times as needed.
 4.  Decide which breakpoint (and up) you want the grids to start alternating at (you typically don’t want them alternating their content on mobile devices.
 5.  Add a `.grid-alternate--` class that matches the smallest breakpoint you want them to start alternating at. This is a “min-width” media query, so it will affect your grid at the chosen breakpoint and UP (not down). For example, `.grid-alternate--l` will alternate your row content at the L breakpoint and up.
-6.  Don’t forget to use the other `.grid--` [media query classes](https://automaticcss.com/docs/grid-classes-standard/) to make your grid responsive.
+6.  Don’t forget to use the other `.grid--` [media query classes](grid-classes-standard.md) to make your grid responsive.

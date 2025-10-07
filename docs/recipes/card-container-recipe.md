@@ -3,7 +3,7 @@ title: Card Container Recipe
 sidebar_position: 20
 ---
 
-The Card Container recipe is used for adding container queries to card styling by the ACSS [Card Framework](https://automaticcss.com/docs/card-framework/).
+The Card Container recipe is used for adding container queries to card styling by the ACSS [Card Framework](../cards/card-framework.md).
 
 You can deploy it by typing `@card-container;` in the custom CSS area.
 
@@ -33,4 +33,4 @@ Native CSS now supports nesting, which you can leverage to keep all your contain
 
 The above code changes the card to a 2-3 grid, changes the aspect ratio of the card media, and changes the card heading size to the H2 size when the card is in a container that’s greater-than or equal-to 767px.
 
-If you prefer to use a Mixin for this, you can use the [Card Container Mixin](https://automaticcss.com/docs/card-container-mixin/).
+If you prefer to use a Mixin for this, you can use the [Card Container Mixin](../mixins/card-container-mixin.md).
