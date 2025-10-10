@@ -42,18 +42,11 @@ const config: Config = {
 			{
 				docs: {
 					sidebarPath: './sidebars.ts',
-					routeBasePath: '/'
+					routeBasePath: '/',
+          showLastUpdateTime: true,
+					showLastUpdateAuthor: false
 				},
-				blog: {
-					showReadingTime: true,
-					feedOptions: {
-						type: ['rss', 'atom'],
-						xslt: true
-					},
-					onInlineTags: 'warn',
-					onInlineAuthors: 'warn',
-					onUntruncatedBlogPosts: 'warn'
-				},
+				blog: false,
 				theme: {
 					customCss: './src/css/custom.css'
 				}
@@ -74,7 +67,7 @@ const config: Config = {
 	],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/docs-cover-image.png',
     navbar: {
       title: 'AutomaticCSS',
       logo: {
