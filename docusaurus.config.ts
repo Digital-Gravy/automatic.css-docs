@@ -44,7 +44,19 @@ const config: Config = {
 					sidebarPath: './sidebars.ts',
 					routeBasePath: '/',
           showLastUpdateTime: true,
-					showLastUpdateAuthor: false
+					showLastUpdateAuthor: false,
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: '4.0',
+              path: '/',
+            },
+            '3.0': {
+              label: '3.0',
+              path: '/3.0',
+              banner: 'none',
+            },
+          },
 				},
 				blog: false,
 				theme: {
@@ -77,10 +89,15 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          type: 'doc',
+          docId: 'accessibility/clickable-parent',
           position: 'left',
           label: 'Documentation',
+        },
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
+          dropdownActiveClassDisabled: true,
         },
         {to: 'https://automaticcss.com/pricing', label: 'Purchase', position: 'left'},
       ],

@@ -3,8 +3,6 @@ title: Clickable Parent
 sidebar_position: 1
 ---
 
-Test v4.0
-
 One of the most common accessibility mistakes in web design involves clickable cards and content groups.
 
 When you wrap a card or group of content with a link, you physically contain multiple pieces of content within the link. This is inadvisable for two reasons:

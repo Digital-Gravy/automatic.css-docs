@@ -3,8 +3,6 @@ title: Clickable Parent
 sidebar_position: 1
 ---
 
-Test v4.0
-
 One of the most common accessibility mistakes in web design involves clickable cards and content groups.
 
 When you wrap a card or group of content with a link, you physically contain multiple pieces of content within the link. This is inadvisable for two reasons:
@@ -22,7 +20,7 @@ Here’s a video that covers this topic in detail:
 
 Here’s a card that is wrapped in a link. Use a screen reader or [Apple Voiceover](https://en.wikipedia.org/wiki/VoiceOver) to interact with it. You’ll see that the accessibility is poor.
 
-![ACSS Cover](img/acss-cover-1.webp "acss-cover")
+![ACSS Cover](img/acss-cover-1.webp)
 
 ### Clickable Card
 
@@ -128,11 +126,11 @@ Notice that I have selected the actual clickable element, which, in this case, i
 
 It’s common to want to combine the clickable-parent technique with another technique called focus-parent.
 
-Where clickable parent extends the clickable area of a link to cover an entire parent element, [focus-parent](./focus-parent.md) alters the focus behavior of that parent element and its children.
+Where clickable parent extends the clickable area of a link to cover an entire parent element, [focus-parent](../accessibility/focus-parent.md) alters the focus behavior of that parent element and its children.
 
 In other words, the focus-parent technique also allows your entire clickable element to be focusable. This extends the same click and hover effects that clickable-parent provides to keyboard users.
 
-[Learn about focus-parent](./focus-parent.md)
+[Learn about focus-parent](../accessibility/focus-parent.md)
 
 ## Wrap-Up
 
