@@ -48,11 +48,11 @@ const config: Config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '4.0',
+              label: '4.x',
               path: '/',
             },
             '3.0': {
-              label: '3.0',
+              label: '3.x',
               path: '/3.0',
               banner: 'none',
             },

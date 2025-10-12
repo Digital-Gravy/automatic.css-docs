@@ -1,6 +1,6 @@
 ---
 title: How to Install ACSS
-sidebar_position: 20
+sidebar_position: 10
 ---
 
 The entire Automatic.css system is easily installed and configured with the Automatic.css plugin.
