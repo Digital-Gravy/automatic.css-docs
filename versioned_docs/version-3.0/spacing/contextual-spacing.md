@@ -19,7 +19,7 @@ We’ve created utilities for these gap values and they’re one of the most imp
 
 ## Container Gap
 
-The container gap is the spacing between containers in `section` elements. A container is the direct child div of a `section` element that establishes your website’s [content width](../dimension/content-width.).
+The container gap is the spacing between containers in `section` elements. A container is the direct child div of a `section` element that establishes your website’s [content width](../dimension/content-width).
 
 It’s often desirable to have multiple containers in a `section` as you work to [group associated content](https://youtu.be/ClWMNlBZMR4).
 
