@@ -8,6 +8,15 @@ const config: Config = {
   title: 'Automatic CSS Documentation',
   tagline: '#1 Framework for WordPress Page Builders',
   favicon: 'img/favicon.png',
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'algolia-site-verification',
+        content: '689BF4C41D86E4E4',
+      },
+    }
+  ]
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -104,7 +113,7 @@ const config: Config = {
     algolia: {
 			appId: '4GXPPHFVQA',
 			apiKey: '99a3039cdca258dd7c6d55c38310cd85',
-			indexName: 'automaticcss-docs',
+			indexName: 'docs_automaticcss_com_4gxpphfvqa_pages',
 			contextualSearch: false,
 			searchParameters: {},
 			externalUrlRegex: 'external\\.com|domain\\.com',
