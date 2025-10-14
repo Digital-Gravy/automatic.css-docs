@@ -7,3 +7,5 @@ Allow: /
 
 # Sitemap
 Sitemap: https://docs.automaticcss.com/sitemap.xml
+
+# Algolia-Crawler-Verif: 72FA8F98036FE82D

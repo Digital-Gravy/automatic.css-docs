@@ -65,18 +65,7 @@ const config: Config = {
 			} satisfies Preset.Options
 		]
 	],
-  	plugins: [
-		[
-			require.resolve('@easyops-cn/docusaurus-search-local'),
-			{
-				hashed: true,
-				language: ['en'],
-				highlightSearchTermsOnTargetPage: true,
-				explicitSearchResultPath: true,
-				searchBarPosition: 'right'
-			}
-		]
-	],
+  	plugins: [],
 
   themeConfig: {
     image: 'img/docs-cover-image.png',
@@ -112,6 +101,19 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    algolia: {
+			appId: '4GXPPHFVQA',
+			apiKey: '99a3039cdca258dd7c6d55c38310cd85',
+			indexName: 'automaticcss-docs',
+			contextualSearch: false,
+			searchParameters: {},
+			externalUrlRegex: 'external\\.com|domain\\.com',
+			replaceSearchResultPathname: {
+				from: '/',
+				to: '/',
+			},
+			debug: true,
+		}
   } satisfies Preset.ThemeConfig,
 };
 
