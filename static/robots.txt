@@ -8,4 +8,4 @@ Allow: /
 # Sitemap
 Sitemap: https://docs.automaticcss.com/sitemap.xml
 
-# Algolia-Crawler-Verif: 72FA8F98036FE82D
+# Algolia-Crawler-Verif: 689BF4C41D86E4E4
