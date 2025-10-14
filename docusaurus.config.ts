@@ -16,7 +16,7 @@ const config: Config = {
         content: '689BF4C41D86E4E4',
       },
     }
-  ]
+  ],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
