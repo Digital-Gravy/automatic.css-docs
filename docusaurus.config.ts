@@ -116,14 +116,14 @@ const config: Config = {
 			appId: '4GXPPHFVQA',
 			apiKey: '99a3039cdca258dd7c6d55c38310cd85',
 			indexName: 'docs_automaticcss_com_4gxpphfvqa_pages',
-			contextualSearch: false,
-			searchParameters: {},
+			contextualSearch: true,
 			externalUrlRegex: 'external\\.com|domain\\.com',
 			replaceSearchResultPathname: {
 				from: '/',
 				to: '/',
 			},
-			debug: true,
+      searchParameters: {},
+			// debug: true,
 		}
   } satisfies Preset.ThemeConfig,
 };
