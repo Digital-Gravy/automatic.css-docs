@@ -96,6 +96,10 @@ const config: Config = {
         },
         {
           type: 'docsVersionDropdown',
+          versions: {
+            current: {label: '4.x'},
+            '3.0': {label: '3.x'},
+          },
           position: 'right',
           dropdownActiveClassDisabled: true,
         },
@@ -117,13 +121,6 @@ const config: Config = {
 			apiKey: '99a3039cdca258dd7c6d55c38310cd85',
 			indexName: 'docs_automaticcss_com_4gxpphfvqa_pages',
 			contextualSearch: true,
-			externalUrlRegex: 'external\\.com|domain\\.com',
-			replaceSearchResultPathname: {
-				from: '/',
-				to: '/',
-			},
-      searchParameters: {},
-			// debug: true,
 		}
   } satisfies Preset.ThemeConfig,
 };
