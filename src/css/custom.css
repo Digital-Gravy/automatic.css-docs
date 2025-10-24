@@ -73,3 +73,20 @@ body {
 .footer--dark {
   background-color: oklch(0.2084 0.0025 247.95);
 }
+
+
+/* Responsive fixes for dropdown */
+@media (max-width: 996px) {
+  .navbarSearchContainer_Bca1 {
+    position: relative;
+    padding-inline-start: var(--ifm-navbar-padding-horizontal);
+  }
+
+  .navbar__item {
+      display: inline-flex;
+      &:not(.dropdown.dropdown--hoverable.dropdown--right) {
+        display: none;
+      }
+    }
+
+}
