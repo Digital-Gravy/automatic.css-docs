@@ -78,8 +78,8 @@ body {
 /* Responsive fixes for dropdown */
 @media (max-width: 996px) {
   .navbarSearchContainer_Bca1 {
-    position: relative;
-    padding-inline-start: var(--ifm-navbar-padding-horizontal);
+    position: relative !important;
+    padding-left: var(--ifm-navbar-padding-horizontal) !important;
   }
 
   .navbar__item {
