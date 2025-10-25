@@ -7,7 +7,7 @@ Margin classes allow you to add space to the outside of an element to create spa
 
 Margins use the Automatic spacing system, so all margin sizes are automatically responsive, follow a mathematical scale, and match exactly to other types of spacing such as padding and gaps.
 
-All margin classes follow the convention: `.margin--[direction]--[size]` with size being standard t-shirt sizes (xs – xxl). Available directions are:
+All margin classes follow the convention: `.margin-[direction]--[size]` with size being standard t-shirt sizes (xs – xxl). Available directions are:
 
 - **Top:** Applies margin to the top of an element.
 - **Right:** Applies margin to the right of an element.
