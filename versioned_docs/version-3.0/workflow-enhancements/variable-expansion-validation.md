@@ -15,7 +15,7 @@ Now, you can stop typing `var()` and `calc()` expressions in the builder.
 
 ## Using variable expansion in input fields
 
-In an input field, you can expand any variable by typing the stem (e.g. “–action”) and hitting the Enter key. ACSS will automatically turn “`--action`” into “`var(--action)`.”
+In an input field, you can expand any variable by typing the stem (e.g. “–primary”) and hitting the Enter key. ACSS will automatically turn “`--primary`” into “`var(--primary)`.”
 
 For calculations, you can simply type the calculation. For example, ACSS will turn “`50vh + 100px`” into “`calc(50vh + 100px)`.”
 

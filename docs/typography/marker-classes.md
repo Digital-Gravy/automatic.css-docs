@@ -11,7 +11,7 @@ Here’s a normal list:
 - List item 2
 - Listen item 3
 
-Here’s a list with `.marker--action` applied, which changes the bullets to the website’s action color (note that action color is now deprecated).
+Here’s a list with `.marker--primary` applied, which changes the bullets to the website’s primary color (note that action color is now deprecated).
 
 - List item 1
 - List item 2

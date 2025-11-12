@@ -32,12 +32,12 @@ Some Recipes are simply the exposed value of a specific variable and can be used
 Let’s say you want to create a custom transparency or use a tweaked version of an existing color within the ACSS system. Prior to 3.0, you’d have to write your own HSL string manually using [color partials](../colors/palette-setup.md):
 
 ```CSS
-hsl(var(--action-h) var(--action-s) var(--action-l) / 1)
+hsl(var(--primary-h) var(--primary-s) var(--primary-l) / 1)
 ```
 
-But, with ACSS Recipes, all you have to type is “`@action-clr.`“
+But, with ACSS Recipes, all you have to type is “`@primary-clr.`“
 
-Once you type `@action-clr` and hit Enter, the Recipe instantly expands into the full HSL string. Now you can simply change the transparency value, any of the H, S, or L values, or even calc part of the HSL.
+Once you type `@primary-clr` and hit Enter, the Recipe instantly expands into the full HSL string. Now you can simply change the transparency value, any of the H, S, or L values, or even calc part of the HSL.
 
 Since the HSL uses variable partials, whatever part of the string you don’t edit remains fully hooked into the ACSS system for maximum maintainability.
 

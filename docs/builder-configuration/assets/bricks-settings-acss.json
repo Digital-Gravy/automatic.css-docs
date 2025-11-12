@@ -1,0 +1,30 @@
+{
+  "_last_updated": "2025-11-09T11:36:00+01:00",
+  "postTypes": ["page"],
+  "elementAttsAsNeeded": true,
+  "saveFormSubmissions": true,
+  "wp_auth_url_behavior": "default",
+  "remoteTemplates": [
+    {
+      "name": "Frames",
+      "url": "https://bricks.getframes.io/",
+      "password": ""
+    }
+  ],
+  "builderAutosaveDisabled": true,
+  "builderMode": "dark",
+  "builderLocale": "site-default",
+  "builderToolbarLogoLink": "current",
+  "builderToolbarLogoLinkNewTab": true,
+  "builderResponsiveControlIndicator": "any",
+  "disableElementSpacing": true,
+  "structureDuplicateElement": true,
+  "structureDeleteElement": true,
+  "structureCollapsed": true,
+  "structureAutoSync": true,
+  "importImageOnPaste": true,
+  "enableDynamicDataPreview": true,
+  "builderGlobalClassesImport": "never",
+  "disableClassChaining": true,
+  "executeCodeEnabled": true
+}

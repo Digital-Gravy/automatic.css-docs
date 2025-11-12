@@ -16,7 +16,7 @@ If you want to set the background color to one of the [main ACSS colors](../colo
 Example:
 
 ```HTML
-<div class="bg--action"></div>
+<div class="bg--primary"></div>
 ```
 
 Any active color in your project will work.
@@ -30,7 +30,7 @@ If you want to set the background color to a shade of one of your colors, use:
 Example:
 
 ```HTML
-<div class="bg--action-light"></div>
+<div class="bg--primary-light"></div>
 ```
 
 Shade values are ultra-light, light, medium, dark, ultra-dark, and hover.
@@ -47,11 +47,11 @@ Every main color offers transparent versions. Additionally, you can access trans
 Example:
 
 ```HTML
-<div class="bg--action-trans-20"></div>
+<div class="bg--primary-trans-20"></div>
 ```
 
 ```HTML
-<div class="bg--action-ultra-dark-trans-20"></div>
+<div class="bg--primary-ultra-dark-trans-20"></div>
 ```
 
 Transparency values range from 10 to 90 in increments of 10.
