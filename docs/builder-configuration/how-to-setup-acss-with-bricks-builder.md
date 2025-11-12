@@ -5,19 +5,19 @@ sidebar_position: 10
 
 If you’re using Bricks Builder and Automatic.css, please follow the setup steps below.
 
-## Option #1: Automatic Setup
+# Option #1: Automatic Setup
 
 We provide two settings files to establish the default settings for your Bricks project automatically. One is a Bricks Settings file and the other is a Bricks Theme file.
 
 **Warning:** These files should be used to start a new project. Uploading them to an existing project will overwrite your settings and defaults.
 
-### Step #1: Import Bricks Settings File
+## Step #1: Import Bricks Settings File
 
 Download this [Bricks Settings file (JSON)](/assets/bricks-settings-acss-formatted.json) and upload it to your Bricks Settings Panel:
 
 ![](img/bricks-import-settings.webp)
 
-### Step #2: Import Bricks Theme File
+## Step #2: Import Bricks Theme File
 
 Bricks uses Global [Theme Styles](https://academy.bricksbuilder.io/article/theme-styles/) to control a lot of your website’s default styling. Most of this should be left undefined, but a few settings need to be set up.
 
@@ -31,11 +31,11 @@ Upload Bricks Theme Style JSON File
 
 Once you’ve uploaded both files, you’re good to go. You can now proceed with customizing any empty settings based on your preferences (such as setting your font family in Typography > Body/Headings).
 
-## Option #2: Manual Setup
+# Option #2: Manual Setup
 
 If you don’t want to use our settings files, you can configure the settings manually. Here are the steps:
 
-### Step #1: Configure Bricks Settings
+## Step #1: Configure Bricks Settings
 
 Navigate to Bricks > Settings in the WordPress Admin:
 
@@ -43,16 +43,14 @@ Bricks Builder Settings
 
 Configure as follows:
 
-#### General
+### General
 
-| Post Types |                   |
+| **[Post Types](https://academy.bricksbuilder.io/article/editing-with-bricks)** |  |
 | ---------- | ----------------- |
 | Posts      | Off (recommended) |
 | Pages      | On                |
 
-Select post types to [edit with Bricks](https://academy.bricksbuilder.io/article/editing-with-bricks).
-
-| **SVG Uploads** |                 |
+| **[SVG Uploads](https://academy.bricksbuilder.io/article/svg-uploads)** |                 |
 | --------------- | --------------- |
 | Administrator   | On              |
 | Editor          | User Preference |
@@ -60,20 +58,14 @@ Select post types to [edit with Bricks](https://academy.bricksbuilder.io/article
 | Contributor     | User Preference |
 | Subscriber      | User Preference |
 
-[https://academy.bricksbuilder.io/article/svg-uploads](https://academy.bricksbuilder.io/article/svg-uploads)
-
-| **Miscellaneous**                       |                 |
+| **Miscellaneous** ||
 | --------------------------------------- | --------------- |
-| Disable Bricks Open Graph Meta Tags    | On              |
+| Disable Bricks Open Graph Meta Tags     | On              |
 | Disable Bricks SEO Meta Tags            | On              |
 | Add element ID as needed                | On              |
 | Smooth Scroll (CSS)                     | Off             |
 | Query Bricks data in search results     | On ([Read more](https://forum.bricksbuilder.io/t/can-someone-please-explain-query-bricks-data-in-search-results-what-does-it-do/4404)) |
 | Save form submissions in database       | User Preference |
-
-| **Query Filters**                    |     |
-| ------------------------------------ | --- |
-| Enable query sort/filter/live search | On  |
 
 | **Custom Breakpoints**                                        |                 |
 | ------------------------------------------------------------- | --------------- |
@@ -81,7 +73,7 @@ Select post types to [edit with Bricks](https://academy.bricksbuilder.io/article
 
 [Custom breakpoints](https://academy.bricksbuilder.io/article/responsive-editing/#custom-breakpoints) are best configured before you start working on your site.
 
-#### Builder Access
+### Builder Access
 
 | **Builder access** |                    |
 | ------------------ | ------------------ |
@@ -93,7 +85,7 @@ Select post types to [edit with Bricks](https://academy.bricksbuilder.io/article
 
 Set [builder access](https://academy.bricksbuilder.io/article/builder-access) per user role. To define access for a specific user edit the user profile directly.
 
-#### Templates
+### Templates
 
 | **Remote Templates** |                                                             |
 | -------------------- | ----------------------------------------------------------- |
@@ -103,7 +95,7 @@ Set [builder access](https://academy.bricksbuilder.io/article/builder-access) 
 
 only if you own Frames
 
-#### Builder
+### Builder
 
 | **Canvas**              |     |
 | ----------------------- | --- |
@@ -123,7 +115,7 @@ only if you own Frames
 | ----------------------- | ----- |
 | Import Manager          | Never |
 
-#### Performance
+### Performance
 
 | **Performance**                                                              |                                                 |
 | ---------------------------------------------------------------------------- | ----------------------------------------------- |
@@ -132,7 +124,7 @@ only if you own Frames
 
 Once you’ve configured the settings, it’s time to setup your Global Theme Styles.
 
-### Step #2: Global Theme Styles
+## Step #2: Global Theme Styles
 
 Open Bricks Builder by editing any page. Once in the editor, click the settings wheel toward the top left:
 
@@ -159,6 +151,7 @@ Here are the rest of the settings (panels & settings that aren’t mentioned req
 - **Element – Container (Required)**: Set width to `var(--content-width)`
 - **Element – Code (Recommended)**: Set theme to Tomorrow Night
 - **Element – Heading (Recommended to ease workflow)**: Set default Tag to H2
+- **Element – Typography (Recommended to ease workflow)**: Set default Tag to p
 - **Element – Image**: Set caption to no caption
 
 Using these settings means headings will be h2. When the defaults are not what you need, change the individual element after adding it.
