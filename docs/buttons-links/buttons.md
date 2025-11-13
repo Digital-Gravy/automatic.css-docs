@@ -109,20 +109,20 @@ For example, let’s say you wanted to override the padding, font weight, backgr
     --btn-padding-block: 2em;
     --btn-padding-inline: 4em;
     --btn-font-weight: 900;
-    --btn-background: var(--action-dark);
-    --btn-background-hover: var(--action-ultra-dark);
+    --btn-background: var(--primary-dark);
+    --btn-background-hover: var(--primary-ultra-dark);
 }
 ```
 
 Want to make this change across an entire page? You can add a body class (a class on the body element) to the page to affect all action buttons:
 
 ```CSS
-body.custom .btn--action {
+body.custom .btn--primary {
     --btn-padding-block: 2em;
     --btn-padding-inline: 4em;
     --btn-font-weight: 900;
-    --btn-background: var(--action-dark);
-    --btn-background-hover: var(--action-ultra-dark);
+    --btn-background: var(--primary-dark);
+    --btn-background-hover: var(--primary-ultra-dark);
 }
 ```
 

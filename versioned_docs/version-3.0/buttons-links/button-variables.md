@@ -54,7 +54,7 @@ Let’s say we want to create a button that shares all the same general styling 
 
 ```CSS
 .gradient-button {
-    background: linear-gradient(var(--action-medium), var(--action));
+    background: linear-gradient(var(--primary-medium), var(--primary));
     padding: var(--btn-padding-block) var(--btn-padding-inline);
     font-size: var(--btn-font-size);
     line-height: var(--btn-line-height);
