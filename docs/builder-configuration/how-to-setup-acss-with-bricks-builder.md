@@ -13,7 +13,7 @@ We provide two settings files to establish the default settings for your Bricks 
 
 ## Step #1: Import Bricks Settings File
 
-Download this [Bricks Settings file (JSON)](/assets/bricks-settings-acss-formatted.json) and upload it to your Bricks Settings Panel:
+Download this [Bricks Settings file (JSON)](assets/bricks-settings-acss-formatted.json) and upload it to your Bricks Settings Panel:
 
 ![](img/bricks-import-settings.webp)
 
@@ -21,7 +21,7 @@ Download this [Bricks Settings file (JSON)](/assets/bricks-settings-acss-formatt
 
 Bricks uses Global [Theme Styles](https://academy.bricksbuilder.io/article/theme-styles/) to control a lot of your website’s default styling. Most of this should be left undefined, but a few settings need to be set up.
 
-Download this [Bricks Theme file (.json)](/assets/bricks-theme-style-acss.json) and upload it to the Bricks Global [Theme Styles](https://academy.bricksbuilder.io/article/theme-styles/) area.
+Download this [Bricks Theme file (.json)](assets/bricks-theme-style-acss.json) and upload it to the Bricks Global [Theme Styles](https://academy.bricksbuilder.io/article/theme-styles/) area.
 
 Open Bricks Builder by editing any page or template. Once in the editor, click the settings wheel toward the top left: Bricks Global Styles
 
