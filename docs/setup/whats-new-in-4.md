@@ -18,6 +18,12 @@ Users should be most aware of the following changes from 3.x to 4.x:
 - **Removed All Previously Deprecated Features:**  
   ACSS 4.x is unprecedentedly lighter and more efficient since we no longer have to support any deprecated features.
 
+- **Removed Most Utility Class Modules:**  
+  ACSS is now officially a variable-first, BEM-first (or any kind of custom classes) framework. This dramatically reduces the framework size, makes workflows simpler and more consistent (less mixing utility classes and BEM), and makes the framework easier to learn and use. Some critical utility classes have been replaced with Recipes which can be expanded inside of any BEM class.
+
+- **Removed Breakpoints:**  
+  Since preset breakpoints are an Era 1/2/3 concept and don't make sense for Era 4, we've removed them. ACSS is now officially a breakpoint-free framework! None of the remaining utility classes or features require breakpoint presets. You can still use media queries and container queries in your development process, but they're no longer needed in the ACSS framework as fixed presets.
+
 - **Implemented CSS Layers:**  
   Users now have a lot more control over framework specificity.
 
@@ -25,31 +31,22 @@ Users should be most aware of the following changes from 3.x to 4.x:
   The new color system is far more accurate in terms of human perceptibility, improving color rendering and accessibility.
 
 - **New Dark Mode Approach:**  
-  Coming Soon...
+  ACSS now makes full use of `color-scheme` and `light-dark()` for a much easier, more efficient, more flexible, and more accurate approach to light and dark mode. This includes the removal of "Alt" colors and a massive reduction in CSS output.
 
 - **Removed Transparency Tokens:**  
-  Loading an entire library of predefined transparency tokens is no longer necessary with the introduction of `color-mix()` and Relative Color Syntax workflows. 
+  Loading an entire library of predefined transparency tokens is no longer necessary with the introduction of `color-mix()` and [Relative Color Syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Colors/Using_relative_colors) workflows.
 
-- **Migrate to 2-Character T-Shirt Sizes:**  
-  Extensions are unified so they are always at least two characters long. For example, "--space-s" is now "--space-sm." Additionally, we made "XXL" more clear as "2xl". This is true across every utility that uses t-shirt sizes.
+- **"XXL" to "2XL"**  
+  We've made a change from XXL t-shirt size to 2XL for better clarity and to make it easier to add additional sizes like 2XS or 3XL, etc. **All other t-shirt sizes remain unchanged (based on a vote from the user base).**
 
 - **Refactored Form Styling:**  
   Forms are completely refactored to perfectly match the options and structures available for each 3rd party form system we support. This results in more styling accuracy across third party form tools.
 
-- **Refactored Height Classes:**  
-  Height classes are now broken out into height, min-height, and max-height.
+- **Refactored Header Height:**  
+Header Height, Scroll Offsets, and Content Offset are now breakpoint-less and based on fluid heading height.
 
 - **Refactored Width Classes:**  
   We no longer use t-shirt sizes for width classes. Width classes now use literal values in 10-point increments from 10 to 90 (e.g. `.width--60`).
 
 - **Separated Custom Surfaces & Overlays:**  
   Surfaces and overlays are no longer combined. We separated them, which expands your custom options from five to ten and makes custom overlays and textures much clearer, cleaner, and easier to configure.
-
-### Removed Class Modules
-
-- **Link Classes:** Can be changed with simple variable re-declaration.
-- **Focus Classes:** Can be changed with simple variable re-declaration.
-- **Overlay Classes:** Can be changed with simple variable re-declaration.
-- **Marker Classes:** Can be changed with simple variable re-declaration.
-- **Breakout Classes:** Use [Content Grid](../grids/content-grid.md) instead (best practice approach).
-- **Column Rule Color Classes:** Can be changed with simple variable re-declaration.
