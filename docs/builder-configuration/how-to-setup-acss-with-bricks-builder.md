@@ -13,7 +13,7 @@ We provide two settings files to establish the default settings for your Bricks 
 
 ## Step #1: Import Bricks Settings File
 
-Download this [Bricks Settings file (JSON)](assets/bricks-settings-acss.json) and upload it to your Bricks Settings Panel:
+Download this <a href="assets/bricks-settings-acss.json" download="assets/bricks-settings-acss.json">Bricks Settings file (JSON)</a> and upload it to your Bricks Settings Panel:
 
 ![](img/bricks-import-settings.webp)
 
