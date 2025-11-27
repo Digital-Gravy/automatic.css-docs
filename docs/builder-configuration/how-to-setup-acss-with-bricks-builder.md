@@ -13,7 +13,7 @@ We provide two settings files to establish the default settings for your Bricks 
 
 ## Step #1: Import Bricks Settings File
 
-Download this [Bricks Settings file (JSON)](assets/bricks-settings-acss-formatted.json) and upload it to your Bricks Settings Panel:
+Download this [Bricks Settings file (JSON)](assets/bricks-settings-acss.json) and upload it to your Bricks Settings Panel:
 
 ![](img/bricks-import-settings.webp)
 
@@ -45,27 +45,27 @@ Configure as follows:
 
 ### General
 
-| **[Post Types](https://academy.bricksbuilder.io/article/editing-with-bricks)** |  |
-| ---------- | ----------------- |
-| Posts      | Off (recommended) |
-| Pages      | On                |
+| **[Post Types](https://academy.bricksbuilder.io/article/editing-with-bricks)** |                   |
+| ------------------------------------------------------------------------------ | ----------------- |
+| Posts                                                                          | Off (recommended) |
+| Pages                                                                          | On                |
 
 | **[SVG Uploads](https://academy.bricksbuilder.io/article/svg-uploads)** |                 |
-| --------------- | --------------- |
-| Administrator   | On              |
-| Editor          | User Preference |
-| Author          | User Preference |
-| Contributor     | User Preference |
-| Subscriber      | User Preference |
+| ----------------------------------------------------------------------- | --------------- |
+| Administrator                                                           | On              |
+| Editor                                                                  | User Preference |
+| Author                                                                  | User Preference |
+| Contributor                                                             | User Preference |
+| Subscriber                                                              | User Preference |
 
-| **Miscellaneous** ||
-| --------------------------------------- | --------------- |
-| Disable Bricks Open Graph Meta Tags     | On              |
-| Disable Bricks SEO Meta Tags            | On              |
-| Add element ID as needed                | On              |
-| Smooth Scroll (CSS)                     | Off             |
-| Query Bricks data in search results     | On ([Read more](https://forum.bricksbuilder.io/t/can-someone-please-explain-query-bricks-data-in-search-results-what-does-it-do/4404)) |
-| Save form submissions in database       | User Preference |
+| **Miscellaneous**                   |                                                                                                                                        |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Disable Bricks Open Graph Meta Tags | On                                                                                                                                     |
+| Disable Bricks SEO Meta Tags        | On                                                                                                                                     |
+| Add element ID as needed            | On                                                                                                                                     |
+| Smooth Scroll (CSS)                 | Off                                                                                                                                    |
+| Query Bricks data in search results | On ([Read more](https://forum.bricksbuilder.io/t/can-someone-please-explain-query-bricks-data-in-search-results-what-does-it-do/4404)) |
+| Save form submissions in database   | User Preference                                                                                                                        |
 
 | **Custom Breakpoints**                                        |                 |
 | ------------------------------------------------------------- | --------------- |
@@ -75,13 +75,13 @@ Configure as follows:
 
 ### Builder Access
 
-| **Builder access** |                    |
-| ------------------ | ------------------ |
-| Administrator      | Full access        |
-| Editor             | Edit Content       |
-| Author             | User Preference    |
-| Contributor        | User Preference    |
-| Subscriber         | User Preference    |
+| **Builder access** |                 |
+| ------------------ | --------------- |
+| Administrator      | Full access     |
+| Editor             | Edit Content    |
+| Author             | User Preference |
+| Contributor        | User Preference |
+| Subscriber         | User Preference |
 
 Set [builder access](https://academy.bricksbuilder.io/article/builder-access) per user role. To define access for a specific user edit the user profile directly.
 
@@ -117,10 +117,10 @@ only if you own Frames
 
 ### Performance
 
-| **Performance**                                                              |                                                 |
-| ---------------------------------------------------------------------------- | ----------------------------------------------- |
-| Disable class chaining                                                       | **On (REQUIRED)**                               |
-| [CSS loading method](https://academy.bricksbuilder.io/article/asset-loading) | Inline Styles                                   |
+| **Performance**                                                              |                   |
+| ---------------------------------------------------------------------------- | ----------------- |
+| Disable class chaining                                                       | **On (REQUIRED)** |
+| [CSS loading method](https://academy.bricksbuilder.io/article/asset-loading) | Inline Styles     |
 
 Once you’ve configured the settings, it’s time to setup your Global Theme Styles.
 
@@ -157,6 +157,5 @@ Here are the rest of the settings (panels & settings that aren’t mentioned req
 Using these settings means headings will be h2. When the defaults are not what you need, change the individual element after adding it.
 
 **Caution:** Setting other global styles in Bricks can cause conflicts with ACSS. Make sure you know exactly what you’re doing if you want to set any other global style defaults in Bricks.
-
 
 That’s it! Bricks is now setup and ready to work properly with ACSS!
