@@ -21,7 +21,7 @@ Download this <a href="/assets/bricks-settings-acss.json" download="/assets/bric
 
 Bricks uses Global [Theme Styles](https://academy.bricksbuilder.io/article/theme-styles/) to control a lot of your website’s default styling. Most of this should be left undefined, but a few settings need to be set up.
 
-Download this [Bricks Theme file (.json)](assets/bricks-theme-style-acss.json) and upload it to the Bricks Global [Theme Styles](https://academy.bricksbuilder.io/article/theme-styles/) area.
+Download this <a href="/assets/bricks-theme-style-acss.json" download="/assets/bricks-theme-style-acss.json">Bricks Theme file (.json)</a> and upload it to the Bricks Global [Theme Styles](https://academy.bricksbuilder.io/article/theme-styles/) area.
 
 Open Bricks Builder by editing any page or template. Once in the editor, click the settings wheel toward the top left: Bricks Global Styles
 

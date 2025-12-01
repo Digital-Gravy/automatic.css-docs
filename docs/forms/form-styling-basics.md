@@ -3,59 +3,39 @@ title: Form Styling Basics
 sidebar_position: 100
 ---
 
-ACSS provides automatic form styling for select form systems. To get started, make sure Load Forms is turned on in the Forms screen of the ACSS dashboard:
+ACSS provides comprehensive form styling for WS Form. To get started, make sure Load Forms is turned on in the Forms screen of the ACSS dashboard:
 
 ![](img/load-forms.webp)
 
 Load Forms Setting
 
-Once activated, you’ll see three tabs and multiple settings panels.
-
-Form Styling is divided into three areas:
-
-- Default – All global form styles that are shared between both color styles. This covers things like spacing, font size, gaps, and more.
-- Light Styles – All styles associated with a “light” form.
-- Dark Styles – All styles associated with a “dark” form.
-
-If you don’t care to use either the dark or light style set, you can simply ignore that particular tab.
+Once activated, all form styling is automatically applied using a unified configuration system.
 
 ## The Premise of Form Styling
 
-Most projects don’t have multiple different form styles. As with most things, consistency is the goal. Therefore, all the forms on your site should share certain structural and spacing values. In ACSS, this is done in the Default tab.
+Most projects maintain consistent form styles throughout their site. In ACSS, all forms share the same structural and spacing values defined in a single configuration.
 
-Beyond that, you want to be able to customize the colors and look and feel of your forms. The only time form styles need to differ a lot is when you need a dark form versus a light form. Thus, we have a style set for each.
+Beyond spacing, you have complete control over form colors and appearance. Forms automatically adapt to your site's color scheme—when you switch between light and dark modes, forms intelligently adjust their colors without requiring separate style definitions. This is achieved through CSS's native `light-dark()` function, which respects your site's `color-scheme` setting.
 
-Keep in mind that this is not related to [color scheme](../colors/color-scheme-dark-mode.md). The light and dark form styles can be deployed on your website regardless of color scheme settings.
+## Automatic Color Adaptation
 
-## Styling Forms (Form Utility Classes)
+Forms automatically adapt based on your site's configured `color-scheme` setting. When you switch between light and dark modes, forms intelligently adjust their colors through CSS's native `light-dark()` function, without requiring separate style definitions or manual configuration.
 
-**ACSS will not style your form unless one of the `.form--` utility classes is present.** Your options are `.form--light` and `.form--dark`.
+## Styling Forms (Optional Utility Classes)
 
-Once you’ve placed the utility class directly on the form element in the builder, you’ll see the styles change to ACSS’ defaults. You can then configure your styles very easily using live preview.
+While forms are styled automatically, ACSS provides optional utility classes for more explicit control if needed. Your options are `.form--light` and `.form--dark`.
+
+These classes can be placed on the form element (or a parent container) in the builder to explicitly set a light or dark appearance, overriding the automatic color-scheme detection. In most cases, however, relying on automatic adaptation is recommended for a seamless experience.
+
+Simply apply `.form--light` or `.form--dark` directly to your form element, and the styles will adapt accordingly. You can then fine-tune your styles further using live preview in the ACSS dashboard.
 
 ## Supported Forms
 
-The ACSS Light and dark form classes are currently compatible with the following form plugins
-
-- WS Form
-- Fluent Forms
-- Bricks
-
-Additional form plugins will also be supported in the near future.
+ACSS form styling is currently compatible with **WS Form**. 
 
 ## Important Note about WS Form
 
-With version 1.10.x, WS Form introduced the new Styler system, offering greater control over WordPress form design.
-However, this update has impacted the functionality of our form utility classes. Therefore, we currently recommend disabling the Styler until we have fully refactored our form framework.
+**The Styler must be enabled** for ACSS form styling to function properly, as our framework relies on WS Form's CSS variables exposed by the Styler.
 
-When the Styler is disabled, our form utility classes work without any issues.
 
-### Disabling the Styler
-
-To disable the Styler and revert to the legacy Customize method, add the following PHP code to your theme’s `functions.php` file (preferably in a child theme) or as a code snippet:
-
-```PHP
-add_filter('wsf_styler_enabled', function() { return false; });
-```
-
-After making this change, navigate to **WS Form > Settings** and click **Save** to regenerate the legacy CSS files.
+If you encounter styling issues, ensure you've saved your settings by clicking **Save** in the WS Form settings page to regenerate any necessary system files.
