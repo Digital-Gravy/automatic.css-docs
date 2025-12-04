@@ -90,3 +90,31 @@ body {
     }
 
 }
+
+/* Sidebar badge */
+.menu__link-badge {
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.4rem 0.1rem;
+  font-size: 0.65rem;
+  line-height: 1.2;
+  border-radius: 100vw;
+  background: var(--ifm-color-primary);
+  color: var(--ifm-background-surface-color);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  min-width: fit-content;
+}
+
+/* Subtle variant for badges (generic) */
+.menu__link-badge--subtle {
+  background: transparent;
+  color: var(--ifm-color-emphasis-600);
+  border: 1px solid var(--ifm-color-emphasis-500);
+  font-weight: 600;
+}
+
+[data-theme='dark'] .menu__link-badge--subtle {
+  color: var(--ifm-color-emphasis-400);
+  border-color: var(--ifm-color-emphasis-200);
+}

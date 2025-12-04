@@ -1,6 +1,8 @@
 ---
 title: Form Styling Basics
-sidebar_position: 101
+sidebar_position: 100
+sidebar_custom_props:
+  badge: "New"
 ---
 
 ACSS provides comprehensive form styling for WS Form. To get started, make sure Load Forms is turned on in the Forms screen of the ACSS dashboard:
