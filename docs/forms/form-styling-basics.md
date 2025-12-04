@@ -1,6 +1,6 @@
 ---
 title: Form Styling Basics
-sidebar_position: 100
+sidebar_position: 101
 ---
 
 ACSS provides comprehensive form styling for WS Form. To get started, make sure Load Forms is turned on in the Forms screen of the ACSS dashboard:
@@ -31,11 +31,10 @@ Simply apply `.form--light` or `.form--dark` directly to your form element, and 
 
 ## Supported Forms
 
-ACSS form styling is currently compatible with **WS Form**. 
+ACSS form styling is currently compatible with **WS Form**.
 
 ## Important Note about WS Form
 
 **The Styler must be enabled** for ACSS form styling to function properly, as our framework relies on WS Form's CSS variables exposed by the Styler.
-
 
 If you encounter styling issues, ensure you've saved your settings by clicking **Save** in the WS Form settings page to regenerate any necessary system files.
