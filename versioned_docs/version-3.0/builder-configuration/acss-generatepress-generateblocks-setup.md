@@ -73,4 +73,4 @@ The **Gutenberg “CSS Classes” input** is where you should place utility clas
 
 The **Generate selector system** is where you should add your custom [BEM](https://youtu.be/tha_ynmZRaA?si=No2WYC7ZLtWC4n56) classes. You can then use ACSS tokens in the styling inputs attached to these classes. Right clicking a styling input will open ACSS’s token context menu for quickly adding tokens to inputs.
 
-You can now build completely custom pages from scratch in Generate, powered by ACSS. Please review the [Gutenberg setup instructions](../builder-configuration/acss-gutenberg-setup.md) for additional insights, since Generate is a Gutenberg-based builder.
+You can now build completely custom pages from scratch in Generate, powered by ACSS. Please review the [Gutenberg setup instructions](./acss-gutenberg-setup.md) for additional insights, since Generate is a Gutenberg-based builder.
