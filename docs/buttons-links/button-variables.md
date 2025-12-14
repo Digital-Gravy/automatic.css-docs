@@ -35,19 +35,6 @@ The following button variables can be changed at any time with custom styling:
 - `--btn-outline-text-color-hover`
 - `--focus-color`
 
-## Deprecated Button Variables
-
-The following variables are still loaded in the framework but are considered officially deprecated. You should stop using them on future projects and start using the new variables above.
-
-- `--btn-border-size`
-- `--outline-btn-border-size`
-- `--btn-pad-x`
-- `--btn-pad-y`
-- `--btn-text-style`
-- `--btn-text-size`
-- `--btn-weight`
-- `--btn-width`
-
 ## Example custom button
 
 Let’s say we want to create a button that shares all the same general styling as our default buttons but has a gradient background instead of a solid background:
