@@ -25,42 +25,44 @@ The above code will make `.target-button-element` exactly match your website’s
 
 You can replace “primary” in the above example with any valid ACSS button style:
 
-- primary
-- primary-light
-- primary-dark
-- primary.btn–outline
-- primary-light.btn–outline
-- primary-dark.btn–outline
-- secondary
-- secondary-light
-- secondary-dark
-- secondary.btn–outline
-- secondary-light.btn–outline
-- secondary-dark.btn–outline
-- tertiary
-- tertiary-light
-- tertiary-dark
-- tertiary.btn–outline
-- tertiary-light.btn–outline
-- tertiary-dark.btn–outline
-- accent
-- accent-light
-- accent-dark
-- accent.btn–outline
-- accent-light.btn–outline
-- accent-dark.btn–outline
-- base
-- base-light
-- base-dark
-- base.btn–outline
-- base-light.btn–outline
-- base-dark.btn–outline
-- neutral
-- neutral-light
-- neutral-dark
-- neutral.btn–outline
-- neutral-light.btn–outline
-- neutral-dark.btn–outline
+```
+primary
+primary-light
+primary-dark
+primary.btn–-outline
+primary-light.btn–-outline
+primary-dark.btn–-outline
+secondary
+secondary-light
+secondary-dark
+secondary.btn–-outline
+secondary-light.btn–-outline
+secondary-dark.btn–-outline
+tertiary
+tertiary-light
+tertiary-dark
+tertiary.btn–-outline
+tertiary-light.btn–-outline
+tertiary-dark.btn–-outline
+accent
+accent-light
+accent-dark
+accent.btn–-outline
+accent-light.btn–-outline
+accent-dark.btn–-outline
+base
+base-light
+base-dark
+base.btn–-outline
+base-light.btn–-outline
+base-dark.btn–-outline
+neutral
+neutral-light
+neutral-dark
+neutral.btn–-outline
+neutral-light.btn–-outline
+neutral-dark.btn–-outline
+```
 
 Note: To use the `.btn--outline` versions, you’ll need to wrap the entire style name in quotes, like this:
 
