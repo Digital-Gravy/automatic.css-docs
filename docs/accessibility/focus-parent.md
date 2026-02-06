@@ -3,31 +3,28 @@ title: Focus Parent
 sidebar_position: 5
 ---
 
-**Note:** Functions and mixins are designed for use in the Custom SCSS area of the Automatic.css dashboard. They will not work in the builder inputs or builder CSS.
-
 Where [clickable parent](clickable-parent.md) extends the clickable area of a link to cover an entire content group, focus parent alters the focus behavior of that content group. In other words, the focus-parent technique also allows your entire clickable element to be focusable.
-
-## The Focus Parent Utility class
 
 If you want the entire element to be focusable, you need to alter the focus behavior of the parent and child elements. You must remove focus from the clickable item and then apply focus to the parent element. This is done using `:focus` and `:focus-within` styling.
 
-Again, you don’t need to know the technical details. You only need to know how to use the provided utilities.
+You don't need to know the technical details. ACSS provides utilities for easily doing this:
 
-`.focus-parent--shadow` and `.focus-parent--outline` are your options in this situation. Both will do what you want but with slightly different behavior.
+1.  `?focus-parent` recipe (recommended)
+2.  `@include focus-parent` mixin (for SCSS users)
 
-`.focus-parent--shadow` applies focus to the parent using a box shadow style and `.focus-parent--outline` will apply focus to the parent using an offset outline style. Both classes will remove focus from the link within the content group.
+## The Focus Parent Recipe (Recommended)
 
-There’s no right or wrong here. It’s user preference.
+The easiest way to implement focus parent is with the `?focus-parent` recipe. Simply apply the recipe to the parent element (the same element you set to position relative for clickable parent).
 
-All you need to do is apply the class to the parent element (the same element you set to position relative).
-
-![Applying .focus-parent--shadow to the parent element](img/CleanShot-2023-08-13-at-22.51.25@2x-1024x715.webp)
+The recipe will remove focus styling from focusable children and apply the focus indication to the parent element instead.
 
 ## The Focus Parent Mixin
 
-Much like the Clickable Parent mixin, the Focus Parent mixin allows you to manipulate the focus styling of a BEM class so you don’t have to litter utility classes everywhere.
+If you're using SCSS and want to apply focus parent to custom BEM classes, you can use the `@include focus-parent` mixin.
 
-Using our example above, here’s what the execution looks like:
+**Note:** This mixin must be added to a SCSS stylesheet (such as the Custom SCSS area in the ACSS dashboard). It will not work in vanilla CSS or builder CSS inputs.
+
+Here's an example combining both clickable parent and focus parent mixins:
 
 ```CSS
 .clickable-card {
@@ -40,43 +37,15 @@ Using our example above, here’s what the execution looks like:
 }
 ```
 
-As with the utility class, your options are “shadow” or “outline.”
+Your options for the focus-parent mixin are `shadow` or `outline`:
+- `shadow` applies focus using a box-shadow style
+- `outline` applies focus using an offset outline style
 
-## Focus Parent in Bricks Builder With BEM Classes
+## Changes From 3.x
 
-If you need to assign focus-parent to a custom class in Bricks Builder without using SCSS, you can use this code snippet on the parent element class:
+In ACSS 4.0, the `.focus-parent`, `.focus-parent--shadow`, and `.focus-parent--outline` utility classes have been removed in favor of the `?focus-parent` recipe. This change was made to reduce stylesheet bloat and encourage the use of recipes, which are more flexible and maintainable.
 
-```CSS
-%root%:focus-within :focus {
-    outline: none;
-    box-shadow: none;
-}
-
-%root%:focus-within {
-    box-shadow: 0 0 0 var(--focus-width) var(--focus-color);
-}
-```
-
-The first instruction removes the focus styles from focusable children, and the second instruction adds a box-shadow focus style to the parent element.
-
-You could optionally use the outline style by replacing the second instruction with this:
-
-```CSS
-%root%:focus-within {
-    outline: var(--focus-width) solid var(--focus-color);
-    outline-offset: var(--focus-offset);
-}
-```
-
-Whether you use the box-shadow or outline focus style depends on the situation and the effect you’re trying to achieve.
-
-Also, if you want to use custom values for the tokens on a given element, you can redefine them on the parent element’s root selector:
-
-```CSS
-%root% {
-    --focus-width: [new-value];
-    --focus-color: [new-value];
-}
-```
-
-Let us know if you have any questions!
+**What changed:**
+- The `.focus-parent`, `.focus-parent--shadow`, and `.focus-parent--outline` utility classes are no longer available
+- Use the `?focus-parent` recipe instead (recommended)
+- The `@include focus-parent(shadow)` and `@include focus-parent(outline)` mixins remain available for SCSS users

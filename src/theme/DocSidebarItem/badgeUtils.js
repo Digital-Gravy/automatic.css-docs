@@ -1,7 +1,7 @@
 export function isSubtleBadge(badge) {
   if (!badge || typeof badge !== 'string') return false;
   const val = badge.toLowerCase();
-  return val === 'planned' || val === 'wip' || val === 'doc wip' || val === 'new';
+  return val === 'planned' || val === 'wip' || val === 'doc wip' || val === 'new' || val === '4.x';
 }
 
 export function getBadgeClass(badge) {
