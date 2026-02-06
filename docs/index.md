@@ -96,7 +96,7 @@ Ready to transform your workflow? Start with these essential guides:
 ### Components & Elements
 
 - **[Buttons](buttons/button-styling.md)** – Flexible button system with automatic styling
-- **[Cards](cards/card-framework.md)** – Semantic card framework for content containers
+- **[Cards](cards/card-styling.md)** – Semantic card framework for content containers
 - **[Forms](forms/form-styling-basics.md)** – Automatic form styling that just works
 
 ### Advanced Workflows
