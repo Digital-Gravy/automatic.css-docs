@@ -1,6 +1,6 @@
 ---
 title: Gradient Outline Buttons
-sidebar_position: 100
+sidebar_position: 50
 ---
 
 Many users have asked how to approach gradient outline buttons using ACSS. While the ACSS button framework gets you 80% of the way there, we need to add some custom CSS to get the final effect. Here’s how it’s done:

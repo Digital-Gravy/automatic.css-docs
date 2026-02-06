@@ -5,7 +5,7 @@ sidebar_position: 20
 
 With Automatic.css, you can quickly turn any link (`<a>`), navigation button (`<a>`), or literal `<button>` into a styled button with utility classes.
 
-Every color set in the ACSS dashboard has a corresponding button style with both solid and outline variants and each button style can be customized.
+Every color set in the ACSS dashboard has a corresponding button style with solid, outline, light, and dark variants. Each button style can be customized.
 
 ## Note: Abbreviated Naming Convention
 
@@ -15,13 +15,13 @@ Only a few classes in ACSS use abbreviations for the name. Buttons are one of th
 
 To add a solid button, add a link or button element to the page and then add the class `.btn--primary`. The link or button is now styled according to the settings you’ve chosen for your website’s primary button.
 
-You can do the same with any of the other colors (secondary, tertiary, accent, base, neutral). For most buttons, we recommend using the primary family as this should map to your website’s primary color.
+You can do the same with any of the other colors (secondary, tertiary, accent, base, neutral), as long as they're activated in the dashboard. For most buttons, we recommend using the primary family as this should map to your website’s primary color.
 
 ## Light and Dark Button Variants
 
 Every button style also has light and dark variants. These are useful for when your button color is clashing with the background of the container. Light and dark variants can be activated/deactivated from the button options in ACSS:
 
-![Light and Dark Button Variants Option](img/buttons-light-dark-1024x1024.webp)
+![Light and Dark Button Variants Option](img/button-options.png)
 
 These are applied with classes using the syntax `.btn--{color}-{variant}`.
 
@@ -53,4 +53,11 @@ By mixing and matching various button classes, you can achieve exactly what you 
 
 Remember, the order the classes are applied to an element doesn’t matter.
 
-**Related:** [Auto Button Styling and Styling Exclusions](../buttons-links/auto-button-styling-exclusions.md)
+**Related:** [Auto Button Styling and Styling Exclusions](auto-button-styling-exclusions.md)
+
+## Changes From 3.x
+
+In ACSS 4.0:
+
+- Deprecated button color styles (action, white, black, shade) have been removed.
+- Outline button border width is now unified with solid button border width.

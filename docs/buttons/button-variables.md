@@ -3,7 +3,7 @@ title: Button Variables
 sidebar_position: 30
 ---
 
-There may be times when you want to design your own custom button, but you still want to use specific values from ACSS’s global button settings. If this is the case, you can use button variables.
+There may be times when you want to design your own custom button, but you still want to use specific values from ACSS's global button settings. If this is the case, you can use button variables.
 
 The following button variables can be changed at any time with custom styling:
 
@@ -18,10 +18,12 @@ The following button variables can be changed at any time with custom styling:
 - `--btn-line-height`
 - `--btn-font-size`
 - `--btn-font-weight`
+- `--btn-font-family`
 - `--btn-font-style`
 - `--btn-padding-block` (top and bottom padding)
 - `--btn-padding-inline` (left and right padding)
 - `--btn-min-width`
+- `--btn-align-items`
 - `--btn-transition-duration`
 - `--btn-border-color`
 - `--btn-border-color-hover`
@@ -30,16 +32,17 @@ The following button variables can be changed at any time with custom styling:
 - `--btn-border-width`
 - `--btn-outline-background-color`
 - `--btn-outline-border-hover`
-- `--btn-outline-border-width`
 - `--btn-outline-text-color`
 - `--btn-outline-text-color-hover`
 - `--focus-color`
 
-## Example custom button
+## Creating Custom Buttons
 
-Let’s say we want to create a button that shares all the same general styling as our default buttons but has a gradient background instead of a solid background:
+For creating custom buttons, **using the [button mixin](../mixins/button-mixins.md) is the recommended approach**. The mixin applies all default button styles in one line, making your code cleaner and easier to maintain.
 
-```CSS
+If you're working in vanilla CSS or need more granular control, you can manually reference button variables as a fallback. Here's an example of a custom gradient button using manual variable references:
+
+```css
 .gradient-button {
     background: linear-gradient(var(--primary-medium), var(--primary));
     padding: var(--btn-padding-block) var(--btn-padding-inline);
@@ -59,6 +62,12 @@ Let’s say we want to create a button that shares all the same general styling 
 }
 ```
 
-Now you have a custom gradient button that will still inherit any changes you make to your global button styles in the ACSS dashboard.
+This approach ensures your custom button inherits any changes you make to global button styles in the ACSS dashboard, but requires more code than using the mixin.
 
-Additionally, if you’re using SCSS, you can use our [button mixin](../mixins/button-mixins.md) to apply all the default styles in one line automatically.
+## Changes From 3.x
+
+In ACSS 4.0:
+
+- Added `--btn-font-family` for controlling button font family.
+- Added `--btn-align-items` for controlling button alignment.
+- Removed `--btn-outline-border-width` in favor of unified `--btn-border-width` for both solid and outline buttons.

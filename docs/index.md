@@ -95,7 +95,7 @@ Ready to transform your workflow? Start with these essential guides:
 
 ### Components & Elements
 
-- **[Buttons](buttons-links/buttons.md)** – Flexible button system with automatic styling
+- **[Buttons](buttons/button-styling.md)** – Flexible button system with automatic styling
 - **[Cards](cards/card-framework.md)** – Semantic card framework for content containers
 - **[Forms](forms/form-styling-basics.md)** – Automatic form styling that just works
 

@@ -1,6 +1,6 @@
 ---
 title: External Link Indication
-sidebar_position: 90
+sidebar_position: 20
 ---
 
 There’s a big debate on whether it’s acceptable to open external links in a new tab. Accessibility advocates tend to argue that they shouldn’t be used, while UX advocates and most users feel that opening external links in a new tab is preferred.
@@ -17,9 +17,7 @@ ACSS lets you apply the visual and auditory cues automatically to any link that 
 
 ## Turning on External Link Indication
 
-![Indicate External Links Setting in ACSS](img/indicate-external-links-930x1024.webp)
-
-Indicate External Links Setting in ACSS
+![Indicate External Links Setting in ACSS](img/external-links.png)
 
 To activate this feature, navigate to Buttons and Links and then click on the links tab. Find the “External Links” accordion and then enable “Indicate External Links.”
 
