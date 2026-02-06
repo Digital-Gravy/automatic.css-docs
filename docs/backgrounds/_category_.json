@@ -1,4 +1,7 @@
 {
     "label": "Backgrounds",
-    "position": 30
+    "position": 30,
+    "customProps": {
+        "badge": "4.x"
+    }
 }
