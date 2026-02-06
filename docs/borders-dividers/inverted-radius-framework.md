@@ -222,3 +222,7 @@ Here’s an example of a working structure for clickable parent and inverted rad
 The “Link Wrapper” is positioned at the bottom by the card’s flex alignments since you can’t use absolute positioning for this. The heading wrapper is where the inverted radius are defined. This works because there’s nothing stopping the clickable parent’s clickable area from extending to the entire card.
 
 If you want to put additional content in this card, it would need to be placed in a separate area from the heading, which you are free to position however you’d like and could support additional inverted radius on its own.
+
+## Changes From 3.x
+
+The Inverted Radius Framework is largely unchanged in ACSS 4.0.

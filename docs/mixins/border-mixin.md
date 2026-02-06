@@ -42,3 +42,7 @@ If you want to customize one of the arguments while leaving the others as defaul
 ```
 
 This adds the global border style code, but leaves out the radius declaration.
+
+## Changes From 3.x
+
+The border mixin is largely unchanged in ACSS 4.0.
