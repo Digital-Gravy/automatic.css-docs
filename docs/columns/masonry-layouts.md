@@ -5,32 +5,47 @@ sidebar_position: 20
 
 ![Masonry Layout Example](img/masonry-layout.webp)
 
-As of **Automatic.css 2.8**, users can create Masonry layouts in seconds using ACSS Masonry utilities.
+ACSS supports masonry layouts through the [`?columns` recipe](../recipes/column-recipes.md). Masonry layouts in CSS are created with CSS Columns, and the `?columns` recipe provides all the control you need.
 
-It’s possible to create up to a 5-column masonry layout using the following utilities:
+## Creating a Masonry Layout
 
-- `.masonry--1`
-- `.masonry--2`
-- `.masonry--3`
-- `.masonry--4`
-- `.masonry--5`
+Apply the `?columns` recipe to your container element, then set the desired column count:
+
+```css
+.my-masonry {
+  --col-count: 3;
+  --col-gap: var(--space-l);
+  --row-gap: var(--space-l);
+}
+```
 
 ## Responsive Masonry Layouts
 
-There are two ways to create responsive masonry layouts in ACSS:
+To make masonry layouts responsive, set a minimum column width instead of (or in addition to) a fixed column count:
 
-### Method #1: Automatically responsive masonry layouts
+```css
+.my-masonry {
+  --col-min-width: 300px;
+  --col-gap: var(--space-l);
+  --row-gap: var(--space-l);
+}
+```
 
-Masonry layouts in CSS are created with [CSS Columns](css-columns.md), which ACSS fully supports. So, you can use existing `.col-width--[size]` utilities to make your masonry layouts automatically responsive.
-
-### Method #2: Manually responsive masonry layouts
-
-You can also control the responsiveness of masonry layouts manually using masonry breakpoint classes, which use the standard breakpoint class convention: `.masonry--[breakpoint]-[columns]`.
+This tells the browser to render as many columns as possible while maintaining the minimum width. Columns will automatically stack when they can't meet the minimum width requirement.
 
 ## Gaps in Masonry Layouts
 
-CSS Columns support column gaps but not row gaps. But, you’re using ACSS so this isn’t an issue for you. We’ve designed Masonry layouts to be compatible with [existing gap utilities](../spacing/spacing-variables.md). We’ve also added new gap utilities for controlling column-gap and row-gap separately.
+The `?columns` recipe supports both column and row gaps:
+
+- `--col-gap`: Sets the horizontal gap between columns
+- `--row-gap`: Sets the vertical gap between items (applied as margin to child elements)
 
 ## Ruled Masonry Layouts
 
-Since masonry layouts use CSS columns, ruled columns are supported by default using our existing columns utilities. You can control rule style, rule color, and rule width. Read the [Columns documentation](css-columns.md) for more details.
+Since masonry layouts use CSS columns, ruled columns are supported. Control rule style, color, and width using the recipe's local variables. Read the [Columns documentation](css-columns.md) for more details.
+
+## Changes From 3.x
+
+In ACSS 4.0:
+
+- Masonry utility classes (`.masonry--1` through `.masonry--5`) have been **removed**. Use the [`?columns` recipe](../recipes/column-recipes.md) instead.

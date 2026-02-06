@@ -3,7 +3,7 @@ title: Column Recipes
 sidebar_position: 100
 ---
 
-## `@columns`
+## `?columns`
 
 Expands the code for creating responsive, text-flow columns. This is best used on a rich text element.
 
@@ -13,4 +13,10 @@ Expands the code for creating responsive, text-flow columns. This is best used o
 - `--col-rule-width`: The thickness of the ruler between columns
 - `--col-rule-color`: The color of the ruler between columns
 - `--col-gap`: The gap between columns
-- `--row-gap`: The gap between “rows” (added as margin to the child elements).
+- `--row-gap`: The gap between "rows" (added as margin to the child elements).
+
+## Changes From 3.x
+
+In ACSS 4.0:
+
+- Recipe syntax changed from `@columns` to `?columns`.
