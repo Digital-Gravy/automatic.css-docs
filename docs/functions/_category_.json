@@ -1,4 +1,8 @@
 {
     "label": "Functions",
-    "position": 150
+    "position": 150,
+    "link": null,
+    "customProps": {
+        "badge": "4.x"
+    }
 }

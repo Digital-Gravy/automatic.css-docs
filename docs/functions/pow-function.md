@@ -7,14 +7,16 @@ sidebar_position: 100
 
 This function is used for exponentiation. It raises any number to the specified power.
 
-```HTML
+```scss
 $my-pow: pow($my-text-size, 3);
 ```
 
-If the value of `$my-text-size` is 2.4, this statement is the equivalent of 2.43.
+If the value of `$my-text-size` is 2.4, this statement is the equivalent of 2.4³.
 
 This function is most often used in scale-based calculations.
 
-**Result:** 13.824
+**Result:** 13.824
 
-We’ll continue updating this documentation if more functions become available.
+## Changes From 3.x
+
+No changes in ACSS 4.0.

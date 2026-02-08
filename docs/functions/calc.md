@@ -45,3 +45,7 @@ Here’s a breakdown:
 - `var(--primary-l)` – Reference the primary color’s lightness value.
 
 This is covered in more detail in [Palette Setup](../colors/palette-setup.md).
+
+## Changes From 3.x
+
+No changes in ACSS 4.0.

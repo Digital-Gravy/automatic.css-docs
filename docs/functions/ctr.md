@@ -22,3 +22,7 @@ $my-custom-value: ctr(24); :root {
     --my-custom-value: #{$my-custom-value};
 }
 ```
+
+## Changes From 3.x
+
+No changes in ACSS 4.0.
