@@ -1,5 +1,5 @@
 ---
-title: ACSS & Bricks Builder Setup
+title: Bricks
 sidebar_position: 10
 ---
 

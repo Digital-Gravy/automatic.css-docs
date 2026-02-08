@@ -1,4 +1,8 @@
 {
     "label": "Builder Configuration",
-    "position": 50
+    "position": 50,
+    "link": null,
+    "customProps": {
+        "badge": "4.x"
+    }
 }
