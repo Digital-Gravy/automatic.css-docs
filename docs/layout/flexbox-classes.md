@@ -3,50 +3,45 @@ title: Flexbox Classes
 sidebar_position: 100
 ---
 
-ACSS users have a full range of utility classes for [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) properties, along with shortcut [centering classes](../layout/centering-classes.md) that also use Flexbox.
+:::warning Removed in 4.x
+Flexbox utility classes have been removed in ACSS 4.0. Use the [`?flex-row` and `?flex-column` recipes](../flexbox/flex-recipes.md) instead for establishing flex layouts, and apply alignment properties directly in your custom CSS.
+:::
 
-If you’re not familiar with Flexbox, it’s going to be tough to use these classes effectively. I’d recommend watching this Flexbox video as a pre-requisite:
+## Previous Flexbox Classes (3.x and Earlier)
 
-[PB101: L10 - Content Justification & Alignment with Flexbox - YouTube](https://www.youtube.com/watch?v=k46Cft746IM&embeds_referring_euri=https%3A%2F%2Fautomaticcss.com%2F)
+In previous versions, ACSS provided utility classes for Flexbox properties:
 
-How Flexbox Works
+- `.flex--col`, `.flex--row`, `.flex--col-reverse`, `.flex--row-reverse`
+- `.flex--wrap`, `.flex--grow`
+- `.justify-content--[value]`, `.align-content--[value]`
+- `.justify-items--[value]`, `.align-items--[value]`
+- `.self--[value]`
+- `.stretch`
 
-## Setting Display to Flex
+These classes have been removed in favor of using recipes and custom CSS for more flexible and maintainable layouts.
 
-ACSS uses a shortcut approach to establishing a Flexbox layout. The classes that set the display property to flex also set the desired alignment, so only one utility class is required for the first step.
+## Recommended Alternatives
 
-The syntax for these classes is `.flex--[direction]` and all breakpoint classes use the `.flex--[direction]-[breakpoint]` syntax.
+### Establishing Flex Layouts
 
-`.flex--col`
+Use the [`?flex-row` and `?flex-column` recipes](../flexbox/flex-recipes.md) in your custom CSS:
 
-`.flex--row`
+```css
+.my-container {
+  ?flex-row;
+  justify-content: space-between;
+  align-items: center;
+}
+```
 
-`.flex--col-reverse`
+### Centering Content
 
-`.flex--row-reverse`
+Use the [centering classes](./centering-classes.md) which are still available and use Flexbox under the hood.
 
-## Available Alignment Options
+## Changes From 3.x
 
-Once `display` is set to `flex` and a direction is chosen, the rest of the classes manipulate alignment. They use the syntax `.[flex-property]--[value]`. If you already know the property names and values for Flexbox, you already know the names of the utilities in ACSS. There are no abbreviations to memorize (except for the “self” classes).
+In ACSS 4.0:
 
-`.justify-content--`
-
-Controls content justification using shorthand keywords: `start`, `end`, `center`, `between`, `around`, `stretch`.
-
-`.align-content--`
-
-Controls content alignment using shorthand keywords: `start`, `end`, `center`, `baseline`, `stretch`.
-
-`.justify-items--`
-
-Controls item justification using shorthand keywords: `start`, `end`, `center`, `stretch`.
-
-`.align-items--`
-
-Controls item alignment using shorthand keywords: `start`, `end`, `center`, `baseline`, `stretch`.
-
-`.self--`
-
-Controls the position of individual elements in a flex layout by assigning the class to the element itself using shorthand keywords: `start`, `end`, `center`, `stretch`.
-
-All utilities are available at all breakpoints using the syntax `.[flex-property]--[value]-[breakpoint]`.
+- All flexbox utility classes (`.flex--col`, `.flex--row`, `.justify-content--`, `.align-content--`, `.justify-items--`, `.align-items--`, `.self--`, `.stretch`, etc.) have been **removed**.
+- Use [`?flex-row` and `?flex-column` recipes](../flexbox/flex-recipes.md) to establish flex layouts.
+- Apply alignment and justification properties directly in your custom CSS.

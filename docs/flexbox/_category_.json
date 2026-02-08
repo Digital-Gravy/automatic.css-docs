@@ -1,4 +1,8 @@
 {
     "label": "Flexbox",
-    "position": 130
+    "position": 130,
+    "link": null,
+    "customProps": {
+        "badge": "4.x"
+    }
 }
