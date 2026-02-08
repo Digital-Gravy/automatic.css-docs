@@ -1,25 +1,45 @@
 ---
-title: Overlay Classes
+title: Basic Overlays
 sidebar_position: 100
 ---
 
-Overlays in ACSS allow you to add visual layers on top of elements, commonly used for darkening background images, adding gradient effects, or creating visual depth.
+Basic overlays provide a simple way to add a single-color overlay to any element. This is commonly used to improve text readability over background images.
 
-## Basic Overlays
+## Enabling Basic Overlays
 
-Basic overlays provide a simple way to add a dark overlay to any element. Enable them in the ACSS dashboard under **Surfaces & Overlays**.
+Enable basic overlays in the ACSS dashboard under **Surfaces & Overlays > Basic Overlays**.
 
-### Usage
+![Basic Overlays Dashboard](img/basic-overlays.png)
 
-Add the `.overlay` class or any class containing `overlay--` to an element:
+## Pseudo Element Selection
+
+If there are conflicts with other utilities or styling, you can choose which pseudo-element to use for the overlay:
+
+- **Before** (default) - Uses `::before`
+- **After** - Uses `::after`
+
+This is configured in the dashboard under the "Pseudo Element" dropdown.
+
+## Usage
+
+Add the `.overlay` class to any element:
 
 ```html
 <div class="overlay">
-  <!-- Content appears above the overlay -->
+  <img src="background.jpg" alt="">
+  <h2>Text appears above the overlay</h2>
 </div>
 ```
 
-### Customizing the Overlay Color
+You can also use any class containing `overlay--` followed by a descriptor:
+
+```html
+<div class="overlay--dark">
+  <!-- Content -->
+</div>
+```
+
+## Customizing the Overlay Color
 
 The overlay color is controlled via the `--overlay-color` CSS variable:
 
@@ -27,73 +47,69 @@ The overlay color is controlled via the `--overlay-color` CSS variable:
 .my-hero {
   --overlay-color: rgba(0, 0, 0, 0.5);
 }
+
+.my-light-section {
+  --overlay-color: rgba(255, 255, 255, 0.3);
+}
 ```
 
-The default overlay color is `rgba(0, 0, 0, 0.7)`.
+The default is `rgba(0, 0, 0, 0.7)` (70% black).
 
-### How It Works
+## Customizing the Z-Index
 
-Basic overlays use a pseudo-element (configurable to `::before` or `::after`) positioned behind the content:
-
-- The parent element receives `position: relative` and `z-index: 0`
-- The pseudo-element is absolutely positioned with `inset: 0` and `z-index: -1`
-
-## Custom Overlays
-
-Custom overlays provide more advanced options including gradients, images, blur effects, blend modes, and animations. Configure up to 5 custom overlays in the dashboard.
-
-### Available Classes
-
-Each custom overlay generates classes based on its number and optional name:
-
-- `.overlay-1`, `.overlay-2`, `.overlay-3`, `.overlay-4`, `.overlay-5`
-- `.overlay-[name]` (if you provide a custom name in the dashboard)
-
-### Locally Scoped Variables
-
-Custom overlays support locally scoped variables for runtime customization:
-
-| Variable | Description |
-|----------|-------------|
-| `--overlay-bg-color` | Background color of the overlay |
-| `--overlay-background` | Background gradient/image |
-| `--overlay-background-size` | Background size |
-| `--overlay-background-position` | Background position |
-| `--overlay-background-repeat` | Background repeat behavior |
-| `--overlay-background-attachment` | Background attachment |
-| `--overlay-background-blur` | Backdrop blur amount |
-| `--overlay-opacity` | Overlay opacity |
-| `--overlay-blend-mode` | Mix blend mode |
-| `--overlay-border-radius` | Border radius |
-| `--overlay-animation` | Animation |
-| `--overlay-inset` | Inset positioning |
-| `--overlay-z-index` | Z-index of the overlay |
-
-### Example: Customizing at Runtime
+The overlay z-index can be customized via the `--overlay-z-index` variable:
 
 ```css
-.my-section {
-  --overlay-opacity: 0.5;
-  --overlay-background-blur: 10px;
-}
-```
-
-## Overlay Mixin
-
-For custom SCSS, use the `overlay()` mixin:
-
-```scss
 .my-element {
-  @include overlay(rgba(0, 0, 0, 0.6));
+  --overlay-z-index: 1;
 }
 ```
 
-This creates a complete overlay setup with the specified background.
+The default is `-1`, placing the overlay behind content.
+
+## Figure Element Handling
+
+When using overlays on `<figure>` elements containing media (`img`, `picture`, `svg`, `video`, or `iframe`), the overlay automatically receives `--overlay-z-index: 0` to ensure it appears above the media content.
+
+```html
+<figure class="overlay">
+  <img src="photo.jpg" alt="Photo">
+  <figcaption>Caption appears above the overlay</figcaption>
+</figure>
+```
+
+## How It Works
+
+Basic overlays use a pseudo-element with isolation to create a proper stacking context:
+
+```css
+.overlay {
+  position: relative;
+  z-index: 0;
+  isolation: isolate;
+}
+
+.overlay::before {
+  content: "";
+  background: var(--overlay-color, rgba(0, 0, 0, 0.7));
+  position: absolute;
+  inset: 0;
+  z-index: var(--overlay-z-index, -1);
+}
+```
+
+The `isolation: isolate` property creates a new stacking context, ensuring proper layering of the overlay and content.
+
+## For More Advanced Overlays
+
+If you need gradients, images, blur effects, blend modes, or animations, see [Custom Overlays](./custom-overlays.md).
 
 ## Changes From 3.x
 
 In ACSS 4.0:
 
-- Custom overlays now support more properties including **backdrop blur**, **animations**, **nested overlays**, and **custom inset**.
-- Overlay classes use CSS custom properties for easier runtime customization.
-- Basic overlays and custom overlays are now separate features with independent toggles.
+- Basic overlays are now a separate toggle from custom overlays.
+- Added `isolation: isolate` for better stacking context control.
+- Added `--overlay-z-index` variable for customizable z-index.
+- Added automatic z-index adjustment for `figure` elements with media.
+- The overlay pseudo-element is configurable (`::before` or `::after`) in the dashboard.
