@@ -3,7 +3,7 @@ title: Introduction to Recipes
 sidebar_position: 100
 ---
 
-Recipes are a new feature in ACSS v3.0. They’re a very powerful new part of our [variable expansion and validation system](../workflow-enhancements/variable-expansion-validation.md).
+Recipes are a new feature in ACSS v3.0. They’re a very powerful new part of our variable expansion and validation system in the dashboard (Options > Workflow Enhancements).
 
 ## What’s a Recipe?
 

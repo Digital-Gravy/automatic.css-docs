@@ -17,7 +17,7 @@ Typography Panel for Root Font Size
 
 The most common root font sizes are **100%** and **62.5%**.
 
-In Automatic.css, the default is 100% because that’s the typical standard. 62.5% makes it easier to calculate rem values (1rem = 10px), but ACSS has [Auto Rem Conversion](../workflow-enhancements/prem.md) to help with that, so setting root font size to 62.5% is not necessary.
+In Automatic.css, the default is 100% because that’s the typical standard. 62.5% makes it easier to calculate rem values (1rem = 10px), but ACSS has auto rem conversion in the builder (Options > Workflow Enhancements) to help with that, so setting root font size to 62.5% is not necessary.
 
 ## Fluid Text Setup
 

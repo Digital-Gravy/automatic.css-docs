@@ -3,27 +3,33 @@ title: Auto Object Fit
 sidebar_position: 110
 ---
 
-Are you tired of setting `object-fit: cover;` every single time you change the dimensions of an image or set an [aspect ratio](aspect-ratio-classes.md)? Just turn on ACSS’ automatic `object-fit` feature under Options > Workflow Enhancements.
+Auto Object Fit applies a default `object-fit` and `object-position` to all images so you can resize or constrain them (e.g. with an aspect ratio) without distortion and without adding classes or CSS each time.
 
-![Auto Object Fit](img/auto-object-fit.webp)
+Turn it on under **Options > Workflow Enhancements**: enable the **Auto Object Fit** toggle.
 
-Auto Object Fit
+![Auto Object Fit in Options > Workflow Enhancements](img/auto-object-fit.webp)
 
-This setting will automatically set images to `object-fit: cover;` allowing you to freely manipulate image dimensions without warping and without extra handling.
+When enabled, ACSS sets every `img` to:
 
-Note that ACSS does this with the following two variables:
+- `object-fit: var(--object-fit, cover);`
+- `object-position: var(--object-position, 50% 50%);`
 
-- `--object-fit`
-- `--object-position`
+So the default is `cover` and centered, but you can override it anywhere by setting the CSS variables.
 
-This means that you’re free to adjust the object-fit and position at any point in time on any image or even large groups of images.
+## Overriding per area
 
-For example, if you wanted all images in a page, template, or box to be set to `contain` instead of `cover`, you could do this:
+You can change the behavior for a section, template, or container by setting the variables on a parent:
 
-```CSS
+```css
 .this-specific-area {
-    --object-fit: contain;
+  --object-fit: contain;
 }
 ```
 
-Now all your images will use the new value of `contain`. This is a great time-saving feature that presents zero limitations to your workflow.
+All images inside that area will use `contain` instead of `cover`. You can also set `--object-position` (e.g. `top left`, `50% 0`) for different crop focus.
+
+## Changes From 3.x
+
+In ACSS 4.0:
+
+- Auto Object Fit is still under **Options > Workflow Enhancements**. Behavior is unchanged: all `img` elements get `object-fit: var(--object-fit, cover)` and `object-position: var(--object-position, 50% 50%)`, and you can override via the same variables.

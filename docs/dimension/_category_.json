@@ -1,4 +1,8 @@
 {
     "label": "Dimension",
-    "position": 100
+    "position": 100,
+    "link": null,
+    "customProps": {
+        "badge": "4.x"
+    }
 }
