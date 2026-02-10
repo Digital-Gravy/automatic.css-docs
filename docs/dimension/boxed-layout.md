@@ -9,8 +9,6 @@ You can see an example of a boxed layout in the photo below.
 
 ![Boxed Layout Example](img/boxed-layout-example.webp)
 
-Boxed Layout Example
-
 There are three ingredients to making a boxed layout:
 
 1.  The `html` element of the website extends edge to edge and defines a “canvas” color or texture. In the example above, this is the black area.
@@ -21,9 +19,9 @@ Automatic.css makes establishing a boxed layout, and styling your boxed layout, 
 
 ## Boxed Layout Settings
 
-Boxed Layout Settings
+Navigate to **Layout > Boxed Layout** and enable the Boxed Layout toggle.
 
-Navigate to Layout > Boxed Layout and enable the Boxed Layout toggle.
+![Boxed Layout settings](img/boxed-layout-settings.webp)
 
 The following settings control your boxed layout. Read carefully because the accepted values aren’t completely obvious unless you’re a pro at CSS.
 
@@ -37,3 +35,11 @@ The following settings control your boxed layout. Read carefully because the acc
 - **Body Shadow:** This is a box shadow added to the `body` element that creates a drop shadow effect behind your boxed layout. Accepts any valid `box-shadow` value including layered shadows.
 
 When done well, boxed layouts can add visual interest and a sense of simplicity to your website. They also prevent many visual issues and alignment/layout issues that happen on very large screens since your content is effectively contained.
+
+## Changes From 3.x
+
+In ACSS 4.0:
+
+- Boxed Layout remains under **Layout > Boxed Layout**. The same settings are available: Boxed Layout toggle, Device Background, Body Width, Top Margin, Border Style/Width/Color, Border Radius, and Body Shadow.
+- Default **Body Shadow** may use `color-mix()` or a neutral transparency variable for the shadow color. You can still enter any valid `box-shadow` value.
+- **Device Background** default is `--white` (ACSS variable); you can use any valid background value including variables, colors, gradients, or images.
