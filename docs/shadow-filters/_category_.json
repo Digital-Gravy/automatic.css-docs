@@ -1,4 +1,8 @@
 {
     "label": "Shadow & Filters",
-    "position": 260
+    "position": 260,
+    "link": null,
+    "customProps": {
+        "badge": "4.x"
+    }
 }
