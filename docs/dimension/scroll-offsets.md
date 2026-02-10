@@ -1,16 +1,30 @@
 ---
-title: Scroll Offset
+title: Scroll Offsets
 sidebar_position: 100
 ---
 
-ACSS allows you to set offsets for scroll-to-hash links. This ensures that when users scroll to a hash link on your page, the content has some breathing room and isn’t touching the edge of the screen.
+Scroll offsets prevent the target of a hash link from sitting flush against the top of the viewport (or under a sticky header) when users click “scroll to anchor.” ACSS lets you set a scroll margin so the target has breathing room.
 
-![Scroll Offset Options](img/scroll-offset-opsions.webp)
+Configure scroll offsets under **Additional Styling > Scroll Offsets**.
 
-Scroll Offset Settings
+![Scroll Offsets panel](img/scroll-offsets.webp)
 
-Even worse, on some sites the sticky header covers up the content!
+## Settings
 
-If you’re using a sticky header and have already set your header heights, Automatic.css will create an offset equal to the height of your header automatically. You don’t have to do anything else. If, however, you want to set an \*additional\* offset for extra breathing room, you can do that via the Scroll Offsets panel.
+- **Scroll Offset (Desktop)** – Extra margin (in px) applied when scrolling to hash links on desktop. Use this when you want more space above the target than the header alone provides.
+- **Scroll Offset (Mobile)** – Same as desktop, for mobile viewports. You can set different values per breakpoint.
 
-Again, you can set a different value at each breakpoint to dial in the exact result you’re going for.
+These values are added on top of any offset that comes from your header height (see below).
+
+## Using header height for scroll margin
+
+If you use a sticky header and have set [Header Height](header-height.md) in **Layout > Header**, you can turn on **Offset Scroll Margin Automatically** in that same panel. ACSS will then use your header height when computing the scroll margin, so the target of hash links appears below the header instead of under it. The Scroll Offset (Desktop) and Scroll Offset (Mobile) values in Additional Styling are added on top of that.
+
+If you don’t use a sticky header, leave the scroll offset fields at 0 or set them to whatever extra spacing you want above hash targets.
+
+## Changes From 3.x
+
+In ACSS 4.0:
+
+- Scroll offsets are configured under **Additional Styling > Scroll Offsets** (same location). The two fields are now labeled **Scroll Offset (Desktop)** and **Scroll Offset (Mobile)** (px).
+- Whether the header height is used for scroll margin is controlled by **Offset Scroll Margin Automatically** in **Layout > Header** (see [Header Height](header-height.md)), not in the Scroll Offsets panel.
