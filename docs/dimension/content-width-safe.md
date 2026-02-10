@@ -15,7 +15,7 @@ On advanced websites (and ACSS websites), the gutter is responsive. The larger t
 
 Even though it’s responsive, it should be a referenceable value. Every section of your site should reference the gutter value to ensure that your gutter is equal throughout the site. A gutter that changes from section to section or element to element is a clear sign of amateur web design.
 
-ACSS references the website’s gutter with `var(--section-space-x)`. This is because gutters are typically defined within the `section` element throughout a website, and the gutter is represented across the X-axis.
+ACSS exposes the website’s inline gutter as `var(--gutter)`. Sections use this for `padding-inline`, so the gutter is consistent across the site.
 
 ## What if there’s no gutter and I need a gutter?
 
@@ -32,23 +32,23 @@ What you need is a utility that references your website’s content width while 
 
 That’s exactly what `.content-width--safe` and `var(--content-width-safe)` do.
 
-1.  Set’s the element’s `max-width` to content width.
-2.  Uses an intelligent `max()` function to establish a virtual gutter that’s equal to your website’s typical gutter.
-3.  Automatically centers your content (just like a typical section container does).
+1. Sets the element’s max inline size to content width.
+2. Uses `min(var(--content-width), calc(100% - var(--gutter) * 2))` so that on small screens the effective width leaves room equal to your gutter on each side.
+3. Automatically centers your content (when using the class, via `margin-inline: auto`).
 
-The variable `var(--content-width-safe)` does the first two of those, but you’ll need to do the third thing on your own. Here’s how it would look with CSS:
+The **class** `.content-width--safe` does all three: it sets `inline-size: 100%`, `max-inline-size: var(--content-width-safe)`, and `margin-inline: auto`. If you use the **variable** `var(--content-width-safe)` on your own element, you still need to center it:
 
-```CSS
+```css
 .my-element {
-    width: 100%;
-    max-width: var(--content-width-safe);
-    margin-inline: auto;
+  width: 100%;
+  max-width: var(--content-width-safe);
+  margin-inline: auto;
 }
 ```
 
-Notice once again that we’re using the variable with the `max-width` property. We want to avoid setting explicit widths for maximum responsiveness.
+Use the variable with `max-width` (or `max-inline-size`) and avoid setting explicit widths for maximum responsiveness.
 
-## When should I use content-width vs content-width–safe?
+## When should I use content-width vs content-width-safe?
 
 Good question!
 
@@ -61,3 +61,10 @@ If you need to make an element equal to your website’s content width, and you�
 ## Caution: Double Gutter
 
 Make sure you don’t use the Content Width Safe utilities in a parent element that already establishes a gutter. This will result in a double gutter.
+
+## Changes From 3.x
+
+In ACSS 4.0:
+
+- The `.content-width--safe` class uses `max-inline-size` and `margin-inline: auto` (logical properties); behavior is unchanged.
+- The gutter value used by `--content-width-safe` is `var(--gutter)` (sections use this for inline padding). Documentation previously referred to `--section-space-x`; the canonical gutter variable is now `--gutter`.

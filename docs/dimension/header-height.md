@@ -3,52 +3,63 @@ title: Header Height
 sidebar_position: 40
 ---
 
-Establishing a variable that matches your header height is very helpful in modern development for various use cases. For example, let’s say your header is sticky and you’re using a sticky element on your page. You need a top value on your sticky element that references your website’s header height.
+ACSS uses your header height to avoid layout collisions: sticky and overlay headers can cover content or cause uneven spacing. Once you tell ACSS your header height, it can set the `--header-height` variable and use it for content offsets, sticky offsets, and scroll margins.
 
-Automatic.css creates a `--header-height` variable automatically. You just have to tell ACSS what the height of your header is. Once ACSS has this information, it can automatically create super helpful content offsets, sticky offsets, scroll offsets, etc.
-
-First, let’s talk about how to set your header heights. Then we’ll run through all the things ACSS can help you with when it comes to your header height.
+Configure header height and related options under **Layout > Header**.
 
 ## Header Height Values
 
-![Header Height Values](img/header-height-values.webp)
+![Header sizing and settings](img/header-sizing-settings.webp)
 
-Header Heights
+In **Layout > Header**, open the **Header Sizing** section. ACSS needs the height of your header at two breakpoints:
 
-In the ACSS dashboard, navigate to Layout and then Header.
+- **Header Height (Desktop)** – height of your header on desktop
+- **Header Height (Mobile)** – height of your header on mobile
 
-ACSS needs to know the height of your header at each breakpoint. This is easy to find by loading your site on the front end, right clicking your header, and getting the computed height. Do this at each breakpoint and insert the value into the inputs.
+ACSS combines these into a fluid `--header-height` value that scales between the two. To get the values: load your site, right-click the header, and read the computed height at desktop and mobile widths. Enter those values (in px) into the inputs.
 
-Note: If your header height ever changes, recalculate these values.
+If your header height changes later, update these values and regenerate.
 
-## Offset Page Content Automatically
+## Header Settings
 
-Offset Content Automatically Option
+Two toggles control how ACSS uses the header height:
 
-If your website uses a sticky header, it means that your header takes up some of the room in the hero section of your pages. This makes your hero spacing look off-balance.
+### Offset Content Automatically
 
-In this case, turn on the “Offset Page Content Automatically” option. Automatic.css will now fix every page on your website automatically, restoring perfectly balanced spacing to the first section on every page.
+If you use a sticky or overlay header, the first section on each page can look cramped because the header takes vertical space. Turn **Offset Content Automatically** on so ACSS adds `margin-block-start: var(--header-height)` where needed, restoring balanced spacing for the first section. This only applies when header height values are set.
 
-### Exclude Headers & Pages From Content Offset
+### Offset Scroll Margin Automatically
 
-In some cases, you might want to remove the offset on certain pages or when certain headers are present. This is possible using the exclusion options that activate when you turn on Offset Content Automatically.
+For in-page links (anchor / “scroll to hash”), the target can end up hidden behind the header. Turn **Offset Scroll Margin Automatically** on so ACSS uses your header height when setting scroll margins, keeping the target visible. See [Scroll Offsets](scroll-offsets.md) for details.
 
-Exclude Headers & Exclude Pages for Offset Content Automatically Option
+## Header Exclusions
 
-You can exclude specific headers by entering any valid selector for the header. A data attribute is a really good way to do this because it also allows you to make a header sticky or not sticky from the back-end of WordPress.
+When **Offset Content Automatically** is on, the **Header Exclusions** section appears.
 
-We provide a default data attribute `[data-sticky-header="0"]` that you can use, which is already excluded by default. Of course, you can use any selector or list of selectors you’d like, just make sure to wrap each selector in quotes and comma separate them.
+![Header settings and exclusions](img/header-settings-exclusions.webp)
 
-You can also disable the offset on specific pages by referencing the unique body class of the page (WordPress adds a body class to every page automatically) or by using the default utility class `.content-offset--off`.
+### Exclude Headers
+
+You can disable the content offset when certain headers are on the page. Enter one or more CSS selectors that match those headers (comma-separated). For example, use a data attribute so you can control stickiness from your CMS:
+
+- Default: `[data-sticky-header='0'], .content-offset--off` – headers with `data-sticky-header="0"` or the `.content-offset--off` class do not trigger content offset.
+
+### Exclude Pages
+
+You can disable the offset on specific pages by entering body/page selectors (e.g. WordPress body classes like `.page-id-2` or `.post-type-services`), comma-separated.
 
 ## Sticky Offset
 
-The same issue with scroll-to-hash happens with sticky elements. By default sticky elements stick to the top of the screen. A sticky header will cover them up if you don’t give the sticky element an offset value.
+Sticky elements (e.g. with the `.sticky` class) normally stick to the top of the viewport; a sticky header can cover them. You can have ACSS offset them using your header height.
 
-If you want Automatic.css to automatically rescue your sticky elements and offset them, turn on the “Offset Sticky Elements Automatically” setting in the Sticky Styling panel (Additional Styling):
+In **Additional Styling > Sticky**, turn on **Offset Sticky Automatically**. ACSS will then use `--header-height` (or your custom sticky offset) so sticky elements sit below the header. You can still override the offset per element with a custom `--sticky-offset` or `inset-block-start` value.
 
-Offset Sticky Automatically Option
+## Changes From 3.x
 
-Now, when you use the `.sticky` class, you don’t have to worry about an offset. ACSS will use your header height and your offset preferences from above to generate the appropriate offset.
+In ACSS 4.0:
 
-Of course, this can be overridden on a case-by-case basis by setting a custom top value for any sticky element.
+- Header height is set in **Layout > Header** (under **Header Sizing**) as **Header Height (Desktop)** and **Header Height (Mobile)**; ACSS still outputs a fluid `--header-height`.
+- **Offset Page Content Automatically** is renamed to **Offset Content Automatically** and remains in Layout > Header.
+- **Offset Scroll Margin Automatically** is a new toggle in Layout > Header for scroll-to-hash behavior (replacing or clarifying prior scroll-offset behavior).
+- **Header Exclusions** (Exclude Headers, Exclude Pages) appear when Offset Content Automatically is on; defaults include `[data-sticky-header='0']` and `.content-offset--off`.
+- Sticky offset is still configured in **Additional Styling > Sticky** (“Offset Sticky Automatically”).

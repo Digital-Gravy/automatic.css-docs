@@ -3,33 +3,52 @@ title: Width Utilities
 sidebar_position: 80
 ---
 
-Width utilities control the max width (inline-size) of elements.
+Width utilities set the **max inline size** of elements so they don’t exceed a fraction of your [content width](content-width.md). They use logical properties (`inline-size`, `max-inline-size`) and are responsive by default.
 
-Unlike most frameworks, width utilities are not mapped to percentages in ACSS. Rather, they’re a calculation based on your website’s [Content Width](content-width.md). This is much more useful, since percentages cause complications with the responsive size of elements.
+**When are they loaded?** The width **classes** (`.width--10` … `.width--90`, `.width--full`, etc.) are only included in your compiled CSS when the **Width** option is on. The width **variables** (`--width-10` … `--width-90`) are only included when **Width Variables** is on (in **Options > Variable Manager**). If you don’t see the width classes or variables, turn on the corresponding option in **Options** and regenerate your CSS. Disabling Width Variables does not remove `--content-width`; that variable is always available.
 
-## Standard Width Classes (10 to 90)
+## How they work
 
-The syntax for width classes is `.width--[value]` with the value being 10-90 in increments of 10.
+Width classes are based on your website’s content width, not percentages. Each utility sets `inline-size: 100%` and `max-inline-size` to a fraction of `var(--content-width)`. That gives you a fixed maximum that scales with your content width and avoids the layout issues you get with percentage-based widths on small screens.
 
-Example output for these width classes:
+## Standard width classes (10–90)
 
-```CSS
-calc(var(--content-width) * .2)
+Use the pattern `.width--[value]` with **10, 20, 30, 40, 50, 60, 70, 80, or 90**. The value is the percentage of content width (e.g. `.width--50` = 50% of content width).
+
+Example for `.width--20`:
+
+```css
+inline-size: 100%;
+max-inline-size: calc(var(--content-width) * 0.2);
 ```
 
-As mentioned previously, this results in a fixed width calculation rather than a percent value. And since they use `max-inline-size`, they’re automatically responsive and won’t create overflow issues.
+Because they use `max-inline-size`, elements stay responsive and don’t cause horizontal overflow.
 
-## Special Width Classes
+## Width variables
 
-ACSS contains the following special width classes that exist outside of the above syntaxes.
+When **Width Variables** is on, each standard width has a matching variable:
 
-- `.content-width` and `var(--content-width)`: Matches the [content width](content-width.md) of your website.
-- `.content-width--safe` and `var(--content-width-safe)`: “[Safe content width](content-width-safe.md)” utilities with a virtual gutter.
-- `.width--full`: Sets an element to 100% width.
-- `.width--max-content`: Sets the inline size to `max-content` and the `max-inline-size` to 100%.
-- `.width--min-content`: Sets the inline size to `min-content` and the `max-inline-size` to 100%.
-- `.width--fit-content` Sets width to fit the content (uses `fit-content`).
+- `var(--width-10)` … `var(--width-90)`  
+  Same as the classes: e.g. `--width-30` = `calc(var(--content-width) * 0.3)`.
 
-## Width Variables
+Use them when you need a width in custom CSS or in a builder field that accepts CSS.
 
-The standard width values all have tokens/variables available for use, e.g. `var(--width-30)`.
+## Special width classes
+
+| Class | Effect |
+|-------|--------|
+| `.content-width` | Max inline size = content width; centered. See [Content Width](content-width.md). |
+| `.content-width--safe` | Content width with virtual gutter. See [Content Width (Safe)](content-width-safe.md). |
+| `.width--full` | `inline-size: 100%`; `max-inline-size: 100%`. |
+| `.width--auto` | `inline-size: auto`; `max-inline-size: 100%`. |
+| `.width--max-content` | `inline-size: max-content`; `max-inline-size: 100%`. |
+| `.width--min-content` | `inline-size: min-content`; `max-inline-size: 100%`. |
+| `.width--fit-content` | `inline-size: fit-content`; `max-inline-size: 100%`. |
+
+## Changes From 3.x
+
+In ACSS 4.0:
+
+- All width utilities use **logical properties**: `inline-size` and `max-inline-size` instead of `width` and `max-width`.
+- **Width** and **Width Variables** are toggled under **Options** (Width in the main options list; Width Variables in Variable Manager). The width classes and variables are **optional**—they are only output when these options are on.
+- Standard scale is unchanged: `.width--10` through `.width--90` and matching `--width-10` … `--width-90` variables when enabled.

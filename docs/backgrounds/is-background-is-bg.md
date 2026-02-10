@@ -17,7 +17,7 @@ To make a real image a background image with ACSS, add an image element to the p
 
 That's all there is to it.
 
-Now you can add additional classes to the image, like [overlay classes](../overlays/overlay-classes.md), [object-position classes](../dimension/object-fit-classes.md), [flip classes](../layout/flip-classes.md), etc.
+Now you can add additional classes to the image, like [overlay classes](../overlays/basic-overlays.md), etc. You can set `object-position` or `object-fit` in your own CSS, or use the `--bg-object-fit` variable for background images.
 
 ## Make any box a background
 
