@@ -44,7 +44,7 @@ Here’s a breakdown:
 - `calc(var(--primary-s) / .2)` – Reference the primary color’s saturation value and reduce it by 20% using `calc()`.
 - `var(--primary-l)` – Reference the primary color’s lightness value.
 
-This is covered in more detail in [Palette Setup](../colors/palette-setup.md).
+This is covered in more detail in [Main Colors](../colors/main-colors.md).
 
 ## Changes From 3.x
 

@@ -29,7 +29,7 @@ Some recipes are very simple and some are complex. It just depends on the utilit
 
 Some Recipes are simply the exposed value of a specific variable and can be used as single values in input fields. For example, you can expose all the partials for a color with the Recipe “`@[color-name]-clr`.”
 
-Let’s say you want to create a custom transparency or use a tweaked version of an existing color within the ACSS system. Prior to 3.0, you’d have to write your own HSL string manually using [color partials](../colors/palette-setup.md):
+Let’s say you want to create a custom transparency or use a tweaked version of an existing color within the ACSS system. Prior to 3.0, you’d have to write your own HSL string manually using [color partials](../colors/main-colors.md):
 
 ```CSS
 hsl(var(--primary-h) var(--primary-s) var(--primary-l) / 1)

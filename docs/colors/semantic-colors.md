@@ -1,6 +1,6 @@
 ---
 title: Semantic Colors
-sidebar_position: 10
+sidebar_position: 20
 ---
 
 Aside from programmable brand colors, ACSS provides you with the following semantic colors:
@@ -16,11 +16,9 @@ Note: Prior to v3.0, Semantic Colors were referred to as “contextual colors”
 
 ## Configuring Semantic Colors
 
-Semantic colors can easily be set in the Palette area of the dashboard.
+Semantic colors are configured in the **Palette** area of the dashboard, under the **Semantic Colors** section.
 
-![Semantic Color Dashboard](img/semantic-color-dashboard.webp)
-
-Semantic Color Dashboard
+![Semantic Colors in the Palette](img/semantic-colors-panel.webp)
 
 ## Semantic Color Classes
 

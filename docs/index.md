@@ -83,7 +83,7 @@ Ready to transform your workflow? Start with these essential guides:
 
 ### Design System
 
-- **[Color System](colors/palette-setup.md)** – Automatic color relationships, dark mode support, and semantic colors
+- **[Color System](colors/main-colors.md)** – Automatic color relationships, dark mode support, and semantic colors
 - **[Spacing System](spacing/spacing-system)** – Consistent spacing with t-shirt sizing (XS, S, M, L, XL, etc.)
 - **[Typography](typography/fluid-responsive-typography)** – Fluid, responsive type scaling with automatic hierarchy
 

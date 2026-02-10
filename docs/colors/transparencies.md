@@ -1,71 +1,59 @@
 ---
 title: Transparencies
-sidebar_position: 60
+sidebar_position: 40
 ---
 
-The use of transparent colors is common in web design.
+In ACSS 4.x there are no pre-built transparency tokens. Instead, you create transparencies on demand using two modern CSS features: **Relative Color Syntax** and **color-mix()**. Both are well supported in current browsers and give you full control without maintaining a large library of tokens.
 
-Transparencies are easy to achieve in modern CSS using two recommended techniques that leverage existing ACSS color tokens.
+## Why we removed transparency tokens
 
-## Method 1: Color Mix
+Previous versions of ACSS shipped a large set of transparency variables (e.g. `--primary-trans-10`, `--base-ultra-dark-trans-60`) for each main color and shade. In 4.x we removed all of them. They’re no longer needed: you can get any transparency you want, for any color, directly in your CSS using the two methods below. That keeps the framework smaller, avoids unused tokens, and lets you define exactly the opacity you need per use case.
 
-You can mix any color with transparent using CSS' `color-mix()` function. 
+## 1. color-mix()
 
-```css
-.foo {
-    background: color-mix(in srgb, var(--primary) 27%, transparent);
-}
-```
+**color-mix()** blends two colors in a given color space. For transparencies, you mix your color with `transparent` and control the result with a percentage.
 
-**Here's a breakdown:**
-- `in srgb` => the color space you want to mix in (for transparencies it's mostly irrelevant).
-- `var(--primary)` => the color or shade you want to make transparent.
-- `27%` => the amount of the color you want (the remainder will be transparent).
-- `transparent` => the CSS color key for transparency.
+Syntax: `color-mix(in <color-space>, <color> <percentage>, transparent)`.
 
-Color Mix has greater browser support than Relative Color Syntax and is typically easier to write.
-
-## Method 2: Relative Color Syntax
-
-Relative Color Syntax allows you to access the color partials of any color natively with full support for transparency manipulation.
+**Examples:**
 
 ```css
-.foo {
-    background: oklch(from var(--primary) l c h / .27);
-}
+/* 20% primary, 80% transparent */
+background: color-mix(in oklch, var(--primary) 20%, transparent);
+
+/* 60% neutral in srgb */
+border-color: color-mix(in srgb, var(--neutral) 60%, transparent);
 ```
 
-**Here's a breakdown:**
-- `oklch()` => the color space you want to work in.
-- `from var(--primary)` => the color or shade you want to make transparent.
-- `l c h` => the color partials (can be referenced as shown, converted to a value, or manipulated with `calc()`).
-- `.27` => the resulting opacity.
+Use `in oklch` for consistency with the ACSS palette; `in srgb` is also common and works everywhere. The percentage is how much of the first color (your palette color) is in the mix—so `20%` gives a light tint, `80%` is mostly opaque.
 
-Relative Color Syntax gives you the added flexibility of manipulating the color partials if desired.
+**When to use it:** Quick, readable transparencies from any variable. Great for overlays, borders, shadows, and backgrounds when you want “this color at X% opacity.”
 
-## Why No Transparency Tokens?
+## 2. Relative Color Syntax
 
-We had a big library of pre-made transparency tokens in previous versions of ACSS. There were pros and cons to this approach:
+**Relative Color Syntax** lets you take an existing color and change one of its channels. So you can start from `var(--primary)` and set only the alpha (or lightness, etc.) to get a transparent version.
 
-**Pros:**
-- Handy and quick.
+Syntax: `oklch(from <color> l c h / <alpha>)` (for OKLCH; other spaces use their own channel names).
 
-**Cons:**
-- Lots of CSS declarations that were never used means a lot of bloat.
-- Values were often close, but not perfect, since they were in fixed increments.
-- Users often needed to create custom transparencies anyway to best match their design requirements, resulting in a [mostly unused] library of static values and a handful of custom transparencies.
-
-As you can see, the cons greatly outweighed the pros. Transparencies tend to be customized to the context, so it's best to just stick with:
-
-1. Generating transparencies on the fly with color-mix() or relative color syntax.
-2. Creating custom transparency tokens based on project requirements.
-
-Remember, you can still create easily referenceable transparency tokens yourself:
+**Example:**
 
 ```css
-:root {
-    --primary-trans-77: color-mix(in srgb, var(--primary 77%, transparent);
-}
+/* Primary at 50% opacity */
+background: oklch(from var(--primary) l c h / 0.5);
+
+/* Base with 10% alpha */
+color: oklch(from var(--base) l c h / 0.1);
 ```
 
-The benefit of this approach is that you only create what you need and actually use with 100% accuracy. And they're still easily referenceable, but with no bloat!
+Here `l`, `c`, and `h` mean “keep the same lightness, chroma, and hue as the source color”; only the alpha (after the `/`) is changed. You can also adjust `l`, `c`, or `h` (e.g. with `calc()`) if you want a lighter or duller transparent color.
+
+**When to use it:** When you want to preserve the exact hue and saturation of a palette color and only change opacity (or tweak one channel). Useful for overlays, focus rings, or any time you need “this exact color, but transparent.”
+
+## Summary
+
+| Need | Prefer |
+|------|--------|
+| “This color at X% opacity” | `color-mix(in oklch, var(--color) X%, transparent)` |
+| “Same color, only change alpha (or one channel)” | `oklch(from var(--color) l c h / 0.5)` |
+
+You can still create your own custom transparency variables in ACSS (e.g. in Custom CSS or a recipe) and reuse them. The change in 4.x is that we no longer ship a fixed set of tokens—you define only what you use, with the full power of modern CSS.

@@ -1,6 +1,6 @@
 {
-    "label": "Palette",
-    "position": 80,
+    "label": "Color Scheme",
+    "position": 78,
     "link": null,
     "customProps": {
         "badge": "4.x"
