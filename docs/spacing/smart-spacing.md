@@ -1,6 +1,6 @@
 ---
 title: Smart Spacing
-sidebar_position: 100
+sidebar_position: 200
 ---
 
 Smart Spacing is a feature unique to Automatic.css and is easily one of the most impactful features in the framework as it helps you achieve even spacing within containers on the pages you’re building while simultaneously applying automatic spacing for rich text content, blog posts, and other content with limited styling controls.
@@ -35,9 +35,7 @@ One huge benefit of Smart Spacing is that you can space blog post content withou
 
 ## How to use Smart Spacing
 
-![Smart Spacing Panel](img/smart-spacing.webp)
-
-Smart Spacing Panel
+![Smart Spacing Panel](img/smart-spacing-panel.webp)
 
 First, turn on Smart Spacing in the **Spacing > Smart Spacing** dashboard.
 

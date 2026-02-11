@@ -1,6 +1,6 @@
 ---
 title: Section Spacing Setup
-sidebar_position: 100
+sidebar_position: 20
 ---
 
 Sections, and the default spacing they provide, are a critical aspect of modern web design.
@@ -15,9 +15,7 @@ There’s [a great article on section structure in web design](https://geary.co/
 
 Block padding (top and bottom) and inline padding (left and right) are both controlled via the dashboard:
 
-![Section Spacing in ACSS](img/section-spacing.webp)
-
-Section Spacing in ACSS
+![Section Spacing in ACSS](img/section-spacing-panel.webp)
 
 Section spacing uses the **[Base Spacing](../spacing/standard-spacing-setup.md)** values from the [regular spacing system](../spacing/standard-spacing-setup.md) and multiplies them to make them bigger and more appropriate for sections. The amount it’s multiplied by is set via the **Base Spacing Multiplier** input.
 
@@ -34,5 +32,5 @@ All of the inputs in this section map directly to the “M” (medium) section s
 Section spacing in ACSS affects the following:
 
 - Default section elements (spacing is set on top level section elements by default).
-- [Section Spacing Variables](../spacing/section-spacing-variables.md)
+- [Spacing Variables](../spacing/spacing-variables.md)
 - Section Classes

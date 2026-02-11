@@ -1,6 +1,6 @@
 ---
 title: Contextual Spacing
-sidebar_position: 100
+sidebar_position: 30
 ---
 
 Contextual Spacing refers to spacing within a specific context. For example, the standard gap value you repeatedly use within grids or the space between content elements.
@@ -35,9 +35,7 @@ Grid gap is the gap between items in grids and columnized content.
 
 You can set values for these contextual utilities via the ACSS Spacing tab.
 
-![Contextual Spacing Controls in Automatic.css](img/contextual-spacing.webp)
-
-Contextual Spacing Controls in Automatic.css
+![Contextual Spacing Controls in Automatic.css](img/contextual-spacing-panel.webp)
 
 Notice that we’re not using random values here. We’re using ACSS variables for automatic responsiveness and maximum consistency.
 
@@ -81,15 +79,6 @@ This is a really fantastic approach for multiple reasons:
 
 Try it, you’ll fall in love.
 
-## Automatic Contextual Spacing
+## Automatic Spacing
 
-Automatic Contextual Spacing
-
-As of version 2.6, you no longer have to manually use contextual utilities within sections, containers, and grids. Simply activate Automatic Contextual Spacing and ACSS will apply the spacing for you automatically.
-
-- ACSS will target all `section` elements and apply container-gap spacing between divs that are direct children of the `section` element.
-- ACSS will target all divs/containers that are direct children of `section` elements and apply content-gap spacing.
-- ACSS will target all div/block elements in general and apply content-gap spacing.
-- ACSS will target all grids that use [grid utility classes](../grids/grid-classes-standard.md) and apply grid-gap.
-
-To avoid conflicts and make it easy to override automatic spacing, ACSS applies these spacing values with zero specificity. The automatic spacing can be overridden at any point with other utility classes, custom classes, ID styling, inline styling, or global styling with any specificity value.
+ACSS can also automatically apply contextual spacing to your site. See [Automatic Spacing](automatic-spacing.md) for details.
