@@ -1,6 +1,6 @@
 ---
 title: Transition
-sidebar_position: 10
+sidebar_position: 30
 ---
 
 It's common for clickable and hoverable elements to have transition styling. It's also common for clickable and hoverable elements to share transition styling for consistency purposes.

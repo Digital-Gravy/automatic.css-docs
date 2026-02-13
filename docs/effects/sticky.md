@@ -1,6 +1,6 @@
 ---
 title: Sticky
-sidebar_position: 225
+sidebar_position: 60
 ---
 
 Sticky elements stick to the top of the browser window (with or without an offset) as the user scrolls down the page.

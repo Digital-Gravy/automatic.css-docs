@@ -1,6 +1,6 @@
 ---
 title: Gradient Fades
-sidebar_position: 100
+sidebar_position: 50
 ---
 
 **Note:** Functions and mixins are designed for use in the Custom SCSS area of the Automatic.css dashboard. They will not work in the builder inputs or builder CSS.

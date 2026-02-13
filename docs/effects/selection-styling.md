@@ -1,6 +1,6 @@
 ---
 title: Selection Styling
-sidebar_position: 50
+sidebar_position: 40
 ---
 
 ACSS users can control the background and foreground color of selected text (highlighted when the user clicks and drags to select text on the site) via the Selection Styling panel under Additional Styling.
