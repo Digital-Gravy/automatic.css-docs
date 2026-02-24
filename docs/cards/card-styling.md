@@ -46,11 +46,15 @@ Configure your default styling in **Cards > Card Styling > Styling Options**:
 
 ### Borders
 
-- **Concentric Radius** – Use concentric math to improve radius UI of cards with boxed icons, media, avatars, etc.
+- **Concentric Radius** – Controls how border radius is calculated for cards and their inner elements (media, icons, avatars). Options:
+  - **Off** – No concentric radius math. You set the card's border radius manually via the Border Radius input.
+  - **Standard** – The card's outer radius is automatically expanded (`--radius + --card-padding`) so that inner elements using the global `--radius` appear visually proportional. This is the traditional concentric radius approach.
+  - **Reverse** – The card's outer radius stays at the global `--radius`, and inner elements receive a smaller calculated radius (`--radius - --card-padding`), clamped to a minimum value. This is useful when you want the card itself to match other elements on the page while still maintaining proportional inner corners.
+- **Minimum Radius** – *(Visible when Concentric Radius is set to Reverse)* Sets the floor for the inner radius calculation. Prevents inner element corners from becoming too small or flat when padding is large. Defaults to `4px`.
 - **Border Width** – Thickness of the card border
 - **Border Style** – Style of the card border (solid, dashed, etc.)
 - **Border Color** – Color of the card border
-- **Border Radius** – Radius of the card corners (hidden when Concentric Radius is on)
+- **Border Radius** – Radius of the card corners (only visible when Concentric Radius is Off)
 
 ### Buttons & Links
 
@@ -133,6 +137,7 @@ The following variables are available for use in your custom styles:
 - `--card-padding`
 - `--card-gap`
 - `--card-radius`
+- `--card-min-radius`
 - `--card-border-width`
 - `--card-border-style`
 - `--card-border-color`

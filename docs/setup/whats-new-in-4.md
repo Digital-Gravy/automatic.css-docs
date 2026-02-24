@@ -21,6 +21,9 @@ Users should be most aware of the following changes from 3.x to 4.x:
 - **Removed Most Utility Class Modules:**  
   ACSS is now officially a variable-first, BEM-first (or any kind of custom classes) framework. This dramatically reduces the framework size, makes workflows simpler and more consistent (less mixing utility classes and BEM), and makes the framework easier to learn and use. Some critical utility classes have been replaced with Recipes which can be expanded inside of any BEM class.
 
+- **Recipe syntax:**  
+  Recipes now use the **`?`** prefix instead of `@` (e.g. `?btn`, `?flex-grid`). Expand them in the CSS input of your builder or in ACSS Custom SCSS.
+
 - **Removed Breakpoints:**  
   Since preset breakpoints are an Era 1/2/3 concept and don't make sense for Era 4, we've removed them. ACSS is now officially a breakpoint-free framework! None of the remaining utility classes or features require breakpoint presets. You can still use media queries and container queries in your development process, but they're no longer needed in the ACSS framework as fixed presets.
 
@@ -41,6 +44,15 @@ Users should be most aware of the following changes from 3.x to 4.x:
 
 - **Refactored Form Styling:**  
   Forms are completely refactored to perfectly match the options and structures available for each 3rd party form system we support. This results in more styling accuracy across third party form tools.
+
+- **Added Effects:**  
+  ACSS 4.x introduces an **Effects** section that groups transition, sticky, selection styling, and related options (configured under **Additional Styling** in the dashboard).
+
+- **Selection Styling moved to Effects:**  
+  The Selection Styling panel (default and alternate text selection colors) is now under **Additional Styling** and documented in the [Effects](../effects/selection-styling.md) section. It works with [color scheme](../color-scheme/color-scheme-setup.md) so selection colors can follow light/dark.
+
+- **Builder integrations updated:**  
+  Bricks, Gutenberg, and Etch integration options have been simplified and updated (e.g. Gutenberg: simplified panel, Blog Post BG/Text Color, automatic load/use toggles). See each builder’s setup doc for details.
 
 - **Refactored Header Height:**  
 Header Height, Scroll Offsets, and Content Offset are now breakpoint-less and based on fluid heading height.
