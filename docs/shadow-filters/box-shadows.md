@@ -1,26 +1,22 @@
 ---
 title: Box Shadows
-sidebar_position: 100
+sidebar_position: 1
 slug: box-shadows
 ---
 
-ACSS provides three customizable box shadow variables that can be configured in the dashboard under **Additional Styling > Box Shadows**.
+ACSS provides five customizable box shadow slots that can be configured in the dashboard under **Shadows > Box Shadows**.
 
-![Box Shadows panel](img/box-shadows.webp)
+Each slot has a customizable **Name** (defaults: 1 through 5) and a **Value** textarea.
 
 ## Available Variables
 
-By default, the box shadow variables are:
-
-- `var(--box-shadow-m)` - Medium shadow
-- `var(--box-shadow-l)` - Large shadow
-- `var(--box-shadow-xl)` - Extra large shadow
-
-Numeric versions are also available:
+By default, the first three slots have values and the remaining two are empty (ready for your custom presets):
 
 - `var(--box-shadow-1)`
 - `var(--box-shadow-2)`
 - `var(--box-shadow-3)`
+- `var(--box-shadow-4)` *(empty by default)*
+- `var(--box-shadow-5)` *(empty by default)*
 
 ## Using Box Shadows
 
@@ -28,27 +24,23 @@ Apply box shadows using the CSS variables:
 
 ```css
 .my-card {
-  box-shadow: var(--box-shadow-m);
+  box-shadow: var(--box-shadow-1);
 }
 
 .my-modal {
-  box-shadow: var(--box-shadow-xl);
+  box-shadow: var(--box-shadow-3);
 }
 ```
 
-## Customizing Box Shadows
+## Custom Names
 
-In the dashboard under **Additional Styling > Box Shadows**, you can customize:
+Each shadow can be given a custom name. If you name shadow 1 "subtle", the variable becomes `var(--box-shadow-subtle)`.
 
-### Name
+This follows the same pattern as Surfaces and Overlays — use the default numeric names or create semantic names that fit your project.
 
-Each shadow can have a custom name. For example, if you name a shadow "primary", the variable becomes `var(--box-shadow-primary)`.
+## Customizing Values
 
-The numeric variable (`--box-shadow-1`, etc.) remains available regardless of the custom name.
-
-### Value
-
-Enter any valid CSS box-shadow value, including compound shadows. Omit the semicolon.
+Enter any valid CSS `box-shadow` value, including compound (multi-layer) shadows. Omit the semicolon.
 
 Example values:
 
@@ -62,22 +54,26 @@ Example values:
 0 40px 60px -10px hsl(0 0% 0% / 0.08)
 ```
 
-Use a [box shadow generator](https://box-shadow.dev/) if you need help creating shadow values.
-
 ## Default Values
 
-The default shadows use `color-mix()` for clean, neutral shadows:
+The first three slots ship with layered, production-quality shadows:
 
-| Variable | Default Value |
-|----------|---------------|
-| `--box-shadow-m` | `0 0 40px color-mix(in srgb, black 10%, transparent)` |
-| `--box-shadow-l` | `0 0 60px color-mix(in srgb, black 20%, transparent)` |
-| `--box-shadow-xl` | `0 0 80px color-mix(in srgb, black 30%, transparent)` |
+| Slot | Description |
+|------|-------------|
+| 1 | Subtle — light 3-layer shadow |
+| 2 | Medium — 4-layer shadow with more spread |
+| 3 | Heavy — 6-layer shadow for strong depth |
+
+## Disabling
+
+Box shadow variables can be disabled under **Options > Box Shadow Variables**.
 
 ## Changes From 3.x
 
 In ACSS 4.0:
 
-- Box shadow **utility classes** (`.box-shadow--m`, etc.) have been **removed**. Use the CSS variables instead.
-- Default values now use `color-mix()` for cleaner shadow colors.
-- Numeric variable aliases (`--box-shadow-1`, `--box-shadow-2`, `--box-shadow-3`) are always available alongside named versions.
+- Box shadows have moved from **Additional Styling** to the new **Shadows** panel.
+- Shadow names now default to `1`, `2`, `3` instead of `m`, `l`, `xl`. Existing installations are migrated automatically.
+- There are now **5 available slots** (up from 3).
+- Box shadow **utility classes** (`.box-shadow--m`, etc.) have been **removed**. Use the CSS variables directly.
+- The old numeric aliases (`--box-shadow-1`, etc.) are now the primary naming convention.

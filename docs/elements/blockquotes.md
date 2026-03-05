@@ -254,7 +254,7 @@ Then use it in your HTML:
   --blockquote-border-color: var(--accent);
   --blockquote-border-width: 2px;
   --blockquote-border-radius: var(--radius-l);
-  --blockquote-box-shadow: var(--box-shadow-m);
+  --blockquote-box-shadow: var(--box-shadow-1);
   --blockquote-max-inline-size: 60ch;
 }
 ```

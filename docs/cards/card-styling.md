@@ -96,7 +96,7 @@ Media elements are targeted with `__media` in the class name.
 
 ### Shadows
 
-- **Card Shadow** – Box shadow for cards (e.g., `var(--box-shadow-md)`)
+- **Card Shadow** – Box shadow for cards (e.g., `var(--box-shadow-1)`)
 
 ## More Options
 
