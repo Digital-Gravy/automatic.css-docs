@@ -17,8 +17,8 @@ Scale and translate elements on hover using modern individual transform properti
 | `.on-hover--shrink` | Scales the element down |
 | `.on-hover--float` | Translates the element up |
 | `.on-hover--sink` | Translates the element down |
-| `.on-hover--forward` | Translates the element right |
-| `.on-hover--backward` | Translates the element left |
+| `.on-hover--slide-right` | Translates the element right |
+| `.on-hover--slide-left` | Translates the element left |
 
 ### Example
 
@@ -156,15 +156,35 @@ Animated border and underline effects for buttons, links, and interactive elemen
 
 ### Border Effect Customization
 
-Configure border effects in the dashboard or with CSS variables:
+Each border effect type has its own set of CSS variables, configured in the dashboard or with local overrides:
 
 ```css
+/* Ripple */
 .my-element {
-  --border-effect-color: var(--primary);
-  --border-effect-width: 2px;
-  --border-effect-duration: 0.4s;
+  --border-ripple-color: var(--primary);
+  --border-ripple-width: 2px;
+  --border-ripple-duration: 0.4s;
+  --border-ripple-distance: 8px;
+}
+
+/* Outline */
+.my-element {
+  --border-outline-color: var(--primary);
+  --border-outline-width: 2px;
+  --border-outline-duration: 0.4s;
+}
+
+/* Underline */
+.my-element {
+  --border-underline-color: var(--primary);
+  --border-underline-width: 2px;
+  --border-underline-duration: 0.4s;
 }
 ```
+
+:::note
+Border effects reset the element's existing `border` and `outline` to prevent conflicts. Outline effects also set `overflow: visible` and inherit the element's `border-radius`.
+:::
 
 ## Global Hover Settings
 

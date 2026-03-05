@@ -53,12 +53,12 @@ The `$amount` argument is not required. It will default to 25%.
 
 Each axis option has an associated recipe. The following will expand the fade out code:
 
-- `@fade-block;`
-- `@fade-inline;`
-- `@fade-top;`
-- `@fade-right;`
-- `@fade-bottom;`
-- `@fade-left;`
+- `?fade-block;`
+- `?fade-inline;`
+- `?fade-top;`
+- `?fade-right;`
+- `?fade-bottom;`
+- `?fade-left;`
 
 Remember that you can’t paste these recipe strings. They’ll only expand when the semicolon on the end is actually typed.
 

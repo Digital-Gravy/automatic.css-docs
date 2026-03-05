@@ -3,10 +3,10 @@ title: Content Grid Recipe
 sidebar_position: 100
 ---
 
-You can deploy a [content grid layout](../grids/content-grid.md) to any box with the `@content-grid;` recipe.
+You can deploy a [content grid layout](../grids/content-grid.md) to any box with the `?content-grid;` recipe.
 
 ```CSS
-@content-grid;
+?content-grid;
 ```
 
 This recipe automatically outputs the `%root%` selector so you can deploy it directly in the CSS box without any preparation.

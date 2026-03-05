@@ -75,33 +75,45 @@ The `entry` keyword refers to when the element enters the viewport from the bott
 }
 ```
 
-### Delay Utilities
+### Staggered Children
 
-Stagger animations with percentage-based delays:
-
-| Class | Delay |
-|-------|-------|
-| `.on-enter--delay-5` | 5% |
-| `.on-enter--delay-10` | 10% |
-| `.on-enter--delay-15` | 15% |
-| `.on-enter--delay-20` | 20% |
-| `.on-enter--delay-25` | 25% |
+Add `.on-enter--stagger` to a parent using `-all` classes to automatically stagger each child's animation based on its position:
 
 ```html
-<div class="on-enter--fade">First element</div>
-<div class="on-enter--fade on-enter--delay-10">Second element (delayed)</div>
-<div class="on-enter--fade on-enter--delay-20">Third element (more delayed)</div>
+<div class="on-enter-all--fade on-enter-all--float on-enter--stagger">
+  <div>Child 1 — animates first</div>
+  <div>Child 2 — delayed by stagger interval</div>
+  <div>Child 3 — delayed by 2× stagger interval</div>
+</div>
 ```
+
+Configure the stagger interval in the dashboard under the Timing section. The default interval is `5%` of the scroll range.
+
+:::note
+Stagger uses CSS `sibling-index()`, which has limited browser support. In unsupported browsers, all children animate simultaneously.
+:::
 
 ## Customization
 
-### Distance
+### Starting Opacity
 
-For float, sink, and slide effects:
+For fade effect:
 
 ```css
 .my-element {
-  --enter-distance: 60px; /* Move 60px instead of default 40px */
+  --enter-opacity-start: 0.2; /* Start at 20% opacity instead of fully transparent */
+}
+```
+
+### Distance
+
+Each movement effect has its own distance variable:
+
+```css
+.my-element {
+  --enter-float-distance: 60px;  /* Float distance */
+  --enter-sink-distance: 60px;   /* Sink distance */
+  --enter-slide-distance: 60px;  /* Slide distance */
 }
 ```
 

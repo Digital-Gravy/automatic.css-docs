@@ -7,18 +7,18 @@ Media query recipes will expand a media query for any custom code that you’d l
 
 ## Max-Width Media Queries
 
-- `@breakpoint-xs`
-- `@breakpoint-s`
-- `@breakpoint-m`
-- `@breakpoint-l`
-- `@breakpoint-xl`
-- `@breakpoint-xxl`
+- `?breakpoint-xs`
+- `?breakpoint-s`
+- `?breakpoint-m`
+- `?breakpoint-l`
+- `?breakpoint-xl`
+- `?breakpoint-xxl`
 
 ## Min-Width Media Queries
 
-- `@breakpoint-up-xs`
-- `@breakpoint-up-s`
-- `@breakpoint-up-m`
-- `@breakpoint-up-l`
-- `@breakpoint-up-xl`
-- `@breakpoint-up-xxl`
+- `?breakpoint-up-xs`
+- `?breakpoint-up-s`
+- `?breakpoint-up-m`
+- `?breakpoint-up-l`
+- `?breakpoint-up-xl`
+- `?breakpoint-up-xxl`

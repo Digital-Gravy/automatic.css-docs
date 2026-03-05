@@ -13,7 +13,7 @@ For example, let’s say you want to turn a big block of paragraphs into a multi
 
 Columns functionality is not something that can be mapped to a CSS variable, so there was no other option for creating columns without writing the CSS yourself, prior to Recipes.
 
-With Recipes, you simply open the rich text element that houses your paragraphs, create a class if you want to assign the Recipe to a class, and then type “@” plus the name of the recipe:
+With Recipes, you simply open the rich text element that houses your paragraphs, create a class if you want to assign the Recipe to a class, and then type “?” plus the name of the recipe:
 
 ![ACSS recipe](img/acss-recipe.webp)
 
@@ -27,7 +27,7 @@ Some recipes are very simple and some are complex. It just depends on the utilit
 
 ## Using Recipes in Input Fields
 
-Some Recipes are simply the exposed value of a specific variable and can be used as single values in input fields. For example, you can expose all the partials for a color with the Recipe “`@[color-name]-clr`.”
+Some Recipes are simply the exposed value of a specific variable and can be used as single values in input fields. For example, you can expose all the partials for a color with the Recipe “`?[color-name]-clr`.”
 
 Let’s say you want to create a custom transparency or use a tweaked version of an existing color within the ACSS system. Prior to 3.0, you’d have to write your own HSL string manually using [color partials](../colors/main-colors.md):
 
@@ -35,9 +35,9 @@ Let’s say you want to create a custom transparency or use a tweaked version of
 hsl(var(--primary-h) var(--primary-s) var(--primary-l) / 1)
 ```
 
-But, with ACSS Recipes, all you have to type is “`@primary-clr.`“
+But, with ACSS Recipes, all you have to type is “"`?primary-clr.`"“
 
-Once you type `@primary-clr` and hit Enter, the Recipe instantly expands into the full HSL string. Now you can simply change the transparency value, any of the H, S, or L values, or even calc part of the HSL.
+Once you type `?primary-clr` and hit Enter, the Recipe instantly expands into the full HSL string. Now you can simply change the transparency value, any of the H, S, or L values, or even calc part of the HSL.
 
 Since the HSL uses variable partials, whatever part of the string you don’t edit remains fully hooked into the ACSS system for maximum maintainability.
 
@@ -45,7 +45,7 @@ Since the HSL uses variable partials, whatever part of the string you don’t ed
 
 For users who want to turn off sets of utility classes, Recipes can be a great way to continue accessing the functionality of those utilities on a case-by-case basis.
 
-Using our example above, you could turn off “Columns” classes in ACSS, which removes all the columns utilities from the stylesheet (making your stylesheet lighter). If you need columns on your project, you cans simply use `@columns` to get the functionality wherever its needed without having to load all the columns utilities.
+Using our example above, you could turn off “Columns” classes in ACSS, which removes all the columns utilities from the stylesheet (making your stylesheet lighter). If you need columns on your project, you cans simply use `?columns` to get the functionality wherever its needed without having to load all the columns utilities.
 
 ## The future of Recipes
 

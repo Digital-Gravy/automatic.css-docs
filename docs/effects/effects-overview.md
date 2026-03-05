@@ -13,7 +13,7 @@ ACSS provides a comprehensive effects system for adding motion and visual feedba
 
 Simple hover interactions using the `.on-hover--*` prefix:
 
-- **Transform**: grow, shrink, float, sink, forward, backward
+- **Transform**: grow, shrink, float, sink, slide-right, slide-left
 - **Shadow**: shadow, glow
 - **Filter**: brighten
 - **Opacity**: fade
@@ -26,11 +26,11 @@ CSS scroll-driven animations that trigger based on scroll position:
 - **Entrance Effects** (`.on-enter--*`): Elements animate into view as you scroll down
 - **Exit Effects** (`.on-exit--*`): Elements animate out as you scroll past them
 
-### Visible Animations
+### On Visible
 
 JavaScript-powered animations using Intersection Observer:
 
-- **Visible Effects** (`.on-visible--*`): Elements animate once when they become visible and stay visible
+- **On Visible** (`.on-visible--*`): Elements animate once when they become visible and stay visible
 
 ## Key Features
 
@@ -56,17 +56,23 @@ Use the `-all` variants to animate direct children:
 </div>
 ```
 
-### Delay Utilities
+### Staggered Animations
 
-Stagger animations with delay classes:
+Add the `--stagger` class to automatically stagger children using CSS `sibling-index()`:
 
 ```html
-<!-- Scroll animations (percentage-based) -->
-<div class="on-enter--fade on-enter--delay-10">Delayed 10%</div>
-
-<!-- Visible animations (time-based) -->
-<div class="on-visible--fade on-visible--delay-200">Delayed 200ms</div>
+<div class="on-enter-all--fade on-enter--stagger">
+  <div>Child 1 — no delay</div>
+  <div>Child 2 — delayed by stagger interval</div>
+  <div>Child 3 — delayed by 2× stagger interval</div>
+</div>
 ```
+
+Each child receives an increasing delay based on its position. Configure the interval per category in the dashboard.
+
+:::note
+Stagger uses CSS `sibling-index()`, which has limited browser support. In unsupported browsers, all children animate simultaneously.
+:::
 
 ### Accessibility
 
@@ -91,4 +97,4 @@ Only enabled effects are included in your CSS output.
 
 - **Hover Effects**: All modern browsers
 - **Scroll Animations**: Browsers supporting `animation-timeline: view()` (Chrome 115+, Edge 115+). Falls back gracefully in unsupported browsers.
-- **Visible Animations**: All browsers supporting Intersection Observer (all modern browsers)
+- **On Visible**: All browsers supporting Intersection Observer (all modern browsers)

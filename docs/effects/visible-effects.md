@@ -1,17 +1,17 @@
 ---
-title: Visible Effects
+title: On Visible
 sidebar_position: 20
 sidebar_custom_props:
   badge: "New"
 ---
 
-Visible effects animate elements once when they become visible in the viewport. Unlike scroll animations that continuously respond to scroll position, visible effects play once and the element remains in its final state.
+On Visible animates elements once when they become visible in the viewport. Unlike scroll animations that continuously respond to scroll position, the animation plays once and the element remains in its final state.
 
 ## How It Works
 
-Visible effects use the Intersection Observer API via a small JavaScript file. When an element with a `.on-visible--*` class enters the viewport:
+On Visible uses the Intersection Observer API via a small JavaScript file. When an element with a `.on-visible--*` class enters the viewport:
 
-1. The `is-visible` class is added to the element
+1. The `acss-visible` class is added to the element
 2. CSS transitions animate from the initial state to the final state
 3. The animation plays once and doesn't reverse when scrolling back
 
@@ -38,7 +38,7 @@ Visible effects use the Intersection Observer API via a small JavaScript file. W
 
 ## Composable Effects
 
-Combine multiple visible effects:
+Combine multiple On Visible effects:
 
 ```html
 <div class="on-visible--fade on-visible--float on-visible--grow">
@@ -67,7 +67,7 @@ The animation triggers when the parent becomes visible, and all children animate
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `--visible-duration` | `0.6s` | Animation duration |
-| `--visible-timing` | `var(--ease-snappy)` | Easing function |
+| `--visible-timing` | `var(--ease-smooth)` | Easing function |
 | `--visible-delay` | `0s` | Default delay |
 
 ```css
@@ -91,33 +91,45 @@ Control how much of the element must be visible before triggering:
 }
 ```
 
-### Delay Utilities
+### Staggered Children
 
-Stagger animations with time-based delays:
-
-| Class | Delay |
-|-------|-------|
-| `.on-visible--delay-100` | 100ms |
-| `.on-visible--delay-200` | 200ms |
-| `.on-visible--delay-300` | 300ms |
-| `.on-visible--delay-400` | 400ms |
-| `.on-visible--delay-500` | 500ms |
+Add `.on-visible--stagger` to a parent using `-all` classes to automatically stagger each child's animation:
 
 ```html
-<div class="on-visible--fade">First (no delay)</div>
-<div class="on-visible--fade on-visible--delay-200">Second (200ms delay)</div>
-<div class="on-visible--fade on-visible--delay-400">Third (400ms delay)</div>
+<div class="on-visible-all--fade on-visible-all--float on-visible--stagger">
+  <div>Child 1 — animates first</div>
+  <div>Child 2 — delayed by stagger interval</div>
+  <div>Child 3 — delayed by 2× stagger interval</div>
+</div>
 ```
+
+Configure the stagger interval in the dashboard under the Timing section. The default interval is `0.1s`.
+
+:::note
+Stagger uses CSS `sibling-index()`, which has limited browser support. In unsupported browsers, all children animate simultaneously.
+:::
 
 ## Customization
 
-### Distance
+### Starting Opacity
 
-For float, sink, and slide effects:
+For fade effect:
 
 ```css
 .my-element {
-  --visible-distance: 60px;
+  --visible-opacity-start: 0.2; /* Start at 20% opacity instead of fully transparent */
+}
+```
+
+### Distance
+
+Each movement effect has its own distance variable:
+
+```css
+.my-element {
+  --visible-float-distance: 60px;  /* Float distance */
+  --visible-sink-distance: 60px;   /* Sink distance */
+  --visible-slide-distance: 60px;  /* Slide distance */
 }
 ```
 
@@ -142,19 +154,19 @@ For blur effect:
 }
 ```
 
-## Visible vs. Entrance Effects
+## On Visible vs. Entrance Effects
 
 Choose based on your needs:
 
-| Feature | Visible Effects | Entrance Effects |
-|---------|-----------------|------------------|
+| Feature | On Visible | Entrance Effects |
+|---------|------------|------------------|
 | **Trigger** | Once when visible | Continuously on scroll |
 | **Reverses** | No | Yes (on scroll back) |
 | **Technology** | Intersection Observer (JS) | Scroll-driven animations (CSS) |
 | **Browser Support** | All modern browsers | Chrome/Edge 115+ |
 | **Best For** | One-time reveals, content loading | Interactive scroll experiences |
 
-### When to Use Visible Effects
+### When to Use On Visible
 
 - Content that should "pop in" once
 - Below-the-fold content on load
@@ -173,17 +185,19 @@ Choose based on your needs:
 Create a staggered reveal for a card grid:
 
 ```html
-<div class="grid">
-  <div class="card on-visible--fade on-visible--float">Card 1</div>
-  <div class="card on-visible--fade on-visible--float on-visible--delay-100">Card 2</div>
-  <div class="card on-visible--fade on-visible--float on-visible--delay-200">Card 3</div>
-  <div class="card on-visible--fade on-visible--float on-visible--delay-300">Card 4</div>
+<div class="grid on-visible-all--fade on-visible-all--float on-visible--stagger">
+  <div class="card">Card 1</div>
+  <div class="card">Card 2</div>
+  <div class="card">Card 3</div>
+  <div class="card">Card 4</div>
 </div>
 ```
 
+Each card automatically receives an increasing delay based on its position — no manual delay classes needed.
+
 ## Accessibility
 
-Visible effects respect `prefers-reduced-motion`:
+On Visible respects `prefers-reduced-motion`:
 
 ```css
 @media (prefers-reduced-motion: reduce) {

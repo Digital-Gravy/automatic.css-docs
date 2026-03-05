@@ -7,7 +7,7 @@ Overlap recipes allow you to quickly create two different types of overlap effec
 
 ## Benefits & Compatibilities
 
-Traditional overlap techniques all have various pros and cons. The technique deployed with the `@overlap` recipe has far more upsides than any other technique and a smaller list of cons.
+Traditional overlap techniques all have various pros and cons. The technique deployed with the `?overlap` recipe has far more upsides than any other technique and a smaller list of cons.
 
 - Can be applied to classes or IDs.
 - Can be manipulated per-instance separately from the class application.
@@ -17,19 +17,19 @@ Traditional overlap techniques all have various pros and cons. The technique dep
 - Supports masks, clip paths, and custom border radii.
 - Supports background styles on the same container.
 
-## `@overlap;`
+## `?overlap;`
 
 ![Overlap](img/overlap.webp)
 
 Overlap
 
-`@overlap` is a simple recipe for adding an overlap effect to any box with some unique benefits. The overlap is effectively a background-type style that extends from the top of the box to a stopping point prior to the bottom of the box. The stopping point is user-editable.
+`?overlap` is a simple recipe for adding an overlap effect to any box with some unique benefits. The overlap is effectively a background-type style that extends from the top of the box to a stopping point prior to the bottom of the box. The stopping point is user-editable.
 
-## `@overlap-alt;`
+## `?overlap-alt;`
 
 Overlap-alt example
 
-`@overlap-alt` deploys a background to the adjacent sibling box with the overlap extending up into the target box.
+`?overlap-alt` deploys a background to the adjacent sibling box with the overlap extending up into the target box.
 
 ## Native Properties for Customization
 

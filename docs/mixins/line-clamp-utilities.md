@@ -34,7 +34,7 @@ Note that the CSS for the line count is added at the ID level. You don’t want 
 
 ## Line Clamp Recipe
 
-If you’re working on a BEM class and want your line clamp to apply to a specific class, you can use an @recipe. Just write `@line-clamp;` in the element CSS box or ACSS’ custom CSS area and the code you need will auto-expand.
+If you’re working on a BEM class and want your line clamp to apply to a specific class, you can use a recipe. Just write `?line-clamp;` in the element CSS box or ACSS’ custom CSS area and the code you need will auto-expand.
 
 ## Line Clamp Mixin
 

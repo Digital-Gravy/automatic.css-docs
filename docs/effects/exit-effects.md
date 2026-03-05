@@ -14,8 +14,11 @@ Exit effects animate elements out as users scroll past them. These are perfect f
 | `.on-exit--fade` | Fades to transparent |
 | `.on-exit--float` | Floats upward |
 | `.on-exit--sink` | Sinks downward |
+| `.on-exit--slide-left` | Slides out to the left |
+| `.on-exit--slide-right` | Slides out to the right |
 | `.on-exit--grow` | Grows larger |
 | `.on-exit--shrink` | Shrinks smaller |
+| `.on-exit--blur` | Blurs out |
 
 ## Basic Usage
 
@@ -92,11 +95,21 @@ Control the final opacity:
 
 ### Distance
 
-For float and sink effects:
+Each movement effect has its own distance variable:
 
 ```css
 .my-element {
-  --exit-distance: 60px; /* Move 60px instead of default 40px */
+  --exit-float-distance: 60px;  /* Float distance */
+  --exit-sink-distance: 60px;   /* Sink distance */
+  --exit-slide-distance: 60px;  /* Slide distance */
+}
+```
+
+### Blur
+
+```css
+.my-element {
+  --exit-blur-amount: 12px; /* More blur */
 }
 ```
 
@@ -111,17 +124,23 @@ For grow and shrink effects:
 }
 ```
 
-## Delay Utilities
+## Staggered Children
 
-Stagger exit animations:
+Add `.on-exit--stagger` to a parent using `-all` classes to automatically stagger each child's exit animation:
 
-| Class | Delay |
-|-------|-------|
-| `.on-exit--delay-5` | 5% |
-| `.on-exit--delay-10` | 10% |
-| `.on-exit--delay-15` | 15% |
-| `.on-exit--delay-20` | 20% |
-| `.on-exit--delay-25` | 25% |
+```html
+<section class="hero on-exit-all--fade on-exit--stagger">
+  <h1>Hero Title</h1>
+  <p>Hero description</p>
+  <button>CTA Button</button>
+</section>
+```
+
+Configure the stagger interval in the dashboard under the Timing section. The default interval is `5%` of the scroll range.
+
+:::note
+Stagger uses CSS `sibling-index()`, which has limited browser support. In unsupported browsers, all children animate simultaneously.
+:::
 
 ## Combining with Entrance Effects
 
