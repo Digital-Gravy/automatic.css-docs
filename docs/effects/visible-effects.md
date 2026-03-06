@@ -195,6 +195,45 @@ Create a staggered reveal for a card grid:
 
 Each card automatically receives an increasing delay based on its position — no manual delay classes needed.
 
+## Manual Visibility Control
+
+By default, the Intersection Observer automatically adds the `acss-visible` class when elements scroll into view. For elements where you control visibility yourself — such as menus, modals, or dropdowns — add `data-skip-acss-visible` to tell the observer to ignore the element entirely.
+
+You then add and remove `acss-visible` via JavaScript when you're ready to trigger the animation. Removing `acss-visible` resets the element to its hidden state so the animation replays each time.
+
+### Example: Animating Menu Items
+
+Add the effect classes and `data-skip-acss-visible` to your menu list in the HTML:
+
+```html
+<ul class="nav__list on-visible-all--fade on-visible-all--blur on-visible--stagger" data-skip-acss-visible>
+  <li><a href="/">Home</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/services">Services</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+```
+
+Then toggle `acss-visible` in your menu's open/close logic:
+
+```js
+const navList = document.querySelector('.nav__list');
+
+function openMenu() {
+  navList.classList.add('acss-visible');
+}
+
+function closeMenu() {
+  navList.classList.remove('acss-visible');
+}
+```
+
+When the menu opens, each list item fades in with a blur-to-sharp transition, staggered one after the other. When the menu closes and `acss-visible` is removed, the items return to their hidden state so the animation replays on the next open.
+
+:::tip
+`data-skip-acss-visible` is useful any time elements are already in the DOM but hidden by your own logic (menus, tabs, accordions, modals). The effect classes define the animation — you just control *when* it fires by toggling `acss-visible`.
+:::
+
 ## Accessibility
 
 On Visible respects `prefers-reduced-motion`:
