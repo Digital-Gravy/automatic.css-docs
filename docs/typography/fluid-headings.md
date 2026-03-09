@@ -56,6 +56,38 @@ As a protection, you can use the “min” fields in the text overrides for thes
 
 Heading Minimum Size
 
+## Bridge Variables
+
+Bridge variables let you create fluid heading sizes that transition between two different heading levels. Instead of staying within one heading's range, a bridge variable uses the **desktop maximum** of the larger heading and the **mobile minimum** of the smaller heading — giving you a wider fluid range.
+
+The syntax is `var(--h{large}-to-h{small})`:
+
+| Variable | Desktop Size | Mobile Size |
+|----------|-------------|-------------|
+| `--h1-to-h2` | h1 | h2 |
+| `--h1-to-h3` | h1 | h3 |
+| `--h1-to-h4` | h1 | h4 |
+| `--h1-to-h5` | h1 | h5 |
+| `--h1-to-h6` | h1 | h6 |
+| `--h2-to-h3` | h2 | h3 |
+| `--h2-to-h4` | h2 | h4 |
+| `--h2-to-h5` | h2 | h5 |
+| `--h2-to-h6` | h2 | h6 |
+| `--h3-to-h4` | h3 | h4 |
+| `--h3-to-h5` | h3 | h5 |
+| `--h3-to-h6` | h3 | h6 |
+| `--h4-to-h5` | h4 | h5 |
+| `--h4-to-h6` | h4 | h6 |
+| `--h5-to-h6` | h5 | h6 |
+
+For example, `var(--h1-to-h3)` renders at the h1 size on desktop and scales down to the h3 size on mobile. This is useful when you want a heading to be prominent on desktop but scale down more aggressively than a standard h1 would:
+
+```css
+.hero-heading {
+  font-size: var(--h1-to-h3);
+}
+```
+
 ## How do I dial in the proper font sizes?
 
 The primary values controlling font sizes in Automatic are the base and scale values.

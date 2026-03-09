@@ -50,6 +50,38 @@ Font Size Override
 
 To override a size, input a value into the min and max field. The min field controls the bottom end of the fluid range. The max field controls the top (desktop) end of the range. These values are plugged into the clamp() and calc() functions to ensure these custom sizes are automatically responsive.
 
+## Bridge Variables
+
+Bridge variables let you create fluid text sizes that transition between two different t-shirt sizes. Instead of staying within one size's range, a bridge variable uses the **desktop maximum** of the larger size and the **mobile minimum** of the smaller size — giving you a wider fluid range.
+
+The syntax is `var(--text-{large}-to-{small})`:
+
+| Variable | Desktop Size | Mobile Size |
+|----------|-------------|-------------|
+| `--text-xxl-to-xl` | xxl | xl |
+| `--text-xxl-to-l` | xxl | l |
+| `--text-xxl-to-m` | xxl | m |
+| `--text-xxl-to-s` | xxl | s |
+| `--text-xxl-to-xs` | xxl | xs |
+| `--text-xl-to-l` | xl | l |
+| `--text-xl-to-m` | xl | m |
+| `--text-xl-to-s` | xl | s |
+| `--text-xl-to-xs` | xl | xs |
+| `--text-l-to-m` | l | m |
+| `--text-l-to-s` | l | s |
+| `--text-l-to-xs` | l | xs |
+| `--text-m-to-s` | m | s |
+| `--text-m-to-xs` | m | xs |
+| `--text-s-to-xs` | s | xs |
+
+For example, `var(--text-xl-to-s)` renders at the xl size on desktop and scales down to the s size on mobile. This is useful for text that needs to be large on desktop but significantly smaller on mobile:
+
+```css
+.feature-description {
+  font-size: var(--text-xl-to-s);
+}
+```
+
 ## How do I dial in the proper font sizes?
 
 The primary values controlling font sizes in Automatic are the base values and the scale values.

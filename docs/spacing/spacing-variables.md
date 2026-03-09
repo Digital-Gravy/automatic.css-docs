@@ -78,6 +78,66 @@ As a final example, the code below demonstrates how we can use a `<div>` as a se
 
 Since the Ad Container isn't a `<section>` element, it doesn't get section spacing by default. But, we can easily assign it to have default section spacing using the Section Spacing variables.
 
+## Bridge Variables
+
+Bridge variables let you create fluid spacing that transitions between two different t-shirt sizes. Instead of staying within one size's range, a bridge variable uses the **desktop maximum** of the larger size and the **mobile minimum** of the smaller size — giving you a wider fluid range.
+
+The syntax is `var(--space-{large}-to-{small})`:
+
+| Variable | Desktop Size | Mobile Size |
+|----------|-------------|-------------|
+| `--space-xxl-to-xl` | xxl | xl |
+| `--space-xxl-to-l` | xxl | l |
+| `--space-xxl-to-m` | xxl | m |
+| `--space-xxl-to-s` | xxl | s |
+| `--space-xxl-to-xs` | xxl | xs |
+| `--space-xl-to-l` | xl | l |
+| `--space-xl-to-m` | xl | m |
+| `--space-xl-to-s` | xl | s |
+| `--space-xl-to-xs` | xl | xs |
+| `--space-l-to-m` | l | m |
+| `--space-l-to-s` | l | s |
+| `--space-l-to-xs` | l | xs |
+| `--space-m-to-s` | m | s |
+| `--space-m-to-xs` | m | xs |
+| `--space-s-to-xs` | s | xs |
+
+For example, `var(--space-xl-to-m)` starts at the xl value on desktop and scales down to the m value on mobile. This is useful when you want more dramatic spacing reduction on smaller screens than a single size provides:
+
+```css
+.hero-content {
+  padding-block: var(--space-xl-to-m);
+}
+```
+
+### Section Spacing Bridge Variables
+
+The same bridge pattern is available for section spacing using `var(--section-space-{large}-to-{small})`:
+
+| Variable | Desktop Size | Mobile Size |
+|----------|-------------|-------------|
+| `--section-space-xxl-to-xl` | xxl | xl |
+| `--section-space-xxl-to-l` | xxl | l |
+| `--section-space-xxl-to-m` | xxl | m |
+| `--section-space-xxl-to-s` | xxl | s |
+| `--section-space-xxl-to-xs` | xxl | xs |
+| `--section-space-xl-to-l` | xl | l |
+| `--section-space-xl-to-m` | xl | m |
+| `--section-space-xl-to-s` | xl | s |
+| `--section-space-xl-to-xs` | xl | xs |
+| `--section-space-l-to-m` | l | m |
+| `--section-space-l-to-s` | l | s |
+| `--section-space-l-to-xs` | l | xs |
+| `--section-space-m-to-s` | m | s |
+| `--section-space-m-to-xs` | m | xs |
+| `--section-space-s-to-xs` | s | xs |
+
+```css
+.hero {
+  padding-block: var(--section-space-xl-to-s);
+}
+```
+
 ## Fine Tuning Spacing with `Calc()`
 
 When using variables, you're not limited to the available t-shirt sizes by default. You can achieve any value in between each size by using a spacing variable within a `calc()` function.
