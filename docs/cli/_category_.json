@@ -1,4 +1,8 @@
 {
     "label": "WP-CLI Commands",
-    "position": 350
+    "position": 350,
+    "link": null,
+    "customProps": {
+        "badge": "4.x"
+    }
 }
