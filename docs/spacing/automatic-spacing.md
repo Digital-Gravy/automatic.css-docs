@@ -14,7 +14,7 @@ You don't have to manually use contextual utilities within sections, containers,
 When enabled, ACSS applies the following:
 
 - **Auto Container Gap**: Targets all `section` elements and applies container-gap spacing between divs that are direct children of the `section` element.
-- **Auto Content Gap**: Targets all divs/containers that are direct children of `section` elements and applies content-gap spacing. Also targets all div/block elements in general and applies content-gap spacing.
+- **Auto Content Gap**: Targets all divs/containers that are direct children of `section` elements and applies content-gap spacing.
 - **Auto Grid Gap**: Targets all grids that use [grid utility classes](../grids/grid-classes-standard.md) and applies grid-gap.
 
 ## Zero Specificity
