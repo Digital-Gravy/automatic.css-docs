@@ -23,6 +23,7 @@ CLI commands are only registered when WP-CLI is available, so they won't affect 
 | [`wp acss logs`](logs.md) | Tail, clear, and locate the activity and debug logs |
 | [`wp acss doctor`](doctor.md) | Run diagnostic health checks on the installation |
 | [`wp acss flags`](flags.md) | Inspect and override feature flags |
+| [`wp acss license`](license.md) | Inspect, replace, activate, and deactivate the v4 license |
 
 ## Getting Help
 
@@ -32,6 +33,7 @@ WP-CLI's built-in help works on every command and subcommand:
 wp help acss
 wp help acss settings
 wp help acss settings set
+wp help acss license
 ```
 
 The help output lists every option, expected format, and includes usage examples pulled straight from the command definitions.
