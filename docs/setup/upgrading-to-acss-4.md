@@ -1,27 +1,38 @@
 ---
-title: Upgrading to ACSS 4.0.0
+title: Upgrading a v4 prerelease to ACSS 4.0.0
 sidebar_position: 20
 ---
 
+Use this guide if your site is running an **ACSS 4.x prerelease** and you want to move to the final ACSS 4.0.0 release.
+
+The final release installs as a separate WordPress plugin. This is expected: follow the steps below and ACSS will move you from the prerelease to the final release without deleting your settings.
+
+:::warning Are you using ACSS v3?
+We recommend leaving existing v3 sites on v3 because v4 is not backward compatible. ACSS will not stop you from installing v4 on a v3 site, but preserving your settings does not make your site compatible with v4. A v3-to-v4 migration is not covered by this guide.
+
+Learn more in [What's New in ACSS 4.x](./whats-new-in-4.md) and [Preparing for ACSS 4.0](https://automaticcss.com/preparing-for-acss-4-0/).
+:::
+
 ## Before you start
 
-- Back up the site's files and database, and save the current v3 license key for rollback.
-- Download the ACSS 4.0.0 ZIP and copy your v4 license key [from your account](https://automaticcss.com/account/).
+1. Back up the site's files and database.
+2. Save the license key used by the prerelease in case you need to roll back.
+3. Download the ACSS 4.0.0 ZIP.
+4. Copy your new v4 license key [from your account](https://automaticcss.com/account/).
 
-The v3 license key does not work with ACSS v4. If no v4 key is shown in your account, [contact support](https://digitalgravy.co/support).
+The prerelease key will not work with the final release. If you do not see a new v4 key in your account, [contact support](https://digitalgravy.co/support).
 
-ACSS v4 is not backward compatible with v3. Upgrading generally only makes sense for sites using Bricks or Etch. Read [Preparing for ACSS 4.0](https://automaticcss.com/preparing-for-acss-4-0/) before continuing.
+Leave the prerelease plugin active and installed for now. ACSS 4.0.0 will handle the switch when you activate it.
 
-Do not deactivate or delete the existing plugin before the process is complete.
-
-## Upgrading manually
+## Upgrade manually
 
 1. Upload, install, and activate ACSS 4.0.0.
-2. Open the Automatic.css dashboard, enter your v4 license key, and activate it.
-3. Regenerate the CSS, clear caches, and verify the site, license, and updates.
-4. After verification, you may delete the legacy plugin.
+2. In WordPress admin, go to **Automatic CSS → License** and activate your new v4 license key.
+3. Regenerate the CSS and clear your caches.
+4. Check the site and confirm that the license and plugin updates are working.
+5. Once everything is working, delete the prerelease plugin.
 
-## Upgrading via WP-CLI
+## Upgrade with WP-CLI
 
 See the command references for [`wp acss license`](../cli/license.md), [`wp acss css`](../cli/css.md), and [`wp acss status`](../cli/status.md).
 
@@ -29,66 +40,97 @@ See the command references for [`wp acss license`](../cli/license.md), [`wp acss
 # Install and activate ACSS 4.0.0.
 wp plugin install /path/to/automatic-css.zip --activate
 
-# Enter the v4 license key when prompted.
+# Enter your new v4 license key when prompted.
 wp acss license set
 
 # If the previous command says the legacy release is pending,
-# run these two commands before continuing:
+# run these commands and then continue:
 # wp acss license deactivate --product=v3
 # wp acss license set
 
-# Activate the v4 license and regenerate the CSS.
+# Activate the license and regenerate the CSS.
 wp acss license activate
 wp acss css regenerate
 
-# Verify the upgrade.
+# Check the upgrade.
 wp acss license get --format=json
 wp acss status --format=json
 
-# After checking the site, you can remove the old plugin.
+# After checking the site, delete the prerelease plugin.
 # wp plugin delete automaticcss-plugin
 ```
 
-## Upgrading multisite
+The CLI uses the name `v3` for the old license because the v4 prerelease used the v3 licensing system. These commands are still upgrading a v4 prerelease, not a v3 site.
 
-On multisite, the network administrator controls when each subsite is ready to upgrade:
+## Multisite
 
-1. If the legacy plugin is network-active, convert it to per-site activation before starting.
-2. Install ACSS 4.0.0 once without network activation. Keep both plugin versions installed during the staged upgrade.
-3. Activate v4 from the target subsite's Plugins screen, then follow the manual steps above. Activating v4 switches only that subsite; other subsites remain on the legacy plugin.
-4. For WP-CLI, add `--url=https://subsite.example.com` after `wp` in every site-scoped command. After installing the ZIP for the first subsite, begin later upgrades with `wp --url=https://subsite.example.com plugin activate automatic-css`.
-5. Repeat the process only for subsites that are ready. Wait until every subsite has been upgraded before deleting the legacy plugin files.
+You can upgrade one site at a time or upgrade the whole network at once. We recommend one site at a time because it is easier to check each site and roll it back if needed. The choice belongs to the network administrator, and ACSS does not block network activation.
 
-Do not network-activate v4 as part of a staged upgrade. For rollback, add the affected subsite's `--url` argument to both rollback commands below.
+### Recommended: one site at a time
 
-## Rolling back
+1. If the prerelease is network-active, change it to individual site activation first.
+2. Install ACSS 4.0.0 once, but do not network-activate it.
+3. Activate ACSS 4.0.0 on the first site and follow the upgrade steps above.
+4. Check the site before moving to the next one.
+5. Delete the prerelease plugin only after every site has been upgraded.
 
-Use this procedure if the upgrade fails before ACSS v4 has been fully verified.
+With WP-CLI, add the site's URL to each command:
+
+```bash
+wp --url=https://subsite.example.com plugin activate automatic-css
+```
+
+Use the same `--url` option for the license, CSS, status, and rollback commands.
+
+### Alternative: upgrade the whole network at once
+
+You may network-activate ACSS 4.0.0, but ACSS will not automatically handle the old plugin and license on every site. Before network activation:
+
+1. Back up every site.
+2. Save and deactivate the prerelease license on each site.
+3. Install ACSS 4.0.0 without activating it.
+4. Deactivate the prerelease everywhere it is active.
+5. Network-activate ACSS 4.0.0.
+6. On each site, activate its new v4 license, regenerate the CSS, clear caches, and check the site.
+
+Do not delete the prerelease plugin until you have checked the whole network. Even after network activation, license setup, CSS regeneration, and verification still happen one site at a time.
+
+## Roll back
+
+For a single site, deactivate ACSS 4.0.0 and reactivate the prerelease:
 
 ```bash
 wp plugin deactivate automatic-css
 wp plugin activate automaticcss-plugin
 ```
 
-Restore the saved v3 key in the legacy dashboard and reactivate it if necessary. Then regenerate the CSS, clear caches, and verify the site. Contact support if the v3 key was not saved.
+Restore the saved prerelease key if needed, regenerate the CSS, clear caches, and check the site.
+
+For a network-wide upgrade, network-deactivate ACSS 4.0.0 and restore the prerelease's previous network or per-site activation. Then restore and check each site separately.
+
+If you did not save the prerelease key or cannot restore the license, [contact support](https://digitalgravy.co/support).
 
 ## Upgrade with an AI assistant
 
-Copy the following prompt and replace the bracketed values:
+Copy this prompt and replace the bracketed values:
 
 ```text
-Upgrade my WordPress sites to ACSS 4.0.0 using WP-CLI.
+Upgrade my WordPress sites from an ACSS 4.x prerelease to ACSS 4.0.0 using WP-CLI.
 
-The ACSS ZIP is at: [PATH TO ZIP]
+The ACSS 4.0.0 ZIP is at: [PATH TO ZIP]
 The sites are: [SITE LIST AND ACCESS DETAILS]
+
+First confirm that each site is running an ACSS 4.x prerelease. Stop if a site is running ACSS v3 because a v3-to-v4 migration is not covered by this procedure.
 
 For each site:
 1. Confirm there is a current backup.
-2. Request the v3 and v4 keys securely; never expose them in commands or logs.
-3. Install and activate v4, release the v3 activation if pending, set and activate the v4 key, regenerate CSS, and verify ACSS and license status.
-4. Keep the legacy plugin until verification. On failure, deactivate v4, reactivate v3, restore its key if needed, regenerate CSS, and report the result.
+2. Request the old and new v4 license keys securely. Never expose them in commands or logs.
+3. Install and activate ACSS 4.0.0.
+4. Release the old license if prompted, set and activate the new v4 key, regenerate CSS, and check ACSS and license status.
+5. Keep the prerelease plugin until the site has been checked.
+6. If the upgrade fails, deactivate ACSS 4.0.0, reactivate the prerelease, restore its key if needed, regenerate CSS, and report the result.
 
-For multisite, install the ZIP once, use `wp --url=<subsite>` for site-scoped commands, and upgrade only the explicitly approved subsites. Do not network-activate v4 or change another subsite. Wait until every subsite has been upgraded before deleting the legacy plugin files.
+For multisite, ask the network administrator whether to upgrade one site at a time or the whole network. Recommend one site at a time, but follow the administrator's choice. Never leave the prerelease active when network-activating ACSS 4.0.0. Configure and check every site separately.
 
 Stop on unexpected errors.
 
