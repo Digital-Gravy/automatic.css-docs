@@ -3,7 +3,7 @@ title: Import, Export and Reset Settings
 sidebar_position: 40
 ---
 
-You can move your Automatic.css settings between sites, or keep a copy of them, by exporting them as a JSON file and importing that file on another site. You can also reset all settings to the Automatic.css defaults. All three actions live in the dashboard's header menu.
+You can move your Automatic.css settings between sites, or keep a copy of them, by exporting them as a JSON file and importing that file on another site. You can also reset all settings to the Automatic.css defaults, or discard changes you have not saved yet. Import, export and reset live in the dashboard's header menu.
 
 ![The dashboard header menu with Import settings, Export settings and Reset to defaults](img/dashboard-import-export-menu.webp)
 
@@ -53,7 +53,16 @@ Click **Cancel** or press <kbd>Esc</kbd> to close the warning without resetting.
 
 Like an import, the reset is not saved right away. Until you click **Save**, you can undo it by reloading the page. If you might need your current settings again, export them before you reset.
 
-The dot next to the Automatic.css logo shows whether you have unsaved changes.
+## Discard unsaved changes
+
+The dot next to the Automatic.css logo shows whether you have unsaved changes. When you do, you can click the dot to go back to your last saved settings:
+
+1. Click the dot next to the Automatic.css logo.
+2. Click **Discard changes**, or **Cancel** to keep editing.
+
+![The notice that asks you to confirm discarding unsaved changes](img/dashboard-discard-unsaved-changes.webp)
+
+All changes you have not saved are lost, including an import or a reset you have not saved yet. Your saved settings stay as they are.
 
 ## Import & Export in the WordPress admin
 
