@@ -9,7 +9,7 @@ You can move your Automatic.css settings between sites, or keep a copy of them, 
 
 ## Export your settings
 
-1. Open the Automatic.css dashboard on the site's front end or in your builder. You can also press <kbd>SHIFT</kbd> + <kbd>CMD</kbd> + <kbd>O</kbd>.
+1. Open the Automatic.css dashboard on the site's front end or in your builder. The keyboard shortcut <kbd>CMD</kbd> + <kbd>SHIFT</kbd> + <kbd>O</kbd> (<kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>O</kbd> on Windows) opens it too, unless you changed it in the dashboard's Options screen.
 2. Click the menu icon in the top right corner of the dashboard.
 3. Click **Export settings**.
 
