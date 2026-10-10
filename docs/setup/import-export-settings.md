@@ -1,11 +1,11 @@
 ---
-title: Import and Export Settings
+title: Import, Export and Reset Settings
 sidebar_position: 40
 ---
 
-You can move your Automatic.css settings between sites, or keep a copy of them, by exporting them as a JSON file and importing that file on another site. Both actions live in the dashboard's header menu.
+You can move your Automatic.css settings between sites, or keep a copy of them, by exporting them as a JSON file and importing that file on another site. You can also reset all settings to the Automatic.css defaults. All three actions live in the dashboard's header menu.
 
-![The dashboard header menu with Import settings and Export settings](img/dashboard-import-export-menu.webp)
+![The dashboard header menu with Import settings, Export settings and Reset to defaults](img/dashboard-import-export-menu.webp)
 
 ## Export your settings
 
@@ -40,17 +40,33 @@ Importing a 3.x settings file does not upgrade a site from ACSS 3.x to 4.x, and 
 
 Settings that no longer exist in 4.x are skipped. Always review the result before you save.
 
+## Reset to defaults
+
+1. Open the dashboard and click the menu icon in the top right corner.
+2. Click **Reset to defaults**. A warning covers the dashboard.
+3. Press and hold **Hold to reset** until the button is filled, about one and a half seconds. Holding <kbd>Space</kbd> or <kbd>Enter</kbd> works too. If you let go early, nothing happens.
+4. Review the result, then open any settings screen and click **Save**.
+
+![The reset warning while Hold to reset is being held](img/dashboard-reset-hold-to-confirm.webp)
+
+Click **Cancel** or press <kbd>Esc</kbd> to close the warning without resetting.
+
+Like an import, the reset is not saved right away. Until you click **Save**, you can undo it by reloading the page. If you might need your current settings again, export them before you reset.
+
+The dot next to the Automatic.css logo shows whether you have unsaved changes.
+
 ## Import & Export in the WordPress admin
 
 The **Import & Export** tab on the Automatic.css settings page in the WordPress admin no longer has its own form. It points you to the dashboard menu described above.
 
 ## Using WP-CLI
 
-You can also export and import settings from the command line, for example during deployments:
+You can also export, import and reset settings from the command line, for example during deployments:
 
 ```bash
 wp acss settings export --file=acss-settings.json
 wp acss settings import acss-settings.json
+wp acss settings reset
 ```
 
-See [`wp acss settings`](../cli/settings.md) for all options.
+See [`wp acss settings`](../cli/settings.md) for all options. Unlike the dashboard, `import` and `reset` save right away.
