@@ -46,4 +46,11 @@ The **Import & Export** tab on the Automatic.css settings page in the WordPress 
 
 ## Using WP-CLI
 
-To export or import settings from the command line, for example during deployments, use [`wp acss settings export` and `wp acss settings import`](../cli/settings.md).
+You can also export and import settings from the command line, for example during deployments:
+
+```bash
+wp acss settings export --file=acss-settings.json
+wp acss settings import acss-settings.json
+```
+
+See [`wp acss settings`](../cli/settings.md) for all options.
