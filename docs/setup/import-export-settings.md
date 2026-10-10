@@ -3,7 +3,7 @@ title: Import, Export and Reset Settings
 sidebar_position: 40
 ---
 
-You can move your Automatic.css settings between sites, or keep a copy of them, by exporting them as a JSON file and importing that file on another site. You can also reset all settings to the Automatic.css defaults, or discard changes you have not saved yet. Import, export and reset live in the dashboard's header menu.
+You can move your Automatic.css settings between sites, or keep a copy of them, by exporting them as a JSON file and importing that file on another site. You can also reset all settings to the Automatic.css defaults, or discard changes you have not saved yet. Import, export and reset live in the dashboard's header menu. Further down, you'll also find what the dots in the dashboard mean.
 
 ![The dashboard header menu with Import settings, Export settings and Reset to defaults](img/dashboard-import-export-menu.webp)
 
@@ -53,11 +53,28 @@ Click **Cancel** or press <kbd>Esc</kbd> to close the warning without resetting.
 
 Like an import, the reset is not saved right away. Until you click **Save**, you can undo it by reloading the page. If you might need your current settings again, export them before you reset.
 
+## The dots in the dashboard
+
+The dashboard uses two kinds of dots to show what has changed. They look alike, but they mean different things.
+
+![The unsaved-changes dot next to the screen title, and a setting dot next to Header Height (Desktop)](img/dashboard-indicators.webp)
+
+### Next to the logo or the screen title: unsaved changes
+
+- **Round dot:** there are no unsaved changes.
+- **Square dot:** you have changed something that is not saved yet. Click **Save** to keep it, or click the dot to discard it (see below).
+
+### Next to a setting: changed from the default
+
+A small dot to the left of a setting's name means that its value differs from the Automatic.css default. In the screenshot above, Header Height (Desktop) has a dot, Header Height (Mobile) does not. The dot stays after you save, so you can always see which settings you have customized.
+
+When you point at the dot, it turns into a small ×. Click it to reset only this setting to its default. Like any other change, this is not saved until you click **Save**.
+
 ## Discard unsaved changes
 
-The dot next to the Automatic.css logo shows whether you have unsaved changes. When you do, you can click the dot to go back to your last saved settings:
+When the dot next to the logo or the screen title is square, you can click it to go back to your last saved settings:
 
-1. Click the dot next to the Automatic.css logo.
+1. Click the square dot.
 2. Click **Discard changes**, or **Cancel** to keep editing.
 
 ![The notice that asks you to confirm discarding unsaved changes](img/dashboard-discard-unsaved-changes.webp)
