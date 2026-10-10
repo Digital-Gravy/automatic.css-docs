@@ -44,7 +44,7 @@ Settings that no longer exist in 4.x are skipped. Always review the result befor
 
 1. Open the dashboard and click the menu icon in the top right corner.
 2. Click **Reset to defaults**. A warning covers the dashboard.
-3. Press and hold **Hold to reset** until the button is filled, about one and a half seconds. Holding <kbd>Space</kbd> or <kbd>Enter</kbd> works too. If you let go early, nothing happens.
+3. Press and hold **Hold to reset** until the button is filled, about one and a half seconds. Holding <kbd>Space</kbd> or <kbd>Enter</kbd> works too. A short click is not enough: if you let go early, nothing is reset and a hint reminds you to keep holding.
 4. Review the result, then open any settings screen and click **Save**.
 
 ![The reset warning while Hold to reset is being held](img/dashboard-reset-hold-to-confirm.webp)
