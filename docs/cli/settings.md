@@ -152,6 +152,8 @@ wp acss settings import ./config/acss-settings.json --yes --skip-css
 Import **replaces** all current settings. There is no automatic backup — take a snapshot with `wp acss settings export --file=...` before importing if you need to be able to roll back.
 :::
 
+If the file was exported from ACSS 3.x, the command converts it to the 4.x format before saving and prints `Detected an ACSS 3.x settings file and converted it to the current format.` This only converts the file; it does not upgrade a 3.x site. You can also import settings in the dashboard, see [Import and Export Settings](../setup/import-export-settings.md).
+
 ## `reset`
 
 Reset every setting to the plugin defaults.
