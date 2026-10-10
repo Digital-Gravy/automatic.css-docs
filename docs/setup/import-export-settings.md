@@ -3,9 +3,9 @@ title: Import, Export and Reset Settings
 sidebar_position: 40
 ---
 
-You can move your Automatic.css settings between sites, or keep a copy of them, by exporting them as a JSON file and importing that file on another site. You can also reset all settings to the Automatic.css defaults, or discard changes you have not saved yet. All of these live in the dashboard's header menu. Further down, you'll also find what the dots in the dashboard mean.
+You can move your Automatic.css settings between sites, or keep a copy of them, by exporting them as a JSON file and importing that file on another site. You can also reset all settings to the Automatic.css defaults, or discard changes you have not saved yet. Import, export and reset live in the dashboard's header menu. Further down, you'll also find what the dots in the dashboard mean.
 
-![The dashboard header menu with Import settings, Export settings, Discard unsaved changes and Reset to defaults](img/dashboard-import-export-menu.webp)
+![The dashboard header menu with Import settings, Export settings and Reset to defaults](img/dashboard-import-export-menu.webp)
 
 ## Export your settings
 
@@ -74,11 +74,11 @@ When you point at the dot, it turns into a small ×. Click it to reset only this
 
 As soon as you change something, the dot next to the logo or the screen title turns from round to square. It stays square until you save or discard your changes.
 
-![The dot next to the screen title: round without unsaved changes, square with unsaved changes](img/dashboard-unsaved-dot-states.webp)
+![The dot next to the screen title: round with the tooltip No unsaved changes, square with the tooltip Discard unsaved changes](img/dashboard-unsaved-dot-states.webp)
 
 To go back to your last saved settings:
 
-1. Click the square dot. You can also open the menu in the top right corner and click **Discard unsaved changes**; that item is only available while you have unsaved changes.
+1. Click the square dot. When you point at it, its tooltip says **Discard unsaved changes**.
 2. Click **Discard changes**, or **Cancel** to keep editing.
 
 ![The notice that asks you to confirm discarding unsaved changes](img/dashboard-discard-unsaved-changes.webp)
