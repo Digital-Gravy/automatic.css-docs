@@ -30,7 +30,7 @@ Expose the code for any standard grid utility in ACSS. This includes:
 
 ## `?auto-grid`
 
-Expands code for creating an auto grid. The number of columns can be set with `--column-count` and the min item width can be set with `--min`.
+Expands code for creating an auto grid. Set the number of columns with `--column-count` and how early it stacks with `--auto-grid-aggressiveness`. The minimum item width (`--min`) is calculated from these.
 
 ## `?variable-grid`
 

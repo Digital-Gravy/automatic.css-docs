@@ -131,8 +131,8 @@ Text-related variables apply to `<p>` elements within blockquotes:
 - `--blockquote-text-font-size`
 - `--blockquote-text-font-weight`
 - `--blockquote-text-line-height`
-- `--blockquote-text-align`
-- `--blockquote-text-transform`
+- `--blockquote-text-text-align`
+- `--blockquote-text-text-transform`
 
 ### Footer Variables
 

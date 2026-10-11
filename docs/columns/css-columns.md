@@ -53,7 +53,7 @@ Set the rule style, width, and color using the recipe's local variables:
 .my-columns {
   --col-rule-style: solid;
   --col-rule-width: var(--col-rule-width-m);
-  --col-rule-color: var(--border-color);
+  --col-rule-color: var(--border-color-dark);
 }
 ```
 
