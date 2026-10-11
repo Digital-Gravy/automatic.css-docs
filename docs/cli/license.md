@@ -33,6 +33,11 @@ wp acss license get
 wp acss license get --format=json
 ```
 
+The output includes two fields <Since version="4.0.2" />:
+
+- `key_source` — where the key comes from: `wp-config` (the `ACSS_LICENSE_KEY` constant), `database` (saved on the License tab or with `set`) or `none`.
+- `activated_site` — the address the license was last activated for, or empty if it has not been activated. After a domain change this differs from the site's current address.
+
 By default, a configured key is masked except for its first and last four characters. The command contacts the licensing server, so it can fail if the site cannot reach the server or if the server rejects the license.
 
 ## `set`
