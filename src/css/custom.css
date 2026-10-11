@@ -189,6 +189,11 @@ body {
   color: oklch(0.85 0.08 221);
 }
 
+/* In tables, break between values, never inside one. */
+td > code {
+  white-space: nowrap;
+}
+
 /* Inside links, the code takes the link color. */
 a > code {
   color: inherit !important;
