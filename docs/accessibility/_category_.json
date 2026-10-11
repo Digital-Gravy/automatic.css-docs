@@ -1,7 +1,4 @@
 {
     "label": "Accessibility",
-    "position": 20,
-    "customProps": {
-        "badge": "4.x"
-    }
+    "position": 20
 }

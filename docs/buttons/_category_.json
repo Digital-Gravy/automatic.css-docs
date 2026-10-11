@@ -1,8 +1,5 @@
 {
     "label": "Buttons",
     "position": 50,
-    "link": null,
-    "customProps": {
-        "badge": "4.x"
-    }
+    "link": null
 }
