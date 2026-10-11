@@ -2,6 +2,9 @@
 title: Accessibility Recipes
 sidebar_position: 100
 ---
+import RecipeSetupTip from './_recipe-setup-tip.md';
+
+<RecipeSetupTip />
 
 ## `?clickable-parent`
 

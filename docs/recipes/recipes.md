@@ -5,6 +5,28 @@ sidebar_position: 100
 
 Recipes are a new feature in ACSS v3.0. They’re a very powerful new part of our variable expansion and validation system in the dashboard (Options > Workflow Enhancements).
 
+## Where recipes work
+
+Type `?`, the recipe's name and `;`. The recipe expands right away.
+
+| Where | What you need |
+| --- | --- |
+| **Etch** | Nothing. Recipes are built into Etch's CSS editor. |
+| **Bricks** and **Gutenberg** (CSS fields) | Turn on **Options → Workflow Enhancements → Variable Expansion & Validation** in the ACSS dashboard. It is off by default. |
+| **ACSS dashboard** (Global SCSS) | Nothing. The editor suggests recipes as you type `?`. |
+
+![Variable Expansion & Validation turned on under Options → Workflow Enhancements in the ACSS dashboard](img/variable-expansion-option.webp)
+
+In Bricks and Gutenberg, the recipe arrives wrapped in `%root% { … }`, so it styles the element you type it on.
+
+:::tip Prefer `@`?
+Bricks and Gutenberg used `@` before. To keep using it, turn on the `USE_CLASSIC_EXPANSION_CHARACTER` flag with WP-CLI: `wp acss flags set USE_CLASSIC_EXPANSION_CHARACTER on`. See [`wp acss flags`](../cli/flags.md). Etch always uses `?`.
+:::
+
+:::note A few recipes exist in only one place
+Etch and Bricks/Gutenberg share almost all recipes. Bricks and Gutenberg also offer `btn`, `overlap`, `overlap-alt`, `list-none`, `property`, `container`, `card-container`, `ipsum-short`, `query-children` and `script`. Etch also offers its editor helpers for braces and pseudo-selectors.
+:::
+
 ## What’s a Recipe?
 
 A Recipe is a block of CSS that you can use wherever needed. It works similar to how a [SCSS mixin](../mixins/what-are-mixins.md) works, but instead of just referencing the block of CSS, the Recipe functionality fully exposes the underlying code.
@@ -27,19 +49,7 @@ Some recipes are very simple and some are complex. It just depends on the utilit
 
 ## Using Recipes in Input Fields
 
-Some Recipes are simply the exposed value of a specific variable and can be used as single values in input fields. For example, you can expose all the partials for a color with the Recipe “`?[color-name]-clr`.”
-
-Let’s say you want to create a custom transparency or use a tweaked version of an existing color within the ACSS system. Prior to 3.0, you’d have to write your own HSL string manually using [color partials](../colors/main-colors.md):
-
-```CSS
-hsl(var(--primary-h) var(--primary-s) var(--primary-l) / 1)
-```
-
-But, with ACSS Recipes, all you have to type is “"`?primary-clr.`"“
-
-Once you type `?primary-clr` and hit Enter, the Recipe instantly expands into the full HSL string. Now you can simply change the transparency value, any of the H, S, or L values, or even calc part of the HSL.
-
-Since the HSL uses variable partials, whatever part of the string you don’t edit remains fully hooked into the ACSS system for maximum maintainability.
+Some recipes expand to a single value, so you can use them in an input field or after a property. For example, `background: ?color-mix;` expands to `background: color-mix(in oklch, black 50%, transparent);`. See [Color Recipes](color-recipes.md) and the gradient recipes.
 
 ## Recipes & Stylesheet Efficiency
 

@@ -2,6 +2,9 @@
 title: Flex Recipes
 sidebar_position: 100
 ---
+import RecipeSetupTip from './_recipe-setup-tip.md';
+
+<RecipeSetupTip />
 
 Flex recipes are helper recipes for quickly establishing flexbox layouts in custom CSS.
 

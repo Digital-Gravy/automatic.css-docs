@@ -11,7 +11,7 @@ Here are some **benefits** of Auto Grids in ACSS:
 - No breakpoint decisions
 - Can be reactive to the specific type of content in the grid by adjusting var(–min)
 - Can be applied to a custom class with a mixin: @include auto-grid($col-count, $min-item-width);
-- Can be applied to a custom class with a recipe: @auto-grid;
+- Can be applied to a custom class with a recipe: `?auto-grid;`
 
 **Downsides** of Auto Grids:
 
@@ -106,7 +106,7 @@ If you need to apply Auto Grid to a custom selector, you can easily do this with
 
 Select the element you want to turn into an auto grid, add a custom class, and then go to the custom CSS area of the style panel.
 
-You can trigger the Auto Grid recipe by typing `@auto-grid;`
+You can trigger the Auto Grid recipe by typing `?auto-grid;`
 
 The column count and minimum item width are both editable in the recipe.
 

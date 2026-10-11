@@ -2,6 +2,13 @@
 title: Card Container Recipe
 sidebar_position: 20
 ---
+import RecipeSetupTip from './_recipe-setup-tip.md';
+
+<RecipeSetupTip />
+
+:::note Bricks and Gutenberg only
+Etch does not offer this recipe.
+:::
 
 The Card Container recipe is used for adding container queries to card styling with the ACSS [Card Framework](../cards/card-styling.md).
 

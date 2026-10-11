@@ -2,6 +2,13 @@
 title: Button Recipes
 sidebar_position: 80
 ---
+import RecipeSetupTip from './_recipe-setup-tip.md';
+
+<RecipeSetupTip />
+
+:::note Bricks and Gutenberg only
+Etch does not offer this recipe.
+:::
 
 Button recipes allow you to add styling rules for buttons quickly. This is especially useful when creating [custom buttons](../buttons/button-styling.md).
 

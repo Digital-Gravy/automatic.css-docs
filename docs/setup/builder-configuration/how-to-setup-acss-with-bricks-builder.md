@@ -5,6 +5,10 @@ sidebar_position: 10
 
 If you’re using Bricks Builder and Automatic.css, please follow the setup steps below.
 
+:::tip Turn on recipes and variable expansion
+To use [recipes](../../recipes/recipes.md) such as `?center-all;` in Bricks' CSS fields, and to expand variables and `calc()` in inputs, turn on **Options → Workflow Enhancements → Variable Expansion & Validation** in the ACSS dashboard. It is off by default.
+:::
+
 # Option #1: Automatic Setup
 
 We provide two settings files to establish the default settings for your Bricks project automatically. One is a Bricks Settings file and the other is a Bricks Theme file.

@@ -22,7 +22,7 @@ Users should be most aware of the following changes from 3.x to 4.x:
   ACSS is now officially a variable-first, BEM-first (or any kind of custom classes) framework. This dramatically reduces the framework size, makes workflows simpler and more consistent (less mixing utility classes and BEM), and makes the framework easier to learn and use. Some critical utility classes have been replaced with Recipes which can be expanded inside of any BEM class.
 
 - **Recipe syntax:**  
-  Recipes now use the **`?`** prefix instead of `@` (e.g. `?btn`, `?flex-grid`). Expand them in the CSS input of your builder or in ACSS Custom SCSS.
+  Recipes now use the **`?`** prefix instead of `@` (e.g. `?flex-grid`) in Etch, Bricks and Gutenberg. Expand them in the CSS input of your builder or in ACSS Custom SCSS. In Bricks and Gutenberg, turn on **Variable Expansion & Validation** in the dashboard options first. See [Where recipes work](../recipes/recipes.md#where-recipes-work).
 
 - **Removed Breakpoints:**  
   Since preset breakpoints are an Era 1/2/3 concept and don't make sense for Era 4, we've removed them. ACSS is now officially a breakpoint-free framework! None of the remaining utility classes or features require breakpoint presets. You can still use media queries and container queries in your development process, but they're no longer needed in the ACSS framework as fixed presets.
