@@ -16,3 +16,9 @@
 [data-theme='dark'] .since {
   color: var(--ifm-color-primary);
 }
+
+/* At the start of a paragraph, keep the gap on the right. */
+.since:first-child {
+  margin-left: 0;
+  margin-right: 0.5em;
+}
