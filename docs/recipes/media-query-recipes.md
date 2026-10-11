@@ -3,22 +3,21 @@ title: Media Query Recipes
 sidebar_position: 100
 ---
 
-Media query recipes will expand a media query for any custom code that you’d like. The best part is that you don’t have to know the value of the breakpoint – the recipe does all the work.
+ACSS 4 has no preset breakpoints, so the breakpoint media query recipes are gone. What remains are recipes for container queries.
 
-## Max-Width Media Queries
+## Container Queries
 
-- `?breakpoint-xs`
-- `?breakpoint-s`
-- `?breakpoint-m`
-- `?breakpoint-l`
-- `?breakpoint-xl`
-- `?breakpoint-xxl`
+- `?container`: a container query inside the current element
+- `?card-container`: a container query for a card
 
-## Min-Width Media Queries
+Both expand to an `@container card ( … ) { … }` block. Add the size condition and your styles.
 
-- `?breakpoint-up-xs`
-- `?breakpoint-up-s`
-- `?breakpoint-up-m`
-- `?breakpoint-up-l`
-- `?breakpoint-up-xl`
-- `?breakpoint-up-xxl`
+:::note Bricks and Gutenberg only
+Etch does not offer these two recipes. In Etch, use the container query buttons in the CSS toolbar instead.
+:::
+
+## Changes From 3.x
+
+In ACSS 4:
+
+- The `?breakpoint-*` and `?breakpoint-up-*` recipes are removed. They inserted the breakpoints from the dashboard, which ACSS 4 no longer has, so they produced an invalid media query. Write the media query with your own value, for example `@media (width < 768px) { … }`.

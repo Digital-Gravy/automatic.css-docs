@@ -3,6 +3,10 @@ title: Overlap Recipes
 sidebar_position: 100
 ---
 
+:::note Bricks and Gutenberg only
+Etch does not offer this recipe.
+:::
+
 Overlap recipes allow you to quickly create two different types of overlap effects in your design.
 
 ## Benefits & Compatibilities

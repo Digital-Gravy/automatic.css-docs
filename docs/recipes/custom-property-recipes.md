@@ -3,6 +3,10 @@ title: Custom Property Recipes
 sidebar_position: 100
 ---
 
+:::note Bricks and Gutenberg only
+Etch does not offer this recipe.
+:::
+
 Custom Property Recipes
 
 ## `?property;`
