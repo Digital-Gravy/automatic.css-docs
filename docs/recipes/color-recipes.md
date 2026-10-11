@@ -2,6 +2,9 @@
 title: Color Recipes
 sidebar_position: 100
 ---
+import RecipeSetupTip from './_recipe-setup-tip.md';
+
+<RecipeSetupTip />
 
 Color recipes expand to a color value that you can adjust on the spot. Use them after a property or in a color input.
 

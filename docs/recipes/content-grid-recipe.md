@@ -2,6 +2,9 @@
 title: Content Grid Recipe
 sidebar_position: 100
 ---
+import RecipeSetupTip from './_recipe-setup-tip.md';
+
+<RecipeSetupTip />
 
 You can deploy a [content grid layout](../grids/content-grid.md) to any box with the `?content-grid;` recipe.
 

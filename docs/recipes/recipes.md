@@ -15,6 +15,8 @@ Type `?`, the recipe's name and `;`. The recipe expands right away.
 | **Bricks** and **Gutenberg** (CSS fields) | Turn on **Options → Workflow Enhancements → Variable Expansion & Validation** in the ACSS dashboard. It is off by default. |
 | **ACSS dashboard** (Global SCSS) | Nothing. The editor suggests recipes as you type `?`. |
 
+![Variable Expansion & Validation turned on under Options → Workflow Enhancements in the ACSS dashboard](img/variable-expansion-option.webp)
+
 In Bricks and Gutenberg, the recipe arrives wrapped in `%root% { … }`, so it styles the element you type it on.
 
 :::tip Prefer `@`?

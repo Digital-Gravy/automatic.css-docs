@@ -2,6 +2,9 @@
 title: Media Query Recipes
 sidebar_position: 100
 ---
+import RecipeSetupTip from './_recipe-setup-tip.md';
+
+<RecipeSetupTip />
 
 ACSS 4 has no preset breakpoints, so the breakpoint media query recipes are gone. What remains are recipes for container queries.
 

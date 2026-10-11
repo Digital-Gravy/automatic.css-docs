@@ -21,6 +21,10 @@ When enabled, the ACSS color system will fully replace all existing site color o
 
 When enabled, ACSS will move the Gutenberg classes input to the top of the block editing panel for faster, easier access.
 
+## Recipes and Variable Expansion
+
+To use [recipes](../../recipes/recipes.md) such as `?center-all;` in the block editor, and to expand variables and `calc()` in inputs, turn on **Options → Workflow Enhancements → Variable Expansion & Validation** in the ACSS dashboard. It is off by default.
+
 ## Blog Posts
 
 Blog posts require some special handling in the Block Editor. Use these settings to tailor your blog authoring experience.

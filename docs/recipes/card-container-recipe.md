@@ -2,6 +2,9 @@
 title: Card Container Recipe
 sidebar_position: 20
 ---
+import RecipeSetupTip from './_recipe-setup-tip.md';
+
+<RecipeSetupTip />
 
 :::note Bricks and Gutenberg only
 Etch does not offer this recipe.
