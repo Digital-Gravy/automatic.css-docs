@@ -47,7 +47,7 @@ Settings that no longer exist in 4.x are skipped. Always review the result befor
 3. Press and hold **Hold to reset** until the button is filled, about one and a half seconds. Holding <kbd>Space</kbd> or <kbd>Enter</kbd> works too. A short click is not enough: if you let go early, nothing is reset and a hint reminds you to keep holding.
 4. Review the result, then open any settings screen and click **Save**.
 
-![The reset warning while Hold to reset is being held](img/dashboard-reset-hold-to-confirm.webp)
+![Animation: Reset to defaults is opened from the menu, the red warning warps in over the dashboard and Hold to reset fills up while it is held](img/dashboard-reset-to-defaults.webp)
 
 Click **Cancel** or press <kbd>Esc</kbd> to close the warning without resetting.
 
