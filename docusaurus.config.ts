@@ -2,6 +2,15 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const codeTheme = {
+  ...prismThemes.oneDark,
+  plain: {
+    ...prismThemes.oneDark.plain,
+    backgroundColor: '#1f1f23',
+    textShadow: 'none',
+  },
+};
+
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
@@ -113,8 +122,12 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} Digital Gravy. AutomaticCSS™ is a Trademark of Digital Gravy.`,
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      // Dark code blocks in both color modes, so code stands out from the text.
+      // The background matches the ACSS dashboard panel.
+      theme: codeTheme,
+      darkTheme: codeTheme,
+      // Prism only bundles a few languages by default; these are used in the docs.
+      additionalLanguages: ['bash', 'scss', 'php'],
     },
     algolia: {
 			appId: '4GXPPHFVQA',
