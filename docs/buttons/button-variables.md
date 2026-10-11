@@ -24,16 +24,12 @@ The following button variables can be changed at any time with custom styling:
 - `--btn-padding-inline` (left and right padding)
 - `--btn-min-width`
 - `--btn-align-items`
-- `--btn-transition-duration`
+- `--btn-transition`
 - `--btn-border-color`
 - `--btn-border-color-hover`
 - `--btn-border-style`
 - `--btn-radius`
 - `--btn-border-width`
-- `--btn-outline-background-color`
-- `--btn-outline-border-hover`
-- `--btn-outline-text-color`
-- `--btn-outline-text-color-hover`
 - `--focus-color`
 
 ## Creating Custom Buttons
@@ -44,7 +40,7 @@ If you're working in vanilla CSS or need more granular control, you can manually
 
 ```css
 .gradient-button {
-    background: linear-gradient(var(--primary-medium), var(--primary));
+    background: linear-gradient(var(--primary-semi-light), var(--primary));
     padding: var(--btn-padding-block) var(--btn-padding-inline);
     font-size: var(--btn-font-size);
     line-height: var(--btn-line-height);
@@ -58,7 +54,7 @@ If you're working in vanilla CSS or need more granular control, you can manually
     font-style: var(--btn-font-style);
     text-transform: var(--btn-text-transform);
     min-inline-size: var(--btn-min-width);
-    transition: background var(--btn-transition-duration) ease-in-out;
+    transition: var(--btn-transition, var(--transition));
 }
 ```
 
@@ -71,3 +67,4 @@ In ACSS 4.0:
 - Added `--btn-font-family` for controlling button font family.
 - Added `--btn-align-items` for controlling button alignment.
 - Removed `--btn-outline-border-width` in favor of unified `--btn-border-width` for both solid and outline buttons.
+- Removed the other `--btn-outline-*` variables. Outline buttons use the same `--btn-*` variables, set on `.btn--outline`.

@@ -35,10 +35,10 @@ Overlap-alt example
 
 The following variables / custom properties are available for immediate customization when using the recipe:
 
-- –background: Sets the background using any valid shorthand background value.
-- –foreground: Sets the foreground color of the adjacent content group (headings and paragraphs by default).
-- –overlap-amount: Sets the amount of overlap.
-- –overlay: Sets the overlay color or gradient.
+- `--background`: Sets the background using any valid shorthand background value.
+- `--foreground`: Sets the foreground color of the adjacent content group (headings and paragraphs by default).
+- `--overlap-amount`: Sets the amount of overlap.
+- `--overlay`: Sets the overlay color or gradient.
 
 ## Background Images and Patterns
 
@@ -53,13 +53,13 @@ Any valid [shorthand background property](https://developer.mozilla.org/en-US/do
 By default, the overlay is set to transparent. To create a uniform overlay, replace both instances of “transparent” with the same transparent color:
 
 ```CSS
---overlay: linear-gradient(var(--black-trans-10), var(--black-trans-10));
+--overlay: linear-gradient(color-mix(in oklch, var(--black) 10%, transparent), color-mix(in oklch, var(--black) 10%, transparent));
 ```
 
 To create a gradient overlay, set two different values:
 
 ```CSS
---overlay: linear-gradient(var(--primary-trans-30), var(--secondary-trans-30));
+--overlay: linear-gradient(color-mix(in oklch, var(--primary) 30%, transparent), color-mix(in oklch, var(--secondary) 30%, transparent));
 ```
 
 You can use any valid linear gradient, but maintaining the linear-gradient value is required for the overlay to work.

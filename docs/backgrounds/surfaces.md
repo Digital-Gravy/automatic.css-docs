@@ -74,11 +74,11 @@ Apply a surface to any element using the generated utility class:
 </section>
 ```
 
-Or use the CSS variable approach:
+Or apply it in SCSS, for example in Global CSS, with the surface mixin:
 
-```css
+```scss
 .my-element {
-  background: var(--surface-1);
+  @include surface(1);
 }
 ```
 

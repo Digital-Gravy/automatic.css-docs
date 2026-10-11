@@ -17,7 +17,7 @@ It's easier to understand how this works if you look at a real example.
 
 The light background of that section is the default body background color of the website, which ACSS outputs as `var(--body-bg-color)`, but could easily be referenced with `var(--bg-light)` or `var(--bg-ultra-light)`.
 
-The vast majority of the text is dark text, so ACSS uses your dark text default color via `var(--body-color)`. However, some of the text is lower contrast (the paragraphs below the headings). We refer to lower-contrast text as "muted" text and we use `var(--text-dark-muted)` or `var(--text-light-muted)` to set these.
+The vast majority of the text is dark text, so ACSS uses your dark text color via `var(--text-dark)`. However, some of the text is lower contrast (the paragraphs below the headings). We refer to lower-contrast text as "muted" text and we use `var(--text-dark-muted)` or `var(--text-light-muted)` to set these.
 
 As you can see, we're referencing the context of light backgrounds, dark text, muted text, etc. without the need for referencing specific colors. This is because the colors are pre-assigned to these contexts.
 
@@ -34,7 +34,7 @@ Open the dashboard and navigate to Backgrounds & Text. Choose the Backgrounds ac
 
 ACSS Background Assignments
 
-Start by telling ACSS what your default background color should be. By default, it's var(–white), but you can use any color.
+Start by telling ACSS what your default background color should be. By default, it's `var(--white)`, but you can use any color.
 
 Next, assign your dark, ultra-dark, light, and ultra-light background options.
 

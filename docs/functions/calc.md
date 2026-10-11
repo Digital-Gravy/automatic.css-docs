@@ -29,22 +29,21 @@ There’s really no right or wrong here, but using a raw `calc()` function is de
 
 ## Colors
 
-You can calc() colors to manipulate existing colors or create news. For example, let’s say I wanted to reduce the saturation of my primary color by 20% and assign that to a new custom property. I can do this:
+You can use calc() inside relative color syntax to derive new colors from existing ones. For example, to reduce the chroma (saturation) of your primary color by 20% and assign that to a new custom property:
 
 ```CSS
 :root {
-    --primary-trans-5: hsl(var(--primary-h) calc(var(--primary-s) / .2) var(--primary-l))
+    --primary-muted: oklch(from var(--primary) l calc(c * .8) h);
 }
 ```
 
 Here’s a breakdown:
 
-- `hsl()` – Declare a new HSL value.
-- `var(--primary-h)` – Reference the primary color’s hue value.
-- `calc(var(--primary-s) / .2)` – Reference the primary color’s saturation value and reduce it by 20% using `calc()`.
-- `var(--primary-l)` – Reference the primary color’s lightness value.
+- `oklch(from var(--primary) …)` – Start from your primary color.
+- `l` and `h` – Keep its lightness and hue.
+- `calc(c * .8)` – Reduce its chroma by 20%.
 
-This is covered in more detail in [Main Colors](../colors/main-colors.md).
+[Transparencies](../colors/transparencies.md) explains relative color syntax in more detail.
 
 ## Changes From 3.x
 

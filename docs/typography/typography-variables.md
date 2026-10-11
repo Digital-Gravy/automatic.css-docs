@@ -56,7 +56,7 @@ The following variables are declared globally for text across the site:
 - `--text-font-family` _(if declared in the dashboard settings)_
 - `--text-color` _(if declared in the dashboard settings)_
 - `--text-line-height` (available by default)
-- `--text-font-weight` (available by default)
+- `--text-font-weight` _(if declared in the dashboard settings)_
 - `--text-font-style` _(if declared in the dashboard settings)_
 - `--text-letter-spacing` _(if declared in the dashboard settings)_
 - `--text-text-transform` _(if declared in the dashboard settings)_
