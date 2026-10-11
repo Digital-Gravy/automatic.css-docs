@@ -27,19 +27,17 @@ Some recipes are very simple and some are complex. It just depends on the utilit
 
 ## Using Recipes in Input Fields
 
-Some Recipes are simply the exposed value of a specific variable and can be used as single values in input fields. For example, you can expose all the partials for a color with the Recipe “`?[color-name]-clr`.”
+Some Recipes are simply the exposed value of a specific variable and can be used as single values in input fields. For example, the Recipe `?[color-name]-clr` exposes a color with all its channels.
 
-Let’s say you want to create a custom transparency or use a tweaked version of an existing color within the ACSS system. Prior to 3.0, you’d have to write your own HSL string manually using [color partials](../colors/main-colors.md):
+Let’s say you want a custom transparency or a tweaked version of an existing color. Type `?primary-clr` and hit Enter. The Recipe expands to:
 
 ```CSS
-hsl(var(--primary-h) var(--primary-s) var(--primary-l) / 1)
+oklch(from var(--primary) l c h / 1)
 ```
 
-But, with ACSS Recipes, all you have to type is “"`?primary-clr.`"“
+Now you can change the transparency value or any of the lightness (`l`), chroma (`c`) and hue (`h`) channels, for example with `calc()`. See [Color Recipes](color-recipes.md).
 
-Once you type `?primary-clr` and hit Enter, the Recipe instantly expands into the full HSL string. Now you can simply change the transparency value, any of the H, S, or L values, or even calc part of the HSL.
-
-Since the HSL uses variable partials, whatever part of the string you don’t edit remains fully hooked into the ACSS system for maximum maintainability.
+Because the expansion starts from `var(--primary)`, whatever you don’t edit stays hooked into the ACSS system, so it updates when you change your colors in the dashboard.
 
 ## Recipes & Stylesheet Efficiency
 
