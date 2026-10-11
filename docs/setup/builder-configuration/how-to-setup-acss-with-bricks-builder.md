@@ -1,6 +1,7 @@
 ---
 title: Bricks
 sidebar_position: 10
+updated: 4.0.2
 ---
 
 If you’re using Bricks Builder and Automatic.css, please follow the setup steps below.
@@ -159,3 +160,13 @@ Using these settings means headings will be h2. When the defaults are not what y
 **Caution:** Setting other global styles in Bricks can cause conflicts with ACSS. Make sure you know exactly what you’re doing if you want to set any other global style defaults in Bricks.
 
 That’s it! Bricks is now setup and ready to work properly with ACSS!
+
+# ACSS Colors in the Bricks Color Palette <Since version="4.0.2" /> {#acss-colors-in-the-bricks-color-palette}
+
+ACSS adds your colors to the Bricks color palette automatically. You don't need to set anything up. Before 4.0.2, ACSS added one palette per color group.
+
+- All ACSS colors are in one palette named **ACSS Colors**.
+- Each main color, such as Primary, is one swatch. In Bricks 2.2 or later, its light and dark shades are grouped under it. Hover colors, black, white and transparent are separate swatches.
+- The palette is updated every time you save the ACSS dashboard, so it always matches your ACSS settings.
+
+Change the colors in the ACSS dashboard, not in the Bricks palette. ACSS replaces the ACSS Colors palette on every save, so edits made there in Bricks are lost. Palettes you create yourself in Bricks are not affected.
