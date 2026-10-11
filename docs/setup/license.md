@@ -1,6 +1,7 @@
 ---
 title: License
 sidebar_position: 15
+updated: 4.0.2
 ---
 
 Your license key gives the site automatic updates. You manage it on the **License** tab under **Automatic CSS** in the WordPress dashboard.
@@ -15,7 +16,7 @@ The tab shows the button that fits the current state: **Save & Activate** while 
 
 When the license is active, the tab names the address it is active for, for example “Automatic.css is active on example.com.”
 
-## After a domain change
+## After a domain change <Since version="4.0.2" /> {#after-a-domain-change}
 
 A license is activated for one address. When you move a site, for example from staging to the live domain, the license is not active for the new address until you activate it again.
 
@@ -25,7 +26,7 @@ The License tab tells you when this happened:
 
 Click **Save & Activate** to activate the license for the new address. The old address keeps its activation. If you need it elsewhere, remove it in your [account](https://automaticcss.com/account).
 
-## Set the key in wp-config.php
+## Set the key in wp-config.php <Since version="4.0.2" /> {#set-the-key-in-wp-configphp}
 
 If you manage many sites, you can set the key in `wp-config.php` instead of the dashboard. Add this line above `/* That's all, stop editing! */`:
 
@@ -52,7 +53,7 @@ If the activation fails, the reason is in the [Activity Log](activity-log.md). A
 While the key is set in `wp-config.php`, `wp acss license set` and `wp acss license deactivate` stop with a message instead of changing it. See [wp acss license](../cli/license.md).
 :::
 
-## Check for updates
+## Check for updates <Since version="4.0.2" /> {#check-for-updates}
 
 **Check for updates now** asks the license server for the latest version right away, instead of waiting for WordPress to check. The result appears on the tab:
 

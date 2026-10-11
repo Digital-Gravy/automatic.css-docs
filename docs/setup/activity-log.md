@@ -70,7 +70,7 @@ If you can't solve the error yourself:
 Before the file is downloaded, Automatic.css removes passwords, password reset keys, logins, tokens and nonces from page addresses. License keys are shortened to their last four characters. The file still contains technical details about your site, such as page addresses and your Automatic.css settings. If you'd rather not share those in public, send the log through a support request instead of the Community.
 
 :::note Older versions
-Automatic.css versions without the **Download log** button keep the file in `wp-content/uploads/automatic-css/activity.log`. You can download it with your host's file manager or SFTP.
+Before 4.0.2 there is no **Download log** button. The file is in `wp-content/uploads/automatic-css/activity.log`. You can download it with your host's file manager or SFTP.
 :::
 
 ## Clear the log <Since version="4.0.2" /> {#clear-the-log}
