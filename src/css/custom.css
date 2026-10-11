@@ -118,3 +118,88 @@ body {
   color: var(--ifm-color-emphasis-400);
   border-color: var(--ifm-color-emphasis-200);
 }
+
+/* Code
+   Code blocks are dark in both color modes (see the prism theme in
+   docusaurus.config.ts), with a header that names the language. */
+:root {
+  --acss-code-block-border: rgb(255 255 255 / 0.08);
+  --acss-code-block-header: #2a2a2f;
+  --acss-code-block-label: #a1a1aa;
+  --ifm-code-border-radius: 0.3rem;
+  --ifm-code-padding-horizontal: 0.35rem;
+}
+
+.theme-code-block {
+  border: 1px solid var(--acss-code-block-border);
+  border-radius: 0.6rem;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.08);
+}
+
+[data-theme='light'] .theme-code-block {
+  border-color: transparent;
+}
+
+/* Language header; blocks with their own title keep only the title. */
+.theme-code-block::before {
+  display: block;
+  padding: 0.45rem 1rem;
+  background: var(--acss-code-block-header);
+  border-bottom: 1px solid var(--acss-code-block-border);
+  color: var(--acss-code-block-label);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.theme-code-block.language-css::before { content: 'CSS'; }
+.theme-code-block.language-scss::before { content: 'SCSS'; }
+.theme-code-block.language-html::before { content: 'HTML'; }
+.theme-code-block.language-php::before { content: 'PHP'; }
+.theme-code-block.language-js::before { content: 'JavaScript'; }
+.theme-code-block.language-json::before { content: 'JSON'; }
+.theme-code-block.language-bash::before { content: 'Terminal'; }
+.theme-code-block.language-text::before { content: 'Output'; }
+
+.theme-code-block:has(> [class*='codeBlockTitle'])::before {
+  display: none;
+}
+
+.theme-code-block [class*='codeBlockTitle'] {
+  background: var(--acss-code-block-header);
+  border-bottom: 1px solid var(--acss-code-block-border);
+  color: var(--acss-code-block-label);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.8rem;
+}
+
+/* Inline code: tinted with the brand color so it reads as code within text. */
+:not(pre) > code {
+  background: color-mix(in oklch, var(--ifm-color-primary) 10%, transparent);
+  border: 1px solid color-mix(in oklch, var(--ifm-color-primary) 22%, transparent);
+  color: oklch(0.42 0.09 221);
+  font-size: 0.88em;
+  vertical-align: 0.04em;
+}
+
+[data-theme='dark'] :not(pre) > code {
+  background: color-mix(in oklch, var(--ifm-color-primary) 16%, transparent);
+  color: oklch(0.85 0.08 221);
+}
+
+/* Inside links, the code takes the link color. */
+a > code {
+  color: inherit !important;
+}
+
+/* In headings, code keeps the heading size and drops the box. */
+[data-theme] :is(h1, h2, h3, h4) > code {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font-size: 0.9em;
+  vertical-align: baseline;
+}
