@@ -1,8 +1,5 @@
 {
     "label": "Overlays",
     "position": 220,
-    "link": null,
-    "customProps": {
-        "badge": "4.x"
-    }
+    "link": null
 }

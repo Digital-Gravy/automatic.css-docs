@@ -97,9 +97,10 @@ const config: Config = {
         {
           type: 'docsVersionDropdown',
           versions: {
-            current: {label: '4.x'},
-            '3.0': {label: '3.x'},
+            current: {label: 'ACSS 4'},
+            '3.0': {label: 'ACSS 3'},
           },
+          className: 'acss-version-switch',
           position: 'right',
           dropdownActiveClassDisabled: true,
         },

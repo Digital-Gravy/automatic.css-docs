@@ -1,7 +1,4 @@
 {
     "label": "Borders & Dividers",
-    "position": 40,
-    "customProps": {
-        "badge": "4.x"
-    }
+    "position": 40
 }

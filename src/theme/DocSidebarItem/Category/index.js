@@ -26,7 +26,7 @@ export default function Category(props) {
   const badge = item?.customProps?.badge;
 
   const hasDescendantBadge = !badge && hasNewDescendant(item?.items);
-  const displayBadge = badge || (hasDescendantBadge ? 'has new' : null);
+  const displayBadge = badge || (hasDescendantBadge ? 'New' : null);
   const badgeClass = getBadgeClass(displayBadge);
 
 

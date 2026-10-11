@@ -1,8 +1,5 @@
 {
     "label": "Columns",
     "position": 90,
-    "link": null,
-    "customProps": {
-        "badge": "4.x"
-    }
+    "link": null
 }

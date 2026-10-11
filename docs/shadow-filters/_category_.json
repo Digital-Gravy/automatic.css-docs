@@ -1,8 +1,5 @@
 {
     "label": "Shadows",
     "position": 260,
-    "link": null,
-    "customProps": {
-        "badge": "4.x"
-    }
+    "link": null
 }
