@@ -81,7 +81,7 @@ To go back to your last saved settings:
 1. Click the square dot. When you point at it, its tooltip says **Discard unsaved changes**.
 2. Click **Discard changes**, or **Cancel** to keep editing.
 
-![The notice that asks you to confirm discarding unsaved changes](img/dashboard-discard-unsaved-changes.webp)
+![Animation: the square dot shows the tooltip Discard unsaved changes, a click warps in the notice, and after Discard changes the value is back to its saved state](img/dashboard-discard-unsaved-changes.webp)
 
 All changes you have not saved are lost, including an import or a reset you have not saved yet. Your saved settings stay as they are.
 
