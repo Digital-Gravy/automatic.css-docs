@@ -21,9 +21,9 @@ Note: If using a code element, make sure the code is rendered without a wrapper 
 <svg data-icon xmlns="http://www.w3.org/2000/svg" ... />
 ```
 
-## Icon Style: Boxed vs Naked
+## Icon Style: Boxed vs Plain
 
-Boxed icons have padding, a background color, border color, etc. You can choose between boxed or naked icons at any time on an icon-by-icon basis, but you can also set the default style for your site in Icon Options.
+Boxed icons have padding, a background color, border color, etc. You can choose between boxed or plain icons at any time on an icon-by-icon basis, but you can also set the default style for your site in Icon Options.
 
 ### Benefits of Boxed Icons
 
@@ -32,7 +32,7 @@ Boxed icons have padding, a background color, border color, etc. You can choose 
 - Typically looks more consistent
 - Easier to cover up imperfections in icon sizes/sets.
 
-If the majority of the icons in your design are boxed, set the default to boxed. If the majority are naked, set the default to naked.
+If the majority of the icons in your design are boxed, set the default to boxed. If the majority are plain, set the default to plain.
 
 Navigate to Icons > Icon Framework Options and toggle Boxed Icons on/off:
 
@@ -50,7 +50,7 @@ For the Dark Theme, you should set a dark icon color.
 
 For the Light Theme, you should set a light icon color.
 
-The styles are not based on the boxed icon styling. The reason for this is simple. If you want to convert an individual icon from boxed to naked, or vice versa, the icon color should not change. If you base the theme styles on the box styling, your icon color may change when you convert an individual icon to naked.
+The styles are not based on the boxed icon styling. The reason for this is simple. If you want to convert an individual icon from boxed to plain, or vice versa, the icon color should not change. If you base the theme styles on the box styling, your icon color may change when you convert an individual icon to plain.
 
 Global Styles are styles that affect all icons regardless of whether they’re Light or Dark.
 
@@ -126,11 +126,11 @@ There are two ways to change the icon style manually, a utility class and a data
 
 **Class Method:**
 
-You can use `.icon--boxed` or `.icon--naked` to change the style.
+You can use `.icon--boxed` or `.icon--plain` to change the style.
 
 **Attribute Method:**
 
-You can use `data-icon-style="boxed"` or `data-icon-style="naked"` to change the style.
+You can use `data-icon-style="boxed"` or `data-icon-style="plain"` to change the style.
 
 ## Overriding the Icon Size Manually
 
