@@ -5,10 +5,6 @@ sidebar_custom_props:
   badge: "New"
 ---
 
-:::info Version
-This feature was introduced in ACSS 4.0.
-:::
-
 Blockquotes are a common HTML element used to display quoted text, testimonials, or highlighted content. Automatic.css provides a comprehensive blockquote styling system that automatically styles your blockquote elements while giving you complete control over their appearance through the dashboard.
 
 ## What Are Blockquotes?

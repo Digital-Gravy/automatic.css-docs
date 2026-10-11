@@ -1,0 +1,24 @@
+.since {
+  display: inline-block;
+  margin-right: 0.5em;
+  padding: 0.15em 0.55em;
+  border-radius: 100vw;
+  background: color-mix(in oklch, var(--ifm-color-primary) 14%, transparent);
+  color: var(--ifm-color-primary-dark);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+[data-theme='dark'] .since {
+  color: var(--ifm-color-primary);
+}
+
+/* In a heading, the pill follows the heading text. */
+:is(h1, h2, h3, h4, h5, h6) > .since {
+  margin-left: 0.5em;
+  margin-right: 0;
+}

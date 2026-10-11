@@ -1,6 +1,7 @@
 ---
 title: Upgrading a v4 prerelease to ACSS 4.0.0
 sidebar_position: 20
+updated: 4.0.1
 ---
 
 Use this guide if your site is running an **ACSS 4.x prerelease** and you want to move to the final ACSS 4.0.0 release.
@@ -64,7 +65,7 @@ The CLI uses the name `v3` for the old license because the v4 prerelease used th
 
 ## Multisite
 
-You can upgrade one site at a time or upgrade the whole network at once. We recommend one site at a time because it is easier to check each site and roll it back if needed. The choice belongs to the network administrator, and ACSS does not block network activation.
+You can upgrade one site at a time or upgrade the whole network at once. We recommend one site at a time because it is easier to check each site and roll it back if needed. The choice belongs to the network administrator. ACSS allows network activation once the prerelease is no longer active.
 
 ### Recommended: one site at a time
 
@@ -84,7 +85,13 @@ Use the same `--url` option for the license, CSS, status, and rollback commands.
 
 ### Alternative: upgrade the whole network at once
 
-You may network-activate ACSS 4.0.0, but ACSS will not automatically handle the old plugin and license on every site. Before network activation:
+You may network-activate ACSS 4.0.0, but ACSS will not automatically handle the old plugin and license on every site.
+
+:::note
+<Since version="4.0.1" /> Network activation stops with the message "Automatic.css cannot be network-activated" while the prerelease is still active. ACSS 4.0.0 did not check this, and running both plugins network-wide could break the site. Deactivate the prerelease everywhere first (step 4 below).
+:::
+
+Before network activation:
 
 1. Back up every site.
 2. Save and deactivate the prerelease license on each site.

@@ -1,0 +1,19 @@
+.badges {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.badges :global(.badge) {
+  margin: 0;
+}
+
+.updated {
+  background: color-mix(in oklch, var(--ifm-color-primary) 14%, transparent);
+  border-color: transparent;
+  color: var(--ifm-color-primary-dark);
+}
+
+[data-theme='dark'] .updated {
+  color: var(--ifm-color-primary);
+}
