@@ -58,7 +58,7 @@ The first method is to add the `--min` via the custom CSS tab. This is probably 
 
 Note: Do not attach this custom CSS to the `.variable-grid` class itself. That would apply the same width to every instance of variable grids across your website. Since the grids you’ll be building are all different, you want to assign the `--min` to each unique instance. This is best done at the ID level.
 
-The second method is to add the –min via the data attributes feature:
+The second method is to add the `--min` via the data attributes feature:
 
 This adds the `--min` as an inline CSS style which, by default, only applies to that unique instance of your grid.
 
@@ -84,7 +84,7 @@ Let’s say you’re creating a grid of team member cards. In your mind, you wan
 
 Instead of choosing a bare minimum value, you can choose a slightly bigger minimum value. With this new minimum, the grid may now only fit three cards in a row. All good!
 
-## Changing var(–min) at breakpoints
+## Changing `var(--min)` at breakpoints {#changing-varmin-at-breakpoints}
 
 Variable Grids are automatically responsive. A downside of this is that you might find an uneven grid at a specific breakpoint, or even an orphaned item.
 
@@ -94,7 +94,7 @@ You can re-assign the value of `var(--min)` at any breakpoint. All you have to d
 
 Being OCD about this will limit the “automatic” nature of Variable Grids, but that’s the tradeoff.
 
-## Setting or changing var(–min) dynamically with Javascript
+## Setting or changing `var(--min)` dynamically with Javascript {#setting-or-changing-varmin-dynamically-with-javascript}
 
 If you’re in a situation where you need to set or change the behavior a grid (like the number of items per row) dynamically with Javascript, Variable Grids might be a good option. Instead of having to dynamically add or remove classes, or create additional variables, you can simply change the value of `var(--min)` dynamically with inline CSS.
 

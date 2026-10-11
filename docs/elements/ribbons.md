@@ -40,13 +40,13 @@ Customization is done via the following locally scoped variables:
 
 For reference, the default values for these are as follows:
 
-- Offset: -2rem
-- Width: 30rem
-- Padding: .5em 1em
-- Background Color: var(–action)
-- Text Color: var(–white)
-- Text Size: var(–text-s)
-- Shadow: 0 5px 10px var(–shade-trans-10);
+- Offset: `-2rem`
+- Width: `30rem`
+- Padding: `.5em 1em`
+- Background Color: `var(--action)`
+- Text Color: `var(--white)`
+- Text Size: `var(--text-s)`
+- Shadow: `0 5px 10px var(--shade-trans-10)`
 
 To style a ribbon contextually, create a custom modifier class to identify it and then set its styling via locally scoped variables. You only need to add the variables you want to change. So if you like all the default ribbon styling but want to change the background color, text color, and shadow, you only need to alter those three variables:
 
@@ -68,8 +68,8 @@ To get started, add your text element along with the base `.ribbon` class. Inste
 
 To position the ribbon, use our preconfigured data attribute. Add `data-ribbon-position` to your element and then use one of the positioning values:
 
-- top-right
-- top-left
+- `top-right`
+- `top-left`
 
 You can use your own custom data attribute to dynamically style the ribbon based on custom field values or some other parameter. Follow the same process that you would follow when creating a custom ribbon class.
 

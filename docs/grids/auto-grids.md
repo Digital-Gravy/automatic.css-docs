@@ -9,8 +9,8 @@ Here are some **benefits** of Auto Grids in ACSS:
 
 - Lightweight CSS
 - No breakpoint decisions
-- Can be reactive to the specific type of content in the grid by adjusting var(–min)
-- Can be applied to a custom class with a mixin: @include auto-grid($col-count, $min-item-width);
+- Can be reactive to the specific type of content in the grid by adjusting `var(--min)`
+- Can be applied to a custom class with a mixin: `@include auto-grid($col-count, $min-item-width);`
 - Can be applied to a custom class with a recipe: @auto-grid;
 
 **Downsides** of Auto Grids:

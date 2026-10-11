@@ -29,7 +29,7 @@ The default names (smooth, snappy, gentle, bouncy) produce the familiar `--ease-
 
 ## Preset Details
 
-### --ease-smooth
+### `--ease-smooth`
 
 The standard easing for most UI transitions. Starts slightly fast, decelerates smoothly.
 
@@ -41,7 +41,7 @@ The standard easing for most UI transitions. Starts slightly fast, decelerates s
 }
 ```
 
-### --ease-snappy
+### `--ease-snappy`
 
 Fast start with a gentle stop. Creates a responsive, dynamic feel.
 
@@ -54,7 +54,7 @@ Fast start with a gentle stop. Creates a responsive, dynamic feel.
 }
 ```
 
-### --ease-gentle
+### `--ease-gentle`
 
 Symmetrical acceleration and deceleration. Equal ease-in and ease-out.
 
@@ -66,7 +66,7 @@ Symmetrical acceleration and deceleration. Equal ease-in and ease-out.
 }
 ```
 
-### --ease-bouncy
+### `--ease-bouncy`
 
 Overshoots the target slightly before settling. Use sparingly for playful interactions.
 
@@ -78,7 +78,7 @@ Overshoots the target slightly before settling. Use sparingly for playful intera
 }
 ```
 
-### --ease-elastic
+### `--ease-elastic`
 
 A spring-like effect using CSS `linear()` easing. Overshoots with a natural bounce-back settle, mimicking a physical spring.
 

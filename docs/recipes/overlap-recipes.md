@@ -35,10 +35,10 @@ Overlap-alt example
 
 The following variables / custom properties are available for immediate customization when using the recipe:
 
-- –background: Sets the background using any valid shorthand background value.
-- –foreground: Sets the foreground color of the adjacent content group (headings and paragraphs by default).
-- –overlap-amount: Sets the amount of overlap.
-- –overlay: Sets the overlay color or gradient.
+- `--background`: Sets the background using any valid shorthand background value.
+- `--foreground`: Sets the foreground color of the adjacent content group (headings and paragraphs by default).
+- `--overlap-amount`: Sets the amount of overlap.
+- `--overlay`: Sets the overlay color or gradient.
 
 ## Background Images and Patterns
 

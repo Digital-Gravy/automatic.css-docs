@@ -34,7 +34,7 @@ Open the dashboard and navigate to Backgrounds & Text. Choose the Backgrounds ac
 
 ACSS Background Assignments
 
-Start by telling ACSS what your default background color should be. By default, it's var(–white), but you can use any color.
+Start by telling ACSS what your default background color should be. By default, it's `var(--white)`, but you can use any color.
 
 Next, assign your dark, ultra-dark, light, and ultra-light background options.
 

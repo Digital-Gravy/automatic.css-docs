@@ -40,7 +40,7 @@ Panel for customizing external link indicators
 
 In some cases, you might want to exclude certain links, certain link contexts, links in certain areas, and so on. You can use the Indicator Exclusions feature for this.
 
-By default, links that wrap images, figures, pictures, and SVGs are excluded via the :has() statement as long as those items are direct children of the link:
+By default, links that wrap images, figures, pictures, and SVGs are excluded via the `:has()` statement as long as those items are direct children of the link:
 
 ```CSS
 :has(> img, > figure, > picture, > svg)
