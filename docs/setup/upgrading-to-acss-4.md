@@ -64,7 +64,7 @@ The CLI uses the name `v3` for the old license because the v4 prerelease used th
 
 ## Multisite
 
-You can upgrade one site at a time or upgrade the whole network at once. We recommend one site at a time because it is easier to check each site and roll it back if needed. The choice belongs to the network administrator, and ACSS does not block network activation.
+You can upgrade one site at a time or upgrade the whole network at once. We recommend one site at a time because it is easier to check each site and roll it back if needed. The choice belongs to the network administrator. ACSS allows network activation once the prerelease is no longer active.
 
 ### Recommended: one site at a time
 
@@ -84,7 +84,13 @@ Use the same `--url` option for the license, CSS, status, and rollback commands.
 
 ### Alternative: upgrade the whole network at once
 
-You may network-activate ACSS 4.0.0, but ACSS will not automatically handle the old plugin and license on every site. Before network activation:
+You may network-activate ACSS 4.0.0, but ACSS will not automatically handle the old plugin and license on every site.
+
+:::info Version
+From ACSS 4.0.1, network activation stops with the message "Automatic.css cannot be network-activated" while the prerelease is still active. ACSS 4.0.0 did not check this, and running both plugins network-wide could break the site. Deactivate the prerelease everywhere first (step 4 below).
+:::
+
+Before network activation:
 
 1. Back up every site.
 2. Save and deactivate the prerelease license on each site.
