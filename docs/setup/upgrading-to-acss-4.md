@@ -1,6 +1,7 @@
 ---
 title: Upgrading a v4 prerelease to ACSS 4.0.0
 sidebar_position: 20
+updated: 4.0.1
 ---
 
 Use this guide if your site is running an **ACSS 4.x prerelease** and you want to move to the final ACSS 4.0.0 release.
@@ -86,8 +87,8 @@ Use the same `--url` option for the license, CSS, status, and rollback commands.
 
 You may network-activate ACSS 4.0.0, but ACSS will not automatically handle the old plugin and license on every site.
 
-:::info Version
-From ACSS 4.0.1, network activation stops with the message "Automatic.css cannot be network-activated" while the prerelease is still active. ACSS 4.0.0 did not check this, and running both plugins network-wide could break the site. Deactivate the prerelease everywhere first (step 4 below).
+:::note
+<Since version="4.0.1" /> Network activation stops with the message "Automatic.css cannot be network-activated" while the prerelease is still active. ACSS 4.0.0 did not check this, and running both plugins network-wide could break the site. Deactivate the prerelease everywhere first (step 4 below).
 :::
 
 Before network activation:

@@ -1,6 +1,7 @@
 ---
 title: Form Styling Basics
 sidebar_position: 100
+updated: 4.0.1
 ---
 
 ACSS provides comprehensive form styling for WS Form. To get started, make sure Load Forms is turned on in the Forms screen of the ACSS dashboard:
@@ -29,11 +30,7 @@ These classes can be placed on the form element (or a parent container) in the b
 
 Simply apply `.form--light` or `.form--dark` directly to your form element, and the styles will adapt accordingly. You can then fine-tune your styles further using live preview in the ACSS dashboard.
 
-## Floating Label Background
-
-:::info Version
-This setting was introduced in ACSS 4.0.1.
-:::
+## Floating Label Background <Since version="4.0.1" /> {#floating-label-background}
 
 When a WS Form field uses the **Inside** label position, the label moves onto the field's top border as soon as the field is focused or filled. **Floating Label Background** sets the background behind that floated label, so the border does not show through it.
 
