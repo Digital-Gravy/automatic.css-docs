@@ -5,6 +5,10 @@ sidebar_position: 80
 
 Manage the Automatic.css v4 license from the command line. You can inspect the current license state, store a replacement key, activate it, or deactivate the site.
 
+:::note Key in wp-config.php
+When the key is set with `ACSS_LICENSE_KEY` in `wp-config.php`, `set` and `deactivate` stop with a message, and `get` and `activate` use that key. See [Set the key in wp-config.php](../setup/license.md#set-the-key-in-wp-configphp).
+:::
+
 :::caution Keep license keys secret
 License keys should not be passed as command arguments because arguments can be saved in shell history or exposed in process listings. The `set` command reads the key from a hidden interactive prompt or standard input instead.
 :::

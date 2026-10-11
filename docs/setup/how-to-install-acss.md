@@ -15,7 +15,7 @@ The entire Automatic.css system is easily installed and configured with the Auto
 
 Once the plugin is installed and activated you’ll see a new Automatic.css area in the left admin sidebar in your Wordpress dashboard.
 
-Open the License part of the dashboard and put in your license key and you’re ready to start using Automatic.css.
+Open the License part of the dashboard and put in your license key and you’re ready to start using Automatic.css. See [License](license.md) for details, including how to set the key in `wp-config.php`.
 
 Note: There may be two keys in your [account dashboard](https://automaticcss.com/account). Use the key named “–Automatic.css” – don’t use the bundle key or the key with the name of the license plan you purchased. The one you want is usually second in the list.
 
