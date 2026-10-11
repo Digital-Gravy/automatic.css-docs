@@ -1,6 +1,7 @@
 ---
 title: Activity Log
 sidebar_position: 60
+updated: 4.0.2
 ---
 
 Automatic.css keeps an activity log of what it does, for example generating your CSS files or activating your license. When something does not work, for example your changes don't show up on the site or your license won't activate, the activity log is the first place to look. It tells you whether Automatic.css ran into an error and what the error was.
@@ -42,7 +43,7 @@ The arrows (▼ and ▶) fold and unfold the sections. Sections such as `flags` 
 
 In the example above, the Global SCSS uses a variable that doesn't exist (`$brand-colour`), so the CSS could not be generated. Fix the code in the dashboard, save, and the next event shows `success`.
 
-### License errors
+### License errors <Since version="4.0.2" /> {#license-errors}
 
 When activating or deactivating your license fails, the event shows `"key": "license"` under `failure_messages`. The `message` is the same one you saw on the **License** tab. The other fields tell support why it failed:
 
@@ -58,7 +59,7 @@ When activating or deactivating your license fails, the event shows `"key": "lic
 | `cf_ray` | Shown when Cloudflare blocked the request. Support needs this Ray ID to find the block. |
 | `transport_error` | Shown when your site could not reach the licensing server at all, for example because of a firewall or a timeout. |
 
-## Share it to get help
+## Share it to get help <Since version="4.0.2" /> {#share-it-to-get-help}
 
 If you can't solve the error yourself:
 
@@ -72,7 +73,7 @@ Before the file is downloaded, Automatic.css removes passwords, password reset k
 Automatic.css versions without the **Download log** button keep the file in `wp-content/uploads/automatic-css/activity.log`. You can download it with your host's file manager or SFTP.
 :::
 
-## Clear the log
+## Clear the log <Since version="4.0.2" /> {#clear-the-log}
 
 Click **Clear log** and confirm. This empties the log, including older rotated files, and cannot be undone. Clearing helps when you want to reproduce a problem: clear the log, repeat the steps that fail, and then download a log that only contains that attempt.
 
