@@ -1,12 +1,13 @@
 ---
 title: Import, Export and Reset Settings
 sidebar_position: 40
+since: 4.0.2
 sidebar_custom_props:
   badge: "New"
 ---
 
-:::info Version
-Import, export and reset in the dashboard menu, and discarding unsaved changes from the dot, were introduced in ACSS 4.0.2. On earlier 4.x versions, use the Import & Export tab in the WordPress admin or [WP-CLI](#using-wp-cli).
+:::note Earlier 4.x versions
+Import, export and reset in the dashboard menu, and discarding unsaved changes from the dot, need ACSS 4.0.2 or later. On earlier 4.x versions, use the Import & Export tab in the WordPress admin or [WP-CLI](#using-wp-cli).
 :::
 
 You can move your Automatic.css settings between sites, or keep a copy of them, by exporting them as a JSON file and importing that file on another site. You can also reset all settings to the Automatic.css defaults, or discard changes you have not saved yet. Import, export and reset live in the dashboard's header menu. Further down, you'll also find what the dots in the dashboard mean.

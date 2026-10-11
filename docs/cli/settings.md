@@ -1,6 +1,7 @@
 ---
 title: wp acss settings
 sidebar_position: 20
+updated: 4.0.2
 ---
 
 Manage Automatic.css settings from the command line. These subcommands operate directly on the same settings store used by the dashboard, so changes made here are reflected in the dashboard and vice versa.
@@ -152,7 +153,7 @@ wp acss settings import ./config/acss-settings.json --yes --skip-css
 Import **replaces** all current settings. There is no automatic backup — take a snapshot with `wp acss settings export --file=...` before importing if you need to be able to roll back.
 :::
 
-From ACSS 4.0.2, if the file was exported from ACSS 3.x, the command converts it to the 4.x format before saving and prints:
+<Since version="4.0.2" /> If the file was exported from ACSS 3.x, the command converts it to the 4.x format before saving and prints:
 
 ```text
 Detected an ACSS 3.x settings file and converted it to the current format.
