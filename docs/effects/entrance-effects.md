@@ -160,6 +160,16 @@ The parallax effect creates a depth illusion where the element moves slower than
 }
 ```
 
+:::note
+Parallax runs on its own. On an element with `.on-enter--parallax`, other `.on-enter--*` or `.on-exit--*` classes have no effect. To fade or slide the parallax area as well, put those classes on a wrapper element:
+
+```html
+<div class="image-container on-enter--fade">
+  <img src="background.jpg" class="on-enter--parallax" alt="Parallax background">
+</div>
+```
+:::
+
 ## Browser Support
 
 Scroll-driven animations require browser support for `animation-timeline: view()`:
