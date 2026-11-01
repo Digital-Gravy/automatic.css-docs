@@ -64,13 +64,7 @@ This adds the `--min` as an inline CSS style which, by default, only applies to 
 
 We named this “Variable Grid” because of the variable nature of how they behave and the fact that it’ll help remind you that they’re based on a `--min` variable.
 
-The **recipe** methods allow you to attach variable grids to custom classes.
-
-`@variable-grid-columns` gives you the literal grid-template-columns value for Variable Grid. Type the name of the recipe and hit enter in the `grid-template-columns` input and it’ll expand to the full `grid-template-columns` value.
-
-You can then use the `--min` variable as shown above, but this time you can attach the `--min` to the custom class you made for the grid.
-
-The second recipe method is the full recipe for Variable Grid. On your custom grid class, navigate to the CSS input and then type `@variable-grid;` –– as soon as you type “;” on the end, the recipe will expand.
+The **recipe** method allows you to attach a variable grid to a custom class. On your custom grid class, navigate to the CSS input and then type `?variable-grid;` –– as soon as you type “;” on the end, the recipe will expand.
 
 The full recipe gives you all the Variable Grid code, including a `--min` that you can customize.
 
