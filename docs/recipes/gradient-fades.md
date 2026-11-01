@@ -1,6 +1,7 @@
 ---
 title: Gradient Fades
 sidebar_position: 100
+updated: 4.0.2
 ---
 
 **Note:** Functions and mixins are designed for use in the Custom SCSS area of the Automatic.css dashboard. They will not work in the builder inputs or builder CSS.
@@ -59,7 +60,13 @@ Each axis option has an associated recipe. The following will expand the fade ou
 - `?fade-right;`
 - `?fade-bottom;`
 - `?fade-left;`
+- `?fade-all;` <Since version="4.0.2" />
 
 Remember that you can’t paste these recipe strings. They’ll only expand when the semicolon on the end is actually typed.
 
 That’s it, have fun!
+
+## Changes in 4.0.2 <Since version="4.0.2" /> {#changes-in-402}
+
+- The fade recipes have a new `--fade-softness` variable (default `1`).
+- New `?fade-all` recipe fades all four edges.

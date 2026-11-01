@@ -1,7 +1,6 @@
 ---
 title: Overlap Recipes
 sidebar_position: 100
-updated: 4.0.2
 ---
 
 Overlap recipes allow you to quickly create two different types of overlap effects in your design.

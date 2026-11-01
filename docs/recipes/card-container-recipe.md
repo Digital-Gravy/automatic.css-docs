@@ -1,17 +1,17 @@
 ---
 title: Card Container Recipe
 sidebar_position: 20
-updated: 4.0.2
 ---
 
 The Card Container recipe is used for adding container queries to card styling with the ACSS [Card Framework](../cards/card-styling.md).
 
 You can deploy it by typing `?card-container` in the custom CSS area.
 
-To use the recipe, you must do two things:
+To use the recipe, you must do three things:
 
-1. Define the size parameters in the parenthesis. You can use any standard media query size syntax as well as the [range syntax](https://css-tricks.com/the-new-css-media-query-range-syntax/).
-2. Add your custom CSS.
+1. Add `container: card / inline-size;` to the element that wraps the card. ACSS 4 doesn't set up this container for you.
+2. Define the size parameters in the parenthesis. You can use any standard media query size syntax as well as the [range syntax](https://css-tricks.com/the-new-css-media-query-range-syntax/).
+3. Add your custom CSS.
 
 **Pro Tip:** Instead of redeclaring properties like padding, font-size, etc. just declare new values for the custom properties that are used throughout the card framework.
 

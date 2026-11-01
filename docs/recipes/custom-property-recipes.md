@@ -1,7 +1,6 @@
 ---
 title: Custom Property Recipes
 sidebar_position: 100
-updated: 4.0.2
 ---
 
 Custom Property Recipes

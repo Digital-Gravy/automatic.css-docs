@@ -1,7 +1,6 @@
 ---
 title: Query Loop Recipes
 sidebar_position: 100
-updated: 4.0.2
 ---
 
 ## `?query-children`

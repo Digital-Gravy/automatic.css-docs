@@ -30,13 +30,13 @@ Some recipes are very simple and some are complex. It just depends on the utilit
 
 ## Recipes in Bricks and Gutenberg <Since version="4.0.2" /> {#where-recipes-work}
 
-ACSS recipes work in Bricks and Gutenberg as soon as you type `?` in a CSS input. No setting is needed. **Options → Workflow Enhancements → Variable Expansion & Validation** only adds auto-corrections such as `var()` and `calc()` expansion.
+ACSS recipes work in Bricks and Gutenberg without any setting. Type `?` plus the recipe name and end it with `;` (Enter in single-line inputs). **Options → Workflow Enhancements → Variable Expansion & Validation** only adds auto-corrections such as `var()` and `calc()` expansion.
 
 Etch has its own built-in recipes and doesn't use the ones on these pages.
 
-New in 4.0.2: the flex recipes (`?flex-grid`, `?center-*`), the gradient recipes, `?tooltip`, `?footer-reveal`, `?color-mix`, `?transparency`, `?font-face`, `?is-bg`, `?skip-link`, `?fade-all`, `?concentric-radius-reverse`, `?border-check` and the pseudo recipes (`?::before`, `?::after`, `?:hover`, `?:focus-visible`, `?hover-exclude-touch`). Recipe names can't contain spaces, so the combined pseudo recipes are `?::before,::after` and `?:hover,:focus-visible`.
+New in 4.0.2: the flex recipes (`?flex-grid`, `?center-*`), the gradient recipes, `?tooltip`, `?footer-reveal`, `?color-mix`, `?transparency`, `?font-face`, `?is-bg`, `?skip-link`, `?fade-all`, `?concentric-radius-reverse`, `?border-check`, `?corner-ribbon` and the pseudo recipes (`?::before`, `?::after`, `?:hover`, `?:focus-visible`, `?hover-exclude-touch`). Recipe names can't contain spaces, so the combined pseudo recipes are `?::before,::after` and `?:hover,:focus-visible`.
 
-Changed in 4.0.2: `?columns`, `?concentric-radius`, `?variable-grid` and the divider recipes have new defaults. Each recipe page lists what changed.
+Changed in 4.0.2: `?columns` and `?variable-grid` have new defaults, `?concentric-radius` uses the full padding, the divider recipes have fallbacks, the `?fade-*` recipes have `--fade-softness`, and the color recipes expand to OKLCH.
 
 ### How recipes expand in Bricks and Gutenberg
 
@@ -48,7 +48,13 @@ Short recipes like `?flex-row`, `?grid-3` or `?center-all` expand to plain decla
 }
 ```
 
-Recipes with nested rules, like `?auto-grid`, `?flex-grid` or `?fade-top`, expand to a complete `%root% { … }` block. Type them on their own line and edit the values inside the expanded block. Bricks replaces `%root%` with the element's selector.
+Recipes that bring their own selector, like `?auto-grid`, `?flex-grid`, `?fade-top` or `?list-none`, expand to a complete `%root% { … }` block. Type them on their own line, not inside another rule, and edit the values inside the expanded block. Bricks replaces `%root%` with the element's selector.
+
+Value recipes like `?linear-gradient` or `?color-mix` go after a property:
+
+```css
+background: ?color-mix;
+```
 
 ## Using Recipes in Input Fields
 

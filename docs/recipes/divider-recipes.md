@@ -1,6 +1,7 @@
 ---
 title: Divider Recipes
 sidebar_position: 100
+updated: 4.0.2
 ---
 
 ## `?divider-all`
@@ -17,9 +18,11 @@ This recipe can be expanded on any element that you'd like to place a divider _b
 
 ## Customizing dividers
 
-The divider recipes read these variables: `--divider-gap`, `--divider-size`, `--divider-inline-size`, `--divider-style` and `--divider-color`. Each one falls back to a default when it isn't set. The recipe lists them at the top so you can change them right there.
+To change the line, set `--divider` on the element, for example `--divider: 2px dashed var(--primary);`. `--divider-gap` and `--divider-inline-size` change the spacing and the width of the line.
 
-## Changes in 4.0.2
+`--divider-size`, `--divider-style` and `--divider-color` (with the fallbacks `1px`, `solid` and `#ddd`) are only used when the global divider variables in ACSS are turned off. Otherwise `--divider` comes from your dashboard settings.
+
+## Changes in 4.0.2 <Since version="4.0.2" /> {#changes-in-402}
 
 - The recipes now include fallback values.
 - `?divider-bottom` no longer adds spacing below the last element, and `?divider-top` no longer adds spacing above the first.

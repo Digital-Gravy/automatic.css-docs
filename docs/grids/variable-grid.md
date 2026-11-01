@@ -34,39 +34,22 @@ The first two things are controllable with Variable Grids, but you might find th
 
 ## How to create a Variable Grid
 
-There are three ways to create a variable grid: utility class, variable-grid-columns recipe, and variable-grid recipe.
+In ACSS 4 you create a variable grid with the `?variable-grid` recipe. The `.variable-grid` utility class from ACSS 3.x isn't generated anymore.
 
-To create a variable grid with the utility class, simply assign the `.variable-grid` class to any box. Unlike our other grid systems, there are no additional classes to use.
-
-If the box is the content width of your website, like a traditional `section` container, you’ll immediately get two equal columns that are automatically responsive. In some cases (like a 50/50 content layout), this may fit your needs perfectly. You can move on without giving the grid any additional input.
-
-In cases where you need more than two columns or you have elements that are sensitive to specific widths (like cards), the next step is to tell the Variable Grid what the minimum width is. This is done with the `var(--min)` utility.
+Type `?variable-grid;` on its own line in your grid container's CSS. It expands to a `%root% { … }` block that sets `--min: 350px`. Change `--min` to the minimum width your grid items need:
 
 ```CSS
 %root% {
     --min: 380px;
+    /* … rest of the recipe … */
 }
 ```
 
-Typically you’ll want to set this `--min` value at the ID level so it only applies to that specific instance of variable grid.
-
-In a page builder like Bricks, you can set the value of the variable two ways.
-
-The first method is to add the `--min` via the custom CSS tab. This is probably the fastest, most obvious, and most maintainable method.
-
 ![var(--min) added via custom CSS in Bricks](img/var--min.webp)
 
-Note: Do not attach this custom CSS to the `.variable-grid` class itself. That would apply the same width to every instance of variable grids across your website. Since the grids you’ll be building are all different, you want to assign the `--min` to each unique instance. This is best done at the ID level.
-
-The second method is to add the `--min` via the data attributes feature:
-
-This adds the `--min` as an inline CSS style which, by default, only applies to that unique instance of your grid.
+You can also set `--min` as an inline style or through your builder's data attributes. That only applies to that one grid.
 
 We named this “Variable Grid” because of the variable nature of how they behave and the fact that it’ll help remind you that they’re based on a `--min` variable.
-
-The **recipe** method allows you to attach a variable grid to a custom class. On your custom grid class, navigate to the CSS input and then type `?variable-grid;` –– as soon as you type “;” on the end, the recipe will expand.
-
-The full recipe gives you all the Variable Grid code, including a `--min` that you can customize.
 
 ## Understanding `var(--min)`
 

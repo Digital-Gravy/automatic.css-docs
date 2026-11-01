@@ -4,10 +4,6 @@ sidebar_position: 100
 updated: 4.0.2
 ---
 
-:::info Bricks and Gutenberg
-In Bricks and Gutenberg these recipes are available since ACSS 4.0.2. See [Recipes in Bricks and Gutenberg](./recipes.md#where-recipes-work).
-:::
-
 Flex recipes are helper recipes for quickly establishing flexbox layouts in custom CSS.
 
 ## Layout Recipes
@@ -32,7 +28,9 @@ Establishes a vertical flex layout:
 }
 ```
 
-## Centering Recipes
+## Centering Recipes <Since version="4.0.2" /> {#centering-recipes}
+
+In Bricks and Gutenberg the centering recipes are available since ACSS 4.0.2.
 
 ### `?center-all`
 
@@ -54,7 +52,7 @@ Centers content horizontally, aligned to top.
 
 Centers content horizontally, aligned to bottom.
 
-## Grid Recipe
+## Grid Recipe <Since version="4.0.2" /> {#grid-recipe}
 
 ### `?flex-grid`
 

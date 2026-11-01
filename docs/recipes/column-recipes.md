@@ -1,6 +1,7 @@
 ---
 title: Column Recipes
 sidebar_position: 100
+updated: 4.0.2
 ---
 
 ## `?columns`
@@ -15,7 +16,7 @@ Expands the code for creating responsive, text-flow columns. This is best used o
 - `--col-gap`: The gap between columns
 - `--row-gap`: The gap between "rows" (added as margin to the child elements).
 
-## Changes in 4.0.2
+## Changes in 4.0.2 <Since version="4.0.2" /> {#changes-in-402}
 
 - New defaults: `--col-min-width` is `350px` (was `250px`) and there's no ruler by default (`--col-rule-style: none`).
 
