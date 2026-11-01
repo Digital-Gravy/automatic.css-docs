@@ -1,7 +1,12 @@
 ---
 title: Flex Grids (Flexbox Grids)
 sidebar_position: 100
+updated: 4.0.2
 ---
+
+:::info Bricks and Gutenberg
+In Bricks and Gutenberg the `?flex-grid` recipe is available since ACSS 4.0.2. Turn on **Options → Workflow Enhancements → Variable Expansion & Validation** first. See [Where recipes work](../recipes/recipes.md#where-recipes-work).
+:::
 
 CSS Grid is a powerful layout system, but it has one weakness for some users. Grids with an unbalanced number of items must remain left-aligned at all times.
 

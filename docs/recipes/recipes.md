@@ -1,6 +1,7 @@
 ---
 title: Introduction to Recipes
 sidebar_position: 100
+updated: 4.0.2
 ---
 
 Recipes are a new feature in ACSS v3.0. They’re a very powerful new part of our variable expansion and validation system in the dashboard (Options > Workflow Enhancements).
@@ -25,6 +26,40 @@ Expanded version of a Recipe in ACSS
 
 Some recipes are very simple and some are complex. It just depends on the utility that you happen to be expanding.
 
+## Where recipes work <Since version="4.0.2" /> {#where-recipes-work}
+
+Recipes work in Etch, Bricks and Gutenberg, but Etch and ACSS ship separate recipe sets:
+
+- **Etch** has its own recipes built in. They work as soon as you type `?` in a CSS input, with or without ACSS.
+- **Bricks and Gutenberg** use the ACSS recipes. Turn on **Options → Workflow Enhancements → Variable Expansion & Validation** in the ACSS dashboard first. It's off by default.
+
+Most recipes exist in both sets. These don't:
+
+| Recipe | Etch | Bricks & Gutenberg |
+| --- | --- | --- |
+| Color recipes (`?primary-clr` …) | – | ✓ |
+| `?btn`, `?list-none`, `?overlap`, `?overlap-alt` | – | ✓ |
+| `?container`, `?card-container`, `?property` | – | ✓ |
+| `?ipsum-short`, `?script`, `?query-children` | – | ✓ |
+| Pseudo recipes (`?::before`, `?::after`, `?:hover`, `?:focus-visible`, `?hover-exclude-touch`) | ✓ | – |
+| `?color-mix`, `?transparency`, `?font-face`, `?is-bg` | ✓ | – |
+| `?skip-link`, `?fade-all`, `?concentric-radius-reverse` | ✓ | – |
+| `?brace-left`, `?brace-right`, `?brace-both`, `?border-check` | ✓ | – |
+
+Since 4.0.2, Bricks and Gutenberg also have the flex recipes (`?flex-grid`, `?center-*`), the gradient recipes, `?tooltip` and `?footer-reveal`.
+
+### How recipes expand in Bricks and Gutenberg
+
+Short recipes like `?flex-row`, `?grid-3` or `?center-all` expand to plain declarations. Type them inside the rule you want to style:
+
+```css
+%root% {
+  ?center-all;
+}
+```
+
+Recipes with nested rules, like `?auto-grid`, `?flex-grid` or `?fade-top`, expand to a complete `%root% { … }` block. Type them on their own line and edit the values inside the expanded block. Bricks replaces `%root%` with the element's selector.
+
 ## Using Recipes in Input Fields
 
 Some Recipes are simply the exposed value of a specific variable and can be used as single values in input fields. For example, the Recipe `?[color-name]-clr` exposes a color with all its channels.
@@ -47,7 +82,7 @@ Using our example above, you could turn off “Columns” classes in ACSS, which
 
 ## The future of Recipes
 
-ACSS 3.0 ships with some initial Recipes for popular non-variable-driven utilities ([columns](../columns/css-columns.md), [masonry](../columns/masonry-layouts.md), [clickable parent](../accessibility/clickable-parent.md), [focus parent](../accessibility/focus-parent.md), [flex-grid](../flexbox/flex-grids-flexbox-grids.md), color expansion, and more). We’ll quickly expand Recipes functionality to all utilities that will provide great value to the user.
+ACSS 3.0 ships with some initial Recipes for popular non-variable-driven utilities ([columns](../columns/css-columns.md), [masonry](../columns/masonry-layouts.md), [clickable parent](../accessibility/clickable-parent.md), [focus parent](../accessibility/focus-parent.md), [flex-grid](../flexbox/flex-grids.md), color expansion, and more). We’ll quickly expand Recipes functionality to all utilities that will provide great value to the user.
 
 In addition to pre-configured Recipes provided by the framework, we have plans to allow for custom Recipes and Recipe-sharing. You’ll be able to write and save your own Recipes and import/export those recipes between sites. You can also share Recipes or groups of Recipes with other users (in the future).
 

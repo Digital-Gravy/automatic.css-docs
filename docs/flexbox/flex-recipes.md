@@ -1,7 +1,12 @@
 ---
 title: Flex Recipes
 sidebar_position: 200
+updated: 4.0.2
 ---
+
+:::info Bricks and Gutenberg
+In Bricks and Gutenberg these recipes are available since ACSS 4.0.2. Turn on **Options → Workflow Enhancements → Variable Expansion & Validation** first. See [Where recipes work](../recipes/recipes.md#where-recipes-work).
+:::
 
 Flex recipes are helper recipes for quickly establishing flexbox layouts in custom CSS. These recipes are available as utility expansions in the ACSS workflow.
 
