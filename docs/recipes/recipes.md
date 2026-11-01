@@ -22,6 +22,8 @@ Calling a Recipe in ACSS
 
 Close the line with “;” just as you normally would and the Recipe will appear instantly:
 
+![Expanded ACSS recipe](img/acss-recipe-expanded.webp)
+
 Expanded version of a Recipe in ACSS
 
 Some recipes are very simple and some are complex. It just depends on the utility that you happen to be expanding.
