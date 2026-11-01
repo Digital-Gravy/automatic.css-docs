@@ -41,11 +41,9 @@ Most recipes exist in both sets. These don't:
 | `?btn`, `?list-none`, `?overlap`, `?overlap-alt` | – | ✓ |
 | `?container`, `?card-container`, `?property` | – | ✓ |
 | `?ipsum-short`, `?script`, `?query-children` | – | ✓ |
-| `?transparency`, `?is-bg` | ✓ | – |
-| `?skip-link`, `?fade-all`, `?concentric-radius-reverse` | ✓ | – |
-| `?brace-left`, `?brace-right`, `?brace-both`, `?border-check` | ✓ | – |
+| `?brace-left`, `?brace-right`, `?brace-both` (Etch template syntax) | ✓ | – |
 
-Since 4.0.2, Bricks and Gutenberg also have the flex recipes (`?flex-grid`, `?center-*`), the gradient recipes, `?tooltip`, `?footer-reveal`, `?color-mix`, `?font-face` and the pseudo recipes (`?::before`, `?::after`, `?:hover`, `?:focus-visible`, `?hover-exclude-touch`). Recipe names can't contain spaces in Bricks and Gutenberg, so the combined pseudo recipes are `?::before,::after` and `?:hover,:focus-visible`.
+Since 4.0.2, Bricks and Gutenberg also have the Etch recipes they were missing: the flex recipes (`?flex-grid`, `?center-*`), the gradient recipes, `?tooltip`, `?footer-reveal`, `?color-mix`, `?transparency`, `?font-face`, `?is-bg`, `?skip-link`, `?fade-all`, `?concentric-radius-reverse`, `?border-check` and the pseudo recipes (`?::before`, `?::after`, `?:hover`, `?:focus-visible`, `?hover-exclude-touch`). Recipe names can't contain spaces in Bricks and Gutenberg, so the combined pseudo recipes are `?::before,::after` and `?:hover,:focus-visible`.
 
 In 4.0.2, `?columns`, `?concentric-radius`, `?variable-grid` and the divider recipes were changed to match Etch.
 
