@@ -147,7 +147,7 @@ This documentation covers everything from basic concepts to advanced workflows. 
 ### Learning Resources
 
 - **[ACSS 101 Free Course](https://youtube.com/playlist?list=PL72Ci-T5YC93yut2z1NZBVY1pBYy2osB8)** – Comprehensive video course on YouTube to get you started
-- **[Automatic.css Cheat Sheet](https://automaticcss.com/cheat-sheet/)** – Quick reference for any utility class or variable
+- **Cheat Sheet in the ACSS dashboard** – Open the dashboard and choose **Cheat Sheet**. It lists every class, variable and recipe your current settings generate
 - **[YouTube Channel](https://youtube.com/@AutomaticCSS)** – Regular tutorials, tips, and feature walkthroughs
 - **[Community Forum](https://community.automaticcss.com)** – Get help from the team and other ACSS users
 - **[Blog & Articles](https://automaticcss.com/blog/)** – In-depth articles on best practices and techniques
