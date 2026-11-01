@@ -26,26 +26,15 @@ Expanded version of a Recipe in ACSS
 
 Some recipes are very simple and some are complex. It just depends on the utility that you happen to be expanding.
 
-## Where recipes work <Since version="4.0.2" /> {#where-recipes-work}
+## Recipes in Bricks and Gutenberg <Since version="4.0.2" /> {#where-recipes-work}
 
-Recipes work in Etch, Bricks and Gutenberg, but Etch and ACSS ship separate recipe sets:
+ACSS recipes work in Bricks and Gutenberg as soon as you type `?` in a CSS input. No setting is needed. **Options → Workflow Enhancements → Variable Expansion & Validation** only adds auto-corrections such as `var()` and `calc()` expansion.
 
-- **Etch** has its own recipes built in. They work as soon as you type `?` in a CSS input, with or without ACSS.
-- **Bricks and Gutenberg** use the ACSS recipes. No setting is needed. **Options → Workflow Enhancements → Variable Expansion & Validation** only adds auto-corrections such as `var()` and `calc()` expansion.
+Etch has its own built-in recipes and doesn't use the ones on these pages.
 
-Most recipes exist in both sets. These don't:
+New in 4.0.2: the flex recipes (`?flex-grid`, `?center-*`), the gradient recipes, `?tooltip`, `?footer-reveal`, `?color-mix`, `?transparency`, `?font-face`, `?is-bg`, `?skip-link`, `?fade-all`, `?concentric-radius-reverse`, `?border-check` and the pseudo recipes (`?::before`, `?::after`, `?:hover`, `?:focus-visible`, `?hover-exclude-touch`). Recipe names can't contain spaces, so the combined pseudo recipes are `?::before,::after` and `?:hover,:focus-visible`.
 
-| Recipe | Etch | Bricks & Gutenberg |
-| --- | --- | --- |
-| Color recipes (`?primary-clr` …) | – | ✓ |
-| `?btn`, `?list-none`, `?overlap`, `?overlap-alt` | – | ✓ |
-| `?container`, `?card-container`, `?property` | – | ✓ |
-| `?ipsum-short`, `?script`, `?query-children` | – | ✓ |
-| `?brace-left`, `?brace-right`, `?brace-both` (Etch template syntax) | ✓ | – |
-
-Since 4.0.2, Bricks and Gutenberg also have the Etch recipes they were missing: the flex recipes (`?flex-grid`, `?center-*`), the gradient recipes, `?tooltip`, `?footer-reveal`, `?color-mix`, `?transparency`, `?font-face`, `?is-bg`, `?skip-link`, `?fade-all`, `?concentric-radius-reverse`, `?border-check` and the pseudo recipes (`?::before`, `?::after`, `?:hover`, `?:focus-visible`, `?hover-exclude-touch`). Recipe names can't contain spaces in Bricks and Gutenberg, so the combined pseudo recipes are `?::before,::after` and `?:hover,:focus-visible`.
-
-In 4.0.2, `?columns`, `?concentric-radius`, `?variable-grid` and the divider recipes were changed to match Etch.
+Changed in 4.0.2: `?columns`, `?concentric-radius`, `?variable-grid` and the divider recipes have new defaults. Each recipe page lists what changed.
 
 ### How recipes expand in Bricks and Gutenberg
 

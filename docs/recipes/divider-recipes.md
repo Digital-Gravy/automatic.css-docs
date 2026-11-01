@@ -21,7 +21,7 @@ The divider recipes read these variables: `--divider-gap`, `--divider-size`, `--
 
 ## Changes in 4.0.2
 
-- The recipes now match Etch and include fallback values.
+- The recipes now include fallback values.
 - `?divider-bottom` no longer adds spacing below the last element, and `?divider-top` no longer adds spacing above the first.
 
 ## Changes From 3.x

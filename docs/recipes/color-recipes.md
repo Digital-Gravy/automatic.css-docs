@@ -4,10 +4,6 @@ sidebar_position: 100
 updated: 4.0.2
 ---
 
-:::note Bricks and Gutenberg only
-These recipes are not available in Etch. Etch ships its own set of recipes, see [Where recipes work](./recipes.md#where-recipes-work).
-:::
-
 Color recipes are shortcuts for exposing the full string behind a given color. For example, `?primary-clr` expands to:
 
 ```CSS

@@ -22,10 +22,6 @@ See [Website Width & Breakpoints](../setup/website-width-breakpoints.md) for how
 
 ## Container query recipes
 
-These recipes work in Bricks and Gutenberg (see [Where recipes work](./recipes.md#where-recipes-work)):
+These recipes work in Bricks and Gutenberg:
 
 - `?container` and `?card-container` both expand an empty `@container card ( … )` query inside a `%root% { … }` block. Fill in the size condition and your styles. They're meant for cards built with the [Card Framework](../cards/card-styling.md), which sets up the `card` container. See [Card Container Recipe](./card-container-recipe.md).
-
-## In Etch
-
-The CSS toolbar in Etch has **Media Query** and **Container Query** buttons. They insert a query that matches the current canvas width or the size of the selected block.

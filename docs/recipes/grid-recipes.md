@@ -34,4 +34,4 @@ Expands code for creating an auto grid. Set the number of columns with `--column
 
 ## `?variable-grid`
 
-Expands code for creating a variable grid. The min item width can be set with `--min` and defaults to `350px` (since 4.0.2, the same as in Etch).
+Expands code for creating a variable grid. The min item width can be set with `--min` and defaults to `350px` (since 4.0.2).

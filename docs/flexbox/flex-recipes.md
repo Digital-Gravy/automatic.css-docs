@@ -5,7 +5,7 @@ updated: 4.0.2
 ---
 
 :::info Bricks and Gutenberg
-In Bricks and Gutenberg these recipes are available since ACSS 4.0.2. See [Where recipes work](../recipes/recipes.md#where-recipes-work).
+In Bricks and Gutenberg these recipes are available since ACSS 4.0.2. See [Recipes in Bricks and Gutenberg](../recipes/recipes.md#where-recipes-work).
 :::
 
 Flex recipes are helper recipes for quickly establishing flexbox layouts in custom CSS. These recipes are available as utility expansions in the ACSS workflow.

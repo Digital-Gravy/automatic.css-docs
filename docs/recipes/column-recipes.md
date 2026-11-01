@@ -17,7 +17,7 @@ Expands the code for creating responsive, text-flow columns. This is best used o
 
 ## Changes in 4.0.2
 
-- The defaults now match Etch: `--col-min-width` is `350px` (was `250px`) and there's no ruler by default (`--col-rule-style: none`).
+- New defaults: `--col-min-width` is `350px` (was `250px`) and there's no ruler by default (`--col-rule-style: none`).
 
 ## Changes From 3.x
 

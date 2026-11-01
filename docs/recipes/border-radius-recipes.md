@@ -11,7 +11,7 @@ The recipe sets the element's padding with `--padding` and the inner radius with
 
 ## Changes in 4.0.2
 
-- The outer radius is now the inner radius plus the full padding (it used half the padding), the same as in Etch.
+- The outer radius is now the inner radius plus the full padding (it used half the padding).
 - New `--inner-radius` variable.
 
 ## Changes From 3.x
