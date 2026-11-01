@@ -34,7 +34,7 @@ ACSS recipes work in Bricks and Gutenberg without any setting. Type `?` plus the
 
 Etch has its own built-in recipes and doesn't use the ones on these pages.
 
-New in 4.0.2: the flex recipes (`?flex-grid`, `?center-*`), the gradient recipes, `?tooltip`, `?footer-reveal`, `?color-mix`, `?transparency`, `?font-face`, `?is-bg`, `?skip-link`, `?fade-all`, `?concentric-radius-reverse`, `?border-check`, `?corner-ribbon` and the pseudo recipes (`?::before`, `?::after`, `?:hover`, `?:focus-visible`, `?hover-exclude-touch`). Recipe names can't contain spaces, so the combined pseudo recipes are `?::before,::after` and `?:hover,:focus-visible`.
+New in 4.0.2: the flex recipes (`?flex-grid`, `?center-*`), the gradient recipes, `?tooltip`, `?footer-reveal`, `?color-mix`, `?transparency`, `?font-face`, `?is-bg`, `?skip-link`, `?fade-all`, `?concentric-radius-reverse`, `?border-check`, [`?corner-ribbon`](./ribbon-recipes.md) and the pseudo recipes (`?::before`, `?::after`, `?:hover`, `?:focus-visible`, `?hover-exclude-touch`). Recipe names can't contain spaces, so the combined pseudo recipes are `?::before,::after` and `?:hover,:focus-visible`.
 
 Changed in 4.0.2: `?columns` and `?variable-grid` have new defaults, `?concentric-radius` uses the full padding, the divider recipes have fallbacks, the `?fade-*` recipes have `--fade-softness`, and the color recipes expand to OKLCH.
 
