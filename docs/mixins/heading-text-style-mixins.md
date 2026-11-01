@@ -9,7 +9,7 @@ Note: Mixins only work within the custom SCSS area of the ACSS dashboard.
 
 ## Heading Styles
 
-You can apply any heading level’s global styles to a custom selector using `@heading-style();`
+You can apply any heading level’s global styles to a custom selector using the `heading-style()` mixin:
 
 ```CSS
 .custom-heading {
@@ -21,7 +21,7 @@ This will attach all global heading styles as well as any styles specific to the
 
 ### Text Styles
 
-You can apply any text level’s global styles to a custom selector using `@text-style();`
+You can apply any text level’s global styles to a custom selector using the `text-style()` mixin:
 
 ```CSS
 .custom-text {

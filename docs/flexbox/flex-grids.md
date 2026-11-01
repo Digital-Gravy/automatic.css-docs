@@ -1,6 +1,7 @@
 ---
 title: Flex Grids (Flexbox Grids)
 sidebar_position: 100
+updated: 4.0.2
 ---
 
 CSS Grid is a powerful layout system, but it has one weakness for some users. Grids with an unbalanced number of items must remain left-aligned at all times.
@@ -17,17 +18,15 @@ Flex Grid is a feature unique to Automatic.css that allows users to create grid 
 
 All the complicated math and setup is done for you. You can even adjust the gap size without issue.
 
-## Using the Flex Grid Recipe
+## Using the Flex Grid Recipe <Since version="4.0.2" /> {#using-the-flex-grid-recipe}
 
-Flex grids are created using the `?flex-grid` recipe in your custom CSS:
+In Bricks and Gutenberg the `?flex-grid` recipe is available since ACSS 4.0.2. Type it on its own line in the parent container's CSS:
 
 ```css
-.my-grid {
-  ?flex-grid;
-}
+?flex-grid;
 ```
 
-Just add the recipe to the parent container and you're all set. Your unbalanced items will be centered at the bottom of the grid by default.
+It expands to a complete `%root% { … }` block, and you're all set. Your unbalanced items will be centered at the bottom of the grid by default.
 
 ## Locally Scoped Variables
 
@@ -41,12 +40,14 @@ The flex grid recipe provides three locally scoped variables you can use to cust
 
 ### Example with Custom Variables
 
+Change the values at the top of the expanded block:
+
 ```css
-.my-grid {
-  ?flex-grid;
-  --columns: 4;
+%root% {
   --gap: var(--space-l);
+  --columns: 4;
   --stretch: 1; /* Stretch unbalanced items */
+  /* … rest of the recipe … */
 }
 ```
 
@@ -63,13 +64,13 @@ The recipe includes default media queries for responsive behavior:
 }
 ```
 
-You can override these breakpoints in your custom CSS to change the responsive behavior:
+To change the responsive behavior, edit the media queries inside the expanded block:
 
 ```css
-.my-grid {
-  ?flex-grid;
+%root% {
   --columns: 5;
-  
+  /* … rest of the recipe … */
+
   @media (max-width: 1200px) {
     --columns: 3;
   }

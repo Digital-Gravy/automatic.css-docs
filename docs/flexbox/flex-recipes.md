@@ -1,6 +1,7 @@
 ---
 title: Flex Recipes
 sidebar_position: 200
+updated: 4.0.2
 ---
 
 Flex recipes are helper recipes for quickly establishing flexbox layouts in custom CSS. These recipes are available as utility expansions in the ACSS workflow.
@@ -45,7 +46,9 @@ Expands to:
 }
 ```
 
-## Centering Recipes
+## Centering Recipes <Since version="4.0.2" /> {#centering-recipes}
+
+In Bricks and Gutenberg the centering recipes are available since ACSS 4.0.2.
 
 These recipes provide quick centering solutions using Flexbox.
 
@@ -159,17 +162,17 @@ Expands to:
 }
 ```
 
-## Grid Recipe
+## Grid Recipe <Since version="4.0.2" /> {#grid-recipe}
 
 ### `?flex-grid`
 
 Creates a flexbox-based grid layout with centered unbalanced items. See [Flex Grids](./flex-grids.md) for full documentation.
 
 ```css
-.my-grid {
-  ?flex-grid;
-}
+?flex-grid;
 ```
+
+Type it on its own line in the container's CSS. It expands to a complete `%root% { … }` block.
 
 Provides locally scoped variables for customization:
 
