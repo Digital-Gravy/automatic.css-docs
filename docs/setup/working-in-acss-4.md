@@ -3,7 +3,7 @@ title: Working in ACSS 4 (Coming From 3.x)
 sidebar_position: 12
 ---
 
-If you built sites with ACSS 3, most of what you know still applies: the same t-shirt sizes, the same spacing and typography system, the same color names. What changes is **how you apply it**. This page shows the new way of working, side by side with the old one.
+If you built sites with ACSS 3, most of what you know still applies: the same spacing and typography system with its t-shirt sizes (`--space-m`, `--text-l`) and the same color names. Some scales changed, for example widths now use numbered steps (`--width-10` to `--width-90`, `.width--60`) instead of `xs` to `xxl`. What changes is **how you apply it**. This page shows the new way of working, side by side with the old one.
 
 [What's New in ACSS 4.x](./whats-new-in-4.md) lists every change. This page is about your day-to-day workflow.
 
