@@ -4,7 +4,7 @@ sidebar_position: 100
 updated: 4.0.2
 ---
 
-Recipes are a new feature in ACSS v3.0. They’re a very powerful new part of our variable expansion and validation system in the dashboard (Options > Workflow Enhancements).
+Recipes are a feature in ACSS since v3.0. Type a `?` shortcut in a CSS field and it expands into ready-made CSS. They work without any dashboard setting.
 
 ## What’s a Recipe?
 
