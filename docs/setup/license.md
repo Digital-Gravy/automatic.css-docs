@@ -53,6 +53,16 @@ If the activation fails, the reason is in the [Activity Log](activity-log.md). A
 While the key is set in `wp-config.php`, `wp acss license set` and `wp acss license deactivate` stop with a message instead of changing it. See [wp acss license](../cli/license.md).
 :::
 
+### Multisite {#multisite}
+
+On a multisite network, a key defined in `wp-config.php` applies to every site of the network. Every site activates the license for its own address, so each site uses one of your activations:
+
+- the activation runs on each site the first time an administrator of that site opens its dashboard;
+- the License tab, the status and the activated address are separate for each site;
+- activating one site does not activate the others.
+
+Make sure your license has enough activations for all sites of the network. You can free activations in your [account](https://automaticcss.com/account).
+
 ## Check for updates <Since version="4.0.2" /> {#check-for-updates}
 
 **Check for updates now** asks the license server for the latest version right away, instead of waiting for WordPress to check. The result appears on the tab:
