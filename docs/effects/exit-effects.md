@@ -144,13 +144,15 @@ Stagger uses CSS `sibling-index()`, which has limited browser support. In unsupp
 
 ## Combining with Entrance Effects
 
-Elements can have both entrance and exit effects:
+Elements can have both entrance and exit effects. The element animates in as it enters the viewport and out as it leaves:
 
 ```html
 <section class="on-enter--fade on-enter--float on-exit--fade on-exit--sink">
   Fades and floats in on entrance, fades and sinks on exit
 </section>
 ```
+
+Parallax (`.on-enter--parallax`) is the exception: it can't be combined with other entrance or exit classes on the same element. Put those on a wrapper instead.
 
 ## Use Cases
 
