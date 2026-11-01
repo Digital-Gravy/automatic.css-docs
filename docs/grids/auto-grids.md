@@ -1,168 +1,103 @@
 ---
 title: Auto Grids
 sidebar_position: 100
+updated: 4.0.2
 ---
 
-Auto Grids are automatically responsive grids that don’t require the user to make any breakpoint decisions.
+Auto grids are responsive on their own. You set how many columns the grid has on large screens, and the items move to new rows when they get too narrow. You don't need any breakpoints.
 
-Here are some **benefits** of Auto Grids in ACSS:
+Benefits of auto grids:
 
-- Lightweight CSS
 - No breakpoint decisions
-- Can be reactive to the specific type of content in the grid by adjusting `var(--min)`
-- Can be applied to a custom class with a mixin: `@include auto-grid($col-count, $min-item-width);`
-- Can be applied to a custom class with a recipe: @auto-grid;
+- Stacking follows the space each item has, not the screen width
+- Very little CSS
 
-**Downsides** of Auto Grids:
+Downside: column and row spans aren't practical in an auto grid.
 
-- Using column and row spans isn’t practical.
+:::info Coming from ACSS 3?
+ACSS 4 has no auto grid utility classes. `.grid--auto-2` to `.grid--auto-12`, the ratio classes (`.grid--auto-1-2` and so on), `.grid--auto-fill`, `.grid--stack-even` and `.grid--stack-any` don't exist anymore, and there is no Auto Grid toggle under Utility Classes. Use the variables, the recipe or the mixin below. The 3.x page is still available in the [3.x docs](/3.0/grids/auto-grids).
+:::
 
-Remember, none of the grid systems in ACSS are perfect for every scenario. We give you multiple different types of grid systems so you can choose the most appropriate system for each situation.
+## Three ways to use auto grids
 
-## Turning on Auto Grids
+| Method | Where | Use it when |
+| --- | --- | --- |
+| [Variables](#variables) `var(--grid-auto-4)` | Any CSS input, builder grid controls | You're fine with the default stacking. |
+| [Recipe](#recipe) `?auto-grid` | Any CSS input that supports recipes | You want to set the minimum item width or the aggressiveness for one grid. |
+| [Mixin](#mixin) `@include auto-grid(4)` | Global SCSS in the ACSS dashboard | You write your styles in SCSS. |
 
-Auto Grid can be turned on in the options panel under Utility Classes. Once activated, you’ll see an Auto Grid area in the Layout panel:
+## Variables {#variables}
 
-![Auto Grid Options](img/auto-grid-options.webp)
+ACSS outputs one variable per column count, from `var(--grid-auto-2)` to `var(--grid-auto-12)`. Use it as `grid-template-columns`:
 
-Screenshot
-
-## How to Apply Auto Grid With Classes
-
-Auto Grid has utility-class support for up to 12 columns as well as support for what we call “ratio grids.”
-
-- `.grid--auto-2`
-- `.grid--auto-3`
-- `.grid--auto-4`
-- `.grid--auto-5`
-- `.grid--auto-6`
-- `.grid--auto-7`
-- `.grid--auto-8`
-- `.grid--auto-9`
-- `.grid--auto-10`
-- `.grid--auto-11`
-- `.grid--auto-12`
-- `.grid--auto-1-2`
-- `.grid--auto-2-1`
-- `.grid--auto-2-3`
-- `.grid--auto-3-2`
-- `.grid--auto-1-3`
-- `.grid--auto-3-1`
-
-### Auto-Grid Stacking Aggressiveness
-
-Auto Grid Aggressiveness Setting
-
-By default, Auto Grids use a math formula to figure out when grid items should stack. This math formula has a user-adjustable control that we call “Aggressiveness.”
-
-This setting controls the default aggressiveness of \*all\* Auto Grids across the site. If you want items to have more sizing leeway prior to stacking, use a lower number. If you want items to have less sizing leeway and stack sooner, use a higher number.
-
-The acceptable value is a decimal from 0 to 1.
-
-Remember, this is only the default. You can control the exact stacking behavior of individual Auto Grids using the `--min` control…
-
-### Minimum Item Width
-
-Auto Grids work by setting a minimum item width on the items in the grid. As the device size gets narrower, the Auto Grid responds by moving items to new rows once they reach their minimum allowed width.
-
-You don’t have to set a minimum width value since one is already set for you. But, a great feature of auto grids is that you can control this minimum width value if desired, which means you can make the responsiveness of the grid perfectly match the requirements of the content inside it.
-
-Let’s say you have a testimonial card and you want to put a lot of them in a 3-column grid. Based on the design of the card, it starts looking too squished if its width goes below 280px.
-
-Start by applying `.grid--auto-3` to the parent container of the cards to establish the 3-column Auto Grid. Now, for this particular grid, go to the ID level and add some custom CSS:
-
-```CSS
-%root% {
-    --min: 280px;
+```css
+.card-grid {
+  display: grid;
+  grid-template-columns: var(--grid-auto-3);
+  gap: var(--grid-gap);
 }
 ```
 
-Now your auto grid will start stacking your testimonial cards as soon as they hit 280px in width. Instead of having to worry about breakpoints, which are disconnected from your content, Auto Grid makes responsiveness content-based.
+Use `var(--grid-gap)` as the gap or a value close to it. The variable calculates its stacking point from `var(--grid-gap)`.
 
-**Note:** Due to variable encapsulation, this `--min` variable will not be honored if you apply the grid with a variable (see below).
+The variables are on by default. You can turn them off in **Options → Variable Manager → Auto Grid Variables**.
 
-## How to Apply Auto Grid With Variables
+The variables already contain the calculated minimum width, so setting `--min` on the grid has no effect. If you need a different stacking point, use the recipe.
 
-Auto grids (1-12) can be applied with variables as well. This lets you use Auto Grid with custom BEM classes.
+## Recipe {#recipe}
 
-Set a box to display grid and then use one of the Auto Grid variables in the grid-template-columns property:
+Type `?auto-grid` in the CSS input of your class and the recipe expands into the full auto grid code. Two values are meant to be edited:
 
-```CSS
-.your-selector {
-    display: grid;
-    grid-template-columns: var(--grid-auto-4);
+- `--column-count`: the number of columns on large screens (default `4`)
+- `--auto-grid-aggressiveness`: how early the items stack, from `0` to `1` (default `.7`). Higher numbers stack sooner.
+
+To set a fixed minimum item width instead, override `--min`:
+
+```css
+.testimonial-grid {
+  ?auto-grid;
+  --column-count: 3;
+  --min: 280px;
 }
 ```
 
-**Note:** Due to variable encapsulation, this is the most limited way to use auto grids. You should only use this method if you’re okay with the default stacking behavior of the Auto Grid. If more control is needed, use the [auto grid mixin](../mixins/auto-grid-mixin.md) or the [auto grid recipe](../recipes/grid-recipes.md).
+Now the cards move to a new row as soon as they would get narrower than 280px.
 
-## How to Apply Auto Grid With a Mixin
+### Forcing even columns
 
-If you need to apply Auto Grid to a custom selector, you can easily do this with the [auto grid mixin](../mixins/auto-grid-mixin.md) via the “Custom SCSS” area of the ACSS dashboard.
+The recipe contains a commented-out block that keeps grids with an even column count even while they stack (4 → 2 → 1 instead of 4 → 3 → …). Uncomment it if you need it, and change the `min-width` in that block to the width below which a single column is allowed.
 
-## How to Apply Auto Grid With a Recipe
+## Mixin {#mixin}
 
-[Auto Grid is also compatible with our recipes feature](../recipes/grid-recipes.md). This allows you to apply Auto Grid to a custom class using vanilla CSS.
+In **Global SCSS** in the ACSS dashboard you can apply an auto grid to any selector with the [auto grid mixin](../mixins/auto-grid-mixin.md):
 
-Select the element you want to turn into an auto grid, add a custom class, and then go to the custom CSS area of the style panel.
+```scss
+.my-grid {
+  @include auto-grid(4);
+}
+```
 
-You can trigger the Auto Grid recipe by typing `@auto-grid;`
+## Global settings
 
-The column count and minimum item width are both editable in the recipe.
+**Layout → Auto Grid** in the dashboard sets the defaults for the variables and the mixin:
 
-## Auto Ratio Grids
+- **Flow Option**: `auto-fit` (default) stretches items to fill the row when there are fewer items than columns. `auto-fill` keeps the empty cells.
+- **Aggressiveness**: how early items stack, from `0` to `1` (default `.7`).
 
-Ratio Grids are grids with uneven columns. The following ratios are available for Auto Ratio Grids:
+The recipe doesn't use these settings. It brings its own values, which you edit in the expanded code.
 
-- `.grid--auto-1-2`
-- `.grid--auto-2-1`
-- `.grid--auto-2-3`
-- `.grid--auto-3-2`
-- `.grid--auto-1-3`
-- `.grid--auto-3-1`
+## Uneven (ratio) grids
 
-These are not true Auto Grids in the sense that they don’t use the exact same logic as Auto Grids. They are, however, automatically responsive.
+ACSS 4 has no automatic ratio grids. For uneven columns, use the [grid variables](grid-variables.md) `var(--grid-1-2)`, `var(--grid-2-1)`, `var(--grid-1-3)`, `var(--grid-3-1)`, `var(--grid-2-3)` or `var(--grid-3-2)` and switch to a single column with a media or container query:
 
-Auto Ratio Grids use a traditional grid structure to create the desired ratio, and then automatically stack at a specific breakpoint. The default stacking breakpoint is the “L” breakpoint, but you can change this if needed in the Layout panel by editing the “Ratio Breakpoint” field.
+```css
+.feature-split {
+  display: grid;
+  grid-template-columns: var(--grid-2-1);
+  gap: var(--grid-gap);
 
-![Auto Grid Options](img/auto-grid-aggressiveness.webp)
-
-Screenshot
-
-## Forcing Even Columns and Eliminating Orphans
-
-3.2.10
-
-Users have the option of forcing even columns to eliminate orphans during column stacking.
-
-This will force all auto grids with an even number of initial columns to remain with even columns down to the “Initial Breakpoint (EC)” value set in the same area of the dashboard.
-
-The Initial Breakpoint value is a min-width media query that forces even columns at the chosen breakpoint and up. By default, this is set to the “S” breakpoint, meaning even columns will be forced at all breakpoints above S.
-
-A breakpoint has to be declared here because “1” is an odd number. We have to know where to allow for a single column, otherwise this setting would for all even grids to have a minimum of two columns.
-
-### Even Columns & “Any” Columns with Utility Classes
-
-3.2.10
-
-“Force Even Columns” is a global setting that affects all auto grids. You can still force individual auto grids to have even columns without turning this on by using the `.grid--stack-even` utility class.
-
-The reverse is true as well. If you turn on the global option, but need to disable it on a specific grid, you can use `.grid--stack-any`.
-
-Additionally, you can override the breakpoint these behaviors occur at using breakpoint classes that follow the syntax: `.grid--stack-{type}-{breakpoint}`.
-
-It’s important to note that the “stack-even” classes are mobile-first (min-width) while the “stack-any” are traditional breakpoint classes (max-width). This means “stack-even” affects the chosen breakpoint and up while “stack-any” affects the chosen breakpoint and down.
-
-## Controlling the Column Flow
-
-3.2.10
-
-The technique used for auto grids accepts two CSS keywords: `auto-fit` and `auto-fill`. By default, auto grids use `auto-fit`. This means that if you have less items than the specified initial column count, the items will stretch to fill the available space.
-
-This is useful in many cases, but not all cases. In some cases you may want the items in your grid to be assigned to their actual cell, leaving the empty cells empty and the space reserved for them. If this is the case, you need to set the flow to `auto-fill`.
-
-You can change the flow globally in the dashboard or per grid instance using a utility class.
-
-To set the option globally, choose `auto-fill` in the dashboard:
-
-To set the option manually, use `.grid--auto-fill`. Consequently, if you have chosen `auto-fill` as the global default, you can change any grid back to `auto-fit` with `.grid--auto-fit`.
+  @media (max-width: 992px) {
+    grid-template-columns: var(--grid-1);
+  }
+}
+```

@@ -7,6 +7,8 @@ ACSS 4.x is essentially a maturation and solidification of a winning framework, 
 
 If you're well versed in ACSS 3.x and previous versions, you're going to feel right at home in 4.x. With that said, there are certainly some changes to be aware of. This page will serve as a one-shot overview of all the major changes from 3.x to 4.x.
 
+For how these changes affect your day-to-day workflow, see [Working in ACSS 4 (Coming From 3.x)](./working-in-acss-4.md).
+
 :::warning Backward Compatibility Notice
 It's important to note that ACSS 4.x is not backward compatible with 3.x. The brand new workflows introduced by advancements in vanilla CSS are impossible to make fully backward compatible. The good news is that it doesn't matter — we're fully supporting the stability of 3.x for all your existing websites for 5 years (and they'll still function just fine beyond that). Just leave your old projects on 3.x and start new projects with 4.x.
 :::

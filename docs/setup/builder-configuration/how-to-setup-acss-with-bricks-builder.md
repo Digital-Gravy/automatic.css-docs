@@ -68,11 +68,11 @@ Configure as follows:
 | Query Bricks data in search results | On ([Read more](https://forum.bricksbuilder.io/t/can-someone-please-explain-query-bricks-data-in-search-results-what-does-it-do/4404)) |
 | Save form submissions in database   | User Preference                                                                                                                        |
 
-| **Custom Breakpoints**                                        |                 |
-| ------------------------------------------------------------- | --------------- |
-| https://docs.automaticcss.com/setup/website-width-breakpoints | User Preference |
+| **Custom Breakpoints** |                 |
+| ---------------------- | --------------- |
+| Custom breakpoints     | User Preference |
 
-[Custom breakpoints](https://academy.bricksbuilder.io/article/responsive-editing/#custom-breakpoints) are best configured before you start working on your site.
+ACSS 4 has no breakpoints, so your Bricks breakpoints don't need to match anything in ACSS. If you want [custom breakpoints](https://academy.bricksbuilder.io/article/responsive-editing/#custom-breakpoints), configure them before you start working on your site. See [Website Width & Breakpoints](../website-width-breakpoints.md).
 
 ### Builder Access
 
