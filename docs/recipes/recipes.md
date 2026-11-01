@@ -31,7 +31,7 @@ Some recipes are very simple and some are complex. It just depends on the utilit
 Recipes work in Etch, Bricks and Gutenberg, but Etch and ACSS ship separate recipe sets:
 
 - **Etch** has its own recipes built in. They work as soon as you type `?` in a CSS input, with or without ACSS.
-- **Bricks and Gutenberg** use the ACSS recipes. Turn on **Options → Workflow Enhancements → Variable Expansion & Validation** in the ACSS dashboard first. It's off by default.
+- **Bricks and Gutenberg** use the ACSS recipes. No setting is needed. **Options → Workflow Enhancements → Variable Expansion & Validation** only adds auto-corrections such as `var()` and `calc()` expansion.
 
 Most recipes exist in both sets. These don't:
 
