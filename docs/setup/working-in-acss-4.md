@@ -19,7 +19,7 @@ ACSS 4 is not backward compatible with 3.x. Start new projects with 4.x and leav
 | Set XL/L/M/S breakpoints and mapped them to your builder | Set nothing. Use your builder's breakpoints or your own media and container queries |
 | Used responsive class variants (`.grid--l-2`, `.col-span--m-1`) | Write the change in your class's CSS, or use your builder's breakpoint controls |
 | Typed `@recipe` | Type `?recipe` |
-| Used `@include breakpoint(m)` in Custom SCSS | Write `@media (max-width: 768px)` in Global SCSS |
+| Used `@include breakpoint(m)` in Global SCSS | Write `@media (max-width: 768px)` in Global SCSS |
 | Used transparency tokens like `var(--primary-trans-50)` | Use `color-mix()` or relative color syntax |
 
 ## 1. Your own classes first, variables inside
@@ -44,23 +44,22 @@ Some classes still exist, for example button classes (`.btn--primary`), section 
 
 ## 2. Recipes instead of copying code
 
-Recipes expand into ready-made CSS right in your builder's CSS input. Type `?` and the recipe name:
+Recipes expand into ready-made CSS right in your builder's CSS input. Type `?`, the recipe name and `;`:
 
 ```css
-.feature-grid {
-  ?auto-grid;
-  --column-count: 3;
-}
+?auto-grid;
 ```
+
+Then change `--column-count` in the expanded code.
 
 This is how you get things that used to be utility classes, like auto grids, grids with a fixed column count (`?grid-3`), or `?clickable-parent`. The recipe code is yours to edit after it expands. See [Grid Recipes](../recipes/grid-recipes.md) and the other pages in the Recipes section.
 
 ## 3. Responsive without breakpoint presets
 
-ACSS 4 has no breakpoint settings. Most ACSS features don't need them:
+ACSS 4 has no breakpoint presets (no XL/L/M/S). Most ACSS features don't need them:
 
 - Typography and spacing are fluid between **Minimum Width** and **Content Width** (Layout → Website Dimensions).
-- [Auto grids](../grids/auto-grids.md) and [variable grids](../grids/variable-grid.md) stack when their items run out of space.
+- [Auto grids](../grids/auto-grids.md) and the [`?variable-grid` recipe](../recipes/grid-recipes.md#variable-grid) stack when their items run out of space.
 
 When you need a layout change at a certain width, you have two options:
 
@@ -93,7 +92,7 @@ Details: [Auto Grids](../grids/auto-grids.md), [Grid Variables](../grids/grid-va
 
 ## 5. Colors
 
-- Colors use OKLCH, and light and dark mode use the browser's `color-scheme` and `light-dark()`. The "Alt" colors are gone.
+- Colors use OKLCH. Light and dark mode use the browser's `color-scheme` and `light-dark()` once you turn on **Enable Color Scheme Support** under Color Scheme (Light/Dark). The "Alt" colors are gone.
 - The transparency tokens are gone. Mix the transparency you need:
 
 ```css
