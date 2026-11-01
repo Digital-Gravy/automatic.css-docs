@@ -1,7 +1,6 @@
 ---
 title: Auto Grid Mixin
 sidebar_position: 100
-updated: 4.0.2
 ---
 
 **Note:** Functions and mixins are designed for use in the Global SCSS area of the Automatic.css dashboard. They will not work in the builder inputs or builder CSS.
@@ -12,7 +11,7 @@ Here’s the full mixin with all available arguments:
 
 `auto-grid($column-count, $min, $flow);`
 
-The only required argument is $column-count, so it’s super easy to use. To get started, use the mixin with any selector like this:
+All arguments are optional (`$column-count` defaults to `1`), so it’s super easy to use. To get started, use the mixin with any selector like this:
 
 ```CSS
 .my-grid {
@@ -27,7 +26,7 @@ The number in parenthesis is the number of desired columns.
 The auto grid mixin has additional options, passed as arguments in the parenthesis. Here’s an explanation of each argument:
 
 - `$column-count` – The number of initial grid columns
-- `$min` – The minimum inline dimension of each item before stacking occurs (if you change this value, it could change the number of initial columns)
+- `$min` – The minimum inline dimension of each item before stacking occurs (if you change this value, it could change the number of initial columns). The mixin multiplies `$min` by the Aggressiveness set in **Layout → Auto Grid**, so `$min: 280px` gives about `196px` at the default `.7`.
 - `$flow` – The column flow (`auto-fit` or `auto-fill`). Defaults to the Flow Option set in **Layout → Auto Grid**.
 
 The mixin uses the Aggressiveness set in **Layout → Auto Grid**.

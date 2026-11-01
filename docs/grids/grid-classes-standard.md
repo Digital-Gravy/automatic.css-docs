@@ -1,10 +1,9 @@
 ---
 title: Grid Classes
 sidebar_position: 100
-updated: 4.0.2
 ---
 
-ACSS 4 has no grid utility classes. `.grid--1` to `.grid--12`, the ratio classes like `.grid--1-2`, the breakpoint variants like `.grid--l-2` or `.grid--m-1`, and the span classes like `.col-span--2` were removed together with the breakpoints.
+ACSS 4 has no grid utility classes. `.grid--1` to `.grid--12`, the ratio classes like `.grid--1-2`, the breakpoint variants like `.grid--l-2` or `.grid--m-1`, and the span classes like `.col-span--2` were removed with the utility class modules. ACSS 4 is variable-first.
 
 Build grids on your own classes with [grid variables](grid-variables.md) or [grid recipes](../recipes/grid-recipes.md) instead. The 3.x page is still available in the [3.x docs](/3.0/grids/grid-classes-standard).
 

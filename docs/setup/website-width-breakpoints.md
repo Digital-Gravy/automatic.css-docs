@@ -1,13 +1,12 @@
 ---
 title: Website Width & Breakpoints
 sidebar_position: 30
-updated: 4.0.2
 ---
 
-ACSS needs to know your website's width. It doesn't need breakpoints. ACSS 4 has no breakpoint settings, so there is nothing to set up or map in your page builder.
+ACSS needs to know your website's width. It doesn't need breakpoints. ACSS 4 has no breakpoint presets (no XL/L/M/S), so there is nothing to set up or map in your page builder. The only width threshold left is the optional **Full-Width Breakpoint** for buttons (Buttons & Links → Buttons, shown when Full Width Buttons on Mobile is on).
 
 :::info Coming from ACSS 3?
-ACSS 3 had a Viewport tab with XL, L, M and S breakpoints (plus optional XXL and XS), and you mapped them to your builder's breakpoints. ACSS 4 removed all of this. See [What changes in your workflow](./working-in-acss-4.md) for how to do the same things in 4.x. The 3.x instructions are still available in the [3.x docs](/3.0/setup/website-width-breakpoints).
+ACSS 3 had XL, L, M and S breakpoints (plus optional XXL and XS) under Layout → Breakpoints, and you mapped them to your builder's breakpoints. ACSS 4 removed all of this. See [What changes in your workflow](./working-in-acss-4.md) for how to do the same things in 4.x. The 3.x instructions are still available in the [3.x docs](/3.0/setup/website-width-breakpoints).
 :::
 
 ## Setting Website Width
@@ -24,7 +23,7 @@ Content Width should match the container width in your page builder. The best wa
 ACSS 4 is a breakpoint-free framework. Its features adapt on their own:
 
 - Typography and spacing are fluid between Minimum Width and Content Width.
-- [Auto grids](../grids/auto-grids.md) and [variable grids](../grids/variable-grid.md) stack based on the space their items have, not on the screen width.
+- [Auto grids](../grids/auto-grids.md) and the [`?variable-grid` recipe](../recipes/grid-recipes.md#variable-grid) stack based on the space their items have, not on the screen width.
 
 You can still use media queries and container queries wherever you need them. Use your page builder's breakpoints (in Bricks, for example, the breakpoints in the builder work as usual), or write your own queries in CSS:
 

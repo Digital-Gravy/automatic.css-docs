@@ -1,7 +1,6 @@
 ---
 title: Auto Grids
 sidebar_position: 100
-updated: 4.0.2
 ---
 
 Auto grids are responsive on their own. You set how many columns the grid has on large screens, and the items move to new rows when they get too narrow. You don't need any breakpoints.
@@ -46,18 +45,18 @@ The variables already contain the calculated minimum width, so setting `--min` o
 
 ## Recipe {#recipe}
 
-Type `?auto-grid` in the CSS input of your class and the recipe expands into the full auto grid code. Two values are meant to be edited:
+Type `?auto-grid;` on its own line in the CSS input of your class. The recipe expands into a complete `%root% { … }` block with the full auto grid code. Two values are meant to be edited:
 
 - `--column-count`: the number of columns on large screens (default `4`)
 - `--auto-grid-aggressiveness`: how early the items stack, from `0` to `1` (default `.7`). Higher numbers stack sooner.
 
-To set a fixed minimum item width instead, override `--min`:
+To set a fixed minimum item width instead, replace the `--min: calc(…)` line in the expanded code:
 
 ```css
-.testimonial-grid {
-  ?auto-grid;
+%root% {
   --column-count: 3;
   --min: 280px;
+  /* … rest of the recipe … */
 }
 ```
 

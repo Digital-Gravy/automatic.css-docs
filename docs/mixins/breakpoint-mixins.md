@@ -1,7 +1,6 @@
 ---
 title: Breakpoint Mixins
 sidebar_position: 100
-updated: 4.0.2
 ---
 
 ACSS 4 has no breakpoint mixins. `@include breakpoint(l)` and `@include breakpoint-up(m)` were removed with the breakpoints. If your Global SCSS still uses them, compiling fails.
