@@ -1,97 +1,43 @@
 ---
 title: Website Width & Breakpoints
 sidebar_position: 30
+updated: 4.0.2
 ---
 
-Automatic.css conforms to your website’s actual dimensions (website width and viewport dimensions) for maximum accuracy in responsiveness. It also allows you to set custom breakpoints that match the specific WordPress page builder you’re using.
+ACSS needs to know your website's width. It doesn't need breakpoints. ACSS 4 has no breakpoint settings, so there is nothing to set up or map in your page builder.
+
+:::info Coming from ACSS 3?
+ACSS 3 had a Viewport tab with XL, L, M and S breakpoints (plus optional XXL and XS), and you mapped them to your builder's breakpoints. ACSS 4 removed all of this. See [What changes in your workflow](./working-in-acss-4.md) for how to do the same things in 4.x. The 3.x instructions are still available in the [3.x docs](/3.0/setup/website-width-breakpoints).
+:::
 
 ## Setting Website Width
 
-To set your website’s width, open the Viewport tab in the ACSS dashboard and change the Website Width input to your desired value:
+Open the ACSS dashboard and go to **Layout → Website Dimensions**:
 
-![Website Dimensions Panel](img/website-dimensions-panel.webp)
+- **Content Width** is the width of your content on large screens. ACSS outputs it as `var(--content-width)`. Fluid typography, fluid spacing and auto grids are calculated from it.
+- **Minimum Width** is the narrowest screen width ACSS uses for its fluid calculations. At this width and below, fluid values are at their minimum.
 
-Website Dimensions Panel
+Content Width should match the container width in your page builder. The best way to do that is to set your builder's container width to `var(--content-width)` instead of a fixed number, so both always stay in sync. See [Content Width](../dimension/content-width.md) for details.
 
-It’s essential that the website width in ACSS settings matches the website width or container width that you’ve set in your page builder. **The framework has to know your website’s dimensions in order for things like responsive typography, responsive spacing, and auto grids to function accurately.**
+## Breakpoints in ACSS 4
 
-## Setting Basic Breakpoints
+ACSS 4 is a breakpoint-free framework. Its features adapt on their own:
 
-ACSS has the following breakpoint options by default:
+- Typography and spacing are fluid between Minimum Width and Content Width.
+- [Auto grids](../grids/auto-grids.md) and [variable grids](../grids/variable-grid.md) stack based on the space their items have, not on the screen width.
 
-- XL (Laptop)
-- L (Vertical Tablet)
-- M (Horizontal Phone)
-- S (Vertical Phone)
+You can still use media queries and container queries wherever you need them. Use your page builder's breakpoints (in Bricks, for example, the breakpoints in the builder work as usual), or write your own queries in CSS:
 
-<mark>It’s best practice to make sure your largest breakpoint is equal to the website width you set in the Website Dimensions area (unless you’re using the extra breakpoints as detailed below).</mark>
+```css
+.service-grid {
+  display: grid;
+  grid-template-columns: var(--grid-3);
+  gap: var(--grid-gap);
 
-Breakpoints are customizable via the Viewport tab:
+  @media (max-width: 768px) {
+    grid-template-columns: var(--grid-1);
+  }
+}
+```
 
-![](img/breakpoints.webp)
-
-Breakpoints Setup Panel
-
-The most important thing to understand when setting up breakpoints is that they must align with the values you’ve set in your page builder. If the page builder and ACSS use two different sets of breakpoints, your responsiveness will be inconsistent.
-
-Whatever changes you make to breakpoint values here must also be set in your page builder.
-
-:::warning note
-Because of the way some page builders show breakpoints in the builder (Oxygen Builder, for example), it may be necessary to set up your builder breakpoints at 1px less than your ACSS breakpoint values for maximum accuracy in the builder. Follow the latest setup documentation for your specific builder – **do not blindly follow old video tutorials**.
-:::
-
-## Additional Breakpoints
-
-<iframe width="100%" height="440" src="https://www.youtube.com/embed/39n6GEMdRtA" frameborder="0" allowfullscreen></iframe>
-
-Aside from the standard breakpoints, ACSS offers two additional breakpoints that are optional. These breakpoints are off by default, but can easily be turned on in the Viewport tab:
-
-<figure>
-![](img/breakpoint-optional.webp)
-<figcaption>XXL and XS Breakpoint Activation</figcaption>
-</figure>
-
-The XXL breakpoint is helpful if you design a site above the average width. Most websites are between 1140 and 1280px. If you design a site at 1366px, 1440px, or higher, you’ll likely find value in enabling the XXL breakpoint and shifting the other breakpoint values to minimize the gap between your largest breakpoint and the next breakpoint down.
-
-If you find too much of a gap between one breakpoint and another, activating the XS breakpoint as an additional option can help.
-
-## Mapping Breakpoints in Bricks Builder
-
-Whether you’re sticking to the standard breakpoints or adding additional breakpoints, we recommend mapping all your ACSS breakpoints over to Bricks. This will keep the names and values consistent and ensure your site works fluidly.
-
-First, ensure you’ve turned on Custom Breakpoints in Bricks’ settings:
-
-![](img/bricks-custom-breakpoints-settings-scaled-1.webp)
-
-Bricks Custom Breakpoint Settings
-
-Once that’s enabled, you can edit breakpoints in Bricks from any page as long as you have the builder open.
-
-In the builder, click the three dots next to the breakpoints to open the editor panel.
-
-![](img/website-dimensions-panel.webp)
-
-Bricks Breakpoint Editor Panel
-
-Bricks sets the top breakpoint as the “base” breakpoint by default. You can change the value of the base breakpoint, but <mark>you should never set any other breakpoint as the base breakpoint. This will break your site.</mark>
-
-### If you’re using standard breakpoints:
-
-1.  Click the pencil next to the base breakpoint and change the name to “XL.” Make sure the value matches the XL breakpoint value set in ACSS.
-2.  Click the pencil next to the “tablet portrait” breakpoint and change the name to “L.” Make sure the value matches the L breakpoint value set in ACSS.
-3.  Click the pencil next to the “mobile landscape” breakpoint and change the name to “M.” Make sure the value matches the M breakpoint value set in ACSS.
-4.  Click the pencil next to the “mobile portrait” breakpoint and change the name to “S.” Make sure the value matches the S breakpoint value set in ACSS.
-
-Now your breakpoint names in Bricks map perfectly to your breakpoint names in ACSS.
-
-### If you’re using additional breakpoints:
-
-1.  Click the pencil next to the base breakpoint and change the value to your website width.
-2.  Click the pencil next to the “tablet portrait” breakpoint and change the name to “L.” Make sure the value matches the L breakpoint value set in ACSS.
-3.  Click the pencil next to the “mobile landscape” breakpoint and change the name to “M.” Make sure the value matches the M breakpoint value set in ACSS.
-4.  Click the pencil next to the “mobile portrait” breakpoint and change the name to “S.” Make sure the value matches the S breakpoint value set in ACSS.
-5.  Click the “+” sign to add a new breakpoint. Set the name to “XXL” and set the value to match the XXL breakpoint value you set in ACSS.
-6.  Click the “+” sign to add a new breakpoint. Set the name to “XL” and set the value to match the XL breakpoint value you set in ACSS.
-7.  If you added an XS breakpoint, click the “+” sign to add a new breakpoint. Set the name to “XS” and set the value to match the XS breakpoint value you set in ACSS.
-
-Your custom/additional breakpoints now map perfectly to your breakpoint names and values in ACSS.
+Your builder's breakpoints don't have to match anything in ACSS.
